@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.currency-options select').each(function(){
+    $('select').each(function(){
         var $this = $(this), numberOfOptions = $(this).children('option').length;
 
         $this.addClass('select-hidden');
@@ -7,7 +7,7 @@ $(document).ready(function () {
         $this.after('<div class="select-styled"></div>');
 
         var $styledSelect = $this.next('div.select-styled');
-        $styledSelect.text($this.children('option').eq(0).text());
+        $styledSelect.html('<span class="' + $this.children('option').eq(0).attr('class') + '">' + $this.children('option').eq(0).text() + '</span>');
 
         var $list = $('<ul />', {
             'class': 'select-options'
@@ -15,8 +15,9 @@ $(document).ready(function () {
 
         for (var i = 0; i < numberOfOptions; i++) {
             $('<li />', {
-                text: $this.children('option').eq(i).text(),
-                rel: $this.children('option').eq(i).val()
+                html: '<span>' + $this.children('option').eq(i).text() + '</span>',
+                rel: $this.children('option').eq(i).val(),
+                class: $this.children('option').eq(i).attr('class'),
             }).appendTo($list);
         }
 
@@ -32,7 +33,7 @@ $(document).ready(function () {
 
         $listItems.click(function(e) {
             e.stopPropagation();
-            $styledSelect.text($(this).text()).removeClass('active');
+            $styledSelect.html('<span class="' + $(this).attr('class') +'">' + $(this).text() + '</span>').removeClass('active');
             $this.val($(this).attr('rel'));
             $list.hide();
             //console.log($this.val());
@@ -41,6 +42,17 @@ $(document).ready(function () {
         $(document).click(function() {
             $styledSelect.removeClass('active');
             $list.hide();
+        });
+
+    });
+
+    //------------tabs-------//
+    $(function() {
+
+        $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
         });
 
     });
