@@ -1,0 +1,368 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu/Ubuntu-Bold.woff2') format('woff2'),
+    url('../fonts/ubuntu/Ubuntu-Bold.woff') format('woff'),
+    url('../fonts/ubuntu/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu/Ubuntu.woff2') format('woff2'),
+    url('../fonts/ubuntu/Ubuntu.woff') format('woff'),
+    url('../fonts/ubuntu/Ubuntu.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+*{
+    font-size: 16px;
+    color: #222222;
+    font-family: 'Ubuntu';
+}
+
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote {
+    quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+}
+* a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #262626;
+    cursor: pointer;
+}
+* a:hover{
+    text-decoration: none;
+    transition: .3s;
+    color: #428bca;
+}
+* a, h1, h2, h3, h4, h5, h6, p, span{
+    font-family: 'Ubuntu';
+}
+* button, button:focus, a , a:focus{
+    outline: none;
+}
+* h2{
+    font-style: normal;
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+}
+button{
+    cursor: pointer;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+
+.display-block {
+    display: block !important;
+}
+body{
+    position: relative;
+}
+
+/*-----------------------------header------------------------------*/
+.header{
+    background-color: #ffffff;
+    width: 100%;
+}
+.logo{
+    margin-right: 50px;
+}
+.user-btn,
+.video-guide{
+    border: none;
+    background-color: #428bca;
+    padding: 15px 17px;
+    width: 150px;
+    position: relative;
+    height: 50px;
+}
+.user-btn-text{
+    position: relative;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Ubuntu';
+}
+.chevron-down-btn{
+    right: 17px;
+    position: absolute;
+    top: 15px;
+}
+.chevron-down-btn i{
+    color: #ffffff;
+    font-size: 14px;
+}
+.user-btn-text:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../../images/user-icon.png") no-repeat center;
+    left: -25px;
+    top: -2px;
+}
+.general-title a img{
+    max-width: 92px;
+}
+.navigation-top-list{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-left: 20px;
+}
+.info-top-nav a{
+    padding: 13px 18px;
+    border: 1px solid transparent;
+}
+.info-top-nav{
+    margin-right: 14px;
+}
+.info-top-nav:last-child{
+    margin-right: 0;
+}
+.info-top-nav a:hover,
+.active-link{
+    border: 1px solid #428bca !important;
+    border-radius: 5px;
+    color: #428bca;
+    transition: .3s;
+}
+.wrapper-top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #f9f9f9;
+}
+.market-btn{
+    background-color: #ffffff;
+    background-image: url("../../images/bell.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 20px;
+    padding: 15px 17px;
+    width: 65px;
+    height: 50px;
+    border: none;
+    position: relative;
+}
+.round-block{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff5722;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Ubuntu';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+    top: 6px;
+    left: 31px;
+}
+.wrapper-navigation-top{
+    display: flex;
+    align-items: center;
+}
+.nav-list-variant{
+    border-left: 2px solid #222222;
+}
+.nav-list-variant a{
+    padding: 0 15px;
+}
+.none-padding-left a{
+    padding-left: 0;
+}
+.none-padding-right a{
+    padding-right: 0;
+}
+.none-padding-right a:hover{
+    color: #222222;
+}
+.button-nav-list{
+    display: flex;
+    align-items: center;
+}
+.wrapper-button-nav{
+    padding: 24px 20px;
+}
+.active-option a{
+    color: #428bca;
+}
+.active-option{
+    border-left: 2px solid #428bca;
+}
+.active-option:first-child{
+    border-left: none;
+}
+.video-guide span{
+    font-size: 17px;
+    color: #ffffff;
+    position: relative;
+    padding-right: 25px;
+}
+.video-guide{
+    width: 140px;
+    height: 34px;
+    padding: 9px 11px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 3px 6px 8px -2px rgba(0,0,0,0.29);
+    -moz-box-shadow: 3px 6px 8px -2px rgba(0,0,0,0.29);
+    box-shadow: 3px 6px 8px -2px rgba(0,0,0,0.29);
+}
+.video-guide span:before{
+    content: '';
+    position: absolute;
+    background: url("../../images/play.png") no-repeat;
+    width: 11px;
+    height: 14px;
+    right: 0;
+    top: 2px;
+}
+
+.currency-options .select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+}
+.currency-options .select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: #ffffff;
+    width: 219px;
+    height: 34px;
+}
+.currency-options .select-styled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding: 8px 15px;
+    transition: all 0.2s ease-in;
+    text-align: center;
+}
+.currency-options .select-styled:hover {
+     background-color: #ffffff;
+ }
+.currency-options .select-styled:active,
+.currency-options .select-styled.active {
+    background-color: #ffffff;
+}
+.currency-options .select-styled:active:after,
+.currency-options .select-styled.active:after {
+    content: "";
+    background: url("../../images/chewron-up.png") no-repeat;
+    width: 13px;
+    height: 8px;
+    position: absolute;
+    top: 11px;
+    right: 8px;
+}
+.currency-options .select-styled:after {
+    content: "";
+    background: url("../../images/chewron-down.png") no-repeat;
+    width: 13px;
+    height: 8px;
+    position: absolute;
+    top: 11px;
+    right: 8px;
+}
+.currency-options .select-styled:before {
+    content: "";
+    background: url("../../images/flag.png") no-repeat;
+    width: 32px;
+    height: 17px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.currency-options .select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #ffffff;
+}
+.currency-options .select-options li {
+    margin: 0;
+    padding: 12px 0;
+    text-indent: 15px;
+    border-top: 1px solid #ffffff;
+    transition: all 0.15s ease-in;
+}
+.currency-options .select-options:hover {
+     color: #ffffff;
+     background: #ffffff;
+ }
+.currency-options .select-options[rel="hide"] {
+     display: none;
+ }
