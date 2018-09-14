@@ -2,429 +2,443 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PPC-TOOLS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="bootstrap_4.1.1/css/bootstrap.css" rel="stylesheet"/>
-    <link href="style/fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
-    <link href="style/css/service.ddlist.jquery.css" rel="stylesheet"/>
-    <link href="style/css/styles.css" rel="stylesheet"/>
-    <link href="style/css/responsive.css" rel="stylesheet"/>
+    <title>PPC.tools</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.3/css/fixedHeader.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/css/tether-theme-arrows-dark.css" />
+    <link rel="stylesheet" href="bootstrap_4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/responsive.css" rel="stylesheet"/>
 </head>
 <body>
 
-<!-- start-header -->
-
-<header class="header">
-    <div class="wrapper-top-nav">
-        <div class="logo">
-            <h1 class="general-title">
-                <a href="">
-                    <img src="images/logo.png" alt="logo"/>
-                </a>
-            </h1>
-        </div>
-        <div class="wrapper-navigation-top">
-            <nav class="top-nav">
-                <ul class="navigation-top-list">
-                    <li class="info-top-nav">
-                        <a href="" class="active-link">SKUs</a>
-                    </li>
-                    <li class="info-top-nav">
-                        <a href="">ppc Wizard</a>
-                    </li>
-                    <li class="info-top-nav">
-                        <a href="">Changemaster</a>
-                    </li>
-                    <li class="info-top-nav">
-                        <a href="">Campaigns</a>
-                    </li>
-                    <li class="info-top-nav">
-                        <a href="">Keywords</a>
-                    </li>
-                    <li class="info-top-nav">
-                        <a href="">Searchterms</a>
-                    </li>
-                    <li class="info-top-nav">
-                        <a href="">Tracking</a>
-                    </li>
-                    <li class="info-top-nav">
-                        <a href="">Autopilot</a>
-                    </li>
-                    <li class="info-top-nav">
-                        <a href="">Help</a>
-                    </li>
-                </ul>
-            </nav>
-            <button type="button" class="user-btn">
-                <span class="user-btn-text">info7</span>
-                <span class="chevron-down-btn">
+<div class="wrapper_searchterms" style="opacity: 0">
+    <!-- top nav -->
+    <header class="header">
+        <div class="wrapper-top-nav">
+            <div class="logo">
+                <h1 class="general-title">
+                    <a href="">
+                        <img src="img/selected_icon/logo.png" alt="logo"/>
+                    </a>
+                </h1>
+            </div>
+            <div class="wrapper-navigation-top">
+                <nav class="top-nav">
+                    <ul class="navigation-top-list">
+                        <li class="info-top-nav">
+                            <a href="" class="active-link">SKUs</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">ppc Wizard</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Changemaster</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Campaigns</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Keywords</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Searchterms</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Tracking</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Autopilot</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Help</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button type="button" class="user-btn">
+                    <span class="user-btn-text">info7</span>
+                    <span class="chevron-down-btn">
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </span>
-            </button>
-            <button type="button" class="market-btn">
+                </button>
+                <button type="button" class="market-btn">
             <span class="round-block">
                 32
             </span>
-            </button>
-        </div>
-    </div>
-    <div class="wrapper-button-nav">
-        <div class="container-button-nav">
-            <nav class="button-nav">
-                <ul class="button-nav-list">
-                    <li class="nav-list-variant none-padding-left active-option">
-                        <a href="">Home</a>
-                    </li>
-                    <li class="nav-list-variant active-option">
-                        <a href="">Product List </a>
-                    </li>
-                    <li class="nav-list-variant active-option">
-                        <a href="">Product</a>
-                    </li>
-                    <li class="nav-list-variant none-padding-right">
-                        <a href="">Words Generator</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="container-nav-right">
-            <div class="button-nav-right">
-                <button type="button" class="video-guide">
-                    <span>Video guide</span>
                 </button>
             </div>
-            <div class="currency-options">
-                <select id="local-flag">
-                    <option class="usa" value="USA">A2UZPC5JPB2EX1</option>
-                    <option class="usa" value="USA">A2UZPC5JPB2EX3</option>
-                    <option class="usa" value="USA">A2UZPC5JPB2EX2</option>
-                </select>
-            </div>
-            <div class="currency">
-                <span class="title">Currency: </span>
-                <select class="currency-select">
-                    <option value="USD">USD </option>
-                    <option value="EUR">EUR </option>
-                    <option value="RUB">RUB </option>
-                </select>
-            </div>
-            <button type="button" class="btn icon add btn-outline-primary btn-add-right" ui-sref="SettingsNewAccount" style="    margin-right: 8px;" href="/settings/newAccount">Add+</button>
         </div>
-    </div>
-</header>
-
-<!-- end-header -->
-<!-- start-section -->
-
-<section class="section-block">
-    <div class="container">
-        <div class="tabs">
-
-            <ul class="tabs__caption">
-                <li class="active">Home</li>
-                <li>Keywords</li>
-                <li>Backend Keywords</li>
-            </ul>
-
-            <div class="tabs__content active">
-                <div class="container-content-tabs-top">
-                    <div class="desc-window">
-                        <a href="#" class="icon-close"></a>
-                        <div class="desc-window__block">
-                            <div class="desc-window__icon-bell">
-                                <i class="icon-bell"></i>
-                            </div>
-                            <div class="desc-window__text">
-                                <p>
-                                    Gernerate backend keywords from your best performing searchterms. Click "Generate" button, wait for result which will apear in the right table and then load keywords into below field. Please remember you have to manually copy them and then upload them at Seller Central.<br>
-                                    <span class="strong">Hint:</span> You can remove duplicate keywords which are already present in your Title/Description by marking "Remove duplicates" checkbox
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end-desc-window -->
-                    <div class="wrapper-tabs-content-text-info">
-                        <div class="wrapper-img-tabs">
-                            <img src="images/tabs-icon.png" alt="tabs"/>
-                        </div>
-                        <div class="text-tabs">
-                            <h2>Tealyra - Imperial Jasmine Dragon Pearls - Loose Leaf Green Tea - Jasmine Green
-                                Tea with Pleasant Aroma and Tonic Effect - 220g (8-ounce)
-                            </h2>
-                            <p>Proin dapibus tellus eget nisl hendrerit congue. Orci varius natoque penatibus et magnis
-                                dis parturient montes, nascetur ridiculus mus. Duis sit amet posuere justo, ac volutpat mauris. Fusce
-                                aliquet nunc massa, sit amet luctus nisl ornare a. Vestibulum ante ipsum primis in faucibus orci luctus
-                                et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                inceptos himenaeos. Integer vulputate malesuada tortor, sit amet laoreet nunc mollis nec. Cras ac malesuada nunc.
-                                Curabitur quis lacus in enim volutpat ullamcorper. Pellentesque eu facilisis ex.</p>
-                        </div>
-                    </div>
-                    <button type="button" class="btn-generate">Generate</button>
+        <div class="wrapper-button-nav">
+            <div class="container-button-nav">
+                <nav class="button-nav">
+                    <ul class="button-nav-list">
+                        <li class="nav-list-variant none-padding-left active-option">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="nav-list-variant active-option">
+                            <a href="">Product List </a>
+                        </li>
+                        <li class="nav-list-variant active-option">
+                            <a href="">Product</a>
+                        </li>
+                        <li class="nav-list-variant none-padding-right">
+                            <a href="">Words Generator</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container-nav-right">
+                <div class="button-nav-right">
+                    <button type="button" class="video-guide">
+                        <span>Video guide</span>
+                    </button>
                 </div>
-                <div class="container-content-tabs-bottom">
-                    <div class="wrapper-table-popular">
-                        <h2 class="pupular-title">Popular searchterms</h2>
-                        <div class="container-table-popular">
-                            <table class="table-popular">
-                                <thead class="popular-header">
-                                <tr>
-                                    <th class="thead-title check-square">
-                                        <div class="custom-control custom-checkbox checkbox-table">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                            <label class="custom-control-label" for="customCheck1"></label>
-                                        </div>
-                                    </th>
-                                    <th class="thead-title">
-                                        <div class="arrow-down">
-                                            <span>Word</span>
-                                        </div>
-                                    </th>
-                                    <th class="thead-title">
-                                        <div class="arrow-grey">
-                                            <span>Popularity</span>
-                                        </div>
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr class="table-content">
-                                    <td class="thead-title check-square">
-                                        <div class="custom-control custom-checkbox checkbox-table">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                            <label class="custom-control-label" for="customCheck2"></label>
-                                        </div>
-                                    </td>
-                                    <td class="word-content">
-                                        <span>tea</span>
-                                    </td>
-                                    <td class="populary-content">
-                                        <span>123</span>
-                                    </td>
-                                </tr>
-                                <tr class="table-content">
-                                    <td class="thead-title check-square">
-                                        <div class="custom-control custom-checkbox checkbox-table">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                            <label class="custom-control-label" for="customCheck3"></label>
-                                        </div>
-                                    </td>
-                                    <td class="word-content">
-                                        <span>jasmine</span>
-                                    </td>
-                                    <td class="populary-content">
-                                        <span>54</span>
-                                    </td>
-                                </tr>
-                                <tr class="table-content">
-                                    <td class="thead-title check-square">
-                                        <div class="custom-control custom-checkbox checkbox-table">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                            <label class="custom-control-label" for="customCheck4"></label>
-                                        </div>
-                                    </td>
-                                    <td class="word-content">
-                                        <span>green</span>
-                                    </td>
-                                    <td class="populary-content">
-                                        <span>765</span>
-                                    </td>
-                                </tr>
-                                <tr class="table-content">
-                                    <td class="thead-title check-square">
-                                        <div class="custom-control custom-checkbox checkbox-table">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                            <label class="custom-control-label" for="customCheck5"></label>
-                                        </div>
-                                    </td>
-                                    <td class="word-content">
-                                        <span>pearls</span>
-                                    </td>
-                                    <td class="populary-content">
-                                        <span>87</span>
-                                    </td>
-                                </tr>
-                                <tr class="table-content">
-                                    <td class="thead-title check-square">
-                                        <div class="custom-control custom-checkbox checkbox-table">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck6">
-                                            <label class="custom-control-label" for="customCheck6"></label>
-                                        </div>
-                                    </td>
-                                    <td class="word-content">
-                                        <span>dragon</span>
-                                    </td>
-                                    <td class="populary-content">
-                                        <span>33</span>
-                                    </td>
-                                </tr>
-                                <tr class="table-content">
-                                    <td class="thead-title check-square">
-                                        <div class="custom-control custom-checkbox checkbox-table">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck7" checked>
-                                            <label class="custom-control-label" for="customCheck7"></label>
-                                        </div>
-                                    </td>
-                                    <td class="word-content active-checked">
-                                        <span>loose</span>
-                                    </td>
-                                    <td class="populary-content active-checked">
-                                        <span>98</span>
-                                    </td>
-                                </tr>
-                                <tr class="table-content">
-                                    <td class="thead-title check-square">
-                                        <div class="custom-control custom-checkbox checkbox-table">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck8">
-                                            <label class="custom-control-label" for="customCheck8"></label>
-                                        </div>
-                                    </td>
-                                    <td class="word-content">
-                                        <span>pearl</span>
-                                    </td>
-                                    <td class="populary-content">
-                                        <span>23</span>
-                                    </td>
-                                </tr>
-                                <tr class="table-content">
-                                    <td class="thead-title check-square">
-                                        <div class="custom-control custom-checkbox checkbox-table">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck9">
-                                            <label class="custom-control-label" for="customCheck9"></label>
-                                        </div>
-                                    </td>
-                                    <td class="word-content">
-                                        <span>leaf</span>
-                                    </td>
-                                    <td class="populary-content">
-                                        <span>6</span>
-                                    </td>
-                                </tr>
-                                <tr class="table-content">
-                                    <td class="thead-title check-square">
-                                        <div class="custom-control custom-checkbox checkbox-table">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck10">
-                                            <label class="custom-control-label" for="customCheck10"></label>
-                                        </div>
-                                    </td>
-                                    <td class="word-content">
-                                        <span>tealyra</span>
-                                    </td>
-                                    <td class="populary-content">
-                                        <span>2</span>
-                                    </td>
-                                </tr>
-                                <tr class="table-content">
-                                    <td class="thead-title check-square">
-                                        <div class="custom-control custom-checkbox checkbox-table">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck11">
-                                            <label class="custom-control-label" for="customCheck11"></label>
-                                        </div>
-                                    </td>
-                                    <td class="word-content">
-                                        <span>organic</span>
-                                    </td>
-                                    <td class="populary-content">
-                                        <span>1</span>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <div class="footer-table">
-                                <div class="footer-btn">
+                <div class="currency-options new-currency ">
+                    <select class="js-example-basic-single flag icon" name="flag">
+                        <option value="US">A2UZPC5JPB2EX1</option>
+                        <option value="US">A2UZPC5JPB2EX2</option>
+                        <option value="US">A2UZPC5JPB2EX3</option>
+                    </select>
+                </div>
+                <div class="currency-valute">
+                    <span class="title">Currency: </span>
+                    <select class="js-example-basic-single currency" name="currency">
+                        <option value="USD">USD </option>
+                        <option value="EUR">EUR </option>
+                        <option value="RUB">RUB </option>
+                    </select>
+                </div>
+                <button type="button" class="btn icon add btn-outline-primary btn-add-right" ui-sref="SettingsNewAccount" style="    margin-right: 8px;" href="/settings/newAccount">Add+</button>
+            </div>
+        </div>
+    </header>
+    <!-- end top nav -->
+    <!-- start-section -->
+
+    <section class="section-block">
+        <div class="container">
+            <div class="tabs">
+
+                <ul class="tabs__caption">
+                    <li class="active">Home</li>
+                    <li>Keywords</li>
+                    <li>Backend Keywords</li>
+                </ul>
+
+                <div class="tabs__content active">
+                    <div class="container-content-tabs-top">
+                        <div class="desc-window">
+                            <a href="#" class="icon-close"></a>
+                            <div class="desc-window__block">
+                                <div class="desc-window__icon-bell">
+                                    <i class="icon-bell"></i>
+                                </div>
+                                <div class="desc-window__text">
+                                    <p>
+                                        Gernerate backend keywords from your best performing searchterms. Click "Generate" button, wait for result which will apear in the right table and then load keywords into below field. Please remember you have to manually copy them and then upload them at Seller Central.<br>
+                                        <span class="strong">Hint:</span> You can remove duplicate keywords which are already present in your Title/Description by marking "Remove duplicates" checkbox
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end-desc-window -->
+                        <div class="wrapper-tabs-content-text-info">
+                            <div class="wrapper-img-tabs">
+                                <img src="img/tabs-icon.png" alt="tabs"/>
+                            </div>
+                            <div class="text-tabs">
+                                <h2>Tealyra - Imperial Jasmine Dragon Pearls - Loose Leaf Green Tea - Jasmine Green
+                                    Tea with Pleasant Aroma and Tonic Effect - 220g (8-ounce)
+                                </h2>
+                                <p>Proin dapibus tellus eget nisl hendrerit congue. Orci varius natoque penatibus et magnis
+                                    dis parturient montes, nascetur ridiculus mus. Duis sit amet posuere justo, ac volutpat mauris. Fusce
+                                    aliquet nunc massa, sit amet luctus nisl ornare a. Vestibulum ante ipsum primis in faucibus orci luctus
+                                    et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                    inceptos himenaeos. Integer vulputate malesuada tortor, sit amet laoreet nunc mollis nec. Cras ac malesuada nunc.
+                                    Curabitur quis lacus in enim volutpat ullamcorper. Pellentesque eu facilisis ex.</p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-generate">Generate</button>
+                    </div>
+                    <div class="container-content-tabs-bottom">
+                        <div class="wrapper-table-popular">
+                            <h2 class="pupular-title">Popular searchterms</h2>
+                            <div class="container-table-popular">
+                                <table class="table-popular">
+                                    <thead class="popular-header">
+                                    <tr>
+                                        <th class="thead-title check-square">
+                                            <div class="custom-control custom-checkbox checkbox-table">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1"></label>
+                                            </div>
+                                        </th>
+                                        <th class="thead-title">
+                                            <div class="arrow-down">
+                                                <span>Word</span>
+                                            </div>
+                                        </th>
+                                        <th class="thead-title">
+                                            <div class="arrow-grey">
+                                                <span>Popularity</span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="table-content">
+                                        <td class="thead-title check-square">
+                                            <div class="custom-control custom-checkbox checkbox-table">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label" for="customCheck2"></label>
+                                            </div>
+                                        </td>
+                                        <td class="word-content">
+                                            <span>tea</span>
+                                        </td>
+                                        <td class="populary-content">
+                                            <span>123</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-content">
+                                        <td class="thead-title check-square">
+                                            <div class="custom-control custom-checkbox checkbox-table">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                <label class="custom-control-label" for="customCheck3"></label>
+                                            </div>
+                                        </td>
+                                        <td class="word-content">
+                                            <span>jasmine</span>
+                                        </td>
+                                        <td class="populary-content">
+                                            <span>54</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-content">
+                                        <td class="thead-title check-square">
+                                            <div class="custom-control custom-checkbox checkbox-table">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                <label class="custom-control-label" for="customCheck4"></label>
+                                            </div>
+                                        </td>
+                                        <td class="word-content">
+                                            <span>green</span>
+                                        </td>
+                                        <td class="populary-content">
+                                            <span>765</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-content">
+                                        <td class="thead-title check-square">
+                                            <div class="custom-control custom-checkbox checkbox-table">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                <label class="custom-control-label" for="customCheck5"></label>
+                                            </div>
+                                        </td>
+                                        <td class="word-content">
+                                            <span>pearls</span>
+                                        </td>
+                                        <td class="populary-content">
+                                            <span>87</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-content">
+                                        <td class="thead-title check-square">
+                                            <div class="custom-control custom-checkbox checkbox-table">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                <label class="custom-control-label" for="customCheck6"></label>
+                                            </div>
+                                        </td>
+                                        <td class="word-content">
+                                            <span>dragon</span>
+                                        </td>
+                                        <td class="populary-content">
+                                            <span>33</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-content">
+                                        <td class="thead-title check-square">
+                                            <div class="custom-control custom-checkbox checkbox-table">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck7" checked>
+                                                <label class="custom-control-label" for="customCheck7"></label>
+                                            </div>
+                                        </td>
+                                        <td class="word-content active-checked">
+                                            <span>loose</span>
+                                        </td>
+                                        <td class="populary-content active-checked">
+                                            <span>98</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-content">
+                                        <td class="thead-title check-square">
+                                            <div class="custom-control custom-checkbox checkbox-table">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                                <label class="custom-control-label" for="customCheck8"></label>
+                                            </div>
+                                        </td>
+                                        <td class="word-content">
+                                            <span>pearl</span>
+                                        </td>
+                                        <td class="populary-content">
+                                            <span>23</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-content">
+                                        <td class="thead-title check-square">
+                                            <div class="custom-control custom-checkbox checkbox-table">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck9">
+                                                <label class="custom-control-label" for="customCheck9"></label>
+                                            </div>
+                                        </td>
+                                        <td class="word-content">
+                                            <span>leaf</span>
+                                        </td>
+                                        <td class="populary-content">
+                                            <span>6</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-content">
+                                        <td class="thead-title check-square">
+                                            <div class="custom-control custom-checkbox checkbox-table">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck10">
+                                                <label class="custom-control-label" for="customCheck10"></label>
+                                            </div>
+                                        </td>
+                                        <td class="word-content">
+                                            <span>tealyra</span>
+                                        </td>
+                                        <td class="populary-content">
+                                            <span>2</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-content">
+                                        <td class="thead-title check-square">
+                                            <div class="custom-control custom-checkbox checkbox-table">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck11">
+                                                <label class="custom-control-label" for="customCheck11"></label>
+                                            </div>
+                                        </td>
+                                        <td class="word-content">
+                                            <span>organic</span>
+                                        </td>
+                                        <td class="populary-content">
+                                            <span>1</span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div class="footer-table">
+                                    <div class="footer-btn">
                                     <span class="btn-show">
                                         Show <span>10</span> entries
                                     </span>
-                                    <button class="chevron-down"></button>
+                                        <button class="chevron-down"></button>
+                                    </div>
+                                    <div class="wrapper-pagination">
+                                        <a href="" class="prev-btn"></a>
+                                        <ul class="list-navigate">
+                                            <li>
+                                                <a href="" class="pagination-link">1</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="pagination-link">2</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="pagination-link">3</a>
+                                            </li>
+                                            <li>
+                                                <span class="pagination-link disabled-link" >...</span>
+                                            </li>
+                                            <li>
+                                                <a href="" class="pagination-link">8</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="pagination-link active-link-pagination">9</a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="pagination-link">10</a>
+                                            </li>
+                                        </ul>
+                                        <a href="" class="next-btn"></a>
+                                    </div>
                                 </div>
-                                <div class="wrapper-pagination">
-                                    <a href="" class="prev-btn"></a>
-                                    <ul class="list-navigate">
-                                        <li>
-                                            <a href="" class="pagination-link">1</a>
+                                <div class="add-new-element-wrapper">
+                                    <ul class="add-list">
+                                        <li class="add-list-li">
+                                            <div class="custom-control custom-checkbox checkbox-add">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                                <label class="custom-control-label add-label" for="customCheck12">Remove where popularity ( 1 )</label>
+                                            </div>
                                         </li>
-                                        <li>
-                                            <a href="" class="pagination-link">2</a>
+                                        <li class="add-list-li">
+                                            <div class="custom-control custom-checkbox checkbox-add">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck13">
+                                                <label class="custom-control-label add-label" for="customCheck13">Remove only Numbers</label>
+                                            </div>
                                         </li>
-                                        <li>
-                                            <a href="" class="pagination-link">3</a>
-                                        </li>
-                                        <li>
-                                            <span class="pagination-link disabled-link" >...</span>
-                                        </li>
-                                        <li>
-                                            <a href="" class="pagination-link">8</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="pagination-link active-link-pagination">9</a>
-                                        </li>
-                                        <li>
-                                            <a href="" class="pagination-link">10</a>
+                                        <li class="add-list-li">
+                                            <div class="custom-control custom-checkbox checkbox-add">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck14">
+                                                <label class="custom-control-label add-label" for="customCheck14">Remove duplicates ( 14 )</label>
+                                            </div>
                                         </li>
                                     </ul>
-                                    <a href="" class="next-btn"></a>
+                                    <button type="button" class="add-btn">Add +</button>
                                 </div>
                             </div>
-                            <div class="add-new-element-wrapper">
-                                <ul class="add-list">
-                                    <li class="add-list-li">
-                                        <div class="custom-control custom-checkbox checkbox-add">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck12">
-                                            <label class="custom-control-label add-label" for="customCheck12">Remove where popularity ( 1 )</label>
-                                        </div>
-                                    </li>
-                                    <li class="add-list-li">
-                                        <div class="custom-control custom-checkbox checkbox-add">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck13">
-                                            <label class="custom-control-label add-label" for="customCheck13">Remove only Numbers</label>
-                                        </div>
-                                    </li>
-                                    <li class="add-list-li">
-                                        <div class="custom-control custom-checkbox checkbox-add">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck14">
-                                            <label class="custom-control-label add-label" for="customCheck14">Remove duplicates ( 14 )</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <button type="button" class="add-btn">Add +</button>
+                        </div>
+                        <div class="wrapper-keywords">
+                            <div class="top-header-keywords">
+                                <h2>Backend keywords</h2>
                             </div>
-                        </div>
-                    </div>
-                    <div class="wrapper-keywords">
-                        <div class="top-header-keywords">
-                            <h2>Backend keywords</h2>
-                        </div>
-                        <div class="content-keywords">
-                        <textarea  class="keywords-info" id="keywords"></textarea>
-                        </div>
-                        <div class="footer-keywords">
-                            <div class="word-number">
-                                <p class="number"><span>0</span>/250</p>
+                            <div class="content-keywords">
+                                <textarea  class="keywords-info" id="keywords"></textarea>
                             </div>
-                            <button type="button" class="copy">Copy</button>
+                            <div class="footer-keywords">
+                                <div class="word-number">
+                                    <input type="text"class="number" placeholder="0/250"/>
+                                </div>
+                                <button type="button" class="copy">Copy</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="tabs__content">
-                <p>Закон внешнего мира, как принято считать, реально рассматривается знак, отрицая очевидное. Гегельянство творит катарсис, хотя в официозе принято обратное. Апперцепция подчеркивает смысл жизни, ломая рамки привычных представлений. Представляется логичным, что адживика откровенна.</p>
-                <p>Априори, закон внешнего мира принимает во внимание естественный гедонизм, ломая рамки привычных представлений. Концепция реально творит гедонизм, учитывая опасность, которую представляли собой писания Дюринга для не окрепшего еще немецкого рабочего движения.</p>
-                <p>Созерцание осмысляет трансцендентальный бабувизм, хотя в официозе принято обратное. Бабувизм абстрактен. Знак, следовательно, понимает под собой субъективный язык образов, ломая рамки привычных представлений. Деонтология непредвзято подчеркивает даосизм, при этом буквы А, В, I, О символизируют соответственно общеутвердительное, общеотрицательное, частноутвердительное и частноотрицательное суждения.</p>
-            </div>
+                <div class="tabs__content">
+                    <p>Закон внешнего мира, как принято считать, реально рассматривается знак, отрицая очевидное. Гегельянство творит катарсис, хотя в официозе принято обратное. Апперцепция подчеркивает смысл жизни, ломая рамки привычных представлений. Представляется логичным, что адживика откровенна.</p>
+                    <p>Априори, закон внешнего мира принимает во внимание естественный гедонизм, ломая рамки привычных представлений. Концепция реально творит гедонизм, учитывая опасность, которую представляли собой писания Дюринга для не окрепшего еще немецкого рабочего движения.</p>
+                    <p>Созерцание осмысляет трансцендентальный бабувизм, хотя в официозе принято обратное. Бабувизм абстрактен. Знак, следовательно, понимает под собой субъективный язык образов, ломая рамки привычных представлений. Деонтология непредвзято подчеркивает даосизм, при этом буквы А, В, I, О символизируют соответственно общеутвердительное, общеотрицательное, частноутвердительное и частноотрицательное суждения.</p>
+                </div>
 
-            <div class="tabs__content">
-                <p>Структурализм, как следует из вышесказанного, заполняет из ряда вон выходящий дуализм, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Суждение осмысляет интеллект, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире.</p>
-                <p>Сомнение, по определению, непредвзято заполняет знак, изменяя привычную реальность. Современная ситуация, следовательно, подрывает трагический смысл жизни, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Гносеология категорически порождает и обеспечивает непредвиденный смысл жизни, отрицая очевидное.</p>
-            </div>
-        </div><!-- .tabs -->
-    </div>
-</section>
+                <div class="tabs__content">
+                    <p>Структурализм, как следует из вышесказанного, заполняет из ряда вон выходящий дуализм, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Суждение осмысляет интеллект, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире.</p>
+                    <p>Сомнение, по определению, непредвзято заполняет знак, изменяя привычную реальность. Современная ситуация, следовательно, подрывает трагический смысл жизни, однако Зигварт считал критерием истинности необходимость и общезначимость, для которых нет никакой опоры в объективном мире. Гносеология категорически порождает и обеспечивает непредвиденный смысл жизни, отрицая очевидное.</p>
+                </div>
+            </div><!-- .tabs -->
+        </div>
+    </section>
+</div>
 
-<!--end-header -->
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
 <script src="js/jquery-3.2.1.js"></script>
 <script src="bootstrap_4.1.1/js/bootstrap.js"></script>
-<script src="js/service.ddlist.jquery.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/select2.full.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/fixedheader/3.1.3/js/dataTables.fixedHeader.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.colVis.min.js"></script>
+<script src="js/AddTabs.js"></script>
+<script src="js/main-new-design.js"></script>
 </body>
 </html>

@@ -6,6 +6,11 @@
     .info-top-nav {
         margin-right: 10px;
     }
+    .wrapper_searchterms .dataTables_wrapper {
+        position: relative;
+        overflow-x: scroll;
+    }
+
 }
 @media screen and (max-width: 650px) {
 

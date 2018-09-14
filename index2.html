@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PPC.tools</title>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <link href="fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.3/css/fixedHeader.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/css/tether-theme-arrows-dark.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="css/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="wrapper_searchterms" style="opacity: 0">
+
+    <!-- top nav -->
+    <header class="header">
+      <div class="wrapper-top-nav">
+        <div class="logo">
+          <h1 class="general-title">
+            <a href="">
+              <img src="img/selected_icon/logo.png" alt="logo"/>
+            </a>
+          </h1>
+        </div>
+        <div class="wrapper-navigation-top">
+          <nav class="top-nav">
+            <ul class="navigation-top-list">
+              <li class="info-top-nav">
+                <a href="" class="active-link">SKUs</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">ppc Wizard</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">Changemaster</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">Campaigns</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">Keywords</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">Searchterms</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">Tracking</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">Autopilot</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">Help</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="user-btn">
+            <span class="user-btn-text">info7</span>
+            <span class="chevron-down-btn">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+          </button>
+          <button type="button" class="market-btn">
+            <span class="round-block">
+                32
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="wrapper-button-nav">
+        <div class="container-button-nav">
+          <nav class="button-nav">
+            <ul class="button-nav-list">
+              <li class="nav-list-variant none-padding-left active-option">
+                <a href="">Home</a>
+              </li>
+              <li class="nav-list-variant active-option">
+                <a href="">Product List </a>
+              </li>
+              <li class="nav-list-variant active-option">
+                <a href="">Product</a>
+              </li>
+              <li class="nav-list-variant none-padding-right">
+                <a href="">Words Generator</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container-nav-right">
+          <div class="button-nav-right">
+            <button type="button" class="video-guide">
+              <span>Video guide</span>
+            </button>
+          </div>
+          <div class="currency-options new-currency ">
+            <select class="js-example-basic-single flag icon" name="flag">
+              <option value="US">A2UZPC5JPB2EX1</option>
+              <option value="US">A2UZPC5JPB2EX2</option>
+              <option value="US">A2UZPC5JPB2EX3</option>
+            </select>
+          </div>
+          <div class="currency-valute">
+            <span class="title">Currency: </span>
+            <select class="js-example-basic-single currency" name="currency">
+              <option value="USD">USD </option>
+              <option value="EUR">EUR </option>
+              <option value="RUB">RUB </option>
+            </select>
+          </div>
+          <button type="button" class="btn icon add btn-outline-primary btn-add-right" ui-sref="SettingsNewAccount" style="    margin-right: 8px;" href="/settings/newAccount">Add+</button>
+        </div>
+      </div>
+    </header>
+    <!-- end top nav -->
+
+    <div class="table-header">
+      <div class="desc-window">
+        <a href="#" class="icon-close"></a>
+        <div class="desc-window__block">
+          <div class="desc-window__icon-bell">
+            <i class="icon-bell"></i>
+          </div>
+          <div class="desc-window__text">
+            <p>
+              Proin dapibus tellus eget nisl hendrerit congue. Orci varius natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Duis sit amet posuere justo, ac volutpat mauris. Fusce aliquet nunc massa, sit amet
+              luctus nisl ornare a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer vulputate
+              malesuada tortor, sit amet laoreet nunc mollis nec.
+              Cras ac malesuada nunc. Curabitur quis lacus in enim volutpat ullamcorper. Pellentesque eu facilisis ex.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-section">
+      <div class="table new-table">
+        <div class="wrapper-header-table">
+          <nav class="nav-header-table">
+            <ul class="nav-table-list">
+              <li class="nav-li-header">
+                <a href="">Warning</a>
+              </li>
+              <li class="nav-li-header">
+                <a href="">Autopilot</a>
+              </li>
+              <li class="nav-li-header">
+                <a href="">Graph</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="wrapper-data-pickers">
+            <div class="date-pickers d-flex flex-row">
+              <div class="d-flex flex-column new-d-flex">
+                <span class="title">Select Data Range</span>
+                <select class="js-example-basic-single js-states form-control fast-date dubleArrow" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                  <optgroup label=""><option label="-- choose preset --" value="object:36">-- choose preset --</option></optgroup><optgroup label="Week"><option label="Jan 22, 2018 - Jan 28, 2018" value="object:37">Jan 22, 2018 - Jan 28, 2018</option><option label="Jan 15, 2018 - Jan 21, 2018" value="object:38">Jan 15, 2018 - Jan 21, 2018</option><option label="Jan 8, 2018 - Jan 14, 2018" value="object:39">Jan 8, 2018 - Jan 14, 2018</option><option label="Jan 1, 2018 - Jan 7, 2018" value="object:40">Jan 1, 2018 - Jan 7, 2018</option><option label="Dec 25, 2017 - Dec 31, 2017" value="object:41">Dec 25, 2017 - Dec 31, 2017</option><option label="Dec 18, 2017 - Dec 24, 2017" value="object:42">Dec 18, 2017 - Dec 24, 2017</option><option label="Dec 11, 2017 - Dec 17, 2017" value="object:43">Dec 11, 2017 - Dec 17, 2017</option><option label="Dec 4, 2017 - Dec 10, 2017" value="object:44">Dec 4, 2017 - Dec 10, 2017</option><option label="Nov 27, 2017 - Dec 3, 2017" value="object:45">Nov 27, 2017 - Dec 3, 2017</option><option label="Nov 20, 2017 - Nov 26, 2017" value="object:46">Nov 20, 2017 - Nov 26, 2017</option><option label="Nov 13, 2017 - Nov 19, 2017" value="object:47">Nov 13, 2017 - Nov 19, 2017</option><option label="Nov 6, 2017 - Nov 12, 2017" value="object:48">Nov 6, 2017 - Nov 12, 2017</option><option label="Oct 30, 2017 - Nov 5, 2017" value="object:49">Oct 30, 2017 - Nov 5, 2017</option></optgroup><optgroup label="Month"><option label="Jan 1, 2018 - Jan 31, 2018" value="object:35" selected="selected">Jan 1, 2018 - Jan 31, 2018</option><option label="Dec 1, 2017 - Dec 31, 2017" value="object:50">Dec 1, 2017 - Dec 31, 2017</option><option label="Nov 1, 2017 - Nov 30, 2017" value="object:51">Nov 1, 2017 - Nov 30, 2017</option><option label="Oct 1, 2017 - Oct 31, 2017" value="object:52">Oct 1, 2017 - Oct 31, 2017</option><option label="Sep 1, 2017 - Sep 30, 2017" value="object:53">Sep 1, 2017 - Sep 30, 2017</option><option label="Aug 1, 2017 - Aug 31, 2017" value="object:54">Aug 1, 2017 - Aug 31, 2017</option><option label="Jul 1, 2017 - Jul 31, 2017" value="object:55">Jul 1, 2017 - Jul 31, 2017</option></optgroup><optgroup label="2 Month"><option label="Dec 1, 2017 - Jan 31, 2018" value="object:56">Dec 1, 2017 - Jan 31, 2018</option><option label="Oct 1, 2017 - Dec 31, 2017" value="object:57">Oct 1, 2017 - Dec 31, 2017</option><option label="Sep 1, 2017 - Nov 30, 2017" value="object:58">Sep 1, 2017 - Nov 30, 2017</option><option label="Aug 1, 2017 - Oct 31, 2017" value="object:59">Aug 1, 2017 - Oct 31, 2017</option><option label="Jul 1, 2017 - Sep 30, 2017" value="object:60">Jul 1, 2017 - Sep 30, 2017</option><option label="Jun 1, 2017 - Aug 31, 2017" value="object:61">Jun 1, 2017 - Aug 31, 2017</option><option label="May 1, 2017 - Jul 31, 2017" value="object:62">May 1, 2017 - Jul 31, 2017</option><option label="Apr 1, 2017 - Jul 31, 2017" value="object:63">Apr 1, 2017 - Jul 31, 2017</option><option label="Mar 1, 2017 - May 31, 2017" value="object:64">Mar 1, 2017 - May 31, 2017</option><option label="Feb 1, 2017 - May 31, 2017" value="object:65">Feb 1, 2017 - May 31, 2017</option></optgroup>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="control form-inline  align-items-end justify-content-between">
+          <div class="d-flex flex-column basic-view">
+            <div class="d-flex flex-row">
+              <div class="label">
+                <input type="text" data-search-table-main class="form-control search" id="search"  placeholder="Search">
+                <div class="search-close"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="legend d-flex align-items-center flex-center">
+          <div class="item d-flex align-items-center new-action">
+            <span class="title">Selected(<span class="count">2</span>)</span>
+            <select class="js-example-basic-single actions icon dubleArrow " name="flag">
+              <option value="1" data-icon='copy'></option>
+              <option value="2" data-icon='add'></option>
+              <option value="3" data-icon='delete'></option>
+              <option value="5" data-icon='pause'></option>
+              <option value="6" data-icon='run'></option>
+            </select>
+          </div>
+          <div class="indicator d-flex align-items-center">
+            <div class="item">
+              <span class="round enabled"></span><span class="desc color-green">enabled</span>
+            </div>
+
+            <div class="item">
+              <span class="round paused"></span><span class="desc color-orange">paused</span>
+            </div>
+
+            <div class="item">
+              <span class="round archived"></span><span class="desc color-grey">archived</span>
+            </div>
+          </div>
+        </div>
+
+        <table id="example" class="display new-display" cellspacing="0" width="100%" data-page-length='10'>
+          <thead class="new-thead">
+          <tr>
+            <th data-disable class="display-none-th"></th>
+            <th>
+              <div class="custom-control custom-checkbox custom-control-new sorting">
+                <input type="checkbox" class="custom-control-input" id="tableCheckAll">
+                <label class="custom-control-label" for="tableCheckAll"></label>
+              </div>
+            </th>
+            <th>AcoS, %</th>
+            <th>State</th>
+            <th>Keyword</th>
+            <th>Suggested action</th>
+            <th>Action</th>
+            <th>Details</th>
+            <th>Bid</th>
+            <th>Suggested</th>
+            <th>Match</th>
+            <th>Rev</th>
+            <th>Ad Spend</th>
+            <th>Impress</th>
+            <th>Clicks</th>
+            <th>Ord ers</th>
+            <th>Autopilot</th>
+            <th>Action</th>
+            <th>Limit ation</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="display-none-th">
+            </td>
+            <td>
+              <div class="custom-control custom-checkbox custom-control-new">
+                <input type="checkbox" class="custom-control-input" id="tableCheck2">
+                <label class="custom-control-label" for="tableCheck2"></label>
+              </div>
+            </td>
+            <td>
+              <div class="percent-wrapper">
+                <p class="percent">0%</p>
+                <span class="percent-span">(35.00%)</span>
+              </div>
+            </td>
+            <td>
+              <div class="wrapper-arrow">
+                <span class="chevron-left"></span>
+                <span class="green-arrow">М</span>
+                <span class="chevron-right"></span>
+              </div>
+            </td>
+            <td>
+              <span class="keywords-text">yerba mate tea	yerba mate tea	yerba mate tea	yerba mate tea</span>
+            </td>
+            <td>
+              <div class="ml-1">
+                <span>
+                  Moved to negative keywords after 20 clicks and no sale
+                </span>
+              </div>
+            </td>
+            <td class="color-drop-table table-actions">
+              <select class="js-example-basic-single table dubleArrow">
+                <option value="AL" class="delete-class">none</option>
+                <option value="AL">Reject</option>
+                <option value="WY">Enabled</option>
+                <option value="AL">Delay</option>
+                <option value="WY">Auto suggested</option>
+              </select>
+            </td>
+            <td>
+              <div class="details-container">
+                <a href="">900 - Main - Green Yerbal Tea with mi...</a>
+                <div class="details-span">
+                  <span class="ok-icon">
+                    <b></b>
+                  </span>
+                  <span class="text-ok">Narrow - Broad</span>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="table-edited-value new-edit-value">
+                <input type=text" value="0.60">
+                <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+              </div>
+              <small>0.60</small>
+            </td>
+            <td class="suggested-td">
+              <div class="table-edited-value new-edit-value-suggested">
+                <span class="btn-left-chevron">
+                  <b></b>
+                </span>
+                <input type=text" value="$1.20">
+                <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+              </div>
+              <small class="small-text">$0.79 - $1.30</small>
+            </td>
+            <td>
+              broad
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>$0.00</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>3</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>2,187</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>432</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>0</p>
+              </div>
+            </td>
+            <td></td>
+            <td >
+              <div class="table-paragraph table-paragraph-action">
+                <p>0.60</p>
+                <i class="arrow-action"></i>
+                <p>0.72</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>0.80</p>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="display-none-th">
+            </td>
+            <td>
+              <div class="custom-control custom-checkbox custom-control-new">
+                <input type="checkbox" class="custom-control-input" id="tableCheck3">
+                <label class="custom-control-label" for="tableCheck3"></label>
+              </div>
+            </td>
+            <td>
+              <div class="percent-wrapper">
+                <p class="percent">0%</p>
+                <span class="percent-span">(35.00%)</span>
+              </div>
+            </td>
+            <td>
+              <div class="wrapper-arrow">
+                <span class="chevron-left"></span>
+                <span class="green-arrow">М</span>
+                <span class="chevron-right"></span>
+              </div>
+            </td>
+            <td>
+              <span class="keywords-text">yerba mate tea	yerba mate tea	yerba mate tea	yerba mate tea</span>
+            </td>
+            <td>
+              <div class="ml-1">
+                <span>
+                  Moved to negative keywords after 20 clicks and no sale
+                </span>
+              </div>
+            </td>
+            <td class="color-drop-table table-actions">
+              <select class="js-example-basic-single table dubleArrow">
+                <option value="AL" class="delete-class">none</option>
+                <option value="AL">Reject</option>
+                <option value="WY">Enabled</option>
+                <option value="AL">Delay</option>
+                <option value="WY">Auto suggested</option>
+              </select>
+            </td>
+            <td>
+              <div class="details-container">
+                <a href="">900 - Main - Green Yerbal Tea with mi...</a>
+                <div class="details-span">
+                  <span class="ok-icon">
+                    <b></b>
+                  </span>
+                  <span class="text-ok">Narrow - Broad</span>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="table-edited-value new-edit-value">
+                <input type=text" value="0.60">
+                <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+              </div>
+              <small>0.60</small>
+            </td>
+            <td class="suggested-td">
+              <div class="table-edited-value new-edit-value-suggested">
+                <span class="btn-left-chevron">
+                  <b></b>
+                </span>
+                <input type=text" value="$1.20">
+                <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+              </div>
+              <small class="small-text">$0.79 - $1.30</small>
+            </td>
+            <td>
+              broad
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>$0.00</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>3</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>2,187</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>432</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>0</p>
+              </div>
+            </td>
+            <td></td>
+            <td >
+              <div class="table-paragraph table-paragraph-action">
+                <p>0.60</p>
+                <i class="arrow-action"></i>
+                <p>0.72</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>0.80</p>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="display-none-th">
+            </td>
+            <td>
+              <div class="custom-control custom-checkbox custom-control-new">
+                <input type="checkbox" class="custom-control-input" id="tableCheck4">
+                <label class="custom-control-label" for="tableCheck4"></label>
+              </div>
+            </td>
+            <td>
+              <div class="percent-wrapper">
+                <p class="percent">0%</p>
+                <span class="percent-span">(35.00%)</span>
+              </div>
+            </td>
+            <td>
+              <div class="wrapper-arrow">
+                <span class="chevron-left"></span>
+                <span class="green-arrow">М</span>
+                <span class="chevron-right"></span>
+              </div>
+            </td>
+            <td>
+              <span class="keywords-text">yerba mate tea	yerba mate tea	yerba mate tea	yerba mate tea</span>
+            </td>
+            <td>
+              <div class="ml-1">
+                <span>
+                  Moved to negative keywords after 20 clicks and no sale
+                </span>
+              </div>
+            </td>
+            <td class="color-drop-table table-actions">
+              <select class="js-example-basic-single table dubleArrow">
+                <option value="AL" class="delete-class">none</option>
+                <option value="AL">Reject</option>
+                <option value="WY">Enabled</option>
+                <option value="AL">Delay</option>
+                <option value="WY">Auto suggested</option>
+              </select>
+            </td>
+            <td>
+              <div class="details-container">
+                <a href="">900 - Main - Green Yerbal Tea with mi...</a>
+                <div class="details-span">
+                  <span class="ok-icon">
+                    <b></b>
+                  </span>
+                  <span class="text-ok">Narrow - Broad</span>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="table-edited-value new-edit-value">
+                <input type=text" value="0.60">
+                <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+              </div>
+              <small>0.60</small>
+            </td>
+            <td class="suggested-td">
+              <div class="table-edited-value new-edit-value-suggested">
+                <span class="btn-left-chevron">
+                  <b></b>
+                </span>
+                <input type=text" value="$1.20">
+                <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+              </div>
+              <small class="small-text">$0.79 - $1.30</small>
+            </td>
+            <td>
+              broad
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>$0.00</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>3</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>2,187</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>432</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>0</p>
+              </div>
+            </td>
+            <td></td>
+            <td >
+              <div class="table-paragraph table-paragraph-action">
+                <p>0.60</p>
+                <i class="arrow-action"></i>
+                <p>0.72</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>0.80</p>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="display-none-th">
+            </td>
+            <td>
+              <div class="custom-control custom-checkbox custom-control-new">
+                <input type="checkbox" class="custom-control-input" id="tableCheck5">
+                <label class="custom-control-label" for="tableCheck5"></label>
+              </div>
+            </td>
+            <td>
+              <div class="percent-wrapper">
+                <p class="percent">0%</p>
+                <span class="percent-span">(35.00%)</span>
+              </div>
+            </td>
+            <td>
+              <div class="wrapper-arrow">
+                <span class="chevron-left"></span>
+                <span class="green-arrow">М</span>
+                <span class="chevron-right"></span>
+              </div>
+            </td>
+            <td>
+              <span class="keywords-text">yerba mate tea	yerba mate tea	yerba mate tea	yerba mate tea</span>
+            </td>
+            <td>
+              <div class="ml-1">
+                <span>
+                  Moved to negative keywords after 20 clicks and no sale
+                </span>
+              </div>
+            </td>
+            <td class="color-drop-table table-actions">
+              <select class="js-example-basic-single table dubleArrow">
+                <option value="AL" class="delete-class">none</option>
+                <option value="AL">Reject</option>
+                <option value="WY">Enabled</option>
+                <option value="AL">Delay</option>
+                <option value="WY">Auto suggested</option>
+              </select>
+            </td>
+            <td>
+              <div class="details-container">
+                <a href="">900 - Main - Green Yerbal Tea with mi...</a>
+                <div class="details-span">
+                  <span class="ok-icon">
+                    <b></b>
+                  </span>
+                  <span class="text-ok">Narrow - Broad</span>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="table-edited-value new-edit-value">
+                <input type=text" value="0.60">
+                <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+              </div>
+              <small>0.60</small>
+            </td>
+            <td class="suggested-td">
+              <div class="table-edited-value new-edit-value-suggested">
+                <span class="btn-left-chevron">
+                  <b></b>
+                </span>
+                <input type=text" value="$1.20">
+                <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+              </div>
+              <small class="small-text">$0.79 - $1.30</small>
+            </td>
+            <td>
+              broad
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>$0.00</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>3</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>2,187</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>432</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>0</p>
+              </div>
+            </td>
+            <td></td>
+            <td >
+              <div class="table-paragraph table-paragraph-action">
+                <p>0.60</p>
+                <i class="arrow-action"></i>
+                <p>0.72</p>
+              </div>
+            </td>
+            <td>
+              <div class="table-paragraph">
+                <p>0.80</p>
+              </div>
+            </td>
+          </tr>
+
+          </tbody>
+        </table>
+
+        <div class="legend d-flex align-items-center">
+
+          <div class="indicator d-flex align-items-center">
+            <div class="item">
+              <span class="round enabled"></span><span class="desc color-green">enabled</span>
+            </div>
+
+            <div class="item">
+              <span class="round paused"></span><span class="desc color-orange">paused</span>
+            </div>
+
+            <div class="item">
+              <span class="round archived"></span><span class="desc color-grey">archived</span>
+            </div>
+          </div>
+          <div class="wrapper-pagination pagination-table">
+            <a href="" class="prev-btn"></a>
+            <ul class="list-navigate list-nav-table">
+              <li>
+                <a href="" class="pagination-link">1</a>
+              </li>
+              <li>
+                <a href="" class="pagination-link">2</a>
+              </li>
+              <li>
+                <a href="" class="pagination-link">3</a>
+              </li>
+              <li>
+                <span class="pagination-link disabled-link" >...</span>
+              </li>
+              <li>
+                <a href="" class="pagination-link">8</a>
+              </li>
+              <li class="active-link-table">
+                <a href="" class="pagination-link">9</a>
+              </li>
+              <li>
+                <a href="" class="pagination-link">10</a>
+              </li>
+            </ul>
+            <a href="" class="next-btn"></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<!-- Modal -->
+<div class="modal-window">
+    <button type="button" class="close-modal"></button>
+    <div class="container-tables">
+      <div class="wrapper-table">
+         <div class="title-modal">
+              <h2>Filters Campaigns</h2>
+         </div> 
+         <div class="header-tabs">
+           <div data-addui='tabs'>
+              <div role='tabs'>
+                  <div>Select SKU(s)</div>
+                  <div>
+                      <div class="container-search">
+                          <span class="search-icon">
+                              <b class="icon-search"></b>
+                          </span>
+                          <input type="text" name="search" value="tea" placeholder="search" />
+                      </div>
+                  </div>
+              </div>
+              <div role='contents'>
+                  <div>
+                      <div class="wrapper-table-modal">
+                          <table class="modal-table">
+                              <thead class="header-table-modal">
+                                  <tr>
+                                      <th class="checkbox-block">
+                                          <div class="custom-control custom-checkbox checkbox-table">
+                                              <input type="checkbox" class="custom-control-input" id="customCheck20">
+                                              <label class="custom-control-label" for="customCheck20"></label>
+                                          </div>
+                                      </th>
+                                      <th>
+                                          <span class="arrow-modal">
+                                              <b></b>
+                                          </span>
+                                          <span class="arrow-span">SKU</span>
+                                      </th>
+                                      <th class="img-head">
+                                          <span>image</span>
+                                      </th>
+                                      <th>
+                                           <span class="arrow-modal">
+                                              <b></b>
+                                          </span>
+                                          <span class="arrow-span">Name</span>
+                                      </th>
+                                  </tr>
+                              </thead>
+                              <tbody class="body-table">
+                                  <tr>
+                                      <td class="checkbox-block">
+                                          <div class="custom-control custom-checkbox checkbox-table">
+                                              <input type="checkbox" class="custom-control-input" id="customCheck22">
+                                              <label class="custom-control-label" for="customCheck22"></label>
+                                          </div>
+                                      </td>
+                                      <td class="sku-span">
+                                          <span>VARBLOOM-12-FBA</span>
+                                      </td>
+                                      <td class="image-block">
+                                          <div class="wrapper-img-table">
+                                              <img src="img/selected_icon/img-table.png" alt="table img"/>
+                                          </div>
+                                      </td>
+                                      <td class="sku-span name-span">
+                                          <span>Tealyra - 12 pcs Blooming Flowering Tea - 12 Variety Flavors of Finest...</span>
+                                      </td>
+                                  </tr>
+                                   <tr>
+                                      <td class="checkbox-block">
+                                          <div class="custom-control custom-checkbox checkbox-table">
+                                              <input type="checkbox" class="custom-control-input" id="customCheck42">
+                                              <label class="custom-control-label" for="customCheck42"></label>
+                                          </div>
+                                      </td>
+                                      <td class="sku-span">
+                                          <span>VARBLOOM-12-FBA</span>
+                                      </td>
+                                      <td class="image-block">
+                                          <div class="wrapper-img-table">
+                                              <img src="img/selected_icon/img-table.png" alt="table img"/>
+                                          </div>
+                                      </td>
+                                      <td class="sku-span name-span">
+                                          <span>Tealyra - 12 pcs Blooming Flowering Tea - 12 Variety Flavors of Finest...</span>
+                                      </td>
+                                  </tr>
+                                   <tr>
+                                      <td class="checkbox-block">
+                                          <div class="custom-control custom-checkbox checkbox-table">
+                                              <input type="checkbox" class="custom-control-input" id="customCheck43">
+                                              <label class="custom-control-label" for="customCheck43"></label>
+                                          </div>
+                                      </td>
+                                      <td class="sku-span">
+                                          <span>VARBLOOM-12-FBA</span>
+                                      </td>
+                                      <td class="image-block">
+                                          <div class="wrapper-img-table">
+                                              <img src="img/selected_icon/img-table.png" alt="table img"/>
+                                          </div>
+                                      </td>
+                                      <td class="sku-span name-span">
+                                          <span>Tealyra - 12 pcs Blooming Flowering Tea - 12 Variety Flavors of Finest...</span>
+                                      </td>
+                                  </tr>
+                                   <tr>
+                                      <td class="checkbox-block">
+                                          <div class="custom-control custom-checkbox checkbox-table">
+                                              <input type="checkbox" class="custom-control-input" id="customCheck44">
+                                              <label class="custom-control-label" for="customCheck44"></label>
+                                          </div>
+                                      </td>
+                                      <td class="sku-span">
+                                          <span>VARBLOOM-12-FBA</span>
+                                      </td>
+                                      <td class="image-block">
+                                          <div class="wrapper-img-table">
+                                              <img src="img/selected_icon/img-table.png" alt="table img"/>
+                                          </div>
+                                      </td>
+                                      <td class="sku-span name-span">
+                                          <span>Tealyra - 12 pcs Blooming Flowering Tea - 12 Variety Flavors of Finest...</span>
+                                      </td>
+                                  </tr>
+                                   <tr>
+                                      <td class="checkbox-block">
+                                          <div class="custom-control custom-checkbox checkbox-table">
+                                              <input type="checkbox" class="custom-control-input" id="customCheck45">
+                                              <label class="custom-control-label" for="customCheck45"></label>
+                                          </div>
+                                      </td>
+                                      <td class="sku-span">
+                                          <span>VARBLOOM-12-FBA</span>
+                                      </td>
+                                      <td class="image-block">
+                                          <div class="wrapper-img-table">
+                                              <img src="img/selected_icon/img-table.png" alt="table img"/>
+                                          </div>
+                                      </td>
+                                      <td class="sku-span name-span">
+                                          <span>Tealyra - 12 pcs Blooming Flowering Tea - 12 Variety Flavors of Finest...</span>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                           <div class="footer-table">
+                            <div class="wrapper-pagination pagination-table">
+                              <a href="" class="prev-btn"></a>
+                              <ul class="list-navigate list-nav-table">
+                                <li>
+                                  <a href="" class="pagination-link">1</a>
+                                </li>
+                                <li>
+                                  <a href="" class="pagination-link">2</a>
+                                </li>
+                                <li>
+                                  <a href="" class="pagination-link">3</a>
+                                </li>
+                                <li>
+                                  <span class="pagination-link disabled-link" >...</span>
+                                </li>
+                                <li>
+                                  <a href="" class="pagination-link">8</a>
+                                </li>
+                                <li class="active-link-table">
+                                  <a href="" class="pagination-link">9</a>
+                                </li>
+                                <li>
+                                  <a href="" class="pagination-link">10</a>
+                                </li>
+                              </ul>
+                              <a href="" class="next-btn"></a>
+                           </div>  
+                           <div class="conteiner-items">
+                             <p><span>2345</span> items</p>
+                           </div>  
+                      </div> 
+                      </div>
+                      
+                  </div>
+                  <div>
+                     
+                  </div>
+                  <div>
+                      
+                  </div>
+                  <div>
+                     
+                  </div>
+              </div>
+         </div>
+        </div>     
+      </div> 
+      <div class="wrapper-table">
+         <div class="title-modal title-none">
+          <h2></h2>
+         </div> 
+         <div class="header-tabs">
+         <div data-addui='tabs'>
+            <div role='tabs'>
+                <div>Select campaign(s)</div>
+               <div>
+                    <div class="container-search-all">
+                        <span class="search-icon">
+                             <b class="icon-search"></b>
+                        </span>
+                        <input type="text" name="search" placeholder="search" />
+                    </div>
+                </div>
+            </div>
+            <div role='contents'>
+                <div>
+                    <div class="wrapper-table-modal">
+                        <table class="modal-table">
+                            <thead class="header-table-modal">
+                                <tr>
+                                    <th class="checkbox-block">
+                                        <div class="custom-control custom-checkbox checkbox-table">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck35">
+                                            <label class="custom-control-label" for="customCheck35"></label>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <span class="arrow-modal">
+                                            <b></b>
+                                        </span>
+                                        <span class="arrow-span">Campaigns</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="body-table">
+                                <tr>
+                                    <td class="checkbox-block">
+                                        <div class="custom-control custom-checkbox checkbox-table">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck36">
+                                            <label class="custom-control-label" for="customCheck36"></label>
+                                        </div>
+                                    </td>
+                                    <td class="campaigns-span">
+                                          <span>Individual Words - Corigem</span>
+                                      </td>
+                                    <td>
+                                      
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="checkbox-block">
+                                        <div class="custom-control custom-checkbox checkbox-table">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck29">
+                                            <label class="custom-control-label" for="customCheck29"></label>
+                                        </div>
+                                    </td>
+                                    <td class="campaigns-span">
+                                          <span>Individual Words - Corigem</span>
+                                      </td>
+                                    <td>
+                                      
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="checkbox-block">
+                                        <div class="custom-control custom-checkbox checkbox-table">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck30">
+                                            <label class="custom-control-label" for="customCheck30"></label>
+                                        </div>
+                                    </td>
+                                    <td class="campaigns-span">
+                                          <span>Individual Words - Corigem</span>
+                                      </td>
+                                    <td>
+                                      
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="checkbox-block">
+                                        <div class="custom-control custom-checkbox checkbox-table">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck31">
+                                            <label class="custom-control-label" for="customCheck31"></label>
+                                        </div>
+                                    </td>
+                                    <td class="campaigns-span">
+                                          <span>Individual Words - Corigem</span>
+                                      </td>
+                                    <td>
+                                      
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="checkbox-block">
+                                        <div class="custom-control custom-checkbox checkbox-table">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck88">
+                                            <label class="custom-control-label" for="customCheck88"></label>
+                                        </div>
+                                    </td>
+                                    <td class="campaigns-span">
+                                          <span>Individual Words - Corigem</span>
+                                      </td>
+                                    <td>
+                                      
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="checkbox-block">
+                                        <div class="custom-control custom-checkbox checkbox-table">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck89>
+                                            <label class="custom-control-label" for="customCheck89"></label>
+                                        </div>
+                                    </td>
+                                    <td class="campaigns-span">
+                                          <span>Individual Words - Corigem</span>
+                                      </td>
+                                    <td>
+                                      
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="checkbox-block">
+                                        <div class="custom-control custom-checkbox checkbox-table">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck33">
+                                            <label class="custom-control-label" for="customCheck33"></label>
+                                        </div>
+                                    </td>
+                                    <td class="campaigns-span">
+                                          <span>Individual Words - Corigem</span>
+                                      </td>
+                                    <td>
+                                      
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="checkbox-block">
+                                        <div class="custom-control custom-checkbox checkbox-table">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck28">
+                                            <label class="custom-control-label" for="customCheck28"></label>
+                                        </div>
+                                    </td>
+                                    <td class="campaigns-span">
+                                          <span>Individual Words - Corigem</span>
+                                      </td>
+                                    <td>
+                                      
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+                <div>
+                   
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                   
+                </div>
+            </div>
+           </div>
+         </div> 
+         <div class="footer-table">
+            <div class="wrapper-pagination pagination-table">
+              <a href="" class="prev-btn"></a>
+              <ul class="list-navigate list-nav-table">
+                <li>
+                  <a href="" class="pagination-link">1</a>
+                </li>
+                <li>
+                  <a href="" class="pagination-link">2</a>
+                </li>
+                <li>
+                  <a href="" class="pagination-link">3</a>
+                </li>
+                <li>
+                  <span class="pagination-link disabled-link" >...</span>
+                </li>
+                <li>
+                  <a href="" class="pagination-link">8</a>
+                </li>
+                <li class="active-link-table">
+                  <a href="" class="pagination-link">9</a>
+                </li>
+                <li>
+                  <a href="" class="pagination-link">10</a>
+                </li>
+              </ul>
+              <a href="" class="next-btn"></a>
+           </div>  
+           <div class="conteiner-items">
+             <p><span>2345</span> items</p>
+           </div>  
+      </div>              
+      </div>
+    </div>
+    <div class="footer-modal">
+      <button type="button" class="footer-modal-btn cancel-btn">Cancel</button>
+      <button type="button" class="footer-modal-btn apply-btn">Apply</button>
+    </div>
+</div>
+
+<div class="modal-filters margin-top-50">
+  <button type="button" class="close-modal"></button>
+   <div class="container-tables">
+    <div class="title-modal">
+         <h2>Filters</h2>
+    </div>
+    <div class="wrapper-columns">
+      <ul class="container-column">
+        <li>
+          <div class="title-column">
+            <h3>Conversion</h3>
+          </div>
+         <div class="input-block">
+           <div class="column-block">
+            <div class="wrapper-input-min-max">
+              <div class="container-min-max active-column-input ">
+                <span class="chevron-down">
+                  <b></b>
+                </span>
+                <input type="text" class="column-input" name="column-input" value="4546" placeholder="min"/>
+                <span class="chevron-up">
+                  <b></b>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="column-block">
+            <div class="wrapper-input-min-max">
+              <div class="container-min-max">
+                <span class="chevron-down">
+                  <b></b>
+                </span>
+                <input type="text" class="column-input" name="column-input" value="" placeholder="max"/>
+                <span class="chevron-up">
+                  <b></b>
+                </span>
+              </div>
+            </div>
+          </div>
+         </div>
+        </li>
+         <li>
+            <div class="title-column">
+                <h3>Clicks</h3>
+            </div>
+            <div class="input-block">
+              <div class="column-block">
+                <div class="wrapper-input-min-max">
+                  <div class="container-min-max">
+                    <span class="chevron-down">
+                      <b></b>
+                    </span>
+                    <input type="text" class="column-input" name="column-input" value="" placeholder="min"/>
+                    <span class="chevron-up">
+                      <b></b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="column-block">
+                <div class="wrapper-input-min-max">
+                  <div class="container-min-max">
+                    <span class="chevron-down">
+                      <b></b>
+                    </span>
+                    <input type="text" class="column-input" name="column-input" value="" placeholder="max"/>
+                    <span class="chevron-up">
+                      <b></b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </li>
+        </li>
+       <li>
+          <div class="title-column">
+            <h3>CPC</h3>
+          </div>
+          <div class="input-block">
+            <div class="column-block">
+              <div class="wrapper-input-min-max">
+                <div class="container-min-max">
+                  <span class="chevron-down">
+                    <b></b>
+                  </span>
+                  <input type="text" class="column-input" name="column-input" value="" placeholder="min"/>
+                  <span class="chevron-up">
+                    <b></b>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="column-block">
+              <div class="wrapper-input-min-max">
+                <div class="container-min-max">
+                  <span class="chevron-down">
+                    <b></b>
+                  </span>
+                  <input type="text" class="column-input" name="column-input" value="" placeholder="max"/>
+                  <span class="chevron-up">
+                    <b></b>
+                  </span>
+                </div>
+              </div>
+          </div>
+        </div>
+        </li>
+         <li>
+            <div class="title-column">
+              <h3>CTR</h3>
+            </div>
+            <div class="input-block">
+              <div class="column-block">
+                <div class="wrapper-input-min-max">
+                  <div class="container-min-max">
+                    <span class="chevron-down">
+                      <b></b>
+                    </span>
+                    <input type="text" class="column-input" name="column-input" value="" placeholder="min"/>
+                    <span class="chevron-up">
+                      <b></b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="column-block">
+                <div class="wrapper-input-min-max">
+                  <div class="container-min-max">
+                    <span class="chevron-down">
+                      <b></b>
+                    </span>
+                    <input type="text" class="column-input" name="column-input" value="" placeholder="max"/>
+                    <span class="chevron-up">
+                      <b></b>
+                    </span>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </li>
+        <li>
+            <div class="title-column">
+              <h3>Net</h3>
+            </div>
+            <div class="input-block">
+              <div class="column-block">
+                <div class="wrapper-input-min-max">
+                  <div class="container-min-max">
+                    <span class="chevron-down">
+                      <b></b>
+                    </span>
+                    <input type="text" class="column-input" name="column-input" value="" placeholder="min"/>
+                    <span class="chevron-up">
+                      <b></b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="column-block">
+                <div class="wrapper-input-min-max">
+                  <div class="container-min-max">
+                    <span class="chevron-down">
+                      <b></b>
+                    </span>
+                    <input type="text" class="column-input" name="column-input" value="" placeholder="max"/>
+                    <span class="chevron-up">
+                      <b></b>
+                    </span>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="container-column">
+        <li>
+          <div class="title-column">
+            <h3>Spend</h3>
+          </div>
+         <div class="input-block">
+           <div class="column-block">
+            <div class="wrapper-input-min-max">
+              <div class="container-min-max">
+                <span class="chevron-down">
+                  <b></b>
+                </span>
+                <input type="text" class="column-input" name="column-input" value="" placeholder="min"/>
+                <span class="chevron-up">
+                  <b></b>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="column-block">
+            <div class="wrapper-input-min-max">
+              <div class="container-min-max">
+                <span class="chevron-down">
+                  <b></b>
+                </span>
+                <input type="text" class="column-input" name="column-input" value="" placeholder="max"/>
+                <span class="chevron-up">
+                  <b></b>
+                </span>
+              </div>
+            </div>
+          </div>
+         </div>
+        </li>
+         <li>
+            <div class="title-column">
+                <h3>ACoS</h3>
+            </div>
+            <div class="input-block">
+              <div class="column-block">
+                <div class="wrapper-input-min-max">
+                  <div class="container-min-max">
+                    <span class="chevron-down">
+                      <b></b>
+                    </span>
+                    <input type="text" class="column-input" name="column-input" value="" placeholder="min"/>
+                    <span class="chevron-up">
+                      <b></b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="column-block">
+                <div class="wrapper-input-min-max">
+                  <div class="container-min-max">
+                    <span class="chevron-down">
+                      <b></b>
+                    </span>
+                    <input type="text" class="column-input" name="column-input" value="" placeholder="max"/>
+                    <span class="chevron-up">
+                      <b></b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </li>
+        </li>
+       <li>
+          <div class="title-column">
+            <h3>Revenue</h3>
+          </div>
+          <div class="input-block">
+            <div class="column-block">
+              <div class="wrapper-input-min-max">
+                <div class="container-min-max">
+                  <span class="chevron-down">
+                    <b></b>
+                  </span>
+                  <input type="text" class="column-input" name="column-input" value="" placeholder="min"/>
+                  <span class="chevron-up">
+                    <b></b>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="column-block">
+              <div class="wrapper-input-min-max">
+                <div class="container-min-max">
+                  <span class="chevron-down">
+                    <b></b>
+                  </span>
+                  <input type="text" class="column-input" name="column-input" value="" placeholder="max"/>
+                  <span class="chevron-up">
+                    <b></b>
+                  </span>
+                </div>
+              </div>
+          </div>
+        </div>
+        </li>
+         <li>
+            <div class="title-column">
+              <h3>Impressions</h3>
+            </div>
+            <div class="input-block">
+              <div class="column-block">
+                <div class="wrapper-input-min-max">
+                  <div class="container-min-max">
+                    <span class="chevron-down">
+                      <b></b>
+                    </span>
+                    <input type="text" class="column-input" name="column-input" value="" placeholder="min"/>
+                    <span class="chevron-up">
+                      <b></b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="column-block">
+                <div class="wrapper-input-min-max">
+                  <div class="container-min-max">
+                    <span class="chevron-down">
+                      <b></b>
+                    </span>
+                    <input type="text" class="column-input" name="column-input" value="" placeholder="max"/>
+                    <span class="chevron-up">
+                      <b></b>
+                    </span>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </li>
+        <li>
+            <div class="title-column">
+              <h3>Orders</h3>
+            </div>
+            <div class="input-block">
+              <div class="column-block">
+                <div class="wrapper-input-min-max">
+                  <div class="container-min-max">
+                    <span class="chevron-down">
+                      <b></b>
+                    </span>
+                    <input type="text" class="column-input" name="column-input" value="" placeholder="min"/>
+                    <span class="chevron-up">
+                      <b></b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="column-block">
+                <div class="wrapper-input-min-max">
+                  <div class="container-min-max">
+                    <span class="chevron-down">
+                      <b></b>
+                    </span>
+                    <input type="text" class="column-input" name="column-input" value="" placeholder="max"/>
+                    <span class="chevron-up">
+                      <b></b>
+                    </span>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="container-column">
+        <li>
+          <div class="title-column">
+            <h3>Keyword</h3>
+          </div>
+          <div class="wrapper-input-keywords active-keywords">
+          <input type="text" value="vjkdjfkdjd" placeholder="keyword"/>
+            <span class="question-icon">
+              <a href="">?</a>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="title-column">
+            <h3>Customer Search Term</h3>
+          </div>
+          <div class="wrapper-input-keywords">
+            <input type="text" value="" placeholder="keyword"/>
+            <span class="question-icon">
+              <a href="">?</a>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="title-column">
+            <h3>Match Type</h3>
+          </div>
+          <div class="wrapper-input-keywords">
+            <input type="text" value="" placeholder="none"/>
+            <span class="chevron-down">
+              <b></b>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="title-column">
+            <h3>Keyword state</h3>
+          </div>
+          <div class="wrapper-input-keywords">
+            <input type="text" value="" placeholder="none"/>
+            <span class="chevron-down">
+              <b></b>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="title-column">
+            <h3>Negative state</h3>
+          </div>
+          <div class="wrapper-input-keywords">
+            <input type="text" value="" placeholder="not negative"/>
+            <span class="chevron-down">
+              <b></b>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+   </div>
+   <div class="footer-modal">
+    <div class="wrapper-btn-filters">
+       <button type="button" class="footer-filters-btn reset-btn">Reset</button>
+       <button type="button" class="footer-filters-btn cancel-btn">Cancel</button>
+    </div>
+      <div class="wrapper-btn-filters">
+       <button type="button" class="footer-filters-btn load-btn">Load</button>
+       <button type="button" class="footer-filters-btn apply-btn">Apply</button>
+       <button type="button" class="footer-filters-btn save-btn">Save</button>
+    </div>
+    </div>
+</div>
+
+<div class="modal-visibility  margin-top-50">
+  <button type="button" class="close-modal"></button>
+  <div class="container-tables">
+      <div class="title-modal">
+          <h2>Column visibility</h2>
+      </div> 
+      <div class="wrapper-list-visibility">
+        <ul class="list-visibility">
+          <li class="checkbox-block visibility-checked">
+            <div class="custom-control custom-checkbox custom-control-new">
+                <input type="checkbox" class="custom-control-input" id="tableCheck53">
+                <label class="custom-control-label" for="tableCheck53">Search query</label>
+              </div>
+          </li>
+           <li class="checkbox-block visibility-checked">
+            <div class="custom-control custom-checkbox custom-control-new">
+                <input type="checkbox" class="custom-control-input" id="tableCheck55">
+                <label class="custom-control-label" for="tableCheck55">Search query</label>
+              </div>
+          </li>
+           <li class="checkbox-block visibility-checked">
+            <div class="custom-control custom-checkbox custom-control-new">
+                <input type="checkbox" class="custom-control-input" id="tableCheck56">
+                <label class="custom-control-label" for="tableCheck56">Search query</label>
+              </div>
+          </li>
+           <li class="checkbox-block visibility-checked">
+            <div class="custom-control custom-checkbox custom-control-new">
+                <input type="checkbox" class="custom-control-input" id="tableCheck57">
+                <label class="custom-control-label" for="tableCheck57">Search query</label>
+              </div>
+          </li>
+           <li class="checkbox-block visibility-checked">
+            <div class="custom-control custom-checkbox custom-control-new">
+                <input type="checkbox" class="custom-control-input" id="tableCheck58">
+                <label class="custom-control-label" for="tableCheck58">Search query</label>
+              </div>
+          </li>
+           <li class="checkbox-block visibility-checked">
+            <div class="custom-control custom-checkbox custom-control-new">
+                <input type="checkbox" class="custom-control-input" id="tableCheck59">
+                <label class="custom-control-label" for="tableCheck59">Search query</label>
+              </div>
+          </li>
+           <li class="checkbox-block visibility-checked">
+            <div class="custom-control custom-checkbox custom-control-new">
+                <input type="checkbox" class="custom-control-input" id="tableCheck54">
+                <label class="custom-control-label" for="tableCheck54">Search query</label>
+              </div>
+          </li>
+        </ul>
+        <ul class="list-visibility">
+             <li class="checkbox-block visibility-checked">
+              <div class="custom-control custom-checkbox custom-control-new">
+                  <input type="checkbox" class="custom-control-input" id="tableCheck60">
+                  <label class="custom-control-label" for="tableCheck60">Search query</label>
+                </div>
+            </li>
+             <li class="checkbox-block visibility-checked">
+              <div class="custom-control custom-checkbox custom-control-new">
+                  <input type="checkbox" class="custom-control-input" id="tableCheck61">
+                  <label class="custom-control-label" for="tableCheck61">Search query</label>
+                </div>
+            </li>
+             <li class="checkbox-block visibility-checked">
+              <div class="custom-control custom-checkbox custom-control-new">
+                  <input type="checkbox" class="custom-control-input" id="tableCheck62">
+                  <label class="custom-control-label" for="tableCheck62">Search query</label>
+                </div>
+            </li>
+             <li class="checkbox-block visibility-checked">
+              <div class="custom-control custom-checkbox custom-control-new">
+                  <input type="checkbox" class="custom-control-input" id="tableCheck63">
+                  <label class="custom-control-label" for="tableCheck63">Search query</label>
+                </div>
+            </li>
+             <li class="checkbox-block visibility-checked">
+              <div class="custom-control custom-checkbox custom-control-new">
+                  <input type="checkbox" class="custom-control-input" id="tableCheck64">
+                  <label class="custom-control-label" for="tableCheck64">Search query</label>
+                </div>
+            </li>
+             <li class="checkbox-block visibility-checked">
+              <div class="custom-control custom-checkbox custom-control-new">
+                  <input type="checkbox" class="custom-control-input" id="tableCheck65">
+                  <label class="custom-control-label" for="tableCheck65">Search query</label>
+                </div>
+            </li>
+             <li class="checkbox-block visibility-checked">
+              <div class="custom-control custom-checkbox custom-control-new">
+                  <input type="checkbox" class="custom-control-input" id="tableCheck66">
+                  <label class="custom-control-label" for="tableCheck66">Search query</label>
+                </div>
+            </li>
+          </ul>
+        <ul class="list-visibility">
+             <li class="checkbox-block visibility-checked">
+               <div class="custom-control custom-checkbox custom-control-new">
+                 <input type="checkbox" class="custom-control-input" id="tableCheck67">
+                 <label class="custom-control-label" for="tableCheck67">Search query</label>
+               </div>
+             </li>
+               <li class="checkbox-block visibility-checked">
+                <div class="custom-control custom-checkbox custom-control-new">
+                    <input type="checkbox" class="custom-control-input" id="tableCheck68">
+                    <label class="custom-control-label" for="tableCheck68">Search query</label>
+                  </div>
+              </li>
+               <li class="checkbox-block visibility-checked">
+                <div class="custom-control custom-checkbox custom-control-new">
+                    <input type="checkbox" class="custom-control-input" id="tableCheck69">
+                    <label class="custom-control-label" for="tableCheck69">Search query</label>
+                  </div>
+              </li>
+               <li class="checkbox-block visibility-checked">
+                <div class="custom-control custom-checkbox custom-control-new">
+                    <input type="checkbox" class="custom-control-input" id="tableCheck70">
+                    <label class="custom-control-label" for="tableCheck70">Search query</label>
+                  </div>
+              </li>
+               <li class="checkbox-block visibility-checked">
+                <div class="custom-control custom-checkbox custom-control-new">
+                    <input type="checkbox" class="custom-control-input" id="tableCheck71">
+                    <label class="custom-control-label" for="tableCheck71">Search query</label>
+                  </div>
+              </li>
+               <li class="checkbox-block visibility-checked">
+                <div class="custom-control custom-checkbox custom-control-new">
+                    <input type="checkbox" class="custom-control-input" id="tableCheck72">
+                    <label class="custom-control-label" for="tableCheck72">Search query</label>
+                  </div>
+              </li>
+               <li class="checkbox-block visibility-checked">
+                <div class="custom-control custom-checkbox custom-control-new">
+                    <input type="checkbox" class="custom-control-input" id="tableCheck73">
+                    <label class="custom-control-label" for="tableCheck73">Search query</label>
+                  </div>
+              </li>
+            </ul>
+      </div>
+  </div>
+</div>
+
+<!-- <footer> 
+  <p>&copy; ppc.tools</p>
+</footer> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/select2.full.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/fixedheader/3.1.3/js/dataTables.fixedHeader.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.colVis.min.js"></script>
+<script src="js/AddTabs.js"></script>
+<script src="js/main-new-design.js"></script>
+</body>
+</html>
