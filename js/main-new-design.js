@@ -340,7 +340,19 @@ $(document).ready(function() {
         });
 
     });
+$(".chosen-select").chosen({max_selected_options: 5});
 
+let data = [
+    'Історія україни',
+    'Історія мистецтва',
+    'Приклад три',
+    'Приклад чотири',
+    'Приклад П’ять'
+];
+
+$('#autocomplete').autocomplete({
+    lookup: data
+});
 
    
 

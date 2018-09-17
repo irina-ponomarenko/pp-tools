@@ -131,6 +131,30 @@ body{
     position: relative;
     height: 50px;
 }
+.user-btn{
+    position: relative;
+}
+.drop-down-user{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 51px;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+.list-drop-down li a{
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    color: #222222;
+    padding: 10px;
+    width: 100%;
+    display: block;
+}
+.list-drop-down li a:hover{
+    background-color: #ececec;
+    transition: .3s;
+}
 .user-btn-text{
     position: relative;
     padding-left: 15px;
@@ -855,16 +879,13 @@ body{
     justify-content: space-between;
     padding: 14px 22px;
 }
-.number::placeholder{
-    color: #bdbdbd;
-    font-size: 18px;
-}
 .number{
     padding: 5px;
     width: 100%;
     margin-bottom: 10px;
-    border: none;
-    outline: none;
+    color: #bdbdbd;
+    font-size: 18px;
+    font-weight: 300;
 }
 .container-content-tabs-bottom{
     display: flex;
@@ -1971,8 +1992,12 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 .wrapper-input-keywords{
     max-width: 285px;
     width: 100%;
-    border-bottom: 1px solid #757575;
     position: relative;
+}
+.ui-widget{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #757575;
 }
 .wrapper-input-keywords input{
     border: none;
@@ -2026,4 +2051,57 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 }
 [name='flag'] + span .select2-selection__rendered {
     min-width: 80px !important;
+}
+.new-select-multiple .chosen-choices{
+    background-image: url("../img/chewron-down.png");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+    background-size: 13px 8px;
+}
+
+.new-select-multiple .chosen-container{
+    max-width: 262px;
+    width: 100% !important;
+}
+.new-select-multiple .chosen-container-multi .chosen-choices{
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+.new-select-multiple .chosen-container .chosen-results li{
+    font-size: 14px;
+    color: #222222;
+    font-family: 'Ubuntu';
+    padding: 7px 6px;
+}
+.new-select-multiple .chosen-container .chosen-results li.highlighted{
+    background-color: #428bca;
+    background-image: none;
+    color: #fff;
+}
+.new-select-multiple .chosen-container-multi .chosen-choices li.search-choice{
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+.new-select-multiple .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    position: absolute;
+    top: 4px;
+    right: 3px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/close.png) 0 1px no-repeat;
+    background-size: 10px;
+    font-size: 1px;
+}
+.new-select-multiple .chosen-container-active .chosen-choices{
+    background-image: url("../img/chewron-up.png");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+    box-shadow: none;
+}
+.new-select-multiple .chosen-container-multi .chosen-choices li.search-field input[type="text"]{
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    margin: 3px 0;
 }
