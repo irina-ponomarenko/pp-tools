@@ -95,7 +95,7 @@ $(document).ready(function() {
     "pagingType": 'simple_numbers',
     "columnDefs":  [{
       "targets": [0, 1, 7, 17],
-      "orderable": false, 
+      "orderable": false,
       'className': 'pl-1'
     },
     {
@@ -119,61 +119,47 @@ $(document).ready(function() {
 
   } );
   var table2  = $('#filter-compaigns1').DataTable( {
-    "dom": 'rtp',
-    "pagingType": 'simple_numbers',
-    'order': [[ 1, "asc" ]],
-    "columnDefs":  [
-    { "width": "30", "targets": 0 },
-    {
-      "targets": [0, 3],
-      "orderable": false, 
-    },
-    {
-      "targets": [0, 1, 2, 3],
-      'className': 'pl-1'
-    },
-    
-    {
-      "targets": [1],
-      'className': 'px-0'
-    },
-    {
-      "targets": [2],
-      'className': 'pl-0'
-    },
-    {
-      "targets": [3],
-      'className': 'pl-1 pr-0'
-    },
-    {
-      "targets": [0,1,2,3],
-      'className': 'pl-0 pr-2'
-    }]
-
-  } )
+      fixedHeader: true,
+      "dom": 'prtp',
+      'order': [[ 2, "asc" ]],
+      "pagingType": 'simple_numbers',
+      "columnDefs":  [{
+          "targets": [2],
+          'className': 'pl-1 pr-0'
+      }]
+  })
   var table3  = $('#filter-compaigns2').DataTable( {
-    "dom": 'rtp',
-    "pagingType": 'simple',
-    'order': [[ 1, "asc" ]],
-    "columnDefs":  [
-    {  "targets": 0, "width": "30px" },
-    {
-      "targets": [0],
-      "orderable": false, 
-    },
-    {
-      "targets": [0, 1],
-      'className': 'pl-1'
-    },
-    
-    {
-      "targets": [1],
-      'className': 'px-0'
-    },
-    {
-      "targets": [0,1],
-      'className': 'pl-0 pr-2'
-    }]
+      "dom": 'rtp',
+      "pagingType": 'simple_numbers',
+      'order': [[ 1, "asc" ]],
+      "columnDefs":  [
+          { "width": "30", "targets": 0 },
+          {
+              "targets": [0, 3],
+              "orderable": false,
+          },
+          {
+              "targets": [0, 1, 2, 3],
+              'className': 'pl-1'
+          },
+
+          {
+              "targets": [1],
+              'className': 'px-0'
+          },
+          {
+              "targets": [2],
+              'className': 'pl-0'
+          },
+          {
+              "targets": [3],
+              'className': 'pl-1 pr-0'
+          },
+          {
+              "targets": [0,1,2,3],
+              'className': 'pl-0 pr-2'
+          }]
+
 
   } )
   $('.visible-container label').on( 'click', function (e) {

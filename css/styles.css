@@ -1604,6 +1604,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     margin-left: 20px;
     background: transparent;
     border: none;
+    outline: none;
 }
 .container-search-all input{
    height: 20px;
@@ -1756,7 +1757,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     border-right: 1px solid #ececec;
 }
 .campaigns-span{
-    padding: 8px 0 10.5px;
+    padding: 9px 0 10.5px;
 }
 .title-none h2{
     min-height: 28px;
@@ -2180,7 +2181,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 .container-search{
     width: 50%;
     cursor: pointer;
-    padding: 15px;
+    padding: 11px;
 }
 .active-option-table{
     border-bottom: 4px solid #428bca;
