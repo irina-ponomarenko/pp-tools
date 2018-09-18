@@ -858,9 +858,10 @@ table.dataTable .d-flex > .select2 {
       .wrapper_searchterms .dataTables_paginate .paginate_button:active {
         box-shadow: none; }
       .wrapper_searchterms .dataTables_paginate .paginate_button.current {
-        border: 1px solid #fff;
+        border: none;
         background: #428bca;
-        color: #ffffff !important; }
+        color: #ffffff !important;
+        box-shadow: 0 4px 4px rgba(121, 143, 150, 0.24); }
         .wrapper_searchterms .dataTables_paginate .paginate_button.current:hover {
           border: 1px solid #fff;
           background: #fff;

@@ -89,7 +89,6 @@ $(document).ready(function() {
 
   // DataTabless
   var table1  = $('#example').DataTable( {
-    fixedHeader: true,
     "dom": 'prtp',
     'order': [[ 2, "asc" ]],
     "pagingType": 'simple_numbers',
@@ -119,7 +118,7 @@ $(document).ready(function() {
 
   } );
     var table2  = $('#filter-compaigns1').DataTable( {
-        "dom": 'prtp',
+        // "dom": 'prtp',
         'order': [[ 2, "asc" ]],
         "pagingType": 'simple_numbers',
         "columnDefs":  [{
@@ -129,7 +128,7 @@ $(document).ready(function() {
     });
 
     var table3  = $('#filter-compaigns2').DataTable( {
-        "dom": 'prtp',
+        // "dom": 'prtp',
         'order': [[ 1, "asc" ]],
         "pagingType": 'simple_numbers',
         "columnDefs":  [{
@@ -137,6 +136,17 @@ $(document).ready(function() {
             'className': 'pl-1 pr-0'
         }]
     });
+    var table2  = $('#filter-compaigns3').DataTable( {
+        // "dom": 'prtp',
+        'order': [[ 2, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [2],
+            'className': 'pl-1 pr-0'
+        }]
+    });
+
+    $('.dataTables_filter input').attr("placeholder", "search");
 
   $('.visible-container label').on( 'click', function (e) {
     var val = $(this).prev().attr('id').slice(11);

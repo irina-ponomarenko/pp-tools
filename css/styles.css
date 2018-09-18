@@ -740,14 +740,14 @@ body{
 .checkbox-table .custom-control-label::before, 
 .checkbox-table .custom-control-label::after {
     position: absolute;
-    top: -0.0rem;
+    top: 0.5rem;
     left: -0.1rem;
 }
 .checkbox-add .custom-control-label::before,
 .checkbox-add .custom-control-label::after{
     position: absolute;
     top: 0.1rem;
-    left: -1.3rem;
+    left: -0.3rem;
 }
 .table-content td{
     border-bottom: 1px solid #eaeaea;
@@ -1660,7 +1660,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     top: -1px;
 }
 .arrow-span{
-    margin-left: 22px;
+    margin-left: 15px;
 }
 .wrapper-img-table{
     width: 46px;
@@ -2166,10 +2166,17 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     padding: 15px;
     border-bottom: 4px solid #ffffff;
 }
-.container-search{
+.container-search,
+.container-search-all{
     width: 50%;
     cursor: pointer;
-    padding: 11px;
+    padding: 24px;
+}
+.container-search input,
+.container-search-all input,
+.container-search-all span,
+.container-search span{
+    display: none;
 }
 .active-option-table{
     border-bottom: 4px solid #428bca;
@@ -2211,4 +2218,154 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 .container-table-popular .footer-table{
     padding: 24px 22px;
     border-top: 1px solid #eaeaea;
+}
+.wrapper-table-modal .dataTables_wrapper .dataTables_paginate .paginate_button.disabled{
+    font-size: 0;
+}
+.wrapper-table-modal .dataTables_wrapper .dataTables_paginate .paginate_button.previous.disabled{
+    background-image: url("../img/chewron-left.png");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 16px;
+}
+.wrapper-table-modal .dataTables_wrapper .dataTables_paginate{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    bottom: -41px;
+    z-index: 1000;
+}
+.wrapper-table-modal .dataTables_wrapper .dataTables_paginate .paginate_button.previous{
+    background-image: url("../img/chewron-left.png");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+.wrapper-table-modal .dataTables_wrapper .dataTables_paginate .paginate_button.next{
+    background-image: url("../img/chewron-right.png");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 16px;
+    margin-left: 10px;
+}
+.wrapper-table-modal .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.wrapper-table-modal .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #222222 !important;
+    border: none;
+    background-color: white;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper-table-modal .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    background-color: #ffffff;
+}
+.wrapper-table-modal .dataTables_wrapper .dataTables_paginate .paginate_button.current{
+    background-color: #428bca;
+    color: #ffffff !important;
+    box-shadow: 0 4px 4px rgba(121, 143, 150, 0.24);
+}
+.new_searchterms .dataTables_wrapper .dataTables_paginate {
+    float: right;
+    text-align: right;
+    padding-top: 0.8em;
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+}
+.new_searchterms  .dataTables_wrapper .dataTables_info,
+.new_searchterms .dataTables_wrapper .dataTables_filter{
+    display: none;
+}
+.new_searchterms .dataTables_wrapper .dataTables_length {
+    float: left;
+    position: absolute;
+    bottom: -34px;
+    left: 17px;
+    z-index: 1000;
+}
+.new_searchterms .dataTables_wrapper .dataTables_length label{
+    font-size: 18px;
+}
+.new_searchterms .dataTables_wrapper .dataTables_length select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.new_searchterms .dataTables_wrapper .dataTables_length select{
+    width: 40px;
+    border: none;
+    outline: none;
+    background-image: url("../img/chewron-down.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    color: #428bca;
+    margin-right: 6px;
+}
+.header-table-modal thead .sorting {
+    background-image: none !important;
+}
+.header-table-modal. table.dataTable thead .sorting {
+    background-image: url(../img/double_arrow_darken.png);
+}
+table.dataTable thead .sorting:first-child,
+table.dataTable thead .sorting_asc:first-child,
+table.dataTable thead .sorting_desc:first-child,
+table.dataTable thead .sorting_asc_disabled:first-child,
+table.dataTable thead .sorting_desc_disabled:first-child {
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-image: none;
+}
+.header-table-modal .sorting:first-child,
+.header-table-modal .sorting:nth-child(3),
+.header-table-modal .sorting_asc:first-child,
+.header-table-modal .sorting_asc:nth-child(3),
+.header-table-modal .sorting_desc:first-child,
+.header-table-modal .sorting_desc:nth-child(3){
+    background-image: none !important;
+}
+.modal-table.dataTable tbody td:first-child,
+.modal-table.dataTable tbody td:last-child {
+    padding: 6px 15px 6px 8px;
+}
+.modal-table.dataTable thead th, .modal-table.dataTable thead td,
+.modal-table.dataTable.no-footer {
+    border-bottom: none;
+}
+.wrapper-table-modal .dataTables_length{
+    display: none;
+}
+.wrapper-table-modal .dataTables_wrapper .dataTables_filter {
+    float: right;
+    position: absolute;
+    text-align: right;
+    right: 15%;
+    top: -42px;
+}
+.wrapper-table-modal .dataTables_wrapper .dataTables_filter label{
+    background-image: url("../img/selected_icon/search-icon.png");
+    background-repeat: no-repeat;
+    color: rgba(255, 255, 255, 0);
+    background-size: 18px;
+    background-position: left;
+}
+.wrapper-table-modal .dataTables_info{
+    display: none;
+}
+.wrapper-table-modal .dataTables_wrapper .dataTables_filter input {
+    margin-left: -1.5em;
+    border: none;
+    outline: none;
+}
+.wrapper-table-modal .dataTables_wrapper .dataTables_filter input::placeholder{
+    font-size: 18px;
 }
