@@ -351,9 +351,18 @@ let data = [
 ];
 
 $('#autocomplete').autocomplete({
-    lookup: data
+    source: data
+});
+$('#autocomplete1').autocomplete({
+    source: data
 });
 
+$(document).ready(function () {
+  $('.user-btn').click(function() {
+    $('.drop-down-user').toggleClass('open-user-block');
+  })
+  
+});
    
 
 
