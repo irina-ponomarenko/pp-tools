@@ -713,23 +713,11 @@ body{
 .arrow-down span,
 .arrow-grey span{
     position: relative;
-    padding-left: 26px;
     font-size: 18px;
+    padding-left: 10px;
 }
 .arrow-grey span{
     color: #757575;
-}
-.arrow-down span:before,
-.arrow-grey span:before{
-    content: '';
-    position: absolute;
-    background: url("../img/selected_icon/black-arrow.png") no-repeat;
-    width: 16px;
-    height: 16px;
-    left: 0;
-}
-.arrow-grey span:before{
-    background: url("../img/selected_icon/grey-arrow.png") no-repeat;
 }
 .popular-header{
     background-color: #ececec;
@@ -2185,4 +2173,42 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 }
 .active-option-table{
     border-bottom: 4px solid #428bca;
+}
+.new_searchterms thead.sorting,
+.new_searchterms .dataTable thead .sorting{
+    background: url(../img/selected_icon/black-arrow.png) no-repeat !important;
+    background-position: left 45% !important;
+}
+.new_searchterms thead.sorting:first-child,
+.new_searchterms .dataTable thead .sorting:first-child{
+    background-image: none !important;
+}
+.new_searchterms table.dataTable.display tbody td:first-child{
+    padding: 9px 8px 13px 20px !important;
+}
+.new_searchterms .dataTable thead .sorting_desc {
+    background-image: url(../img/selected_icon/grey-arrow.png) !important;
+}
+.new_searchterms .dataTable thead .sorting_desc:first-child{
+    background-image: none !important;
+}
+.new_searchterms .dataTable thead .sorting_asc {
+    background-image: url(../img/selected_icon/grey-arrow.png) !important;
+}
+.new_searchterms .dataTable thead .sorting_asc:first-child{
+    background-image: none !important;
+}
+.new_searchterms  .dataTables_paginate.paging_simple_numbers:nth-of-type(2) {
+    position: absolute;
+    bottom: -41px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+}
+.new_searchterms .dataTables_paginate.paging_simple_numbers:nth-of-type(1) {
+    display: none;
+}
+.container-table-popular .footer-table{
+    padding: 24px 22px;
+    border-top: 1px solid #eaeaea;
 }
