@@ -330,11 +330,32 @@ $('#autocomplete1').autocomplete({
 });
 
 $(document).ready(function () {
-  $('.user-btn').click(function() {
-    $('.drop-down-user').toggleClass('open-user-block');
-  })
-  
+    $('.user-btn').click(function () {
+        $(this).toggleClass('open-user-block');
+    });
+    $(document).mouseup(function (e) {
+        if ($(e.target).closest(".open-user-block").length > 0 || $(e.target).hasClass('user-btn')) {
+            return false;
+        }
+        else {
+            $('.user-btn').removeClass('open-user-block');
+        }
+    });
+      $('.market-btn').click(function () {
+        $(this).toggleClass('open-market-block');
+    });
+    $(document).mouseup(function (e) {
+        if ($(e.target).closest(".open-market-block").length > 0 || $(e.target).hasClass('market-btn')) {
+            return false;
+        }
+        else {
+            $('.market-btn').removeClass('open-market-block');
+        }
+    });
 });
+
+
+
    
 
 

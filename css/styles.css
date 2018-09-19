@@ -134,28 +134,67 @@ body{
 .user-btn{
     position: relative;
 }
-.drop-down-user{
+.drop-down-user,
+.drop-down-market{
+    display: none;
     position: absolute;
     left: 0;
     right: 0;
-    top: 51px;
+    top: 61px;
     background-color: #ffffff;
     box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
     z-index: 100;
-    display: none;
 }
-.open-user-block{
+.drop-down-market{
+    right: 0;
+    left: -70px;
+}
+.open-user-block .drop-down-user,
+.open-market-block .drop-down-market{
     display: block;
 }
-.list-drop-down li a{
+.close-user-block .open-user-block{
+    display: none;
+}
+.list-drop-down li a,
+.separeted-link a{
     font-size: 18px;
     font-family: 'Ubuntu';
     color: #222222;
     padding: 10px;
     width: 100%;
     display: block;
+    text-align: left;
 }
-.list-drop-down li a:hover{
+.list-drop-down,
+.drop-down-user .list-drop-down{
+    position: relative;
+}
+.list-drop-down:before{
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    top: -5px;
+    left: 75%;
+}
+.drop-down-user .list-drop-down:before{
+     content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    top: -5px;
+    left: 50%;
+}
+.separeted-link a{
+    border-top: 1px solid #ececec;
+}
+.list-drop-down li a:hover,
+.separeted-link a:hover{
     background-color: #ececec;
     transition: .3s;
 }
@@ -682,7 +721,9 @@ body{
 .checkbox-add .custom-control-label::before {
     width: 15px;
     height: 15px;
-    background: url("../img/selected_icon/squar.png") no-repeat center;
+    border: 1px solid #222222;
+    border-radius: 1px;
+    background: transparent;
     cursor: pointer;
 }
 .checkbox-table .custom-control-input:checked ~ .custom-control-label::after,
@@ -693,11 +734,13 @@ body{
 .custom-control-input:checked ~ .custom-control-label::before,
 .checkbox-add .custom-control-input:checked ~ .custom-control-label::before{
     background-color: transparent;
-    width: 15px;
-    height: 15px;
-    background-image: url("../img/selected_icon/checked.png");
+    width: 17px;
+    height: 17px;
+    border: 1px solid #428bca;
+    background-image: none;
     background-repeat: no-repeat;
     cursor: pointer;
+    background-color: transparent;
 }
 .wrapper-table-popular,
 .wrapper-keywords{
@@ -717,7 +760,7 @@ body{
     padding-left: 10px;
 }
 .arrow-grey span{
-    color: #757575;
+    color: #222222;
 }
 .popular-header{
     background-color: #ececec;
@@ -1255,12 +1298,14 @@ body{
     background-image: url('../img/selected_icon/checked.png');
     width: 13px;
     height: 13px;
+    border: 1px solid #428bca;
     background-position: center;
 }
 .checkbox-block .custom-checkbox .custom-control-input:checked~.custom-control-label:after {
     background-image: url('../img/selected_icon/checked.png');
     width: 18px;
     height: 18px;
+    border: none;
     background-position: center;
     background-size: contain;
 }
@@ -1971,7 +2016,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 .visibility-checked .custom-control-label::before, .checkbox-block .custom-control-label::after {
     position: absolute;
     top: 2px;
-    left: 0.7rem;
+    left: 0.8rem;
 }
 .modal-visibility .container-tables{
     flex-direction: column;
@@ -2335,7 +2380,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .modal-table.dataTable tbody td:first-child,
 .modal-table.dataTable tbody td:last-child {
-    padding: 6px 15px 6px 8px;
+    padding: 7px 15px 6px 8px;
 }
 .modal-table.dataTable thead th, .modal-table.dataTable thead td,
 .modal-table.dataTable.no-footer {
@@ -2368,4 +2413,30 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .wrapper-table-modal .dataTables_wrapper .dataTables_filter input::placeholder{
     font-size: 18px;
+}
+.wrapper_searchterms .custom-control.custom-checkbox .custom-control-input + .custom-control-label::before {
+    background-color: transparent !important;
+    border: 1px solid #222222 !important;
+    background-image: none !important;
+    background-repeat: no-repeat;
+    border-radius: 1px;
+    outline: 0;
+    box-shadow: none;
+    background-position: center;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: transparent;
+}
+.keywords-text{
+    max-width: 163px;
+    width: 100%;
+    display: flex;
+    white-space: pre-line;
+}
+.ml-1 span{
+    max-width: 168px;
+    width: 100%;
+    display: flex;
+    white-space: pre-line;
 }

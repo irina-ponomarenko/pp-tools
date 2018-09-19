@@ -380,14 +380,14 @@ table.dataTable .d-flex > .select2 {
   .wrapper_searchterms .btn.icon.visible {
     padding: 0 10px 0 30px;
     background-image: url("../img/visible.png");
-    border: 1px solid #cfd8dc;
-    color: #798f96;
+    border: 1px solid #428bca;
+    color: #428bca;
     transition: all ease .3s; }
   .wrapper_searchterms .btn.icon.visible:hover, .wrapper_searchterms .active.btn.icon.visible.active {
     background-image: url("../img/visible_active.png");
-    background-color: #e4e9ea !important;
-    border-color: #798f96;
-    color: #263238; }
+    background-color: #428bca  !important;
+    border-color: #428bca;
+    color: #ffffff; }
   .wrapper_searchterms .label {
     position: relative; }
     .wrapper_searchterms .label .search {
