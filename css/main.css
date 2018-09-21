@@ -187,14 +187,14 @@ form + .select2-container.select2-container--default.select2-container--open {
     background-image: url("../img/calendar_darken.png"), url("../img/chewron-up.png"); }
 
 .fast-date + .select2-container--default .select2-selection--single .select2-selection__rendered {
-  background-image: url("../img/calendar.png") !important;
+  background-image: url("../img/calendar_darken.png") !important;
   padding: 0 28px 0 34px;
   background-position: 10px center;
   background-repeat: no-repeat;
   color: #798f96; }
 
 .fast-date + .select2-container--default .select2-selection--single .select2-selection__rendered {
-  background-image: url("../img/calendar.png") !important;
+  background-image: url("../img/calendar_darken.png") !important;
   padding: 0 28px 0 34px;
   background-position: 10px center;
   background-repeat: no-repeat;
@@ -209,10 +209,10 @@ form + .select2-container.select2-container--default.select2-container--open {
   background-image: url("../img/calendar_darken.png") !important; }
 
 .fast-date + .select2-container.select2-container--open .select2-selection__arrow {
-  background-image: url(../img/double_arrow_darken.png); }
+  background-image: url(../img/chewron-up.png); }
 
 .fast-date + .select2-container:hover .select2-selection__arrow {
-  background-image: url(../img/double_arrow_darken.png); }
+  background-image: url(../img/chewron-up.png); }
 
 .daterangepicker.dropdown-menu .input-mini {
   margin: 0 0 27px 0;
@@ -375,8 +375,7 @@ table.dataTable .d-flex > .select2 {
     color: #139bd6;
     background-image: url("../img/plus.png"); }
   .wrapper_searchterms .btn.icon.add:hover {
-    color: #fff;
-    background-image: url("../img/plus-white.png"); }
+    color: #fff; }
   .wrapper_searchterms .btn.icon.visible {
     padding: 0 10px 0 30px;
     background-image: url("../img/visible.png");
@@ -422,9 +421,10 @@ table.dataTable .d-flex > .select2 {
         right: 10px;
         width: 10px;
         height: 32px;
-        background-image: url("../img/close.png");
+        background-image: url("../img/selected_icon/icon-close.png");
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 14px;
         cursor: pointer;
         transition: .1s ease;
         opacity: 0; }
@@ -501,12 +501,12 @@ table.dataTable .d-flex > .select2 {
       .wrapper_searchterms .dataTable thead [aria-label="ID"] {
         padding-right: 0; }
       .wrapper_searchterms .dataTable thead .sorting {
-        background-image: url(../img/double_arrow.png) !important;
+        background-image: url(../img/black-arrow.png) !important;
       background-position: left 60%;}
       .wrapper_searchterms .dataTable thead .sorting_desc {
-        background-image: url(../img/double_arrow_down.png) !important; }
+        background-image: url(../img/black-arrow.png) !important; }
       .wrapper_searchterms .dataTable thead .sorting_asc {
-        background-image: url(../img/double_arrow_up.png) !important; }
+        background-image: url(../img/grey-arrow.png) !important; }
     .wrapper_searchterms .dataTable th, .wrapper_searchterms .dataTable td {
       border: 0;
       border-bottom: #f7fafd; }
@@ -668,7 +668,7 @@ table.dataTable .d-flex > .select2 {
       font-size: 12px;
       display: flex;
       width: 21px;
-      height: 18px;
+      height: 20px;
       border-radius: 50%;
      background-image: url("../img/selected_icon/succsess.png");
       background-repeat: no-repeat;
@@ -837,7 +837,7 @@ table.dataTable .d-flex > .select2 {
     top: -106px; }
   .wrapper_searchterms .dataTables_paginate.paging_simple_numbers:nth-of-type(2) {
     position: absolute;
-    bottom: -46px;
+    bottom: -45px;
     right: 24px;
     display: flex;
     align-items: center;}
@@ -1189,11 +1189,11 @@ thead {
   thead [aria-label="ID"] {
     padding-right: 0; }
   thead .sorting {
-    background-image: url(../img/double_arrow.png) !important; }
+    background-image: url(../img/black-arrow.png) !important; }
   thead .sorting_desc {
-    background-image: url(../img/double_arrow_down.png) !important; }
+    background-image: url(../img/black-arrow.png) !important; }
   thead .sorting_asc {
-    background-image: url(../img/double_arrow_up.png) !important; }
+    background-image: url(../img/grey-arrow.png) !important; }
 
 th, td {
   border: 0;

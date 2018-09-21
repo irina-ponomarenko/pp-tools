@@ -114,9 +114,70 @@ $(document).ready(function() {
     },{
       "targets": [3],
       'className': 'pl-1 pr-0'
+
     }]
 
   } );
+    var table1  = $('#example2').DataTable( {
+        "dom": 'prtp',
+        'order': [[ 2, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [0, 1, 7, 17],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [1],
+                'className': 'px-0'
+            },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            },{
+                "targets": [6,7,8,9,10,11,12,13,14,15,16],
+                'className': 'pl-1 pr-1'
+            },{
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+
+            }]
+
+    } );
+
+    var table1  = $('#example1').DataTable( {
+        "dom": 'prtp',
+        'order': [[ 2, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [0, 1, 5, 6, 7, 8, 18],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [1],
+                'className': 'px-0'
+            },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            },{
+                "targets": [6,7,8,9,10,11,12,13,14,15,16],
+                'className': 'pl-1 pr-1'
+            },{
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            }]
+
+    } );
     var table2  = $('#filter-compaigns1').DataTable( {
         // "dom": 'prtp',
         'order': [[ 2, "asc" ]],

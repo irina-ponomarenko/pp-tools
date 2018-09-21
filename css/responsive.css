@@ -10,6 +10,58 @@
         position: relative;
         overflow-x: scroll;
     }
+    .nav-li-header a {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 16px;
+    }
+    .icon-refresh{
+        padding-left: 15px !important;
+        padding-right: 40px !important;
+    }
+    .new-d-flex .fast-date + .select2-container--default .select2-selection--single .select2-selection__rendered,
+    .datepicker{
+        font-size: 16px;
+    }
+    .new-d-flex .title,
+    .range-title{
+        font-size: 13px;
+    }
+    .first-picker,
+    .wrapper-data-pickers{
+        margin-right: 15px;
+    }
+    .campages-block .item .input {
+        font-size: 12px;
+        padding: 4px 9px;
+        margin-right: 10px;
+    }
+    .campages-block .item .desc {
+        font-size: 12px;
+    }
+    .campages-block .item {
+        margin-right: 10px;
+    }
+    .show-more p {
+        font-size: 15px;
+    }
+    .chevron-active {
+        margin-left: 10px;
+    }
+    .wrapper_searchterms .btn {
+        font-size: 10px;
+    }
+    .wrapper_searchterms .control,
+    .wrapper_searchterms .legend{
+        padding: 15px 18px;
+    }
+    .new-action .title, .new-action .count,
+    .select2-selection__rendered{
+        font-size: 16px;
+    }
+    .desc {
+        font-size: 16px;
+    }
 
 }
 @media screen and (max-width: 650px) {
