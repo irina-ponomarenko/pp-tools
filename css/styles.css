@@ -700,7 +700,6 @@ body{
     margin-bottom: 13px;
 }
 .btn-generate{
-    border: none;
     border-radius: 5px;
     background-color: #428bca;
     border: 1px solid #428bca;
@@ -783,8 +782,8 @@ body{
 .checkbox-table .custom-control-label::before, 
 .checkbox-table .custom-control-label::after {
     position: absolute;
-    top: 0.5rem;
-    left: -0.1rem;
+    top: 0.1rem;
+    left: 0.8rem;
 }
 .checkbox-add .custom-control-label::before,
 .checkbox-add .custom-control-label::after{
@@ -887,8 +886,8 @@ body{
     margin-bottom: 0;
 }
 .add-btn,
-.copy{
-    border: none;
+.copy,
+.set-btn{
     background-color: #428bca;
     border: 1px solid #428bca;
     color: #ffffff;
@@ -902,8 +901,14 @@ body{
     -moz-box-shadow: 3px 6px 8px -2px rgba(0,0,0,0.29);
     box-shadow: 3px 6px 8px -2px rgba(0,0,0,0.29);
 }
+.set-btn{
+    width: 61px;
+    padding: 2px 0;
+    height: 26px;
+}
 .add-btn:hover,
-.copy:hover{
+.copy:hover,
+.set-btn:hover{
     transition: .3s;
     background-color: transparent;
     color: #428bca;
@@ -912,7 +917,7 @@ body{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 14px 22px;
+    padding: 14px 30px;
 }
 .number{
     padding: 5px;
@@ -2059,8 +2064,8 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 .autopilit-checked:last-child{
     margin-bottom: 0;
 }
-.visibility-checked .custom-control-label::before, .checkbox-block .custom-control-label::after,
-:last-child .custom-control-label::before, .checkbox-block .custom-control-label::after{
+.visibility-checked .custom-control-label::before, .visibility-checked .custom-control-label::after,
+.custom-control-label::before, .visibility-checked .custom-control-label::after{
     position: absolute;
     top: 2px;
     left: 0.8rem;
@@ -2532,6 +2537,11 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     font-size: 18px;
     font-weight: 300;
     color: #222222;
+    margin-left: 10px;
+}
+.control-check .custom-control-label:after{
+    top: 2px;
+    left: 13px;
 }
 .wrapper-control-block{
     display: flex;
@@ -2618,7 +2628,9 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .list-recommend li .custom-control-new label{
     font-size: 14px;
-    margin-top: 3px;
+    margin-top: 2px;
+    margin-left: 3px;
+    white-space: nowrap;
 }
 .change-modal-width{
     max-width: 725px;
@@ -2835,7 +2847,8 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .new-display tfoot{
     background-color: #ececec;
 }
-.new-campaing{
+.new-campaing,
+.header-btn{
     border: 1px solid #428bca;
     background-color: #428bca;
     color: #ffffff;
@@ -2845,12 +2858,18 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     border-radius: 5px;
      box-shadow: 3px 6px 8px -2px rgba(0,0,0,0.29);
 }
-.new-campaing:hover{
+.new-campaing:hover,
+.header-btn:hover{
     transition: .3s;
     background-color: transparent;
     color: #428bca;
 }
-.wrapper-btn-campaing{
+.update-btn{
+    width: 231px;
+    margin-left: 20px;
+}
+.wrapper-btn-campaing,
+.wrapper-add-btn{
     padding: 13px;
 }
 .modal-campaing{
@@ -2957,6 +2976,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .container-checked .custom-control-label{
     color: #388e3c;
     line-height: 18px;
+    margin-left: 10px;
 }
 .container-checked .custom-control-label p a{
     color: #428bca;
@@ -3157,11 +3177,15 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     padding: 0;
 }
 #example2_length,
-#example2_filter{
+#example2_filter,
+#example3_info,
+#example3_filter,
+#example3_length{
     display: none;
 }
 #example2_paginate,
-.dataTables_wrapper .dataTables_info{
+.dataTables_wrapper .dataTables_info,
+#example3_paginate{
     padding-top: 16px;
     padding-bottom: 16px;
 }
@@ -3170,4 +3194,76 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     font-size: 18px;
     padding-left: 25px;
     padding-top: 21px;
+}
+.wrapper_searchterms .refresh-btn {
+    padding: 0 10px 0 30px;
+    background: url(../img/refresh-icon.png) no-repeat;
+    border: 1px solid #428bca;
+    color: #428bca;
+    transition: all ease .3s;
+    background-position: 8px center;
+}
+.wrapper_searchterms .refresh-btn:hover{
+    background: url(../img/refresh-icon-hover.png) no-repeat;
+    background-color: #428bca;
+    color: #ffffff;
+    background-position: 8px center;
+}
+.custom-campaing .custom-control-label::before{
+    top: 4px;
+    left: -0.1rem;
+}
+.wrapper_searchterms .dataTable .padding-left-thead .sorting,
+.wrapper_searchterms .dataTable .padding-left-thead .sorting_asc,
+.wrapper_searchterms .dataTable .padding-left-thead .sorting_desc{
+    background-position: 9px 60%;
+    padding-left: 33px !important;
+}
+.wrapper_searchterms table.dataTable .body-style td,
+.wrapper_searchterms table.dataTable .body-style .pl-0,
+.wrapper_searchterms table.dataTable .body-style .px-0{
+    padding: 7px 9px !important;
+}
+.campaing-table-text a{
+    font-size: 14px;
+    color: #428bca !important;
+    text-decoration: underline;
+    text-overflow: ellipsis;
+    white-space: pre-line !important;
+    line-height: 1rem;
+}
+.sku-kod a{
+    font-size: 14px;
+    color: #428bca !important;
+    text-decoration: underline;
+}
+.product-line{
+    max-width: 360px;
+    width: 100%;
+}
+.wrapper-question-btn .question-btn{
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    color: #428bca;
+    border-radius: 100%;
+    border: 1px solid #428bca;
+    font-family: 'Arial';
+}
+.wrapper-question-btn{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 15px;
+    position: relative;
+}
+.wrapper-question-btn:hover .question-block{
+    display: block;
+}
+.flex-center-block{
+    display: flex;
+    align-items: center;
+}
+.margin-right-0{
+    margin-right: 0;
 }
