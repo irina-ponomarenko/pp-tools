@@ -3112,7 +3112,6 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .autopilot-info-list{
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 .change-header-modal-autopilot .modal-title{
