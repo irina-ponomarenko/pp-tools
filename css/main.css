@@ -531,7 +531,7 @@ table.dataTable .d-flex > .select2 {
       white-space: nowrap;
       color: #000;
       font-weight: 400; }
-  .wrapper_searchterms tr:hover td {
+  .wrapper_searchterms tr:hover > td {
     border-top: 1px rgba(0, 131, 227, 0.5) solid !important;
     border-bottom: 1px rgba(0, 131, 227, 0.5) solid !important; }
   .wrapper_searchterms table.dataTable.display tbody tr.odd > .sorting_1, .wrapper_searchterms table.dataTable.order-column.stripe tbody tr.odd > .sorting_1, .wrapper_searchterms tbody tr.odd > .sorting_1 a {
@@ -1226,7 +1226,7 @@ td {
     color: #000;
     font-weight: 400; }
 
-tr:hover td {
+tr:hover > td {
   border-top: 1px rgba(0, 131, 227, 0.5) solid !important;
   border-bottom: 1px rgba(0, 131, 227, 0.5) solid !important; }
 

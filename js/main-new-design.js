@@ -2,7 +2,7 @@ function formatState (state) {
   if (!state.id) { return state.text; }
   var $state = $(
     '<span><img src="img/country/' +  state.element.value.toLowerCase() +
-    '.png" class="img-flag" /> ' + 
+    '.png" class="img-flag" /> ' +
     state.text +     '</span>'
     );
   return $state;
@@ -12,7 +12,7 @@ function formatState2 (state) {
   if (!state.id) { return state.text; }
   var $state = $(
     '<span><img src="img/selected_icon/' +  state.element.dataset.icon +
-    '.png" class="img-flag" /> ' + 
+    '.png" class="img-flag" /> ' +
     state.text +     '</span>'
     );
   return $state;
@@ -20,19 +20,19 @@ function formatState2 (state) {
 function formatStateCircle (state) {
   if (state.id == 1) {
     return $(
-      '<span><span class="round enabled"></span>' + 
+      '<span><span class="round enabled"></span>' +
       state.text + '</span>'
       );
   }
   if (state.id == 2) {
     return $(
-      '<span><span class="round paused"></span>' + 
+      '<span><span class="round paused"></span>' +
       state.text + '</span>'
       );
   }
   if (state.id == 3) {
     return $(
-      '<span><span class="round archived"></span>' + 
+      '<span><span class="round archived"></span>' +
       state.text + '</span>'
       );
   }
@@ -84,7 +84,7 @@ $(document).ready(function() {
     templateResult: formatState2,
     dropdownCssClass: 'icons'
   });
-  
+
 
 
   // DataTabless
@@ -118,36 +118,7 @@ $(document).ready(function() {
     }]
 
   } );
-    var table1  = $('#example2').DataTable( {
-        "dom": 'prtp',
-        'order': [[ 2, "asc" ]],
-        "pagingType": 'simple_numbers',
-        "columnDefs":  [{
-            "targets": [0, 1, 7, 17],
-            "orderable": false,
-            'className': 'pl-1'
-        },
-            {
-                "targets": [1],
-                'className': 'px-0'
-            },
-            {
-                "targets": [2],
-                'className': 'pl-0'
-            },
-            {
-                "targets": [3],
-                'className': 'pl-1 pr-0'
-            },{
-                "targets": [6,7,8,9,10,11,12,13,14,15,16],
-                'className': 'pl-1 pr-1'
-            },{
-                "targets": [3],
-                'className': 'pl-1 pr-0'
 
-            }]
-
-    } );
 
     var table1  = $('#example1').DataTable( {
         "dom": 'prtp',
@@ -417,7 +388,222 @@ $(document).ready(function () {
 
 
 
-   
+var opinions = [{"id":47,"name":"E061140","fileName":null,"disposition":null,"summary":null,"title":"Marr. of Eustice","opinionDate":"2015-12-10"},{"id":48,"name":"C070296M","fileName":null,"disposition":null,"summary":null,"title":"P. v. Nilsson","opinionDate":"2015-12-10"},{"id":50,"name":"S209643","fileName":null,"disposition":null,"summary":null,"title":"P. v. Stevens","opinionDate":"2015-12-10"}];
+var sections = [{"code":"code of civil procedure","sectionNumber":{"position":-1,"sectionNumber":"177.5"},"refCount":2,"section":{"part":"Chapter","partNumber":"4","title":"Incidental Powers and Duties of Judicial Officers","codeRange":{"sNumber":{"position":168,"sectionNumber":"177"},"eNumber":{"position":171,"sectionNumber":"179"}},"depth":3}},{"code":"code of civil procedure","sectionNumber":{"position":-1,"sectionNumber":"580"},"refCount":16,"section":{"part":"Chapter","partNumber":"1","title":"Judgment in General","codeRange":{"sNumber":{"position":862,"sectionNumber":"577"},"eNumber":{"position":879,"sectionNumber":"582.5"}},"depth":3}}];
+
+function format ( table_id ) {
+    return '<table class="display new-display" id="example2'+table_id+'">'+
+        '<thead class="new-thead"><tr><th></th><th>State</th><th class="width-details">AdGroup</th><th>Revenue</th><th>Spend</th><th>AcoS, $</th><th>CTR</th><th>Orders</th><th>Impressions</th></tr></thead>'+
+    '<tbody class="tr-style">'+
+    '<tr>'+
+    '<td></td>'+
+    '<td><div class="table-paragraph"><p>enabled</p></div></td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>Narrow - Phrase</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>293.88</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>31.15</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>31.15</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>0.15</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>8</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>28375</p>'+
+        '</div>'+
+        '</td>'+
+        '</tr>'+
+        '<tr>'+
+        '<td></td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>enabled</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>KillBRD 21/08/2017 - Narrow - Broad</p>'+
+    '</div>'+
+    '</td>'+
+    '<td>'+
+    '<div class="table-paragraph">'+
+        '<p>1087.35</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>105.59</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>105.59</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>0.59</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>33</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>28375</p>'+
+        '</div>'+
+        '</td>'+
+        '</tr>'+
+        '<tr>'+
+        '<td></td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>enabled</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>Narrow - Exact</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>224.94</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>30.20</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>30.20</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>0.20</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>8</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>28375</p>'+
+        '</div>'+
+        '</td>'+
+        '</tr>'+
+        '</tbody>'+
+        '</table>';
+}
+var iTableCounter=1;
+var oInnerTable;
+
+$(document).ready(function() {
+    TableHtml = $('#example2').html();
+
+    var table  = $('#example2').DataTable( {
+        // "dom": 'prtp',
+        "language": {
+            "info": "1 of 20 (total 1134)",
+        },
+        'order': [[ 2, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [0, 1, 7],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [1],
+                'className': 'px-0'
+            },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            },{
+                "targets": [6,7,8,9,10,11,12],
+                'className': 'pl-1 pr-1'
+            },{
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+
+            }]
+
+    } );
+    /* Add event listener for opening and closing details
+     * Note that the indicator for showing which row is open is not controlled by DataTables,
+     * rather it is done here
+     */
+    $('#example2 tbody').on('click', '.add-new-row', function () {
+        var tr = $(this).closest('tr');
+        var row = table.row( tr );
+        if ( row.child.isShown() ) {
+            //  This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        }
+        else {
+            // Open this row
+            row.child( format(iTableCounter) ).show();
+            tr.addClass('shown');
+            // try datatable stuff
+            oInnerTable = $('#example2' + iTableCounter).dataTable({
+                data: sections,
+                autoWidth: true,
+                deferRender: true,
+                info: false,
+                lengthChange: false,
+                ordering: false,
+                paging: false,
+                scrollX: false,
+                scrollY: false,
+                searching: false,
+                columns:[
+                    { data:'refCount' },
+                    { data:'section.codeRange.sNumber.sectionNumber' },
+                    { data:'section.title' }
+                ]
+            });
+            iTableCounter = iTableCounter + 1;
+        }
+    });
+} );
+
+
+
+
 
 
 

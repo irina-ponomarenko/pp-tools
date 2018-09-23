@@ -1315,6 +1315,12 @@ body{
     min-height: 1.3rem !important;
     padding-right: 10px;
 }
+.custom-control-new .custom-control-label:after,
+.custom-control-new .custom-control-label:before {
+    position: absolute;
+    top: 2px;
+    left: 13px;
+}
 .percent{
     color: #005a93;
     font-size: 24px;
@@ -1331,6 +1337,9 @@ body{
 .new-display .pl-1, .px-1 {
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
+}
+.new-display{
+    width: 100%;
 }
 .wrapper_searchterms table.dataTable thead th, .wrapper_searchterms table.dataTable thead td {
     padding: 9px 8px 13px 20px;
@@ -1736,6 +1745,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     flex: 1;
     text-align: left;
     padding: 12px 14px;
+    padding-left: 30px;
     cursor: pointer;
     color: rgba(0, 0, 0, 0.87);
     transition: .3s;
@@ -1744,6 +1754,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     white-space: nowrap;
     font-weight: 300;
     max-width: 50%;
+    border-bottom: 1px solid #ececec;
 }
 .addui-Tabs .addui-Tabs-tabHolder .addui-Tabs-tab.addui-Tabs-active {
     border-bottom: 4px solid #428bca;
@@ -1752,7 +1763,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     line-height: normal;
     font-size: 18px;
     text-align: left;
-    color: #222222;
+    color: #428bca !important;
 }
 
 .addui-Tabs .addui-Tabs-content {
@@ -1761,6 +1772,37 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 
 .addui-Tabs .addui-Tabs-content.addui-Tabs-active {
     display: block
+}
+.active-title-tabs span,
+.active-title-tabs{
+    color: #388e3c !important;
+}
+.active-title-tabs span{
+    font-size: 0;
+    position: relative;
+    padding-left: 30px;
+}
+.active-title-tabs span:before{
+    content: '';
+    position: absolute;
+    background: url(../img/ok-icon.png) no-repeat center;
+    background-size: 21px 21px;
+    display: block;
+    left: 0;
+    top: -17px;
+    padding: 11px;
+}
+.addui-Tabs-active span:before{
+    background: transparent;
+    padding: 0;
+}
+.addui-Tabs-active span{
+     font-weight: 300;
+    line-height: normal;
+    font-size: 18px;
+    text-align: left;
+    color: #428bca !important;
+    padding-left: 0;
 }
 .container-tables{
     display: flex;
@@ -1992,19 +2034,33 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 .footer-filters-btn:last-child{
     margin-right: 0;
 }
-.visibility-checked .custom-control-label{
+.visibility-checked .custom-control-label,
+.autopilit-checked  .custom-control-label{
     color: #222222;
     font-size: 18px;
     margin-left: 20px;
+}
+.autopilit-checked  .custom-control-label{
+    font-size: 16px;
+}
+.autopilit-checked  .custom-control-new{
+    display: flex;
+    align-items: center;
 }
 .visibility-checked{
     width: 161px;
     margin-bottom: 30px;
 }
-.visibility-checked:last-child{
+.autopilit-checked{
+     margin-bottom: 15px;
+     width: 100%;
+}
+.visibility-checked:last-child,
+.autopilit-checked:last-child{
     margin-bottom: 0;
 }
-.visibility-checked .custom-control-label::before, .checkbox-block .custom-control-label::after {
+.visibility-checked .custom-control-label::before, .checkbox-block .custom-control-label::after,
+:last-child .custom-control-label::before, .checkbox-block .custom-control-label::after{
     position: absolute;
     top: 2px;
     left: 0.8rem;
@@ -2568,7 +2624,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     max-width: 725px;
 }
 .change-header-modal{
-    padding: 25px;
+    padding: 25px 25px 0 0;
     border-bottom: none;
 }
 .change-header-modal .modal-title{
@@ -2810,11 +2866,14 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     margin: 0 auto;
     border-bottom: 1px solid #ececec;
 }
+.container-campaing-info:last-child{
+    padding-bottom: 23px;
+}
 .title-campaing{
     font-size: 18px;
     text-transform: uppercase;
     font-family: 'Ubuntu';
-    padding: 40px 0 32px 0;
+    padding: 35px 0 30px 0;
     text-align: center;
 }
 .wrapper-select-campaing,
@@ -2883,7 +2942,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     background-image: url("../img/radio.png");
     background-repeat: no-repeat;
     width: 14px;
-    height: 14px;
+    height: 13px;
     border-radius: 100%;
 }
 .custom-radio .custom-control-input:checked~.custom-control-label:before{
@@ -2930,4 +2989,186 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.title-table-modal-campaing {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title-table-modal-campaing span{
+    font-size: 14px;
+    color: #757575;
+}
+.custom-campaing.custom-control-input:checked ~ .custom-campaing.custom-control-label::before{
+    border: none !important;
+}
+.custom-campaing-input:checked ~ .custom-campaing-label::before{
+    border: none;
+    width: 13px;
+    height: 13px;
+}
+.custom-campaing-label::after{
+    border: 1px solid #222222;
+    width: 13px;
+    height: 13px;
+}
+.img-campaing{
+    margin-right: 10px;
+}
+.campaign-product{
+    display: flex;
+    align-items: center;
+}
+.campaing-table-text p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 252px;
+    font-size: 14px;
+}
+.campaing-table-text span{
+    font-size: 18px;
+    color: #ff5722;
+}
+.campaign-table tr{
+    background-color: #ececec;
+    height: 69px;
+}
+.campaign-table td{
+    padding: 13px;
+    padding-left: 0;
+    min-height: 65px;
+}
+.campaign-table td:first-child{
+    padding: 0 13px;
+    width: 50px;
+}
+.campaign-table td:last-child{
+    width: 316px;
+}
+.campaign-table{
+    border-right: 1px solid #757575;
+}
+.campaign-table:last-child{
+    border-right:none;
+}
+.wrapper-table-campaing{
+    display: flex;
+    align-items: flex-start;
+    max-height: 225px;
+    overflow: auto;
+}
+.container-shadow{
+  box-shadow: inset 0 3px 3px -3px #333,  inset 0 -3px 3px -3px;
+  padding: 3px 0;
+}
+.title-select-campaing{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.title-select-campaing span{
+    color: #757575 !important;
+    font-size: 14px;
+}
+.textarea-keywords{
+    border: 1px solid #757575;
+    resize: none;
+    width: 100%;
+    min-height: 108px;
+    padding: 5px;
+}
+.flex-container-select{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.border-button-none{
+    border-bottom: none !important;
+}
+.size-change{
+    max-width: 283px;
+}
+.create-btn{
+    width: 96px;
+}
+.option-autopilot-container {
+    border-bottom: 1px solid #757575;
+    max-width: 180px;
+}
+.option-autopilot-container h3{
+    font-size: 18px;
+    color: #222222;
+    margin-bottom: 18px;
+}
+.option-autopilot-container input{
+    padding: 7px 10px;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+}
+.option-autopilot-container input::placeholder{
+    font-size: 14px;
+}
+.autopilot-info-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.change-header-modal-autopilot .modal-title{
+    font-family: 'Ubuntu';
+    font-size: 24px;
+    padding: 35px 55px 25px;
+
+}
+.atopilot-container-width{
+    max-width: 283px;
+}
+.wrapper-autopilot-info{
+    margin-bottom: 40px;
+}
+.checkbox-group-container{
+    padding-bottom: 40px;
+}
+.container-autopilot{
+    padding: 0 60px 0 55px;
+}
+.small-bell .icon-bell{
+    width: 61px;
+    height: 54px;
+}
+.small_desk_window{
+    padding: 21px 60px 21px 55px;
+    display: flex;
+    align-items: center;
+}
+.small_desk_window .desc-window__text{
+    margin-top: 0;
+}
+.small-desk-window-container{
+    padding-right: 0;
+}
+.btn-save-change{
+    width: 161px;
+}
+.tr-style tr{
+    background-color: #ececec !important;
+}
+.wrapper_searchterms table.dataTable tbody td[colspan="13"]{
+    padding: 0;
+}
+#example2_length,
+#example2_filter{
+    display: none;
+}
+#example2_paginate,
+.dataTables_wrapper .dataTables_info{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.dataTables_wrapper .dataTables_info{
+    color: #bdbdbd;
+    font-size: 18px;
+    padding-left: 25px;
+    padding-top: 21px;
 }
