@@ -179,8 +179,7 @@
       <div class="table new-table">
         <div class="wrapper-header-table">
           <div class="wrapper-add-btn">
-            <button type="button" class="header-btn add-remove-btn">Add/Remove</button>
-            <button type="button" class="header-btn update-btn">Update profit margins</button>
+            <button type="button" class="header-btn add-remove-btn">Add Product</button>
           </div>
           <div class="wrapper-data-pickers">
             <div class="d-flex flex-column">
@@ -199,11 +198,6 @@
             </div>
           </div>
            <div class="filters new-filters">
-            <div class="group">
-              <button class="btn ico btn-outline-primary refresh-btn">Refresh</button>
-              <button data-filter-campaigns-btn class="btn icon filter btn-primary">Filters Campaigns</button>
-              <button data-filter-btn class="btn icon filter btn-primary">Filters</button>
-            </div>
             <div class="show-more">
               <p>Show <select>
                 <option>10</option>
@@ -215,44 +209,16 @@
           </div>
         </div>
 
-
-        <div class="legend d-flex align-items-center flex-center">
-          <div class="item d-flex align-items-center new-action">
-            <span class="title">Selected(<span class="count">2</span>)</span>
-            <select class="js-example-basic-single actions icon dubleArrow " name="flag">
-              <option value="0">Action:</option>
-              <option value="1" data-icon='reject'>Reject</option>
-              <option value="2" data-icon='succsess'>Enabled</option>
-              <option value="3" data-icon='delay'>Delay</option>
-              <option value="5" data-icon='autosuccssesed'>Auto suggested</option>
-            </select>
-          </div>
-          <div class="wrapper-control-block">
-            <div class="container-control margin-right-0">
-              <div class="custom-control custom-checkbox control-check">
-                <input type="checkbox" class="custom-control-input" id="tableCheckA99">
-                <label class="custom-control-label" for="tableCheckA99">ShowAll SKU's</label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <table id="example3" class="display new-display" cellspacing="0" width="100%" data-page-length='10'>
+        <table id="example6" class="display new-display" cellspacing="0" width="100%" data-page-length='10'>
           <thead class="new-thead padding-left-thead">
           <tr>
             <th>Product</th>
-            <th>SKU</th>
-            <th>Sales</th>
-            <th>PPC Sales</th>
-            <th>Units</th>
+            <th>Acos</th>
             <th>Orders</th>
-            <th>Avg Price</th>
-            <th>True ACoS</th>
-            <th>FBA FEES</th>
-            <th>PPC Profit</th>
-            <th>True Profit</th>
-            <th>Wizard</th>
-            <th>Inventory</th>
+            <th>Sales Rank</th>
+            <th>Ranking</th>
+            <th>Count Keywords</th>
+            <th>Action</th>
           </tr>
           </thead>
           <tbody class="body-style">
@@ -268,547 +234,135 @@
               </div>
             </td>
             <td>
-              <div class="sku-kod">
-                <a href="">346-4OZ-FBA</a>
+              <div class="table-paragraph">
+                <p>0</p>
               </div>
             </td>
             <td>
               <div class="table-paragraph">
-                <p>$1,093.00</p>
+                <p>1</p>
               </div>
             </td>
-            <td class="details-width">
-              <div class="table-paragraph">
-                <p>$57.98</p>
-              </div>
-            </td>
-            <td class="status-block">
-              <div class="table-paragraph">
-                <p>39</p>
-              </div>
-            </td>
-            <td class="details-budjet">
-              <div class="table-paragraph">
-                <p>955</p>
-              </div>
-            </td>
-            <td>
-              <div class="table-paragraph">
-                <p>N/a</p>
-              </div>
-            </td>
-            <td>
-              <div class="table-paragraph">
-                <p>6.16%</p>
-              </div>
-            </td>
-            <td>
-              <div class="table-paragraph">
-                <p>3,276.00</p>
-              </div>
-            </td>
-            <td>
-              <div class="table-paragraph green-text">
-                <p>484.05</p>
-              </div>
-            </td>
-            <td>
-              <div class="table-paragraph green-text">
-                <p>6060.8</p>
-              </div>
-            </td>
-            <td>
-              <div class="wrapper-switch">
-                <div class="row-switch">
-                  <input type="checkbox" id="unchecked2" class="cbx hidden" checked/>
-                  <label for="unchecked2" class="lbl"></label>
+              <td>
+                <div class="table-paragraph">
+                  <p>103.376</p>
                 </div>
-                <div class="container-btn-settings">
-                  <button type="button" class="btn-settings"></button>
+              </td>
+            <td>
+              <div class="ranking-block">
+                <div class="table-paragraph direction-block margin-right-25">
+                  <p>100</p>
+                  <span>top</span>
+                </div>
+                <div class="table-paragraph direction-block">
+                  <p>+6</p>
+                  <span>change</span>
                 </div>
               </div>
             </td>
             <td>
-              <div class="table-paragraph flex-center-block">
-                <p>N/a</p>
-                <div class="wrapper-question-btn">
-                  <a href="" class="question-btn">?</a>
-                  <div class="question-block">
-                    <div class="container-text-questions">
-                      <p>Your text questions</p>
-                    </div>
-                  </div>
-                </div>
+              <div class="table-paragraph">
+                <p>8</p>
+              </div>
+            </td>
+            <td>
+              <div class="wrapper-btn-table-nav">
+                <button type="button" class="add-some">
+                  <div class="button" data-title="Some text"></div>
+                </button>
+                <button type="button" class="rating">
+                  <div class="button" data-title="Some text"></div>
+                </button>
+                <button type="button" class="move-up">
+                  <div class="button" data-title="Some text"></div>
+                </button>
+                <button type="button" class="delete">
+                  <div class="button" data-title="Some text"></div>
+                </button>
               </div>
             </td>
           </tr>
-            <tr>
-              <td>
-                <div class="campaign-product product-line">
-                  <div class="img-campaing">
-                    <img src="img/img-campaing.png" alt="campaing"/>
-                  </div>
-                  <div class="campaing-table-text">
-                    <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="sku-kod">
-                  <a href="">346-4OZ-FBA</a>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>$1,093.00</p>
-                </div>
-              </td>
-              <td class="details-width">
-                <div class="table-paragraph">
-                  <p>$57.98</p>
-                </div>
-              </td>
-              <td class="status-block">
-                <div class="table-paragraph">
-                  <p>39</p>
-                </div>
-              </td>
-              <td class="details-budjet">
-                <div class="table-paragraph">
-                  <p>955</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>N/a</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>6.16%</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>3,276.00</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph green-text">
-                  <button type="button" class="set-btn">set</button>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph green-text">
-                  <p>6060.8</p>
-                </div>
-              </td>
-              <td>
-                <div class="wrapper-switch">
-                  <div class="row-switch">
-                    <input type="checkbox" id="unchecked3" class="cbx hidden" checked/>
-                    <label for="unchecked3" class="lbl"></label>
-                  </div>
-                  <div class="container-btn-settings">
-                    <button type="button" class="btn-settings"></button>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph flex-center-block">
-                  <p>N/a</p>
-                  <div class="wrapper-question-btn">
-                    <a href="" class="question-btn">?</a>
-                    <div class="question-block">
-                      <div class="container-text-questions">
-                        <p>Your text questions</p>
-                      </div>
+          <tr class="sub-table">
+            <td colspan="7">
+              <div class="header-sub-table">
+                <button type="button" class="search-btn-table">
+                  <span>Keyword Suggestions</span>
+                </button>
+              </div>
+              <table class="open-sub-table">
+                <thead>
+                <tr>
+                  <th>Keyword</th>
+                  <th>Trend</th>
+                  <th>Acos</th>
+                  <th>Orders</th>
+                  <th>BID</th>
+                  <th>Matchtype</th>
+                  <th>Campaign</th>
+                  <th>Position</th>
+                  <th>1 Day Ago</th>
+                  <th>7 Day Ago</th>
+                  <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>
+                    <div class="table-paragraph">
+                      <p>best cat litter</p>
                     </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="campaign-product product-line">
-                  <div class="img-campaing">
-                    <img src="img/img-campaing.png" alt="campaing"/>
-                  </div>
-                  <div class="campaing-table-text">
-                    <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="sku-kod">
-                  <a href="">346-4OZ-FBA</a>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>$1,093.00</p>
-                </div>
-              </td>
-              <td class="details-width">
-                <div class="table-paragraph">
-                  <p>$57.98</p>
-                </div>
-              </td>
-              <td class="status-block">
-                <div class="table-paragraph">
-                  <p>39</p>
-                </div>
-              </td>
-              <td class="details-budjet">
-                <div class="table-paragraph">
-                  <p>955</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>N/a</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>6.16%</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>3,276.00</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>N/a</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph green-text">
-                  <p>6060.8</p>
-                </div>
-              </td>
-              <td>
-                <div class="wrapper-switch">
-                  <div class="row-switch">
-                    <input type="checkbox" id="unchecked4" class="cbx hidden" checked/>
-                    <label for="unchecked4" class="lbl"></label>
-                  </div>
-                  <div class="container-btn-settings">
-                    <button type="button" class="btn-settings"></button>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph flex-center-block">
-                  <p>N/a</p>
-                  <div class="wrapper-question-btn">
-                    <a href="" class="question-btn">?</a>
-                    <div class="question-block">
-                      <div class="container-text-questions">
-                        <p>Your text questions</p>
-                      </div>
+                  </td>
+                  <td>
+                    <div id="graph"></div>
+                  </td>
+                  <td>
+                    <div class="table-paragraph">
+                      <p>15.54</p>
                     </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="campaign-product product-line">
-                  <div class="img-campaing">
-                    <img src="img/img-campaing.png" alt="campaing"/>
-                  </div>
-                  <div class="campaing-table-text">
-                    <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="sku-kod">
-                  <a href="">346-4OZ-FBA</a>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>$1,093.00</p>
-                </div>
-              </td>
-              <td class="details-width">
-                <div class="table-paragraph">
-                  <p>$57.98</p>
-                </div>
-              </td>
-              <td class="status-block">
-                <div class="table-paragraph">
-                  <p>39</p>
-                </div>
-              </td>
-              <td class="details-budjet">
-                <div class="table-paragraph">
-                  <p>955</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>N/a</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>6.16%</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>3,276.00</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>N/a</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph green-text">
-                  <p>6060.8</p>
-                </div>
-              </td>
-              <td>
-                <div class="wrapper-switch">
-                  <div class="row-switch">
-                    <input type="checkbox" id="unchecked5" class="cbx hidden" checked/>
-                    <label for="unchecked5" class="lbl"></label>
-                  </div>
-                  <div class="container-btn-settings">
-                    <button type="button" class="btn-settings"></button>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph flex-center-block">
-                  <p>N/a</p>
-                  <div class="wrapper-question-btn">
-                    <a href="" class="question-btn">?</a>
-                    <div class="question-block">
-                      <div class="container-text-questions">
-                        <p>Your text questions</p>
-                      </div>
+                  </td>
+                  <td>
+                    <div class="table-paragraph">
+                      <p>0</p>
                     </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="campaign-product product-line">
-                  <div class="img-campaing">
-                    <img src="img/img-campaing.png" alt="campaing"/>
-                  </div>
-                  <div class="campaing-table-text">
-                    <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="sku-kod">
-                  <a href="">346-4OZ-FBA</a>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>$1,093.00</p>
-                </div>
-              </td>
-              <td class="details-width">
-                <div class="table-paragraph">
-                  <p>$57.98</p>
-                </div>
-              </td>
-              <td class="status-block">
-                <div class="table-paragraph">
-                  <p>39</p>
-                </div>
-              </td>
-              <td class="details-budjet">
-                <div class="table-paragraph">
-                  <p>955</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>N/a</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>6.16%</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>3,276.00</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>N/a</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph green-text">
-                  <p>6060.8</p>
-                </div>
-              </td>
-              <td>
-                <div class="wrapper-switch">
-                  <div class="row-switch">
-                    <input type="checkbox" id="unchecked6" class="cbx hidden" checked/>
-                    <label for="unchecked6" class="lbl"></label>
-                  </div>
-                  <div class="container-btn-settings">
-                    <button type="button" class="btn-settings"></button>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph flex-center-block">
-                  <p>N/a</p>
-                  <div class="wrapper-question-btn">
-                    <a href="" class="question-btn">?</a>
-                    <div class="question-block">
-                      <div class="container-text-questions">
-                        <p>Your text questions</p>
-                      </div>
+                  </td>
+                  <td>
+                    <div class="table-edited-value new-edit-value table-edite-change">
+                      <input type=text" value="0.60">
+                      <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                      <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
                     </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="campaign-product product-line">
-                  <div class="img-campaing">
-                    <img src="img/img-campaing.png" alt="campaing"/>
-                  </div>
-                  <div class="campaing-table-text">
-                    <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="sku-kod">
-                  <a href="">346-4OZ-FBA</a>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>$1,093.00</p>
-                </div>
-              </td>
-              <td class="details-width">
-                <div class="table-paragraph">
-                  <p>$57.98</p>
-                </div>
-              </td>
-              <td class="status-block">
-                <div class="table-paragraph">
-                  <p>39</p>
-                </div>
-              </td>
-              <td class="details-budjet">
-                <div class="table-paragraph">
-                  <p>955</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>N/a</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>6.16%</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>3,276.00</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph">
-                  <p>N/a</p>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph green-text">
-                  <p>6060.8</p>
-                </div>
-              </td>
-              <td>
-                <div class="wrapper-switch">
-                  <div class="row-switch">
-                    <input type="checkbox" id="unchecked7" class="cbx hidden" checked/>
-                    <label for="unchecked7" class="lbl"></label>
-                  </div>
-                  <div class="container-btn-settings">
-                    <button type="button" class="btn-settings"></button>
-                  </div>
-                </div>
-              </td>
-              <td>
-                <div class="table-paragraph flex-center-block">
-                  <p>N/a</p>
-                  <div class="wrapper-question-btn">
-                    <a href="" class="question-btn">?</a>
-                    <div class="question-block">
-                      <div class="container-text-questions">
-                        <p>Your text questions</p>
-                      </div>
+                    <small>0.60</small>
+                  </td>
+                  <td>
+                    <div class="table-paragraph">
+                      <p>broad</p>
                     </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
+                  </td>
+                  <td class="details-width-new">
+                    <div class="details-container new-details">
+                      <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                    </div>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+
           </tbody>
-          <tfoot>
-          <tr class="footer-info-table">
-            <td colspan="2">
-              <p>Total</p>
-            </td>
-            <td>
-              <p>$55,849.00</p>
-            </td>
-            <td>
-              <p>$8,061.62</p>
-            </td>
-            <td>
-              <p>2,403	</p>
-            </td>
-            <td>
-              <p>629.59</p>
-            </td>
-            <td colspan="2">
-              <p>2,278</p>
-            </td>
-            <td colspan="4">
-              <p>8,598.00</p>
-            </td>
-            <td>
-              <p>0</p>
-            </td>
-          </tr>
-          </tfoot>
         </table>
+        <div class="legend d-flex align-items-center flex-center legend-examle-6">
+          <div class="item d-flex align-items-center new-action">
+            <span class="title">Selected(<span class="count">2</span>)</span>
+          </div>
+        </div>
       </div>
       </div>
     </div>
 
 <!-- Modal -->
 
-  <div uib-modal-window="modal-new-campaing" class="modal ng-scope ng-isolate-scope in" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: block;">
+  <div uib-modal-window="modal-new-campaing" class="modal ng-scope ng-isolate-scope in" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: none;">
     <div class="modal-dialog modal-xl change-modal-width">
       <div class="modal-content  modal-campaing padding-none" uib-modal-transclude="">
         <div class="modal-header ng-scope change-header-modal">
@@ -1132,11 +686,13 @@
   <script src="https://cdn.datatables.net/fixedheader/3.1.3/js/dataTables.fixedHeader.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.colVis.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
   <script src="js/AddTabs.js"></script>
   <script src="js/chosen.jquery.js"></script>
   <script src="js/prism.js"></script>
   <script src="js/init.js"></script>
   <script src="js/jquery-ui.js"></script>
+  <script src="js/morris.min.js"></script>
   <script src="js/main-new-design.js"></script>
   </body>
   </html>

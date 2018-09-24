@@ -237,6 +237,35 @@ $(document).ready(function() {
 
             }]
     } );
+    var table1  = $('#example6').DataTable( {
+        "dom": 'prtp',
+        'order': [[ 2, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [0],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [1],
+                'className': 'px-0'
+            },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            },{
+                "targets": [4,5,6],
+                'className': 'pl-1 pr-1'
+            },{
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+
+            }]
+    } );
 
     var table2  = $('#filter-compaigns1').DataTable( {
         // "dom": 'prtp',
@@ -690,6 +719,23 @@ $(document).ready(function() {
     });
 } );
 
+var day_data = [
+    {"period": "2012-10-01", "licensed": 7407, "sorned": 960},
+    {"period": "2012-09-30", "licensed": 1351, "sorned": 629},
+    {"period": "2012-09-29", "licensed": 3269, "sorned": 518},
+    {"period": "2012-09-20", "licensed": 1246, "sorned": 661},
+    {"period": "2012-09-19", "licensed": 3257, "sorned": 267}
+];
+Morris.Line({
+    element: 'graph',
+    data: day_data,
+    xkey: 'period',
+    ykeys: ['licensed'],
+    labels: ['Licensed', 'SORN'],
+    resize: true,
+    grid: false,
+    axes: false
+});
 
 
 
