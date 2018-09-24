@@ -2134,6 +2134,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
     right: -8px;
     display: none;
+    z-index: 10000;
 }
 .container-text-questions{
     position: relative;
@@ -2281,7 +2282,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 }
 .new_searchterms thead.sorting,
 .new_searchterms .dataTable thead .sorting{
-    background: url(../img/selected_icon/black-arrow.png) no-repeat !important;
+    background: url(../img/selected_icon/double-arrow.png) no-repeat !important;
     background-position: left 45% !important;
 }
 .new_searchterms thead.sorting:first-child,
@@ -2411,7 +2412,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     background-image: none !important;
 }
 .header-table-modal. table.dataTable thead .sorting {
-    background-image: url(../img/double_arrow_darken.png);
+    background-image: url(../img/double-arrow.png);
 }
 table.dataTable thead .sorting:first-child,
 table.dataTable thead .sorting_asc:first-child,
@@ -2961,11 +2962,17 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     background-image: url("../img/radio.png");
     background-repeat: no-repeat;
     width: 14px;
-    height: 13px;
+    height: 14px;
     border-radius: 100%;
 }
 .custom-radio .custom-control-input:checked~.custom-control-label:before{
     background-color: transparent;
+    width: 14px !important;
+    height: 14px !important;
+}
+.custom-radio .custom-control-label::after{
+    top: 1px;
+    left: 12px;
 }
 .container-checked .custom-control-input:checked ~ .custom-control-label::before,
 .container-checked input:checked ~ .container-checked label::before,
@@ -2989,6 +2996,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     width: 94px;
     border-radius: 5px;
     padding: 10px 0;
+    font-family: 'Ubuntu';
 }
 .campaing-next{
     width: 120px;
@@ -3018,7 +3026,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .title-table-modal-campaing span{
     font-size: 14px;
-    color: #757575;
+    color: #757575 !important;
 }
 .custom-campaing.custom-control-input:checked ~ .custom-campaing.custom-control-label::before{
     border: none !important;
@@ -3142,6 +3150,9 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .atopilot-container-width{
     max-width: 283px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .wrapper-autopilot-info{
     margin-bottom: 40px;
@@ -3249,6 +3260,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     border-radius: 100%;
     border: 1px solid #428bca;
     font-family: 'Arial';
+    padding-top: 1px;
 }
 .wrapper-question-btn{
     display: flex;
@@ -3266,4 +3278,127 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .margin-right-0{
     margin-right: 0;
+}
+.width-apdate-profit{
+    max-width: 1105px;
+    width: 100%;
+}
+.select-table-profit{
+    max-width: 73px;
+    width: 100%;
+    border: 1px solid #757575;
+    border-radius: 0;
+    padding: 3px 6px;
+    font-size: 18px;
+    color: #757575;
+    font-family: 'Ubuntu';
+}
+.profit-select-grey{
+    background-color: #ececec;
+}
+.footer-table-profit{
+    min-height: 63px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec; 
+}
+.table-profit thead{
+    background-color: #ececec;
+}
+.table-profit thead th{
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    color: #757575;
+    padding: .5rem .75rem;
+}
+.table-profit tbody td{
+    padding: .5rem .75rem;
+}
+.table-profit tr:hover > td {
+    border-top: 1px rgba(0, 131, 227, 0.5) solid !important;
+    border-bottom: 1px rgba(0, 131, 227, 0.5) solid !important;
+}
+.header-table-profit{
+    min-height: 40px;
+}
+.show-selected{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 25px;
+}
+.show-selected p{
+    font-size: 18px;
+    color: #757575;
+    font-family: 'Ubuntu';
+}
+.error-text{
+    color: #ff5722 !important;
+}
+.error-text a{
+    text-decoration: underline;
+    color: #ff5722 !important;
+}
+.display-flex{
+    display: flex;;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.profit-checked .custom-control-label::after{
+    left: 14px;
+}
+.profit-checked .custom-control-label::before{
+    width: 13px !important;
+    height: 13px !important;
+    border: 1px solid #222222;
+    border-radius: 0;
+    top: 4px;
+    left: 0.9rem;
+}
+.profit-checked .custom-control-input:checked ~ .custom-control-label::before{
+    border: none;
+}
+.profit-checked {
+    width: 13px;
+    height: 13px;
+}
+.small-table-paragraph p{
+    font-size: 14px;
+}
+.wrapper-radio-btn .radio-container{
+    margin-bottom: 30px;
+}
+.wrapper-radio-btn h3{
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.wrapper-negative-select{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px 0 40px;
+    border-bottom: 1px solid #ececec;
+}
+.radio-container .custom-control-label::before{
+    left: 0;
+}
+.radio-container .custom-control-label::after{
+    left: -1px;
+}
+.add-btn{
+    width: 82px;
+    height: 38px;
+}
+.wrapper-text-area{
+    padding: 10px;
+}
+.wrapper-text-area textarea{
+    width: 100%;
+    min-height: 100px;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    color: #222222;
+    padding: 10px;
 }

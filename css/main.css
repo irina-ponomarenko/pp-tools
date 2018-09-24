@@ -501,7 +501,7 @@ table.dataTable .d-flex > .select2 {
       .wrapper_searchterms .dataTable thead [aria-label="ID"] {
         padding-right: 0; }
       .wrapper_searchterms .dataTable thead .sorting {
-        background-image: url(../img/black-arrow.png) !important;
+        background-image: url(../img/double-arrow.png) !important;
       background-position: left 60%;}
       .wrapper_searchterms .dataTable thead .sorting_desc {
         background-image: url(../img/black-arrow.png) !important; }
@@ -1189,7 +1189,7 @@ thead {
   thead [aria-label="ID"] {
     padding-right: 0; }
   thead .sorting {
-    background-image: url(../img/black-arrow.png) !important; }
+    background-image: url(../img/double-arrow.png) !important; }
   thead .sorting_desc {
     background-image: url(../img/black-arrow.png) !important; }
   thead .sorting_asc {

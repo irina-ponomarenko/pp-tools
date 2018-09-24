@@ -812,221 +812,40 @@
     <div class="modal-dialog modal-xl change-modal-width">
       <div class="modal-content  modal-campaing padding-none" uib-modal-transclude="">
         <div class="modal-header ng-scope change-header-modal">
-          <h5 class="modal-title" id="exampleModalLabel1">Add/Remove SKU(S)</h5>
+          <h5 class="modal-title" id="exampleModalLabel1">Add to negative keywords <span>0</span> keywords</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close(false)">
             <span aria-hidden="true"></span>
           </button>
         </div>
         <div class="modal-body ng-scope new-padding-campaing">
-           <div class="container-table-profit">
-             <div class="header-table-profit display-flex">
-               <div class="show-more">
-                <p>Show <select>
-                  <option>10</option>
-                  <option>25</option>
-                  <option>50</option>
-                  <option>100</option>
-                </select> entries</p>
+          <div class="wrapper-negative-select">
+            <div class="wrapper-radio-btn">
+               <h3>TYPE</h3>
+               <div class="custom-control custom-radio radio-container">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">Exact</label>
               </div>
-              <div class="show-selected">
-                <p>You have selected 1393 of 99999 allowed</p>
-                <p class="error-text">Need More? <a href="">Upgrade</a></p>
+               <div class="custom-control custom-radio radio-container">
+                  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio2">Phrase</label>
               </div>
             </div>
-           </div>
-           <div class="wrapper-table-profit">
-             <table id="example2" class="display new-display table-profit" cellspacing="0" width="100%" data-page-length='10'>
-              <thead>
-                 <tr>
-                   <th>
-                      <div class="custom-control custom-checkbox profit-checked">
-                        <input type="checkbox" class="custom-control-input" id="tableCheckAll">
-                        <label class="custom-control-label" for="tableCheckAll"></label>
-                      </div>
-                   </th>
-                   <th>Img</th>
-                   <th>Name</th>
-                   <th>SKU</th>
-                   <th>Asin</th>
-                 </tr>
-               </thead>
-               <tbody>
-                 <tr>
-                   <td>
-                     <div class="custom-control custom-checkbox profit-checked">
-                        <input type="checkbox" class="custom-control-input" id="tableCheckAl2">
-                        <label class="custom-control-label" for="tableCheckAl2"></label>
-                      </div>
-                   </td>
-                   <td>
-                    <div class="container-img-table">
-                      <img src="img/img-campaing.png" alt="images table"/>
-                    </div>
-                   </td>
-                   <td>
-                    <div class="campaing-table-text product-line">
-                      <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
-                    </div>
-                   </td>
-                   <td>
-                      <div class="table-paragraph small-table-paragraph">
-                        <p>100050-SET-MCH</p>
-                      </div>
-                   </td>
-                   <td>
-                      <div class="table-paragraph small-table-paragraph">
-                        <p>B011GU8AE0</p>
-                      </div>
-                   </td>
-                 </tr>
-                  <tr>
-                   <td>
-                     <div class="custom-control custom-checkbox profit-checked">
-                        <input type="checkbox" class="custom-control-input" id="tableCheckAl3">
-                        <label class="custom-control-label" for="tableCheckAl3"></label>
-                      </div>
-                   </td>
-                   <td>
-                    <div class="container-img-table">
-                      <img src="img/img-campaing.png" alt="images table"/>
-                    </div>
-                   </td>
-                   <td>
-                    <div class="campaing-table-text product-line">
-                      <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
-                    </div>
-                   </td>
-                   <td>
-                      <div class="table-paragraph small-table-paragraph">
-                        <p>100050-SET-MCH</p>
-                      </div>
-                   </td>
-                   <td>
-                      <div class="table-paragraph small-table-paragraph">
-                        <p>B011GU8AE0</p>
-                      </div>
-                   </td>
-                 </tr>
-                 <tr>
-                   <td>
-                     <div class="custom-control custom-checkbox profit-checked">
-                        <input type="checkbox" class="custom-control-input" id="tableCheckAl4">
-                        <label class="custom-control-label" for="tableCheckAl4"></label>
-                      </div>
-                   </td>
-                   <td>
-                    <div class="container-img-table">
-                      <img src="img/img-campaing.png" alt="images table"/>
-                    </div>
-                   </td>
-                   <td>
-                    <div class="campaing-table-text product-line">
-                      <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
-                    </div>
-                   </td>
-                   <td>
-                      <div class="table-paragraph small-table-paragraph">
-                        <p>100050-SET-MCH</p>
-                      </div>
-                   </td>
-                   <td>
-                      <div class="table-paragraph small-table-paragraph">
-                        <p>B011GU8AE0</p>
-                      </div>
-                   </td>
-                 </tr>
-                 <tr>
-                   <td>
-                     <div class="custom-control custom-checkbox profit-checked">
-                        <input type="checkbox" class="custom-control-input" id="tableCheckAl5">
-                        <label class="custom-control-label" for="tableCheckAl5"></label>
-                      </div>
-                   </td>
-                   <td>
-                    <div class="container-img-table">
-                      <img src="img/img-campaing.png" alt="images table"/>
-                    </div>
-                   </td>
-                   <td>
-                    <div class="campaing-table-text product-line">
-                      <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
-                    </div>
-                   </td>
-                   <td>
-                      <div class="table-paragraph small-table-paragraph">
-                        <p>100050-SET-MCH</p>
-                      </div>
-                   </td>
-                   <td>
-                      <div class="table-paragraph small-table-paragraph">
-                        <p>B011GU8AE0</p>
-                      </div>
-                   </td>
-                 </tr>
-                  <tr>
-                   <td>
-                     <div class="custom-control custom-checkbox profit-checked">
-                        <input type="checkbox" class="custom-control-input" id="tableCheckAl6">
-                        <label class="custom-control-label" for="tableCheckAl6"></label>
-                      </div>
-                   </td>
-                   <td>
-                    <div class="container-img-table">
-                      <img src="img/img-campaing.png" alt="images table"/>
-                    </div>
-                   </td>
-                   <td>
-                    <div class="campaing-table-text product-line">
-                      <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
-                    </div>
-                   </td>
-                   <td>
-                      <div class="table-paragraph small-table-paragraph">
-                        <p>100050-SET-MCH</p>
-                      </div>
-                   </td>
-                   <td>
-                      <div class="table-paragraph small-table-paragraph">
-                        <p>B011GU8AE0</p>
-                      </div>
-                   </td>
-                 </tr>
-                  <tr>
-                   <td>
-                     <div class="custom-control custom-checkbox profit-checked">
-                        <input type="checkbox" class="custom-control-input" id="tableCheckAl7">
-                        <label class="custom-control-label" for="tableCheckAl7"></label>
-                      </div>
-                   </td>
-                   <td>
-                    <div class="container-img-table">
-                      <img src="img/img-campaing.png" alt="images table"/>
-                    </div>
-                   </td>
-                   <td>
-                    <div class="campaing-table-text product-line">
-                      <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
-                    </div>
-                   </td>
-                   <td>
-                      <div class="table-paragraph small-table-paragraph">
-                        <p>100050-SET-MCH</p>
-                      </div>
-                   </td>
-                   <td>
-                      <div class="table-paragraph small-table-paragraph">
-                        <p>B011GU8AE0</p>
-                      </div>
-                   </td>
-                 </tr>
-               </tbody>
-             </table>
-             <div class="footer-table-profit"></div>
-             <div class="footer-modal-campaing">
-                  <button type="button" class="cancel-btn campaing-cancel close-btn">Close</button>
-                <button type="button" class="campaing-next btn-save-change">Save Changes</button>
+            <div class="wrapper-radio-btn">
+              <h3>negative level</h3>
+               <div class="custom-control custom-radio radio-container">
+                  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio3">Campaign Level</label>
+              </div>
+               <div class="custom-control custom-radio radio-container">
+                  <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio4">AdGroup Level (current adgroup)</label>
+              </div>
             </div>
-           </div>
+          </div>
+           <div class="footer-modal-campaing">
+              <button type="button" class="cancel-btn campaing-cancel close-btn">Close</button>
+              <button type="button" class="campaing-next add-btn">Add</button>
+          </div>
         </div>
       </div>
     </div>
