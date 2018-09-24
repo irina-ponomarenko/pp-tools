@@ -65,7 +65,7 @@ select + .select2-container:hover {
   outline: none; }
 
 .select2-selection__rendered {
-  line-height: 32px !important;
+  line-height: 30px !important;
   color: #757575 !important;
   font-weight: 300;
   outline: none;
@@ -637,7 +637,7 @@ table.dataTable .d-flex > .select2 {
     background: #fd6f6a !important;
     margin: -6px 0 0 0; }
     .wrapper_searchterms .dataTable .color-drop-table .select2.select2-container.select2-container .select2-selection__rendered, .wrapper_searchterms .dataTable .color-drop-table .select2.select2-container.select2-container--open .select2-selection__rendered {
-      color: #fff !important; }
+      color: #222222 !important; }
     .wrapper_searchterms .dataTable .color-drop-table .select2.select2-container.select2-container .select2-selection__arrow, .wrapper_searchterms .dataTable .color-drop-table .select2.select2-container.select2-container--open .select2-selection__arrow {
       background-image: url(../img/double_arrow_light.png); }
   .wrapper_searchterms .dataTable [title="Archived"] {
@@ -721,8 +721,13 @@ table.dataTable .d-flex > .select2 {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important; }
-  .wrapper_searchterms .dataTable .state-a + .select2-container [title="Enabled"]:before, .wrapper_searchterms .dataTable .state-a + .select2-container [title="Archived"]:before, .wrapper_searchterms .dataTable .state-a + .select2-container [title="Paused"]:before {
-    content: "M" !important;}
+   .wrapper_searchterms .dataTable .state-a + .select2-container [title="Archived"]:before, .wrapper_searchterms .dataTable .state-a + .select2-container [title="Paused"]:before {
+    content: "A" !important;}
+  .wrapper_searchterms .dataTable .state-a + .select2-container [title="Paused"]:before {
+  content: "P" !important;}
+.wrapper_searchterms .dataTable .state-a + .select2-container [title="Enabled"]:before{
+  content: "E" !important;
+}
 .wrapper_searchterms .dataTable .state-a + .select2-container [title="Enabled"]:before{
   width: 16px;
   height: 16px;
@@ -731,7 +736,7 @@ table.dataTable .d-flex > .select2 {
   border-radius: 100%;
 }
   .wrapper_searchterms .dataTable .state-m + .select2-container [title="Enabled"]:before, .wrapper_searchterms .dataTable .state-m + .select2-container [title="Archived"]:before, .wrapper_searchterms .dataTable .state-m + .select2-container [title="Paused"]:before {
-    content: "M" !important; }
+    content: "" !important; }
   .wrapper_searchterms .dataTable .table-adgroup {
     display: block;
     font-size: 12px;
@@ -829,22 +834,27 @@ table.dataTable .d-flex > .select2 {
         margin-right: 8px; }
       .wrapper_searchterms .legend .campages .desc {
         color: #798f96; }
-  .wrapper_searchterms .dataTables_wrapper {
+  .wrapper_searchterms .dataTables_wrapper,
+  .dataTables_wrapper{
     position: relative; }
-  .wrapper_searchterms .dataTables_paginate.paging_simple_numbers:nth-of-type(1) {
+  .wrapper_searchterms .dataTables_paginate.paging_simple_numbers:nth-of-type(1),
+  .dataTables_wrapper .dataTables_paginate.paging_simple_numbers:nth-of-type(1){
     position: absolute;
     right: 24px;
     top: -106px; }
-  .wrapper_searchterms .dataTables_paginate.paging_simple_numbers:nth-of-type(2) {
+  .wrapper_searchterms .dataTables_paginate.paging_simple_numbers:nth-of-type(2),
+  .dataTables_wrapper .dataTables_paginate.paging_simple_numbers:nth-of-type(2){
     position: absolute;
     bottom: -45px;
     right: 24px;
     display: flex;
     align-items: center;}
-  .wrapper_searchterms .dataTables_paginate {
+  .wrapper_searchterms .dataTables_paginate,
+  .dataTables_paginate{
     display: flex;
     align-item: center; }
-    .wrapper_searchterms .dataTables_paginate .paginate_button {
+    .wrapper_searchterms .dataTables_paginate .paginate_button,
+    .dataTables_wrapper .dataTables_paginate .paginate_button{
       color: #263238;
       font-size: 18px;
       font-weight: 600;
@@ -855,35 +865,45 @@ table.dataTable .d-flex > .select2 {
       border-radius: 100%;
       cursor: pointer;
     }
-      .wrapper_searchterms .dataTables_paginate .paginate_button:active {
+      .wrapper_searchterms .dataTables_paginate .paginate_button:active,
+      .dataTables_wrapper .dataTables_paginate .paginate_button:active{
         box-shadow: none; }
-      .wrapper_searchterms .dataTables_paginate .paginate_button.current {
+      .wrapper_searchterms .dataTables_paginate .paginate_button.current,
+      .dataTables_wrapper .dataTables_paginate .paginate_button.current{
         border: none;
         background: #428bca;
         color: #ffffff !important;
         box-shadow: 0 4px 4px rgba(121, 143, 150, 0.24); }
-        .wrapper_searchterms .dataTables_paginate .paginate_button.current:hover {
+        .wrapper_searchterms .dataTables_paginate .paginate_button.current:hover,
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
           border: 1px solid #fff;
           background: #fff;
           color: #428bca !important; }
-      .wrapper_searchterms .dataTables_paginate .paginate_button:hover {
+      .wrapper_searchterms .dataTables_paginate .paginate_button:hover,
+      .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
         border: 1px solid #fff;
         background: #fff;
         color: #428bca !important; }
-      .wrapper_searchterms .dataTables_paginate .paginate_button.previous, .wrapper_searchterms .dataTables_paginate .paginate_button.next {
+      .wrapper_searchterms .dataTables_paginate .paginate_button.previous, .wrapper_searchterms .dataTables_paginate .paginate_button.next,
+      .dataTables_wrapper .dataTables_paginate .paginate_button.previous,
+      .dataTables_wrapper .dataTables_paginate .paginate_button.next{
         font-size: 0;
         width: 26px;
         height: 26px;
         background-repeat: no-repeat !important;
         background-position: center !important;
         cursor: pointer; }
-      .wrapper_searchterms .dataTables_paginate .paginate_button.previous {
+      .wrapper_searchterms .dataTables_paginate .paginate_button.previous,
+      .dataTables_wrapper .dataTables_paginate .paginate_button.previous{
         background-image: url("../img/chewron-left.png"); }
-        .wrapper_searchterms .dataTables_paginate .paginate_button.previous:hover {
+        .wrapper_searchterms .dataTables_paginate .paginate_button.previous:hover,
+        .dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover{
           background-image: url("../img/chewron-left.png"); }
-      .wrapper_searchterms .dataTables_paginate .paginate_button.next {
+      .wrapper_searchterms .dataTables_paginate .paginate_button.next,
+      .dataTables_wrapper .dataTables_paginate .paginate_button.next{
         background-image: url("../img/chewron-right.png"); }
-        .wrapper_searchterms .dataTables_paginate .paginate_button.next:hover {
+        .wrapper_searchterms .dataTables_paginate .paginate_button.next:hover,
+        .dataTables_wrapper .dataTables_paginate .paginate_button.next:hover{
           background-image: url("../img/chewron-right.png"); }
   .wrapper_searchterms .selected-control {
     padding: 0 24px 20px 24px;

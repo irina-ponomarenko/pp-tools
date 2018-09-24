@@ -1609,7 +1609,8 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     flex-direction: column;
     padding: 0 65px;
 }
-.modal-visibility{
+.modal-visibility,
+.modal-campaing{
     max-width: 725px;
     width: 100%;
     background-color: #ffffff;
@@ -3191,7 +3192,9 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 #example2_filter,
 #example3_info,
 #example3_filter,
-#example3_length{
+#example3_length,
+#example4_paginate,
+#example5_paginate{
     display: none;
 }
 #example2_paginate,
@@ -3401,4 +3404,30 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     font-family: 'Ubuntu';
     color: #222222;
     padding: 10px;
+}
+.table-profit .pl-0, .px-0,
+.table-profit .pl-1, .px-1{
+    padding-left: 30px !important;
+}
+.table-profit thead .sorting,
+.table-profit thead .sorting_asc,
+.table-profit thead .sorting_desc{
+    background-position: 7px 50% !important;
+}
+.table-profit td.pl-0,
+.table-profit td.px-0,
+.table-profit td.pl-1,
+.table-profit .px-1 {
+    padding-left: 0 !important;
+}
+.table-profit .pl-1:first-child{
+    padding-left: 0 !important;
+}
+.table-update.dataTable thead th:first-child,
+.table-update.dataTable tbody td,
+.table-update.dataTable tbody td:first-child{
+    padding-left: 20px !important;
+}
+.color-drop-table .select2-selection__arrow{
+    top: 1px !important;
 }
