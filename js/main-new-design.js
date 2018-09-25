@@ -88,7 +88,7 @@ $(document).ready(function() {
 
 
   // DataTabless
-  var table1  = $('#example').DataTable( {
+  var table  = $('#example').DataTable( {
     "dom": 'prtp',
     'order': [[ 2, "asc" ]],
     "pagingType": 'simple_numbers',
@@ -150,7 +150,7 @@ $(document).ready(function() {
 
     } );
 
-    var table1  = $('#example3').DataTable( {
+    var table3  = $('#example3').DataTable( {
         // "dom": 'prtp',
         'order': [[ 2, "asc" ]],
         "pagingType": 'simple_numbers',
@@ -179,7 +179,7 @@ $(document).ready(function() {
             }]
     } );
 
-    var table1  = $('#example4').DataTable( {
+    var table4  = $('#example4').DataTable( {
         "dom": 'prtp',
         'order': [[ 2, "asc" ]],
         "pagingType": 'simple_numbers',
@@ -208,7 +208,7 @@ $(document).ready(function() {
 
             }]
     } );
-    var table1  = $('#example5').DataTable( {
+    var table5  = $('#example5').DataTable( {
         "dom": 'prtp',
         'order': [[ 2, "asc" ]],
         "pagingType": 'simple_numbers',
@@ -239,7 +239,7 @@ $(document).ready(function() {
     } );
 
 
-    var table2  = $('#filter-compaigns1').DataTable( {
+    var table7  = $('#filter-compaigns1').DataTable( {
         // "dom": 'prtp',
         'order': [[ 2, "asc" ]],
         "pagingType": 'simple_numbers',
@@ -249,7 +249,7 @@ $(document).ready(function() {
         }]
     });
 
-    var table3  = $('#filter-compaigns2').DataTable( {
+    var table8  = $('#filter-compaigns2').DataTable( {
         // "dom": 'prtp',
         'order': [[ 1, "asc" ]],
         "pagingType": 'simple_numbers',
@@ -258,7 +258,7 @@ $(document).ready(function() {
             'className': 'pl-1 pr-0'
         }]
     });
-    var table2  = $('#filter-compaigns3').DataTable( {
+    var table9  = $('#filter-compaigns3').DataTable( {
         // "dom": 'prtp',
         'order': [[ 2, "asc" ]],
         "pagingType": 'simple_numbers',
@@ -619,7 +619,7 @@ var oInnerTable;
 $(document).ready(function() {
     TableHtml = $('#example2').html();
 
-    var table  = $('#example2').DataTable( {
+    var table2  = $('#example2').DataTable( {
         // "dom": 'prtp',
         "language": {
             "info": "1 of 20 (total 1134)",
@@ -695,7 +695,7 @@ $(document).ready(function() {
 var opinions = [{"id":57,"name":"E061140","fileName":null,"disposition":null,"summary":null,"title":"Marr. of Eustice","opinionDate":"2015-12-10"},{"id":58,"name":"C070296M","fileName":null,"disposition":null,"summary":null,"title":"P. v. Nilsson","opinionDate":"2015-12-10"},{"id":60,"name":"S209643","fileName":null,"disposition":null,"summary":null,"title":"P. v. Stevens","opinionDate":"2015-12-10"}];
 var sections = [{"code":"code of civil procedure","sectionNumber":{"position":-1,"sectionNumber":"177.5"},"refCount":2,"section":{"part":"Chapter","partNumber":"4","title":"Incidental Powers and Duties of Judicial Officers","codeRange":{"sNumber":{"position":168,"sectionNumber":"177"},"eNumber":{"position":171,"sectionNumber":"179"}},"depth":3}},{"code":"code of civil procedure","sectionNumber":{"position":-1,"sectionNumber":"580"},"refCount":16,"section":{"part":"Chapter","partNumber":"1","title":"Judgment in General","codeRange":{"sNumber":{"position":862,"sectionNumber":"577"},"eNumber":{"position":879,"sectionNumber":"582.5"}},"depth":3}}];
 
-function format ( table_id ) {
+function format1 ( table_id ) {
     return '<table class="display new-display" id="example6'+table_id+'">'+
         '<div class="header-sub-table">'+
         '<button type="button" class="search-btn-table">'+
@@ -717,7 +717,7 @@ function format ( table_id ) {
     '<th>Action</th>'+
     '</tr>'+
     '</thead>'+
-    '<tbody>'+
+    '<tbody class="sub-table">'+
     '<tr>'+
     '<td>'+
     '<div class="table-paragraph">'+
@@ -865,7 +865,7 @@ var oInnerTable;
 $(document).ready(function() {
     TableHtml = $('#example6').html();
 
-    var table1  = $('#example6').DataTable( {
+    var table6  = $('#example6').DataTable( {
         "dom": 'prtp',
         'order': [[ 2, "asc" ]],
         "pagingType": 'simple_numbers',
@@ -898,9 +898,9 @@ $(document).ready(function() {
      * Note that the indicator for showing which row is open is not controlled by DataTables,
      * rather it is done here
      */
-    $('#example6 tbody').on('click', '.add-some, function () {
+    $('#example6 tbody').on('click', '.add-some', function () {
         var tr = $(this).closest('tr');
-        var row = table.row( tr );
+        var row = table6.row( tr );
         if ( row.child.isShown() ) {
             //  This row is already open - close it
             row.child.hide();
@@ -908,9 +908,44 @@ $(document).ready(function() {
         }
         else {
             // Open this row
-            row.child( format(iTableCounter) ).show();
+            row.child( format1(iTableCounter) ).show();
             tr.addClass('shown');
             // try datatable stuff
+            var day_data = [
+                {"period": "2012-10-01", "licensed": 7407, "sorned": 960},
+                {"period": "2012-09-30", "licensed": 1351, "sorned": 629},
+                {"period": "2012-09-29", "licensed": 3269, "sorned": 518},
+                {"period": "2012-09-20", "licensed": 1246, "sorned": 661},
+                {"period": "2012-09-19", "licensed": 3257, "sorned": 267}
+            ];
+            Morris.Line({
+                element: 'graph',
+                data: day_data,
+                xkey: 'period',
+                ykeys: ['licensed'],
+                labels: ['Licensed', 'SORN'],
+                resize: true,
+                grid: false,
+                axes: false
+            });
+
+            var day_data1 = [
+                {"period": "2012-10-01", "licensed": 7407, "sorned": 960},
+                {"period": "2012-09-30", "licensed": 1351, "sorned": 629},
+                {"period": "2012-09-29", "licensed": 3269, "sorned": 518},
+                {"period": "2012-09-20", "licensed": 1246, "sorned": 661},
+                {"period": "2012-09-19", "licensed": 3257, "sorned": 267}
+            ];
+            Morris.Line({
+                element: 'graph1',
+                data: day_data1,
+                xkey: 'period',
+                ykeys: ['licensed'],
+                labels: ['Licensed', 'SORN'],
+                resize: true,
+                grid: false,
+                axes: false
+            });
             oInnerTable = $('#example6' + iTableCounter).dataTable({
                 data: sections,
                 autoWidth: true,
@@ -934,41 +969,7 @@ $(document).ready(function() {
 } );
 
 
-var day_data = [
-    {"period": "2012-10-01", "licensed": 7407, "sorned": 960},
-    {"period": "2012-09-30", "licensed": 1351, "sorned": 629},
-    {"period": "2012-09-29", "licensed": 3269, "sorned": 518},
-    {"period": "2012-09-20", "licensed": 1246, "sorned": 661},
-    {"period": "2012-09-19", "licensed": 3257, "sorned": 267}
-];
-Morris.Line({
-    element: 'graph',
-    data: day_data,
-    xkey: 'period',
-    ykeys: ['licensed'],
-    labels: ['Licensed', 'SORN'],
-    resize: true,
-    grid: false,
-    axes: false
-});
 
-var day_data1 = [
-    {"period": "2012-10-01", "licensed": 7407, "sorned": 960},
-    {"period": "2012-09-30", "licensed": 1351, "sorned": 629},
-    {"period": "2012-09-29", "licensed": 3269, "sorned": 518},
-    {"period": "2012-09-20", "licensed": 1246, "sorned": 661},
-    {"period": "2012-09-19", "licensed": 3257, "sorned": 267}
-];
-Morris.Line({
-    element: 'graph1',
-    data: day_data1,
-    xkey: 'period',
-    ykeys: ['licensed'],
-    labels: ['Licensed', 'SORN'],
-    resize: true,
-    grid: false,
-    axes: false
-});
 
 
 

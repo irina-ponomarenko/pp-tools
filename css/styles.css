@@ -3650,6 +3650,9 @@ svg:not(:root) {
 .wrapper_searchterms table.dataTable .body-style td[colspan="7"]{
     padding: 0 !important;
 }
+.sub-table td, th{
+    background-color: #ececec;
+}
 .list-day li a{
     display: flex;
     flex-direction: column;
