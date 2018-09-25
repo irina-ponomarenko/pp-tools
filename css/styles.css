@@ -1052,11 +1052,13 @@ body{
     position: relative;
     font-weight: 300;
 }
-.nav-li-header a:hover{
+.nav-li-header a:hover,
+.active-li-header a{
     color: #428bca;
     transition: .3s;
 }
-.nav-li-header a:hover:before{
+.nav-li-header a:hover:before,
+.active-li-header a:before{
     content: '';
     position: absolute;
     height: 4px;
@@ -2572,9 +2574,11 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     background-size: 18px;
     padding: 27px 50px 25px 33px !important;
 }
-.icon-refresh:hover{
+.icon-refresh:hover,
+.active-li-header .icon-refresh{
     background-image: url("../img/refresh.png");
 }
+
 .wrapper-two-pickers .select2-container--default .select2-selection--single .select2-selection__rendered {
      overflow: inherit;
      text-overflow: inherit;
@@ -2650,6 +2654,31 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .d-flex-ok .dubleArrow + .select2-container .select2-selection__arrow{
    background-image: none;
 }
+.wrapper_searchterms  .dataTable .d-flex-ok  [title="Enabled"]:before{
+    background-image: url("../img/ok-icon.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 21px;
+    height: 21px;
+}
+.wrapper_searchterms  .dataTable .d-flex-ok  [title="Paused"]:before{
+    background-image: url("../img/ok-icon-orange.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 21px;
+    height: 21px;
+}
+.wrapper_searchterms  .dataTable .d-flex-ok  [title="Archived"]:before{
+    background-image: url("../img/ok-icon-grey.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 21px;
+    height: 21px;
+}
+.d-flex-ok +.select2-selection__rendered:before{
+    background-color: transparent;
+
+}
 .wrapper_searchterms .dataTable .d-flex-ok .select2-container {
     border: 0 !important;
     width: 30px !important;
@@ -2683,9 +2712,10 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     min-width: 47px;
     height: 27px;
     border-radius: 0;
-    background-color: transparent !important;
+    background-color: #f09819 !important;
     border: 1px solid #757575 !important;
 }
+
 .wrapper_searchterms .dataTable .color-neg .select2.select2-container.select2-container .select2-selection__arrow {
     background-image: url(../img/chewron-down.png);
 }

@@ -665,13 +665,11 @@ table.dataTable .d-flex > .select2 {
     .wrapper_searchterms .dataTable [title="Enabled"]:before {
       content: '';
       color: #fff;
-      font-size: 12px;
-      display: flex;
-      width: 21px;
-      height: 20px;
-      border-radius: 50%;
-     background-image: url("../img/selected_icon/succsess.png");
-      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      background-color: #7bce4c;
+      background-image: none;
+      border-radius: 100%;
       margin: 6px 0 0 0; }
 .wrapper_searchterms .dataTable [title="Disabled"]:before {
   content: '';
@@ -716,18 +714,13 @@ table.dataTable .d-flex > .select2 {
   background-repeat: no-repeat;
   margin: 4px 0 0 0; }
   .wrapper_searchterms .dataTable .select2-container [title="Enabled"]:before, .wrapper_searchterms .dataTable .select2-container [title="Archived"]:before, .wrapper_searchterms .dataTable .select2-container [title="Paused"]:before {
+    content: " " !important;
     color: #fff !important;
     font-size: 12px !important;
     display: flex !important;
     justify-content: center !important;
-    align-items: center !important; }
-   .wrapper_searchterms .dataTable .state-a + .select2-container [title="Archived"]:before, .wrapper_searchterms .dataTable .state-a + .select2-container [title="Paused"]:before {
-    content: "A" !important;}
-  .wrapper_searchterms .dataTable .state-a + .select2-container [title="Paused"]:before {
-  content: "P" !important;}
-.wrapper_searchterms .dataTable .state-a + .select2-container [title="Enabled"]:before{
-  content: "E" !important;
-}
+    align-items: center !important;
+  }
 .wrapper_searchterms .dataTable .state-a + .select2-container [title="Enabled"]:before{
   width: 16px;
   height: 16px;
@@ -735,8 +728,10 @@ table.dataTable .d-flex > .select2 {
   background-image: none;
   border-radius: 100%;
 }
+.wrapper_searchterms .dataTable .state-a + .select2-container [title="Enabled"]:before, .wrapper_searchterms .dataTable .state-a + .select2-container [title="Archived"]:before, .wrapper_searchterms .dataTable .state-a + .select2-container [title="Paused"]:before {
+  content: "A" !important; }
   .wrapper_searchterms .dataTable .state-m + .select2-container [title="Enabled"]:before, .wrapper_searchterms .dataTable .state-m + .select2-container [title="Archived"]:before, .wrapper_searchterms .dataTable .state-m + .select2-container [title="Paused"]:before {
-    content: "" !important; }
+    content: "M" !important; }
   .wrapper_searchterms .dataTable .table-adgroup {
     display: block;
     font-size: 12px;
