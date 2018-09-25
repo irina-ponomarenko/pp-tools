@@ -237,7 +237,63 @@ $(document).ready(function() {
 
             }]
     } );
+    var table10 = $('#example7').DataTable( {
+        "dom": 'prtp',
+        'order': [[ 2, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [1],
+                'className': 'px-0'
+            },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            },{
+                "targets": [4,5,6],
+                'className': 'pl-1 pr-1'
+            },{
+                "targets": [3],
+                'className': 'pl-1 pr-0'
 
+            }]
+    } );
+
+    var table11 = $('#example8').DataTable( {
+        "dom": 'prtp',
+        'order': [[ 2, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [1],
+                'className': 'px-0'
+            },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            },{
+                "targets": [4,5,6],
+                'className': 'pl-1 pr-1'
+            },{
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+
+            }]
+    } );
 
     var table7  = $('#filter-compaigns1').DataTable( {
         // "dom": 'prtp',
@@ -362,6 +418,57 @@ $(document).ready(function() {
     console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
   });
 
+    $('#datePicker3').daterangepicker({
+        "ranges": {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        },
+        "linkedCalendars": false,
+        "locale": {
+            "format": "MMM D, YYYY",
+            "separator": " - ",
+            "applyLabel": "Apply",
+            "cancelLabel": "Cancel",
+            "fromLabel": "From",
+            "toLabel": "To",
+            "customRangeLabel": "Custom",
+            "weekLabel": "W",
+            "daysOfWeek": [
+                "Su",
+                "Mo",
+                "Tu",
+                "We",
+                "Th",
+                "Fr",
+                "Sa"
+            ],
+            "monthNames": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+            ],
+            "firstDay": 1
+        },
+        "alwaysShowCalendars": true,
+        //"startDate": "01/27/2018",
+        //"endDate": "02/02/2018",
+        "opens": "left"
+    }, function(start, end, label) {
+        console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
+    });
   //ui helper
   $( ".search" ).on('keyup', function() {
     var input = $(this)
@@ -967,11 +1074,67 @@ $(document).ready(function() {
         }
     });
 } );
+$("#test-circle").circliful({
+    animation: 1,
+    animationStep: 5,
+    animateInView: true,
+    foregroundBorderWidth: 15,
+    backgroundBorderWidth: 4,
+    percent: 100,
+    textSize: 28,
+    textStyle: 'font-size: 12px;',
+    textColor: 'rgba(255, 255, 255, 0.5)',
+});
+$("#test-circle2").circliful({
+    animation: 1,
+    animationStep: 5,
+    animateInView: true,
+    foregroundBorderWidth: 15,
+    backgroundBorderWidth: 4,
+    percent: 20,
+    textSize: 28,
+    textStyle: 'font-size: 12px;',
+    textColor: 'rgba(255, 255, 255, 0.5)',
+});
 
+$("#test-circle3").circliful({
+    animation: 1,
+    animationStep: 5,
+    animateInView: true,
+    foregroundBorderWidth: 15,
+    backgroundBorderWidth: 4,
+    percent: 12,
+    textSize: 28,
+    textStyle: 'font-size: 12px;',
+    textColor: 'rgba(255, 255, 255, 0.5)',
+});
+$("#test-circle4").circliful({
+    animation: 1,
+    animationStep: 5,
+    animateInView: true,
+    foregroundBorderWidth: 15,
+    backgroundBorderWidth: 4,
+    percent: 70,
+    textSize: 28,
+    textStyle: 'font-size: 12px;',
+    textColor: 'rgba(255, 255, 255, 0.5)',
+});
 
-
-
-
+Morris.Area({
+    element: 'area',
+    behaveLikeLine: true,
+    data: [
+        {x: '2011 Q1', y: 3, z: 3},
+        {x: '2011 Q2', y: 2, z: 1},
+        {x: '2011 Q3', y: 2, z: 4},
+        {x: '2011 Q4', y: 3, z: 3},
+        {x: '2011 Q5', y: 4, z: 2},
+        {x: '2011 Q6', y: 3, z: 2}
+    ],
+    xkey: 'x',
+    ykeys: ['y', 'z'],
+    labels: ['Y', 'Z']
+});
 
 
 

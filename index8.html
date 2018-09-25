@@ -63,28 +63,22 @@
               </li>
             </ul>
           </nav>
-          <button type="button" class="user-btn">
-            <span class="user-btn-text">info7</span>
-            <span class="chevron-down-btn">
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-            <div class="drop-down-user">
-              <ul class="list-drop-down">
-                <li>
-                  <a href="">your info</a>
-                </li>
-                <li>
-                  <a href="">your info</a>
-                </li>
-                <li>
-                  <a href="">your info</a>
-                </li>
-              </ul>
-              <div class="separeted-link">
-                <a href="">Separeted link</a>
-              </div>
+
+          <div class="profile dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" title="User's menu"  data-step="26" data-intro="Information about your account, global settings, billing."
+               id="dropdown-profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                    class="name user-btn-text" ng-bind="email">info7
+              <i class="fa fa-chevron-down" aria-hidden="true"></i></span></a>
+            <div class="dropdown-menu new-dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-profile">
+              <a ui-sref="userSettings">Profile</a>
+              <a ui-sref="Settings">System settings</a>
+              <a ui-sref="Portal" target="_blank" >Billing</a>
+              <a ui-sref="ContactUs">Contact us</a>
+              <a ui-sref="addUser">Add user</a>
+              <a ui-sref="Logout" class="logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Log Out</a>
+
             </div>
-          </button>
+          </div>
           <button type="button" class="market-btn">
             <span class="round-block">
                 32
@@ -115,8 +109,14 @@
               <li class="nav-list-variant none-padding-left active-option">
                 <a href="">Home</a>
               </li>
+              <li class="nav-list-variant active-option">
+                <a href="">Product List </a>
+              </li>
+              <li class="nav-list-variant active-option">
+                <a href="">Product</a>
+              </li>
               <li class="nav-list-variant none-padding-right">
-                <a href=""> KeywordTracking</a>
+                <a href="">Words Generator</a>
               </li>
             </ul>
           </nav>
@@ -153,7 +153,7 @@
     <!-- end top nav -->
 
     <div class="table-header">
-     <div class="wrapper-charts-graphiks">
+     <div class="wrapper-charts-graphics">
        <div class="container-list-charts">
          <ul class="charts-list">
            <li class="options-charts ravenue-li">
@@ -175,7 +175,9 @@
                 </div>
               </div>
               <div class="wrapper-chart-circul">
-                
+                <div class="wrapper-chart-circul">
+                  <div id="test-circle2"></div>
+                </div>
               </div>
            </li>
            <li class="options-charts profit-li">
@@ -197,10 +199,9 @@
                 </div>
               </div>
               <div class="wrapper-chart-circul">
-                
+                <div id="test-circle"></div>
               </div>
            </li>
-            </li>
            <li class="options-charts acos-li">
               <div class="text-info-charts">
                 <h5>ACoS</h5>
@@ -220,7 +221,9 @@
                 </div>
               </div>
               <div class="wrapper-chart-circul">
-                
+                <div class="wrapper-chart-circul">
+                  <div id="test-circle3"></div>
+                </div>
               </div>
            </li>
             <li class="options-charts orders-li">
@@ -242,12 +245,94 @@
                 </div>
               </div>
               <div class="wrapper-chart-circul">
-                
+                <div class="wrapper-chart-circul">
+                  <div id="test-circle4"></div>
+                </div>
               </div>
+           </li>
+         </ul>
+         <ul class="charts-list">
+           <li class="options-charts info-bottom-block">
+             <div class="container-chart-info">
+               <h5>Total AdSpend</h5>
+               <div class="wrapper-info-data">
+                 <span class="data-charts">$ 42 062</span>
+                 <span class="data-percent">-12%</span>
+               </div>
+             </div>
+
+           </li>
+           <li class="options-charts info-bottom-block">
+             <div class="container-chart-info">
+               <h5>Impressions</h5>
+               <div class="wrapper-info-data">
+                 <span class="data-charts">15 237 521</span>
+                 <span class="data-percent">-16%</span>
+               </div>
+             </div>
+           </li>
+           <li class="options-charts info-bottom-block">
+             <div class="container-chart-info">
+               <h5>Clicks / CTR</h5>
+               <div class="wrapper-info-data">
+                 <span class="data-charts">54 148 / 0.36 % </span>
+                 <span class=""></span>
+               </div>
+             </div>
+           </li>
+           <li class="options-charts info-bottom-block">
+             <div class="container-chart-info">
+               <h5>Conversion</h5>
+               <div class="wrapper-info-data">
+                 <span class="data-charts">14.34 %</span>
+                 <span class="data-percent">-3%</span>
+               </div>
+             </div>
            </li>
          </ul>
        </div>
      </div>
+      <div class="container-graphic-content">
+        <div class="wrapper-header-table border-bottom-0">
+          <div class="wrapper-add-btn">
+          </div>
+          <div class="wrapper-data-pickers flex-position">
+            <ul class="list-day">
+              <li>
+                <a href="" class="active-link-list">
+                  <span class="last-span">Last</span>
+                  <span class="days">7 days</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="last-span">Last</span>
+                  <span class="days">14 days</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="last-span">Last</span>
+                  <span class="days">30 days</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="last-span">Last</span>
+                  <span class="days">60 days</span>
+                </a>
+              </li>
+            </ul>
+            <div class="d-flex flex-column">
+              <span class="title range-title">Select Data Range</span>
+              <input type="text" id="datePicker3" class="form-control datepicker">
+            </div>
+          </div>
+        </div>
+        <div class="graphic-content">
+          <div id="area"></div>
+        </div>
+      </div>
     </div>
 
     <div class="table-section">
@@ -317,7 +402,7 @@
             </div>
             <div role='contents'>
                 <div>
-                  <table id="example6" class="display new-display" cellspacing="0" width="100%" data-page-length='10'>
+                  <table id="example7" class="display new-display" cellspacing="0" width="100%" data-page-length='10'>
                     <thead class="new-thead padding-left-thead">
                     <tr>
                       <th>Campaign</th>
@@ -703,7 +788,7 @@
                     </div>
                   </div>
                 <div>
-                  <table id="example6" class="display new-display" cellspacing="0" width="100%" data-page-length='10'>
+                  <table id="example8" class="display new-display" cellspacing="0" width="100%" data-page-length='10'>
                     <thead class="new-thead padding-left-thead">
                     <tr>
                       <th>Campaign</th>
@@ -1428,6 +1513,7 @@
   <script src="js/init.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/morris.min.js"></script>
+  <script src="js/jquery.circliful.js"></script>
   <script src="js/main-new-design.js"></script>
   </body>
   </html>
