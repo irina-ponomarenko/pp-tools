@@ -237,35 +237,7 @@ $(document).ready(function() {
 
             }]
     } );
-    var table1  = $('#example6').DataTable( {
-        "dom": 'prtp',
-        'order': [[ 2, "asc" ]],
-        "pagingType": 'simple_numbers',
-        "columnDefs":  [{
-            "targets": [0],
-            "orderable": false,
-            'className': 'pl-1'
-        },
-            {
-                "targets": [1],
-                'className': 'px-0'
-            },
-            {
-                "targets": [2],
-                'className': 'pl-0'
-            },
-            {
-                "targets": [3],
-                'className': 'pl-1 pr-0'
-            },{
-                "targets": [4,5,6],
-                'className': 'pl-1 pr-1'
-            },{
-                "targets": [3],
-                'className': 'pl-1 pr-0'
 
-            }]
-    } );
 
     var table2  = $('#filter-compaigns1').DataTable( {
         // "dom": 'prtp',
@@ -719,6 +691,249 @@ $(document).ready(function() {
     });
 } );
 
+
+var opinions = [{"id":57,"name":"E061140","fileName":null,"disposition":null,"summary":null,"title":"Marr. of Eustice","opinionDate":"2015-12-10"},{"id":58,"name":"C070296M","fileName":null,"disposition":null,"summary":null,"title":"P. v. Nilsson","opinionDate":"2015-12-10"},{"id":60,"name":"S209643","fileName":null,"disposition":null,"summary":null,"title":"P. v. Stevens","opinionDate":"2015-12-10"}];
+var sections = [{"code":"code of civil procedure","sectionNumber":{"position":-1,"sectionNumber":"177.5"},"refCount":2,"section":{"part":"Chapter","partNumber":"4","title":"Incidental Powers and Duties of Judicial Officers","codeRange":{"sNumber":{"position":168,"sectionNumber":"177"},"eNumber":{"position":171,"sectionNumber":"179"}},"depth":3}},{"code":"code of civil procedure","sectionNumber":{"position":-1,"sectionNumber":"580"},"refCount":16,"section":{"part":"Chapter","partNumber":"1","title":"Judgment in General","codeRange":{"sNumber":{"position":862,"sectionNumber":"577"},"eNumber":{"position":879,"sectionNumber":"582.5"}},"depth":3}}];
+
+function format ( table_id ) {
+    return '<table class="display new-display" id="example6'+table_id+'">'+
+        '<div class="header-sub-table">'+
+        '<button type="button" class="search-btn-table">'+
+        '<span>Keyword Suggestions</span>'+
+    '</button>'+
+    '</div>'+
+        '<thead>'+
+        '<tr>'+
+        '<th>Keyword</th>'+
+        '<th>Trend</th>'+
+        '<th>Acos</th>'+
+        '<th>Orders</th>'+
+        '<th>BID</th>'+
+        '<th>Matchtype</th>'+
+        '<th>Campaign</th>'+
+        '<th>Position</th>'+
+        '<th>1 Day Ago</th>'+
+    '<th>7 Day Ago</th>'+
+    '<th>Action</th>'+
+    '</tr>'+
+    '</thead>'+
+    '<tbody>'+
+    '<tr>'+
+    '<td>'+
+    '<div class="table-paragraph">'+
+        '<p>best cat litter</p>'+
+    '</div>'+
+    '</td>'+
+    '<td>'+
+    '<div id="graph"></div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>15.54</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>0</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-edited-value new-edit-value table-edite-change">'+
+        '<input type=text" value="0.60">'+
+    '<button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>'+
+        '<button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>'+
+        '</div>'+
+        '<small>0.60</small>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>broad</p>'+
+        '</div>'+
+        '</td>'+
+        '<td class="details-width-new">'+
+        '<div class="details-container new-details">'+
+        '<a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm...</a>'+
+    '</div>'+
+    '</td>'+
+    '<td>'+
+    '<div class="table-paragraph flex-position">'+
+        '<p>154</p><span>/</span><p class="color-orange arrow-block-down">47</p>'+
+    '</div>'+
+    '</td>'+
+    '<td>'+
+    '<div class="table-paragraph">'+
+        '<p>107</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>109</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="wrapper-btn-table-nav">'+
+        '<button type="button" class="add-some">'+
+        '<div class="button" data-title="Some text"></div>'+
+        '</button>'+
+        '<button type="button" class="rating">'+
+        '<div class="button" data-title="Some text"></div>'+
+        '</button>'+
+        '<button type="button" class="move-up">'+
+        '<div class="button" data-title="Some text"></div>'+
+        '</button>'+
+        '<button type="button" class="delete">'+
+        '<div class="button" data-title="Some text"></div>'+
+        '</button>'+
+        '</div>'+
+        '</td>'+
+        '</tr>'+
+        '<tr>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>best cat litter</p>'+
+    '</div>'+
+    '</td>'+
+    '<td>'+
+    '<div id="graph1"></div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>15.54</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>0</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-edited-value new-edit-value table-edite-change">'+
+        '<input type=text" value="0.60">'+
+    '<button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>'+
+        '<button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>'+
+        '</div>'+
+        '<small>0.60</small>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>broad</p>'+
+        '</div>'+
+        '</td>'+
+        '<td class="details-width-new">'+
+        '<div class="details-container new-details">'+
+        '<a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm...</a>'+
+    '</div>'+
+    '</td>'+
+    '<td>'+
+    '<div class="table-paragraph flex-position">'+
+        '<p>154</p><span>/</span><p class="color-green arrow-block-up">47</p>'+
+    '</div>'+
+    '</td>'+
+    '<td>'+
+    '<div class="table-paragraph">'+
+        '<p>107</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="table-paragraph">'+
+        '<p>109</p>'+
+        '</div>'+
+        '</td>'+
+        '<td>'+
+        '<div class="wrapper-btn-table-nav">'+
+        '<button type="button" class="add-some">'+
+        '<div class="button" data-title="Some text"></div>'+
+        '</button>'+
+        '<button type="button" class="rating">'+
+        '<div class="button" data-title="Some text"></div>'+
+        '</button>'+
+        '<button type="button" class="move-up">'+
+        '<div class="button" data-title="Some text"></div>'+
+        '</button>'+
+        '<button type="button" class="delete">'+
+        '<div class="button" data-title="Some text"></div>'+
+        '</button>'+
+        '</div>'+
+        '</td>'+
+        '</tr>'+
+        '</tbody>'+
+        '</table>';
+}
+var iTableCounter=1;
+var oInnerTable;
+
+$(document).ready(function() {
+    TableHtml = $('#example6').html();
+
+    var table1  = $('#example6').DataTable( {
+        "dom": 'prtp',
+        'order': [[ 2, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [0],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [1],
+                'className': 'px-0'
+            },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            },{
+                "targets": [4,5,6],
+                'className': 'pl-1 pr-1'
+            },{
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+
+            }]
+    } );
+    /* Add event listener for opening and closing details
+     * Note that the indicator for showing which row is open is not controlled by DataTables,
+     * rather it is done here
+     */
+    $('#example6 tbody').on('click', '.add-some, function () {
+        var tr = $(this).closest('tr');
+        var row = table.row( tr );
+        if ( row.child.isShown() ) {
+            //  This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        }
+        else {
+            // Open this row
+            row.child( format(iTableCounter) ).show();
+            tr.addClass('shown');
+            // try datatable stuff
+            oInnerTable = $('#example6' + iTableCounter).dataTable({
+                data: sections,
+                autoWidth: true,
+                deferRender: true,
+                info: false,
+                lengthChange: false,
+                ordering: false,
+                paging: false,
+                scrollX: false,
+                scrollY: false,
+                searching: false,
+                columns:[
+                    { data:'refCount' },
+                    { data:'section.codeRange.sNumber.sectionNumber' },
+                    { data:'section.title' }
+                ]
+            });
+            iTableCounter = iTableCounter + 1;
+        }
+    });
+} );
+
+
 var day_data = [
     {"period": "2012-10-01", "licensed": 7407, "sorned": 960},
     {"period": "2012-09-30", "licensed": 1351, "sorned": 629},
@@ -737,6 +952,23 @@ Morris.Line({
     axes: false
 });
 
+var day_data1 = [
+    {"period": "2012-10-01", "licensed": 7407, "sorned": 960},
+    {"period": "2012-09-30", "licensed": 1351, "sorned": 629},
+    {"period": "2012-09-29", "licensed": 3269, "sorned": 518},
+    {"period": "2012-09-20", "licensed": 1246, "sorned": 661},
+    {"period": "2012-09-19", "licensed": 3257, "sorned": 267}
+];
+Morris.Line({
+    element: 'graph1',
+    data: day_data1,
+    xkey: 'period',
+    ykeys: ['licensed'],
+    labels: ['Licensed', 'SORN'],
+    resize: true,
+    grid: false,
+    axes: false
+});
 
 
 

@@ -684,7 +684,7 @@ body{
     max-width: 288px;
     margin-right: 30px;
 }
-.wrapper-img-tabs image{
+.wrapper-img-tabs img{
     max-width: 288px;
     width: 100%;
 }
@@ -1759,7 +1759,6 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     font-family: 'Ubuntu';
     white-space: nowrap;
     font-weight: 300;
-    max-width: 50%;
     border-bottom: 1px solid #ececec;
 }
 .addui-Tabs .addui-Tabs-tabHolder .addui-Tabs-tab.addui-Tabs-active {
@@ -2947,7 +2946,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     outline: none;
     background-image: url(../img/chewron-down.png);
     background-repeat: no-repeat;
-    background-position: 100% 50%;
+    background-position: 100% 60%;
     color: #428bca;
     margin-right: 6px;
     -webkit-appearance: none;
@@ -3434,6 +3433,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .direction-block{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .direction-block span{
     font-size: 14px;
@@ -3546,6 +3546,13 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .open-sub-table thead th,
 .open-sub-table tbody td{
     background-color: #ececec !important;
+    color: #757575;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+}
+.wrapper_searchterms .open-sub-table thead th{
+    padding-left: 30px;
+    border-bottom: 1px solid #ffffff;
 }
 
 .morris-hover {
@@ -3574,7 +3581,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     white-space: nowrap;
     margin: 0.1em 0
 }
-#graph {
+#graph, #graph1 {
     max-width: 180px;
     width: 100%;
     max-height: 50px;
@@ -3602,8 +3609,234 @@ svg:not(:root) {
     margin-top: 5px;
     margin-left: 10px;
 }
+.table-edite-change input{
+    height: 26px;
+}
 .details-width-new .details-container{
     max-width: 237px;
 }
+.hidden-body{
+    overflow: hidden;
+}
+.color-orange{
+    color: #ff5722 !important;
+}
+.color-green{
+    color: #388e3c !important;
+}
+.flex-position{
+    display: flex;
+    align-items: center;
+}
+.arrow-block-down,
+.arrow-block-up{
+    position: relative;
+    padding-right: 17px;
+}
+.arrow-block-down:before,
+.arrow-block-up:before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 0;
+    top: 6px;
+    background: url("../img/arrow-orange.png") no-repeat;
+}
+.arrow-block-up:before{
+     background: url("../img/arrow-green.png") no-repeat;
+}
 
-
+.wrapper_searchterms table.dataTable .body-style td[colspan="7"]{
+    padding: 0 !important;
+}
+.list-day li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list-day li a span{
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+.last-span{
+    font-size: 14px;
+    color: #757575;
+}
+.days{
+   color: #222222;
+}
+.list-day{
+    display: flex;
+    margin-right: 40px;
+}
+.list-day li a{
+    padding: 15px 25px 10px 25px;
+}
+.active-link-list span{
+    color: #428bca;
+}
+.active-link-list{
+    border-bottom: 4px solid #428bca;
+}
+.flex-position{
+    display: flex;
+}
+.smart-icon,
+.campaing-tab{
+    background-image: url("../img/smart.png");
+    background-repeat: no-repeat;
+    background-size: 14px 15px;
+    background-position: 25px 50%;
+}
+.campaing-tab{
+    background-image: url("../img/table-black.png");
+}
+.container-role-tabs{
+    max-width: 270px;
+}
+.container-role-tabs div{
+    max-width: auto !important;
+    padding-left: 52px !important;
+    padding-right: 25px !important;
+    text-align: center !important;
+    border-bottom: 4px solid #ffffff !important;
+}
+.new-campaing-tabs .addui-Tabs{
+    position: relative;
+}
+.new-campaing-tabs .addui-Tabs .addui-Tabs-tabHolder {
+    display: flex;
+    position: absolute;
+    top: -50px;
+}
+.addui-Tabs .container-role-tabs .addui-Tabs-tab.addui-Tabs-active{
+    border-bottom: 4px solid #428bca !important;
+}
+.new-campaing-tabs .addui-Tabs{
+    max-width: 100% !important;
+}
+.campaing-tab.addui-Tabs-active{
+     background-image: url("../img/table.png");
+}
+.smart-icon.addui-Tabs-active{
+     background-image: url("../img/smart-blue.png");
+}
+.buy-btn{
+    width: 99px;
+    height: 30px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    background-color: #ff5722;
+    border-radius: 5px;
+    border: 1px solid #ff5722;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+}
+.buy-btn:hover{
+    transition: .3s;
+    background-color: transparent;
+    color: #ff5722;
+}
+.trial-wrapper{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.trial-wrapper p{
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #222222;
+}
+.trial-wrapper p span{
+    color: #ff5722;
+}
+.charts-list{
+    display: flex;
+}
+.options-charts{
+    padding: 28px 26px 30px 37px;
+}
+.ravenue-li{
+    background-color: #4caf50;
+}
+.text-info-charts h5{
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.info-chart span{
+     font-family: 'Ubuntu';
+    color: #ffffff;
+    font-weight: 300;
+}
+.total-info,
+.price-chart{
+    font-size: 24px;
+}
+.percent-number{
+    font-size: 18px;
+}
+.color-change span{
+    color: #ffffff;
+    opacity: 0.7;
+}
+.text-info-charts{
+ max-width: 254px;
+ width: 100%;
+}
+.info-chart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.color-change{
+    margin-top: 11px;
+}
+.percent-up,
+.percent-down,
+.percent-opacity-up{
+    position: relative;
+    padding-right: 20px;
+}
+.percent-up:before,
+.percent-down:before,
+.percent-opacity-up:before{
+    content: '';
+    position: absolute;
+    background: url("../img/arrow-white-up.png") no-repeat center;
+    width: 17px;
+    height: 17px;
+    right: 0;
+}
+.percent-down:before{
+   background: url("../img/arrow-green-down.png") no-repeat center;
+}
+.percent-opacity-up:before{
+    background: url("../img/arrow-opacity-up.png") no-repeat center;
+}
+.options-charts{
+    max-width: 443px;
+    width: 100%;
+    margin-right: 30px;
+}
+.options-charts:last-child{
+    margin-right: 0;
+}
+.wrapper-chart-circul{
+    max-width: 102px;
+    width: 100%;
+}
+.profit-li{
+    background-color: #ffc107;
+}
+.acos-li{
+    background-color: #536dfe;
+}
+.orders-li{
+    background-color: #f44336;
+}

@@ -421,13 +421,13 @@ table.dataTable .d-flex > .select2 {
         right: 10px;
         width: 10px;
         height: 32px;
-        background-image: url("../img/selected_icon/icon-close.png");
+        background-image: url("../img/selected_icon/icon-close-grey.png");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 14px;
+        background-size: 10px;
         cursor: pointer;
         transition: .1s ease;
-        opacity: 0; }
+        opacity: 1; }
       .wrapper_searchterms .label .search.active + .search-close {
         opacity: 1; }
   .wrapper_searchterms .btn.filter {
