@@ -90,6 +90,7 @@ $(document).ready(function() {
   // DataTabless
   var table  = $('#example').DataTable( {
     "dom": 'prtp',
+    "scrollY":    "450px",
     'order': [[ 2, "asc" ]],
     "pagingType": 'simple_numbers',
     "columnDefs":  [{

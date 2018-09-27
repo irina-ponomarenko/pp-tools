@@ -851,7 +851,7 @@ table.dataTable .d-flex > .select2 {
     .wrapper_searchterms .dataTables_paginate .paginate_button,
     .dataTables_wrapper .dataTables_paginate .paginate_button{
       color: #263238;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600;
       background-color: transparent;
       border: 1px solid #e4e9ed;
