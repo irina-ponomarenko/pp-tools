@@ -4023,7 +4023,8 @@ svg:not(:root) {
     font-family: 'Ubuntu';
     margin-right: 15px;
 }
-.data-percent{
+.data-percent,
+.green-percent{
     font-weight: 300;
     font-family: 'Ubuntu';
     font-size: 18px;
@@ -4031,7 +4032,11 @@ svg:not(:root) {
     position: relative;
     padding-right: 23px;
 }
-.data-percent:before{
+.green-percent{
+    color: #4caf50;
+}
+.data-percent:before,
+.green-percent:before{
     content: '';
     position: absolute;
     right: 0;
@@ -4040,6 +4045,9 @@ svg:not(:root) {
     width: 15px;
     height: 18px;
     background-size: contain;
+}
+.green-percent:before{
+    background: url("../img/arrow-green.png") no-repeat;
 }
 .charts-list{
     margin-bottom: 32px;
@@ -4189,26 +4197,119 @@ svg:not(:root) {
     display: flex;
     flex-direction: column;
 }
-.modal-table{
-    width: 100%;
-    display: inline-block;
-}
-.header-table-modal {
-    display: inline-block;
-    width: 100%;
-}
-.modal-dialog {
-    max-width: 1140px;
-}
 .modal-content {
    border: none;
 }
-.body-table{
-    display: inline-block;
-    height: 290px;
-    overflow-y: auto;
-    width: 100%;
-}
 .tbody-width-column tr td:last-child{
     width: 90%;
+}
+.dataTables_wrapper.no-footer .dataTables_scrollBody{
+    border-bottom: 1px solid #ececec;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: none;
+    border-right: none;
+    border-bottom: 0;
+    border-left: none;
+}
+.dropdown-content-toggle{
+    width: 47px;
+    padding: 0 10px 0 3px !important;
+    background-color: #ffffff;
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+    background-image: url(../img/chewron-down.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 75% 50%;
+}
+.wrapper_searchterms .round.paused {
+    background-color: #f09819;
+}
+.item-variant{
+    display: flex;
+}
+.true.item-variant{
+    display: flex;
+}
+.wrapper_searchterms .dropdown .dropdown-toggle:hover, .wrapper_searchterms .dropdown .dropdown-toggle[aria-expanded="true"] {
+    background-color: rgba(121, 143, 150, 0.2) !important;
+}
+.wrapper_searchterms .dropdown .dropdown-menu {
+    min-width: 0;
+    padding: 12px 6px;
+    border: 0;
+    margin-top: 5px;
+    box-shadow: 0 8px 16px rgba(121, 143, 150, 0.24), 0 0 8px rgba(121, 143, 150, 0.12) !important;
+}
+.wrapper_searchterms .dropdown .dropdown-menu .dropdown-item {
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+.wrapper_searchterms .dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(121, 143, 150, 0.2) !important;
+}
+.show .colored-menu{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper_searchterms .drop-down-colored{
+    border: 1px solid #222222 !important;
+}
+.wrapper_searchterms .dropdown.colored.checked .drop-down-colored {
+    background-color: #f09819 !important;
+    color: #fff;
+    padding: 0 6px;
+    border-radius: 0;
+    width: 53px;
+}
+.wrapper_searchterms .dropdown.colored.checked .drop-down-colored span {
+    color: #fff;
+}
+.wrapper_searchterms .dropdown.colored .drop-down-colored span {
+    display: inline-block;
+    line-height: initial;
+    margin-top: 0;
+    min-width: 19px;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+.wrapper_searchterms .dropdown .drop-down-colored::after {
+    background-image: url(../img/chewron-down.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    content: '';
+    height: 16px;
+    width: 13px;
+    font-size: 0;
+    margin-left: 2px;
+}
+.wrapper_searchterms .dropdown.colored .drop-down-colored {
+     background-color: #fff !important;
+     height: 27px;
+     color: #263238;
+     padding-left: 6px;
+ }
+.wrapper_searchterms .dropdown .drop-down-colored::after {
+    background-image: url(../img/chewron-down.png);
+    background-position: center;
+    content: '';
+    height: 16px;
+    width: 13px;
+    font-size: 0;
+}
+.wrapper_searchterms .dropdown.colored .dropdown-menu .dropdown-item {
+    padding: 4px 10px;
+    height: 27px;
+    min-width: 45px;
 }

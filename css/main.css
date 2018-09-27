@@ -637,7 +637,7 @@ table.dataTable .d-flex > .select2 {
     background: #fd6f6a !important;
     margin: -6px 0 0 0; }
     .wrapper_searchterms .dataTable .color-drop-table .select2.select2-container.select2-container .select2-selection__rendered, .wrapper_searchterms .dataTable .color-drop-table .select2.select2-container.select2-container--open .select2-selection__rendered {
-      color: #222222 !important; }
+      color: #ffffff !important; }
     .wrapper_searchterms .dataTable .color-drop-table .select2.select2-container.select2-container .select2-selection__arrow, .wrapper_searchterms .dataTable .color-drop-table .select2.select2-container.select2-container--open .select2-selection__arrow {
       background-image: url(../img/double_arrow_light.png); }
   .wrapper_searchterms .dataTable [title="Archived"] {

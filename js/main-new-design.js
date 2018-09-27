@@ -326,6 +326,7 @@ $(document).ready(function() {
 
     var table7  = $('#filter-compaigns1').DataTable( {
         // "dom": 'prtp',
+        "scrollY":        "310px",
         'order': [[ 2, "asc" ]],
         "pagingType": 'simple_numbers',
         "columnDefs":  [{
@@ -336,6 +337,7 @@ $(document).ready(function() {
 
     var table8  = $('#filter-compaigns2').DataTable( {
         // "dom": 'prtp',
+        "scrollY":        "310px",
         'order': [[ 1, "asc" ]],
         "pagingType": 'simple_numbers',
         "columnDefs":  [{
