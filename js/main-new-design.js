@@ -294,6 +294,35 @@ $(document).ready(function() {
 
             }]
     } );
+    var table12  = $('#example9').DataTable( {
+        "dom": 'prtp',
+        'order': [[ 2, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [0],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [1],
+                'className': 'px-0'
+            },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            },{
+                "targets": [4,5,6],
+                'className': 'pl-1 pr-1'
+            },{
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+
+            }]
+    } );
 
     var table7  = $('#filter-compaigns1').DataTable( {
         // "dom": 'prtp',
@@ -1074,50 +1103,53 @@ $(document).ready(function() {
         }
     });
 } );
-$("#test-circle").circliful({
-    animation: 1,
-    animationStep: 5,
-    animateInView: true,
-    foregroundBorderWidth: 15,
-    backgroundBorderWidth: 4,
-    percent: 100,
-    textSize: 28,
-    textStyle: 'font-size: 12px;',
-    textColor: 'rgba(255, 255, 255, 0.5)',
-});
-$("#test-circle2").circliful({
-    animation: 1,
-    animationStep: 5,
-    animateInView: true,
-    foregroundBorderWidth: 15,
-    backgroundBorderWidth: 4,
-    percent: 20,
-    textSize: 28,
-    textStyle: 'font-size: 12px;',
-    textColor: 'rgba(255, 255, 255, 0.5)',
-});
+$(document).ready(function () {
+    $("#test-circle").circliful({
+        animation: 1,
+        animationStep: 5,
+        animateInView: true,
+        foregroundBorderWidth: 15,
+        backgroundBorderWidth: 4,
+        percent: 100,
+        textSize: 28,
+        textStyle: 'font-size: 12px;',
+        textColor: 'rgba(255, 255, 255, 0.5)',
+    });
+    $("#test-circle2").circliful({
+        animation: 1,
+        animationStep: 5,
+        animateInView: true,
+        foregroundBorderWidth: 15,
+        backgroundBorderWidth: 4,
+        percent: 20,
+        textSize: 28,
+        textStyle: 'font-size: 12px;',
+        textColor: 'rgba(255, 255, 255, 0.5)',
+    });
 
-$("#test-circle3").circliful({
-    animation: 1,
-    animationStep: 5,
-    animateInView: true,
-    foregroundBorderWidth: 15,
-    backgroundBorderWidth: 4,
-    percent: 12,
-    textSize: 28,
-    textStyle: 'font-size: 12px;',
-    textColor: 'rgba(255, 255, 255, 0.5)',
-});
-$("#test-circle4").circliful({
-    animation: 1,
-    animationStep: 5,
-    animateInView: true,
-    foregroundBorderWidth: 15,
-    backgroundBorderWidth: 4,
-    percent: 70,
-    textSize: 28,
-    textStyle: 'font-size: 12px;',
-    textColor: 'rgba(255, 255, 255, 0.5)',
+    $("#test-circle3").circliful({
+        animation: 1,
+        animationStep: 5,
+        animateInView: true,
+        foregroundBorderWidth: 15,
+        backgroundBorderWidth: 4,
+        percent: 12,
+        textSize: 28,
+        textStyle: 'font-size: 12px;',
+        textColor: 'rgba(255, 255, 255, 0.5)',
+    });
+    $("#test-circle4").circliful({
+        animation: 1,
+        animationStep: 5,
+        animateInView: true,
+        foregroundBorderWidth: 15,
+        backgroundBorderWidth: 4,
+        percent: 70,
+        textSize: 28,
+        textStyle: 'font-size: 12px;',
+        textColor: 'rgba(255, 255, 255, 0.5)',
+    });
+
 });
 
 Morris.Area({

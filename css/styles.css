@@ -3145,6 +3145,9 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .img-campaing{
     margin-right: 10px;
 }
+.img-campaing img{
+    max-width: 40px;
+}
 .campaign-product{
     display: flex;
     align-items: center;
@@ -3294,7 +3297,8 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 #example3_filter,
 #example3_length,
 #example4_paginate,
-#example5_paginate{
+#example5_paginate,
+#example9_paginate{
     display: none;
 }
 #example2_paginate,
@@ -3480,7 +3484,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .wrapper-negative-select{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 10px 60px 0 40px;
     border-bottom: 1px solid #ececec;
@@ -3522,7 +3526,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     padding-left: 0 !important;
 }
 .table-profit .pl-1:first-child{
-    padding-left: 0 !important;
+    padding-left: 15px !important;
 }
 .table-update.dataTable thead th:first-child,
 .table-update.dataTable tbody td,
@@ -4159,6 +4163,11 @@ svg:not(:root) {
     border: 1px solid #428bca;
     background-position: center;
 }
+.nvtooltip {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
 .checkbox-welcome .custom-control-label::before, .checkbox-welcome .custom-control-label::after {
     position: absolute;
     top: 0rem;
@@ -4179,4 +4188,27 @@ svg:not(:root) {
 .show .state-a-select{
     display: flex;
     flex-direction: column;
+}
+.modal-table{
+    width: 100%;
+    display: inline-block;
+}
+.header-table-modal {
+    display: inline-block;
+    width: 100%;
+}
+.modal-dialog {
+    max-width: 1140px;
+}
+.modal-content {
+   border: none;
+}
+.body-table{
+    display: inline-block;
+    height: 290px;
+    overflow-y: auto;
+    width: 100%;
+}
+.tbody-width-column tr td:last-child{
+    width: 90%;
 }
