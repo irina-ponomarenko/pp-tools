@@ -215,7 +215,7 @@ body{
     margin-left: 10px;
 }
 .new-dropdown-menu{
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 0;
@@ -2757,7 +2757,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     background: url(../img/icon-close.png) no-repeat center;
     background-size: 14px 14px;
 }
-.change-modal-width-filters{
+.change-modal-width-filters .modal-xl{
     max-width: 1140px;
     width: 100%;
 }
@@ -3385,6 +3385,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .width-apdate-profit{
     max-width: 1105px;
     width: 100%;
+    box-shadow: 0px 0px 35px 0px rgba(170,170,170,1);
 }
 .select-table-profit{
     max-width: 73px;
@@ -3579,30 +3580,73 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .button {
     display: inline-block; /* Строчно-блочный элемент */
     position: relative; /* Относительное позиционирование */
+    color: black;
 }
-.wrapper-btn-table-nav button:hover::after {
+.delete:hover .button::after {
     position: absolute;
-    left: 22px; top: -25px;
+    left: 10px; 
+    top: -15px;
+    content: attr(data-title);
     z-index: 1;
     background: rgba(255,255,230,0.9);
     font-family: 'Ubuntu';
     font-size: 13px;
-    padding: 5px 10px;
+    padding: 5px;
     border: 1px solid #222222;
     transition: .3s;
+    width: 60px;
+    position: absolute;
+    white-space: pre-wrap;
 }
-.delete:hover::after{
-    content: 'Some text';
+.move-up:hover .button::after {
+    position: absolute;
+    left: 10px; 
+    top: -15px;
+    content: attr(data-title);
+    z-index: 1;
+    background: rgba(255,255,230,0.9);
+    font-family: 'Ubuntu';
+    font-size: 13px;
+    padding: 5px;
+    border: 1px solid #222222;
+    transition: .3s;
+    width: 60px;
+    position: absolute;
+     white-space: pre-wrap;
 }
-.move-up:hover::after{
-    content: 'Some text';
+.rating:hover .button::after {
+    position: absolute;
+    left: 10px; 
+    top: -15px;
+    content: attr(data-title);
+    z-index: 1;
+    background: rgba(255,255,230,0.9);
+    font-family: 'Ubuntu';
+    font-size: 13px;
+    padding: 5px;
+    border: 1px solid #222222;
+    transition: .3s;
+    width: 60px;
+    position: absolute;
+     white-space: pre-wrap;
 }
-.rating:hover::after{
-    content: 'Some text';
+.add-some:hover .button::after {
+    position: absolute;
+    left: 10px; 
+    top: -15px;
+    content: attr(data-title);
+    z-index: 1;
+    background: rgba(255,255,230,0.9);
+    font-family: 'Ubuntu';
+    font-size: 13px;
+    padding: 5px;
+    border: 1px solid #222222;
+    transition: .3s;
+    width: 60px;
+    position: absolute;
+     white-space: pre-wrap;
 }
-.add-some:hover::after{
-    content: 'Some text';
-}
+
 .search-btn-table{
     border-radius: 5px;
     background-color: #428bca;
@@ -4007,4 +4051,132 @@ svg:not(:root) {
     -moz-box-shadow: 0px 4px 5px -1px rgba(0,0,0,0.2);
     box-shadow: 0px 4px 5px -1px rgba(0,0,0,0.2);
     margin-top: 30px;
+}
+.container-modal-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-modal-header h5{
+    font-size: 36px !important;
+    color: #428ac9;
+    font-family: 'Ubuntu';
+    padding: 35px 55px 0 !important;
+}
+.show .new-dropdown-menu{
+    display: flex;
+}
+.container-welcome-img{
+    max-width: 825px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.container-welcome-img img{
+    max-width: 825px;
+    width: 100%;
+}
+.wrapper-list-welcome {
+    max-width: 470px;
+    margin-bottom: 30px;
+}
+.wrapper-list-welcome h3{
+    font-size: 24px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+.welcome-padding{
+    padding: 0 58px 0 65px
+}
+.wrapper-list-welcome h3 span{
+    color: #ff5621;
+    text-transform: uppercase;
+
+}
+.wrapper-list-welcome p{
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    margin-top: 11px;
+}
+.list-welcome li p{
+    font-weight: 300;
+    font-size: 18px;
+    color: #757575;
+}
+.list-welcome{
+    margin-left: 15px;
+    margin-top: 16px;
+}
+.list-welcome li{
+    list-style-type: decimal;
+}
+.btn-welcome{
+    border-radius: 5px;
+    background: #428bca;
+    border: 1px solid #428bca;
+    padding: 12px 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Ubuntu';
+}
+.wizard-btn{
+    width: 200px;
+}
+.btn-welcome:hover{
+    transition: .3s;
+    background: transparent;
+    color: #428bca;
+}
+.read-more{
+    color: #428bca;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    text-decoration: underline;
+}
+.footer-welcome-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.container-welcome-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.container-modal-header p{
+    font-weight: 300;
+    font-size: 24px;
+    font-family: 'Ubuntu';
+}
+.checkbox-welcome .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: url('../img/selected_icon/checked.png');
+    width: 16px;
+    height: 16px;
+    border: 1px solid #428bca;
+    background-position: center;
+}
+.checkbox-welcome .custom-control-label::before, .checkbox-welcome .custom-control-label::after {
+    position: absolute;
+    top: 0rem;
+    left: -1px;
+}
+.checkbox-welcome .custom-control-label{
+    font-size: 18px;
+    color: #222222;
+    font-family: 'Ubuntu';
+    margin-bottom: 3px;
+}
+.footer-modal-welcome{
+    padding-top: 22px;
+    padding-bottom: 55px;
+    padding-left: 60px;
+    border-top:  1px solid #ececec;
+}
+.show .state-a-select{
+    display: flex;
+    flex-direction: column;
 }
