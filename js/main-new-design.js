@@ -182,6 +182,7 @@ $(document).ready(function() {
 
     var table4  = $('#example4').DataTable( {
         "dom": 'prtp',
+         "scrollY":        "389px",
         'order': [[ 2, "asc" ]],
         "pagingType": 'simple_numbers',
         "columnDefs":  [{
@@ -211,6 +212,7 @@ $(document).ready(function() {
     } );
     var table5  = $('#example5').DataTable( {
         "dom": 'prtp',
+         "scrollY":        "390px",
         'order': [[ 2, "asc" ]],
         "pagingType": 'simple_numbers',
         "columnDefs":  [{
@@ -864,7 +866,7 @@ function format1 ( table_id ) {
     '</div>'+
     '</td>'+
     '<td>'+
-    '<div id="graph"></div>'+
+    '<div class="graph-height" id="graph' + table_id + '"></div>'+
         '</td>'+
         '<td>'+
         '<div class="table-paragraph">'+
@@ -933,7 +935,7 @@ function format1 ( table_id ) {
     '</div>'+
     '</td>'+
     '<td>'+
-    '<div id="graph1"></div>'+
+    '<div class="graph-height" id="graph1' + table_id + '"></div>'+
         '</td>'+
         '<td>'+
         '<div class="table-paragraph">'+
@@ -998,7 +1000,7 @@ function format1 ( table_id ) {
         '</tbody>'+
         '</table>';
 }
-var iTableCounter=1;
+// var iTableCounter=1;
 var oInnerTable;
 
 $(document).ready(function() {
@@ -1046,6 +1048,7 @@ $(document).ready(function() {
             tr.removeClass('shown');
         }
         else {
+            iTableCounter++;
             // Open this row
             row.child( format1(iTableCounter) ).show();
             tr.addClass('shown');
@@ -1058,7 +1061,7 @@ $(document).ready(function() {
                 {"period": "2012-09-19", "licensed": 3257, "sorned": 267}
             ];
             Morris.Line({
-                element: 'graph',
+                element: 'graph' + iTableCounter,
                 data: day_data,
                 xkey: 'period',
                 ykeys: ['licensed'],
@@ -1076,7 +1079,7 @@ $(document).ready(function() {
                 {"period": "2012-09-19", "licensed": 3257, "sorned": 267}
             ];
             Morris.Line({
-                element: 'graph1',
+                element: 'graph1' + iTableCounter,
                 data: day_data1,
                 xkey: 'period',
                 ykeys: ['licensed'],

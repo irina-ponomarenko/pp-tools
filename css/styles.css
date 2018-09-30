@@ -850,7 +850,7 @@ body{
 .populary-content span{
     font-size: 18px;
 }
-.checkbox-table .custom-control-label::before, 
+.checkbox-table .custom-control-label::before,
 .checkbox-table .custom-control-label::after {
     position: absolute;
     top: 0.1rem;
@@ -1706,7 +1706,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     width: 18px;
     height: 18px;
     position: relative;
-  
+
 }
 .icon-search{
     position: absolute;
@@ -2083,7 +2083,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 }
 .reset-btn:hover{
     background-color: #ff5722;
-    color: #ffffff; 
+    color: #ffffff;
     transition: .3s;
 }
 .load-btn{
@@ -2092,7 +2092,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 }
 .load-btn:hover{
     background-color: #0097a7;
-    color: #ffffff; 
+    color: #ffffff;
     transition: .3s;
 }
 .save-btn{
@@ -2864,12 +2864,12 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 
 .lbl:active:after,
-.lbl:active:before { 
-    transform: scale(1.15, 0.85); 
+.lbl:active:before {
+    transform: scale(1.15, 0.85);
 }
 
-.cbx:checked ~ label { 
-    background: #428bca; 
+.cbx:checked ~ label {
+    background: #428bca;
 }
 
 .cbx:checked ~ label:after {
@@ -3405,9 +3405,9 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     background-color: #ececec;
 }
 .footer-table-profit{
-    min-height: 63px;
     border-top: 1px solid #ececec;
-    border-bottom: 1px solid #ececec; 
+    border-bottom: 1px solid #ececec;
+    margin-top: 10px;
 }
 .table-profit thead{
     background-color: #ececec;
@@ -3588,7 +3588,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .delete:hover .button::after {
     position: absolute;
-    left: 10px; 
+    left: 10px;
     top: -15px;
     content: attr(data-title);
     z-index: 1;
@@ -3604,7 +3604,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .move-up:hover .button::after {
     position: absolute;
-    left: 10px; 
+    left: 10px;
     top: -15px;
     content: attr(data-title);
     z-index: 1;
@@ -3620,7 +3620,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .rating:hover .button::after {
     position: absolute;
-    left: 10px; 
+    left: 10px;
     top: -15px;
     content: attr(data-title);
     z-index: 1;
@@ -3636,7 +3636,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .add-some:hover .button::after {
     position: absolute;
-    left: 10px; 
+    left: 10px;
     top: -15px;
     content: attr(data-title);
     z-index: 1;
@@ -4312,4 +4312,24 @@ svg:not(:root) {
     padding: 4px 10px;
     height: 27px;
     min-width: 45px;
+}
+.container-img-table img,
+.container-img-table{
+    max-width: 40px;
+}
+.green-percent-p{
+    color: #4caf50;
+    font-size: 24px;
+}
+.red-percent-p{
+     font-size: 24px;
+     color: #ff5722;
+}
+.graph-height{
+    height: 50px;
+}
+.dataTables_wrapper .dataTables_paginate {
+    float: right;
+    text-align: right;
+    padding-top: 0.55em;
 }
