@@ -123,7 +123,9 @@ form + .select2-container.select2-container--default.select2-container--open {
     padding: 6px 0 14px;
   background-color: #ececec; }
   .icons.select2-dropdown .select2-results__option {
-    font-size: 14px;}
+    font-size: 14px;
+   font-weight: 300;
+  }
     .icons.select2-dropdown .select2-results__option img {
       margin-right: 7px;}
 

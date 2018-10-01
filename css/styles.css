@@ -1486,7 +1486,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     background-color: transparent !important;
 }
 .table-actions .select2-selection__rendered {
-    line-height: 27px !important;
+    line-height: 26px !important;
 }
 .wrapper_searchterms .dataTable .color-drop-table .select2.select2-container.select2-container .select2-selection__arrow{
     background-image: url(../img/selected_icon/chewron-down-white.png);
@@ -2379,7 +2379,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     background-image: url("../img/chewron-left.png");
     background-repeat: no-repeat;
     width: 10px;
-    height: 16px;
+    height: 24px;
 }
 .wrapper-table-modal .dataTables_wrapper .dataTables_paginate{
     display: flex;
@@ -2400,7 +2400,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     background-image: url("../img/chewron-right.png");
     background-repeat: no-repeat;
     width: 10px;
-    height: 16px;
+    height: 24px;
     margin-left: 10px;
 }
 .wrapper-table-modal .dataTables_wrapper .dataTables_paginate .paginate_button.current,
@@ -4239,6 +4239,7 @@ svg:not(:root) {
 .wrapper_searchterms .dropdown .dropdown-menu .dropdown-item {
     padding: 6px 10px;
     border-radius: 3px;
+    font-size: 14px;
 }
 .wrapper_searchterms .dropdown .dropdown-menu .dropdown-item:hover {
     background-color: rgba(121, 143, 150, 0.2) !important;
@@ -4346,6 +4347,7 @@ svg:not(:root) {
     line-height: 27px !important;
     background-position: 85% 50% !important;
     border: 1px solid #428bca !important;
+    background-image: url(../img/selected_icon/chewron-down-white.png);
 }
 .table-actions span{
     font-size: 14px;
@@ -4357,7 +4359,246 @@ svg:not(:root) {
 .wrapper_searchterms .dropdown .table-actions[aria-expanded="true"] {
     background-color: transparent !important;
     border: 1px solid #428bca !important;
+    background-image: url(../img/selected_icon/chewron-down-blue.png);
 }
-.modal-content{
-   width: 1140px !important;
+.wrapper_searchterms .dropdown .table-actions:hover span,
+.table-actions[aria-expanded="true"] > span{
+    color: #222222;
+}
+.change-modal-width-filters{
+   max-width: 1140px !important;
+    width: 100%;
+}
+.wrapper-table-modal .dataTables_paginate span{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.dataTables_scrollHeadInner{
+    background-color: #ececec;
+}
+.dropdown-item-new{
+    max-width: 161px;
+    background-color: #ececec;
+}
+.wrapper_searchterms .item-img{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.wrapper_searchterms .item-img.disabled-img{
+    background: url("../img/selected_icon/disabled.png") no-repeat;
+}
+.wrapper_searchterms .item-img.reject-img{
+    background: url("../img/selected_icon/reject.png") no-repeat;
+}
+.wrapper_searchterms .item-img.enabled-img{
+    background: url("../img/selected_icon/succsess.png") no-repeat;
+    background-size: contain;
+}
+.wrapper_searchterms .item-img.delay-img{
+    background: url("../img/selected_icon/delay.png") no-repeat;
+    background-size: contain;
+}
+.wrapper_searchterms .item-img.suggested-img{
+    background: url("../img/selected_icon/autosuccssesed.png") no-repeat;
+    background-size: contain;
+}
+.wrapper-logout-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.red-video-guide{
+    background-color: #ff5722;
+}
+.logout-btn{
+    background-color: #428bca;
+    padding: 16px 0;
+    width: 96px;
+    border: none;
+}
+.logout-btn span{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+.container-logout-nav{
+    display: flex;
+    align-items: center;
+    margin-right: 66px;
+}
+.logo-logout img{
+    max-width: 348px;
+    width: 100%;
+}
+.wrapper-logout-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 90px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    max-width: 732px;
+    padding-top: 70px;
+}
+.title-sign-in{
+    font-size: 30px;
+    color: #222222;
+    font-weight: 300;
+    font-family: 'Ubuntu';
+    margin-top: 55px;
+    margin-bottom: 35px;
+}
+.amazon-logout{
+    border: 2px solid #b48c0c;
+    background: rgba(255,232,164,1);
+    background: -moz-linear-gradient(top, rgba(255,232,164,1) 0%, rgba(248,200,57,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,232,164,1)), color-stop(100%, rgba(248,200,57,1)));
+    background: -webkit-linear-gradient(top, rgba(255,232,164,1) 0%, rgba(248,200,57,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,232,164,1) 0%, rgba(248,200,57,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,232,164,1) 0%, rgba(248,200,57,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,232,164,1) 0%, rgba(248,200,57,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe8a4', endColorstr='#f8c839', GradientType=0 );
+    height: 61px;
+    padding: 16px 23px 16px 20px;
+    border-radius: 3px;
+}
+.amazon-logout span{
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 52px;
+}
+.amazon-logout span:before{
+    content: '';
+    position: absolute;
+    background: url("../img/am-icon.png") no-repeat;
+    width: 36px;
+    height: 38px;
+    left: 0;
+    top: -5px;
+}
+.or-span,
+.login-email{
+    font-size: 18px;
+    color: #757575;
+    font-weight: 300;
+    font-family: 'Ubuntu';
+}
+.or-span{
+    margin: 23px 0;
+}
+.login-email{
+    color: #428bca;
+    text-decoration: underline;
+}
+.container-logout-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+    width: 100%;
+}
+.container-footer-logout-text{
+    display: flex;
+    align-items: center;
+}
+.container-footer-logout-text p{
+    font-size: 14px;
+    color: #757575;
+    font-weight: 300;
+    font-family: 'Ubuntu';
+}
+.container-footer-logout-text a{
+    font-size: 14px;
+    color: #428bca;
+    font-weight: 300;
+    text-decoration: underline;
+    font-family: 'Ubuntu';
+}
+.footer-logout-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 33px 0;
+}
+.container-footer-logout-text:first-child{
+    margin-bottom: 14px;
+}
+.form-logout{
+    display: flex;
+    flex-direction: column;
+    max-width: 547px;
+    width: 100%;
+}
+.logout-input{
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 20px 11px;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+.email-input{
+    margin-bottom: 30px;
+}
+.password-input{
+    font-size: 14px;
+}
+.active-input-logout{
+    border-bottom: 4px solid #428bca;
+}
+.form-logout{
+    margin-bottom: 30px;
+}
+.login-btn{
+    font-size: 18px;
+    padding: 14px;
+    width: 112px;
+    background-color: #428bca;
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 3px 6px 8px -2px rgba(0,0,0,0.29);
+    border: 1px solid #428bca;
+}
+.login-btn:hover{
+    transition: .3s;
+    background: transparent;
+    color: #428bca;
+}
+.small-amazon{
+    width: 156px;
+    padding: 5px 13px 5px 10px;
+    height: 32px;
+}
+.small-amazon span{
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    padding-left: 27px;
+}
+.small-amazon span:before{
+    content: '';
+    position: absolute;
+    background: url("../img/am-icon.png") no-repeat;
+    width: 16px;
+    height: 22px;
+    left: 0;
+    top: -2px;
+    background-size: contain;
 }
