@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PPC.tools</title>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <link href="fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.3/css/fixedHeader.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/css/tether-theme-arrows-dark.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/chosen.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="css/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="wrapper_searchterms" style="opacity: 0">
+
+    <!-- top nav -->
+    <header class="header">
+      <div class="wrapper-logout-nav">
+        <div class="logo">
+          <h1 class="general-title">
+            <a href="">
+              <img src="img/selected_icon/logo.png" alt="logo"/>
+            </a>
+          </h1>
+        </div>
+        <div class="container-logout-nav">
+          <button type="button" class="video-guide red-video-guide">
+            <span>Video guide</span>
+          </button>
+          <button type="button" class="logout-btn">
+            <span>logout</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- end top nav -->
+    <div class="wrapper-logout-block">
+      <div class="logo-logout">
+        <img src="img/logout.png" alt="logout"/>
+      </div>
+      <h2 class="title-sign-in">SIGN IN</h2>
+      <div class="container-logout-form">
+        <div class="container-logout-group">
+          <div class="options-list">
+            <h4>1. Login to your amazon account and we will import your data </h4>
+          </div>
+          <a href="" class="amazon-logout">
+            <span>Login with Amazon</span>
+          </a>
+          <div class="options-list margin-top-30 no-active-block">
+            <h4>2. Select plan</h4>
+            <ul class="list-group-radio">
+              <li>
+                <div class="custom-control custom-radio custom-radio-login">
+                  <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+                  <label class="custom-control-label" for="customControlValidation2">Basic (1-5 SKU’s) - <span class="custom-label-span">$39.95</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-radio custom-radio-login">
+                  <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+                  <label class="custom-control-label" for="customControlValidation3">Professional (1-20 SKU’s) - <span class="custom-label-span">$79.95</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-radio custom-radio-login">
+                  <input type="radio" class="custom-control-input" id="customControlValidation4" name="radio-stacked" required>
+                  <label class="custom-control-label" for="customControlValidation4">Unlimited *Unlimited SKU’s) - <span class="custom-label-span">$149.95</span></label>
+                </div>
+              </li>
+            </ul>
+            <div class="private-checkbox">
+              <div class="custom-control custom-checkbox private-custom">
+                <input type="checkbox" class="custom-control-input" id="customControlValidation5" required>
+                <label class="custom-control-label" for="customControlValidation5">By clicking on create account, you agree to our terms of servive and that you have read our privacy policy, including our cookie use policy</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-logout-form no-active-block">
+       <button type="button" class="trial-date-btn">
+         <span class="title-trial">Start 14 days free trial</span>
+         <span class="info-trial-btn">no credit card required</span>
+       </button>
+      </div>
+    </div>
+    <div class="wrapper-logout-block">
+      <div class="logo-logout">
+        <img src="img/logout.png" alt="logout"/>
+      </div>
+      <h2 class="title-sign-in">SIGN IN</h2>
+      <div class="container-logout-form">
+        <div class="container-logout-group">
+          <div class="options-list">
+            <h4>1. Login to your Amazon account and we will import your data </h4>
+          </div>
+          <form class="form-logout margin-bottom-10">
+            <input type="email" class="logout-input email-input active-input-logout" placeholder="E-mail"/>
+          </form>
+          <div class="options-list">
+            <h4>2. Select plan</h4>
+            <ul class="list-group-radio">
+              <li>
+                <div class="custom-control custom-radio custom-radio-login">
+                  <input type="radio" class="custom-control-input" id="customControlValidation6" name="radio-stacked" required>
+                  <label class="custom-control-label" for="customControlValidation6">Basic (1-5 SKU’s) - <span class="custom-label-span">$39.95</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-radio custom-radio-login">
+                  <input type="radio" class="custom-control-input" id="customControlValidation7" name="radio-stacked" required>
+                  <label class="custom-control-label" for="customControlValidation7">Professional (1-20 SKU’s) - <span class="custom-label-span">$79.95</span></label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-radio custom-radio-login">
+                  <input type="radio" class="custom-control-input" id="customControlValidation8" name="radio-stacked" required>
+                  <label class="custom-control-label" for="customControlValidation8">Unlimited *Unlimited SKU’s) - <span class="custom-label-span">$149.95</span></label>
+                </div>
+              </li>
+            </ul>
+            <div class="private-checkbox">
+              <div class="custom-control custom-checkbox private-custom">
+                <input type="checkbox" class="custom-control-input" id="customControlValidation9" required>
+                <label class="custom-control-label" for="customControlValidation9">By clicking on create account, you agree to our terms of servive and that you have read our privacy policy, including our cookie use policy</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-logout-form">
+        <button type="button" class="trial-date-btn">
+          <span class="title-trial">Start 14 days free trial</span>
+          <span class="info-trial-btn">no credit card required</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/select2.full.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/fixedheader/3.1.3/js/dataTables.fixedHeader.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.colVis.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+  <script src="js/AddTabs.js"></script>
+  <script src="js/chosen.jquery.js"></script>
+  <script src="js/prism.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/morris.min.js"></script>
+  <script src="js/jquery.circliful.js"></script>
+  <script src="js/main-new-design.js"></script>
+  </body>
+  </html>

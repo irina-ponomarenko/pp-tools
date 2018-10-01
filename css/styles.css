@@ -4602,3 +4602,109 @@ svg:not(:root) {
     top: -2px;
     background-size: contain;
 }
+.options-list h4{
+    color: #222222;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.options-list{
+    max-width: 570px;
+    width: 100%;
+    padding-bottom: 3px;
+}
+.custom-radio-login .custom-control-label:before,
+.custom-radio-login .custom-control-label:after{
+    position: absolute;
+    top: 3px;
+    left: 0rem;
+}
+.custom-radio-login .custom-control-label:after {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 14px 14px;
+}
+.custom-radio-login .custom-control-label{
+    color: #222222;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+.custom-label-span{
+    color: #428bca;
+}
+.list-group-radio,
+.private-checkbox{
+    margin-left: 17px;
+}
+.list-group-radio li{
+    margin-bottom: 20px;
+}
+.list-group-radio li:last-child{
+    margin-bottom: 30px;
+}
+.private-custom .custom-control-label:before,
+.private-custom .custom-control-label:after{
+    position: absolute;
+    top: 0;
+    left: 0rem;
+}
+.private-custom .custom-control-label{
+    font-size: 14px;
+}
+.container-logout-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.margin-top-30{
+    margin-top: 30px;
+}
+.trial-date-btn{
+    border: 1px solid #428bca;
+    background-color: #428bca;
+    padding: 13px 0;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+.trial-date-btn:hover{
+    transition: .3s;
+    background-color: transparent;
+}
+.title-trial{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+.trial-date-btn:hover .title-trial{
+    color: #428bca;
+    transition: .3s;
+}
+.info-trial-btn{
+    color: #c0dbf3;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+.no-active-block{
+    position: relative;
+}
+.no-active-block:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255,255, 255, 0.7);
+}
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
