@@ -315,15 +315,20 @@
                 </span>
               </div>
             </td>
-            <td class="color-drop-table table-actions">
-              <select class="js-example-basic-single actions icon dubleArrow " name="flag">
-                <option value="0">none</option>
-                <option value="6" data-icon='disabled'>Disabled</option>
-                <option value="1" data-icon='reject'>Reject</option>
-                <option value="2" data-icon='succsess'>Enabled</option>
-                <option value="3" data-icon='delay'>Delay</option>
-                <option value="5" data-icon='autosuccssesed'>Auto suggested</option>
-              </select>
+            <td>
+             <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle dropdown-content-toggle table-actions" type="button" id="dropdown_r77" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span> None </span>
+                  </button>
+                  <div class="dropdown-menu state-a-select" aria-labelledby="dropdown_r77" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+                  <a class="dropdown-item item-variant">
+                    <span class="d-flex align-items-center">
+                      <span class="round enabled"></span>None</span></a>
+                      <a class="dropdown-item item-variant">
+                    <span class="d-flex align-items-center" ng-click="deleteFromNegativeInWarnings(77)">
+                      <span class="round enabled"></span>Delete from neagtive</span></a>
+                  </div>
+                </div>
             </td>
             <td>
               <div class="wrapper-d-flex-ok">
@@ -776,7 +781,7 @@
     </div>
 
 <!-- Modal -->
-  <div uib-modal-window="modal-window" class="modal ng-scope ng-isolate-scope in" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: none;">
+  <div uib-modal-window="modal-window" class="modal ng-scope ng-isolate-scope in" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: block;">
     <div class="modal-dialog modal-xl change-modal-width-filters">
       <div class="modal-content  modal-window margin-top-50 padding-none" uib-modal-transclude="">
         <div class="modal-header ng-scope change-header-modal">
