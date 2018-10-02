@@ -4457,6 +4457,7 @@ svg:not(:root) {
     font-family: 'Ubuntu';
     margin-top: 55px;
     margin-bottom: 35px;
+    text-transform: uppercase;
 }
 .amazon-logout{
     border: 2px solid #b48c0c;
@@ -4548,7 +4549,11 @@ svg:not(:root) {
     outline: none;
     font-size: 18px;
     font-family: 'Ubuntu';
+    color: #222222;
     font-weight: 300;
+}
+.logout-input::placeholder{
+    color: #757575 !important;
 }
 .email-input{
     margin-bottom: 30px;
@@ -4583,7 +4588,7 @@ svg:not(:root) {
 }
 .small-amazon{
     width: 156px;
-    padding: 5px 13px 5px 10px;
+    padding: 5px 7px;
     height: 32px;
 }
 .small-amazon span{
@@ -4695,6 +4700,7 @@ svg:not(:root) {
 }
 .no-active-block{
     position: relative;
+    width: 100%;
 }
 .no-active-block:after{
     content: '';
@@ -4707,4 +4713,192 @@ svg:not(:root) {
 }
 .margin-bottom-10{
     margin-bottom: 10px;
+}
+.link-list{
+    display: flex;
+    align-items: center;
+}
+.link-list li a{
+    position: relative;
+    padding-right: 15px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #757575;
+}
+.link-list li a:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    background: url("../img/chewron-right-grey.png") no-repeat;
+    width: 8px;
+    height: 13px;
+    top: 4px;
+}
+.link-list li a.none-chewron:before{
+    background: transparent;
+}
+a.active-link-log{
+   color: #428bca !important;
+}
+a.active-link-log:before,
+.link-list li a:hover:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    background: url("../img/chewron-right-blue.png") no-repeat !important;
+    width: 8px;
+    height: 13px;
+    top: 4px;
+}
+.link-list li a:hover{
+    color: #428bca !important;
+}
+.link-list li a.none-chewron:hover:before{
+    background: transparent !important;
+}
+.sign-up-btn,
+.access-btn{
+    border: 1px solid #428bca;
+    background-color: transparent;
+    padding: 16px 0;
+    width: 237px;
+    text-align: center;
+    border-radius: 8px; 
+    display: flex;
+    margin: 0 auto;
+}
+.access-btn{
+  width: 274px;
+   padding: 14px 0;
+   display: flex;
+   justify-content: center;
+   margin: 25px auto;
+   align-items: center;
+}
+.sign-up-btn span,
+.access-btn span{
+    color: #428bca;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Ubuntu';
+}
+.sign-up-btn:hover,
+.access-btn:hover{
+    background-color: #428bca;
+    transition: .3s;
+}
+.sign-up-btn:hover span,
+.access-btn:hover span{
+    color: #ffffff;
+    transition: .3s;
+}
+.left-margin-15{
+    margin-left: 15px;
+}
+.form-logout-create{
+    max-width: 534px;
+}
+.block-image-loged img{
+    max-width: 524px;
+    width: 100%;
+    margin: 15px 0;
+}
+.none-margin-bottom{
+    margin-bottom: 0 !important;
+}
+.option-span{
+    font-size: 14px;
+}
+.loged-input{
+    width: 100%;
+}
+.margin-15{
+    margin: 15px 0;
+    margin-bottom: 15px !important;
+}
+.next-btn-loged{
+    border: 1px solid #428bca;
+    background-color: #428bca;
+    padding: 16px 0;
+    width: 112px;
+    text-align: center;
+    border-radius: 8px; 
+    box-shadow: 3px 6px 8px -2px rgba(0,0,0,0.29);
+}
+.next-btn-loged span{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+}
+.next-btn-loged:hover{
+    background-color: transparent;
+    transition: .3s;
+}
+.next-btn-loged:hover span{
+    color: #428bca;
+    transition: .3s;
+}
+.show .dropdown-country{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.select-group-img {
+    width: 100%;
+}
+.select-group-img .toggle-select-group{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    border-radius: 0;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Ubuntu';
+    width: 100%;
+}
+.toggle-select-group span{
+    color: #222222;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Ubuntu';
+}
+.toggle-select-group{
+    display: flex;
+    align-items: center;
+    padding: 0 20px !important;
+    background-image: url(../img/chewron-down.png);
+    background-repeat: no-repeat;
+    background-size: 13px 8px;
+    background-position: 98% 50%;
+}
+.show .toggle-select-group{
+    background-image: url(../img/chewron-up.png);
+    background-repeat: no-repeat;
+    transition: .3s;
+    background-size: 13px 8px;
+    background-position: 98% 50%;
+}
+.toggle-select-group:hover,
+.toggle-select-group:focus,
+.show > .btn-secondary.toggle-select-group{
+    background-color: transparent !important;
+}
+.image-select-toggle{
+    background: url("../img/flag/us.png") no-repeat;
+    width: 24px;
+    height: 16px;
+    display: block;
+    margin-right: 15px;
+}
+.item-select-toggle{
+    display: flex;
+    align-items: center;
+    padding: 8px 20px !important;
+}
+.wrapper-header-height{
+    min-height: 66px;
 }
