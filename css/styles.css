@@ -4738,7 +4738,7 @@ svg:not(:root) {
     top: 4px;
 }
 .link-list li a.none-chewron:before{
-    background: transparent;
+    background: transparent !important;
 }
 a.active-link-log{
    color: #428bca !important;
@@ -4918,4 +4918,82 @@ table.dataTable thead th{
 .wrapper_searchterms .dataTable .dataTables-change-padding .sorting_desc,
 .wrapper_searchterms .dataTable .dataTables-change-padding .sorting {
     padding-left: 29px !important;
+}
+.title-small-info{
+    font-size: 18px;
+    color: #222222;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    max-width: 483px;
+    text-align: center;
+}
+.margin-bottom-15{
+    margin-bottom: 15px;
+}
+.progress-bar-wrapper{
+    border: 1px solid #428bca;
+    width: 530px;
+    padding: 2px;
+    min-height: 24px;
+    display: flex;
+    border-radius: 50px;
+    position: relative;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+}
+.progress-line{
+    background-color: #428bca;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.progress-bar-wrapper span{
+    color: #428bca;
+}
+.progress-info{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5px;
+}
+.dots-line-big,
+.dots-line-medium,
+.dots-line-small{
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    z-index: 100;
+}
+.dots-line-medium{
+    width: 6px;
+    height: 6px;
+    background-color: #b3d1ea;
+    margin-right: 3px;
+}
+.dots-line-small{
+    width: 4px;
+    height: 4px;
+    background-color: #7baeda;
+    margin-right: 3px;
+}
+.dots-line{
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    margin-right: 7px;
+}
+.no-active-dots{
+    display: none;
+}
+/*.progress-bar-wrapper span:last-child{*/
+    /*color:white;*/
+    /*clip:rect(0 0px 40px 0);*/
+/*}*/
+.padding-bottom-70{
+    padding-bottom: 70px;
 }
