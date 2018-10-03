@@ -4990,10 +4990,6 @@ table.dataTable thead th{
 .no-active-dots{
     display: none;
 }
-/*.progress-bar-wrapper span:last-child{*/
-    /*color:white;*/
-    /*clip:rect(0 0px 40px 0);*/
-/*}*/
 .padding-bottom-70{
     padding-bottom: 70px;
 }
