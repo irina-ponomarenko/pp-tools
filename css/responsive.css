@@ -82,6 +82,10 @@
         overflow-x: auto;
         padding-bottom: 6px;
     }
+    #example3_wrapper,
+    #example10_wrapper{
+        padding-bottom: 0;
+    }
 }
 @media screen and (max-width: 650px) {
 

@@ -326,6 +326,36 @@ $(document).ready(function() {
 
             }]
     } );
+    var table13  = $('#example10').DataTable( {
+        "dom": 'prtp',
+        "scrollY":        "365px",
+        'order': [[ 2, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [0],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [1],
+                'className': 'px-0'
+            },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            },{
+                "targets": [4],
+                'className': 'pl-1 pr-1'
+            },{
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+
+            }]
+    } );
 
     var table7  = $('#filter-compaigns1').DataTable( {
         // "dom": 'prtp',

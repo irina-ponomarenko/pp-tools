@@ -3424,6 +3424,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     font-size: 18px;
     color: #757575;
     font-family: 'Ubuntu';
+    font-weight: 300;
 }
 .error-text{
     color: #ff5722 !important;
@@ -4902,4 +4903,19 @@ a.active-link-log:before,
 }
 .wrapper-header-height{
     min-height: 66px;
+}
+table.dataTable thead th{
+    border-bottom: none;
+}
+.option-list-table{
+    max-width: 730px;
+    width: 100%;
+}
+.logout-width-100{
+    width: 100%;
+}
+.wrapper_searchterms .dataTable .dataTables-change-padding .sorting_asc,
+.wrapper_searchterms .dataTable .dataTables-change-padding .sorting_desc,
+.wrapper_searchterms .dataTable .dataTables-change-padding .sorting {
+    padding-left: 29px !important;
 }

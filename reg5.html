@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PPC.tools</title>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <link href="fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.3/css/fixedHeader.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/css/tether-theme-arrows-dark.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/chosen.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="css/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="wrapper_searchterms" style="opacity: 0">
+
+    <!-- top nav -->
+    <header class="header">
+      <div class="wrapper-logout-nav">
+        <div class="logo">
+          <h1 class="general-title">
+            <a href="">
+              <img src="img/selected_icon/logo.png" alt="logo"/>
+            </a>
+          </h1>
+        </div>
+        <div class="container-logout-nav">
+          <button type="button" class="video-guide red-video-guide">
+            <span>Video guide</span>
+          </button>
+          <button type="button" class="logout-btn">
+            <span>logout</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- end top nav -->
+    <div class="wrapper-logout-block">
+      <div class="link-logout-container">
+       <ul class="link-list">
+         <li>
+           <a href="">1.MWS Data</a>
+         </li>
+         <li>
+           <a href="">2. Amazon Token </a>
+         </li>
+          <li>
+           <a href="" class="active-link-log">3. SKUs</a>
+         </li>
+          <li>
+           <a href="" class="none-chewron">4. Finish</a>
+         </li>
+       </ul>
+      </div>
+      <h2 class="title-sign-in">select sku(s)</h2>
+      <div class="container-logout-form padding-0">
+        <form class="container-logout-group logout-width-100">
+          <div class="options-list option-list-table">
+            <div class="container-table-sku">
+              <div class="container-table-profit-header">
+                <div class="header-table-profit display-flex">
+                  <div class="show-more">
+                    <p>Show <select>
+                      <option>10</option>
+                      <option>25</option>
+                      <option>50</option>
+                      <option>100</option>
+                    </select> entries</p>
+                  </div>
+                  <div class="show-selected">
+                    <p>You have selected 0 of 5</p>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper-table-profit-content">
+                <table id="example10" class="display new-display table-profit" cellspacing="0" width="100%" data-page-length='10'>
+                  <thead class="dataTables-change-padding">
+                  <tr>
+                    <th>
+                      <div class="custom-control custom-checkbox profit-checked">
+                        <input type="checkbox" class="custom-control-input" id="tableCheckAll">
+                        <label class="custom-control-label" for="tableCheckAll"></label>
+                      </div>
+                    </th>
+                    <th>Img</th>
+                    <th>Name</th>
+                    <th>SKU</th>
+                    <th>Asin</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox profit-checked">
+                        <input type="checkbox" class="custom-control-input" id="tableCheckAl2">
+                        <label class="custom-control-label" for="tableCheckAl2"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="container-img-table">
+                        <img src="img/img-campaing.png" alt="images table"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="campaing-table-text product-line">
+                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-paragraph small-table-paragraph">
+                        <p>100050-SET-MCH</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-paragraph small-table-paragraph">
+                        <p>B011GU8AE0</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox profit-checked">
+                        <input type="checkbox" class="custom-control-input" id="tableCheckAl3">
+                        <label class="custom-control-label" for="tableCheckAl3"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="container-img-table">
+                        <img src="img/img-campaing.png" alt="images table"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="campaing-table-text product-line">
+                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-paragraph small-table-paragraph">
+                        <p>100050-SET-MCH</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-paragraph small-table-paragraph">
+                        <p>B011GU8AE0</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox profit-checked">
+                        <input type="checkbox" class="custom-control-input" id="tableCheckAl4">
+                        <label class="custom-control-label" for="tableCheckAl4"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="container-img-table">
+                        <img src="img/img-campaing.png" alt="images table"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="campaing-table-text product-line">
+                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-paragraph small-table-paragraph">
+                        <p>100050-SET-MCH</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-paragraph small-table-paragraph">
+                        <p>B011GU8AE0</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox profit-checked">
+                        <input type="checkbox" class="custom-control-input" id="tableCheckAl5">
+                        <label class="custom-control-label" for="tableCheckAl5"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="container-img-table">
+                        <img src="img/img-campaing.png" alt="images table"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="campaing-table-text product-line">
+                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-paragraph small-table-paragraph">
+                        <p>100050-SET-MCH</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-paragraph small-table-paragraph">
+                        <p>B011GU8AE0</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox profit-checked">
+                        <input type="checkbox" class="custom-control-input" id="tableCheckAl6">
+                        <label class="custom-control-label" for="tableCheckAl6"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="container-img-table">
+                        <img src="img/img-campaing.png" alt="images table"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="campaing-table-text product-line">
+                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-paragraph small-table-paragraph">
+                        <p>100050-SET-MCH</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-paragraph small-table-paragraph">
+                        <p>B011GU8AE0</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="custom-control custom-checkbox profit-checked">
+                        <input type="checkbox" class="custom-control-input" id="tableCheckAl7">
+                        <label class="custom-control-label" for="tableCheckAl7"></label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="container-img-table">
+                        <img src="img/img-campaing.png" alt="images table"/>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="campaing-table-text product-line">
+                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-paragraph small-table-paragraph">
+                        <p>100050-SET-MCH</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-paragraph small-table-paragraph">
+                        <p>B011GU8AE0</p>
+                      </div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+                <div class="footer-table-profit"></div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="footer-logout-form">
+          <button type="button" class="next-btn-loged">
+            <span>Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/select2.full.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/fixedheader/3.1.3/js/dataTables.fixedHeader.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.colVis.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+  <script src="js/AddTabs.js"></script>
+  <script src="js/chosen.jquery.js"></script>
+  <script src="js/prism.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/morris.min.js"></script>
+  <script src="js/jquery.circliful.js"></script>
+  <script src="js/main-new-design.js"></script>
+  </body>
+  </html>
