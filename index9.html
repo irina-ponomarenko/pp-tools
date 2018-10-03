@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PPC.tools</title>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <link href="fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.3/css/fixedHeader.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/css/tether-theme-arrows-dark.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/chosen.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="css/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="wrapper_searchterms" style="opacity: 0">
+
+    <!-- top nav -->
+    <header class="header">
+      <div class="wrapper-top-nav">
+        <div class="logo">
+          <h1 class="general-title">
+            <a href="">
+              <img src="img/selected_icon/logo.png" alt="logo"/>
+            </a>
+          </h1>
+        </div>
+        <div class="wrapper-navigation-top">
+          <nav class="top-nav">
+            <ul class="navigation-top-list">
+              <li class="info-top-nav">
+                <a href="" class="active-link">SKUs</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">ppc Wizard</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">Changemaster</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">Campaigns</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">Keywords</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">Searchterms</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">Tracking</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">Autopilot</a>
+              </li>
+              <li class="info-top-nav">
+                <a href="">Help</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="profile dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" title="User's menu"  data-step="26" data-intro="Information about your account, global settings, billing."
+               id="dropdown-profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                    class="name user-btn-text" ng-bind="email">info7
+              <i class="fa fa-chevron-down" aria-hidden="true"></i></span></a>
+            <div class="dropdown-menu new-dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-profile">
+              <a ui-sref="userSettings">Profile</a>
+              <a ui-sref="Settings">System settings</a>
+              <a ui-sref="Portal" target="_blank" >Billing</a>
+              <a ui-sref="ContactUs">Contact us</a>
+              <a ui-sref="addUser">Add user</a>
+              <a ui-sref="Logout" class="logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Log Out</a>
+
+            </div>
+          </div>
+          <button type="button" class="market-btn">
+            <span class="round-block">
+                32
+            </span>
+             <div class="drop-down-market">
+              <ul class="list-drop-down">
+                <li>
+                  <a href="">your info</a>
+                </li>
+                <li>
+                  <a href="">your info</a>
+                </li>
+                <li>
+                  <a href="">your info</a>
+                </li>
+              </ul>
+              <div class="separeted-link">
+                <a href="">Separeted link</a>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="wrapper-button-nav">
+        <div class="container-button-nav">
+          <nav class="button-nav">
+            <ul class="button-nav-list">
+              <li class="nav-list-variant none-padding-left active-option">
+                <a href="">Home</a>
+              </li>
+              <li class="nav-list-variant active-option">
+                <a href="">Product List </a>
+              </li>
+              <li class="nav-list-variant active-option">
+                <a href="">Product</a>
+              </li>
+              <li class="nav-list-variant none-padding-right">
+                <a href="">Words Generator</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container-nav-right">
+          <div class="button-nav-right">
+            <button type="button" class="video-guide">
+              <span>Video guide</span>
+            </button>
+          </div>
+          <div class="currency-options new-currency ">
+            <select class="js-example-basic-single flag icon" name="flag">
+              <option value="US">A2UZPC5JPB2EX1</option>
+              <option value="US">A2UZPC5JPB2EX2</option>
+              <option value="US">A2UZPC5JPB2EX3</option>
+            </select>
+          </div>
+          <div class="currency-valute">
+            <span class="title">Currency: </span>
+            <select class="js-example-basic-single currency" name="currency">
+              <option value="USD">USD </option>
+              <option value="EUR">EUR </option>
+              <option value="RUB">RUB </option>
+            </select>
+          </div>
+          <button type="button" class="btn icon add btn-outline-primary btn-add-right" ui-sref="SettingsNewAccount" style="    margin-right: 8px;" href="/settings/newAccount">Add+</button>
+        </div>
+      </div>
+    </header>
+    <!-- end top nav -->
+    <div class="wrapper-content-tools">
+      <div class="header-content-tools">
+        <h3>Your PPC.TOOLS account is currently suspended. </h3>
+        <p>Please click the Update Card button below to update your payment method.</p>
+      </div>
+      <div class="container-list-tools">
+        <ul class="list-tools">
+          <li class="tools-options">
+            <div class="header-tools-li">
+              <h5>Standard</h5>
+              <div class="title-price color-dark-blue">
+                <span class="dollar-icon">$</span>
+                <span class="price-tools">39</span>
+                <span class="mounts-tools">/mo</span>
+              </div>
+            </div>
+            <div class="grey-block-tools">
+              <h5>best for</h5>
+            </div>
+            <div class="color-block-tools background-dark-blue">
+              <h3>New Seller</h3>
+            </div>
+            <div class="info-text-block-tools">
+              <p class="info-text-tools">Risk-Free 30 Days Trial</p>
+            </div>
+              <div class="info-text-block-tools">
+                  <p class="info-text-tools">Automated Keyword Discovery</p>
+              </div>
+              <div class="info-text-block-tools">
+                  <p class="info-text-tools">Fully Featured Dashboard</p>
+              </div>
+              <div class="info-text-block-tools">
+                  <p class="info-text-tools">Manage Existing Seller Central Campaigns</p>
+              </div>
+              <div class="info-text-block-tools-grey">
+                  <p class="info-text-tools-grey-block"><span>10 products</span> to promote</p>
+              </div>
+              <div class="info-text-block-tools-grey">
+                  <p class="info-text-tools-grey-block">Unlimited e-mail and live chat</p>
+              </div>
+              <div class="info-text-block-tools">
+                  <p class="info-text-tools-close">Dedicated Account Manager</p>
+              </div>
+              <div class="info-text-block-tools padding-bottom-33">
+                  <p class="info-text-tools-close">Regular Account Reviewes</p>
+              </div>
+              <div class="footer-info-text-tools">
+                  <a href="" class="upgrate-btn">Upgrate Account</a>
+              </div>
+          </li>
+            <li class="tools-options">
+                <div class="header-tools-li">
+                    <h5>Advanced</h5>
+                    <div class="title-price color-light-blue">
+                        <span class="dollar-icon">$</span>
+                        <span class="price-tools">99</span>
+                        <span class="mounts-tools">/mo</span>
+                    </div>
+                </div>
+                <div class="grey-block-tools">
+                    <h5>best for</h5>
+                </div>
+                <div class="color-block-tools background-light-blue">
+                    <h3>Current Advertisers</h3>
+                </div>
+                <div class="info-text-block-tools">
+                    <p class="info-text-tools-blue-check">Risk-Free 30 Days Trial</p>
+                </div>
+                <div class="info-text-block-tools">
+                    <p class="info-text-tools-blue-check">Automated Keyword Discovery</p>
+                </div>
+                <div class="info-text-block-tools">
+                    <p class="info-text-tools-blue-check">Fully Featured Dashboard</p>
+                </div>
+                <div class="info-text-block-tools">
+                    <p class="info-text-tools-blue-check">Manage Existing Seller Central Campaigns</p>
+                </div>
+                <div class="info-text-block-tools-grey">
+                    <p class="info-text-tools-grey-block"><span>500 products</span> to promote</p>
+                </div>
+                <div class="info-text-block-tools-grey">
+                    <p class="info-text-tools-grey-block">Unlimited e-mail and live chat</p>
+                </div>
+                <div class="info-text-block-tools">
+                    <p class="info-text-tools-close">Dedicated Account Manager</p>
+                </div>
+                <div class="info-text-block-tools padding-bottom-33">
+                    <p class="info-text-tools-close">Regular Account Reviewes</p>
+                </div>
+                <div class="footer-info-text-tools">
+                    <a href="" class="upgrate-btn-blue">Upgrate Account</a>
+                </div>
+            </li>
+            <li class="tools-options">
+                <div class="header-tools-li">
+                    <h5>Professional</h5>
+                    <div class="title-price color-orange-block">
+                        <span class="dollar-icon">$</span>
+                        <span class="price-tools">499</span>
+                        <span class="mounts-tools">/mo</span>
+                    </div>
+                </div>
+                <div class="grey-block-tools">
+                    <h5>best for</h5>
+                </div>
+                <div class="color-block-tools background-orange">
+                    <h3>Large Clients</h3>
+                </div>
+                <div class="info-text-block-tools">
+                    <p class="info-text-tools-orange-check">Risk-Free 30 Days Trial</p>
+                </div>
+                <div class="info-text-block-tools">
+                    <p class="info-text-tools-orange-check">Automated Keyword Discovery</p>
+                </div>
+                <div class="info-text-block-tools">
+                    <p class="info-text-tools-orange-check">Fully Featured Dashboard</p>
+                </div>
+                <div class="info-text-block-tools">
+                    <p class="info-text-tools-orange-check">Manage Existing Seller Central Campaigns</p>
+                </div>
+                <div class="info-text-block-tools-grey">
+                    <p class="info-text-tools-grey-block orange-span"><span>Unlimited  products</span> to promote</p>
+                </div>
+                <div class="info-text-block-tools-grey">
+                    <p class="info-text-tools-grey-block orange-span">Unlimited e-mail, live chat <span>and phone support</span></p>
+                </div>
+                <div class="info-text-block-tools">
+                    <p class="info-text-tools-orange-check">Dedicated Account Manager</p>
+                </div>
+                <div class="info-text-block-tools padding-bottom-20">
+                    <p class="info-text-tools-orange-check">Regular Account Reviewes</p>
+                </div>
+                <div class="footer-info-text-tools">
+                    <a href="" class="upgrate-btn-orange">Upgrate Account</a>
+                </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/select2.full.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/fixedheader/3.1.3/js/dataTables.fixedHeader.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.colVis.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+  <script src="js/AddTabs.js"></script>
+  <script src="js/chosen.jquery.js"></script>
+  <script src="js/prism.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/morris.min.js"></script>
+  <script src="js/jquery.circliful.js"></script>
+  <script src="js/main-new-design.js"></script>
+  </body>
+  </html>

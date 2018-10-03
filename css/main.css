@@ -103,7 +103,7 @@ form + .select2-container.select2-container--default.select2-container--open {
     color: #263238;
     font-size: 12px !important;
     font-weight: 600;
-    padding: 0 6px; }
+    padding: 5px 6px; }
   .select2-dropdown .select2-results__option {
     padding: 8px 10px; }
   .select2-dropdown .select2-results__option--highlighted {
