@@ -4993,3 +4993,6 @@ table.dataTable thead th{
 .padding-bottom-70{
     padding-bottom: 70px;
 }
+.active-option-autopilot{
+    border-bottom: 4px solid #428bca;
+}
