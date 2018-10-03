@@ -1130,7 +1130,8 @@ body{
     border-bottom: 1px solid #ececec;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    padding: 10px 0 0;
 }
 .nav-table-list{
     display: flex;
@@ -1340,7 +1341,7 @@ body{
     align-items: center;
 }
 .show-more p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     font-family: 'Ubuntu';
 }
@@ -5084,7 +5085,10 @@ table.dataTable thead th{
 }
 .wrapper_searchterms .dataTable thead .sorting,
 .wrapper_searchterms .dataTable thead .sorting_asc,
-.wrapper_searchterms .dataTable thead .sorting_desc{
+.wrapper_searchterms .dataTable thead .sorting_desc,
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc{
     background-size: 14px;
 }
 .select2-results__option span{
@@ -5314,4 +5318,53 @@ table.dataTable thead th{
 }
 .tools-options:last-child{
     margin-right: 0;
+}
+.title-keywords-text{
+    margin-bottom: 23px;
+}
+.title-keywords-text p{
+    font-size: 30px;
+    color: #222222;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+.align-center{
+    align-items: center;
+}
+.padding-bottom-0{
+    padding-bottom: 0 !important;
+}
+.item-size-small span{
+    font-size: 14px;
+}
+.nav-li-header-small{
+    padding: 25px 0 15px;
+}
+.nav-li-header-small a {
+    padding: 15px 25px 15px;
+    font-size: 14px;
+    position: relative;
+    font-weight: 300;
+}
+.nav-li-header-small .icon-refresh {
+    padding: 15px 40px 15px 25px !important;
+}
+.wrapper_searchterms .control {
+    border-bottom: 2px solid #eceff1;
+    padding: 20px 10px;
+}
+.respons-wrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.campages-block .item .input {
+    font-size: 14px;
+    margin-right: 10px;
+}
+.respons-wrap .new-filters{
+    margin-bottom: 20px;
+}
+.wrapper-control-block-no-absolute{
+    display: flex;
+    align-items: center;
 }

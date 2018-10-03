@@ -16,9 +16,9 @@
         bottom: 5px;
     }
     .nav-li-header a {
-        padding-left: 15px;
-        padding-right: 15px;
-        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
     }
     .icon-refresh{
         padding-left: 15px !important;
@@ -49,6 +49,10 @@
     }
     .show-more p {
         font-size: 15px;
+        white-space: nowrap;
+    }
+    .respons-wrap .show-more{
+        margin-bottom: 15px;
     }
     .chevron-active {
         margin-left: 10px;
@@ -133,6 +137,38 @@
     }
     .container-nav-right .btn.icon.add {
         font: 300 16px 'Ubuntu';
+    }
+    .list-day li a span {
+        font-size: 14px;
+    }
+    .title-keywords-text p {
+        font-size: 20px;
+    }
+    .nav-li-header a {
+        padding: 15px;
+    }
+    .icon-refresh{
+        padding: 15px 50px 15px 15px !important;
+    }
+    .nav-li-header {
+        padding: 15px 0 13px;
+    }
+    .list-day li a {
+        padding: 15px 20px 10px 20px;
+    }
+    .respons-wrap{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .view-respons{
+        flex-wrap: wrap;
+    }
+    .view-respons .campages-block {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    .respons-wrap .new-filters{
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width: 650px) {

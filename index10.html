@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PPC.tools</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.3/css/fixedHeader.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/css/tether-theme-arrows-dark.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/chosen.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="wrapper_searchterms" style="opacity: 0">
+
+    <!-- top nav -->
+    <header class="header">
+        <div class="wrapper-top-nav">
+            <div class="logo">
+                <h1 class="general-title">
+                    <a href="">
+                        <img src="img/selected_icon/logo.png" alt="logo"/>
+                    </a>
+                </h1>
+            </div>
+            <div class="wrapper-navigation-top">
+                <nav class="top-nav">
+                    <ul class="navigation-top-list">
+                        <li class="info-top-nav">
+                            <a href="" class="active-link">SKUs</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">ppc Wizard</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Changemaster</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Campaigns</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Keywords</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Searchterms</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Tracking</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Autopilot</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Help</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="profile dropdown">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center" title="User's menu"  data-step="26" data-intro="Information about your account, global settings, billing."
+                       id="dropdown-profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                            class="name user-btn-text" ng-bind="email">info7
+              <i class="fa fa-chevron-down" aria-hidden="true"></i></span></a>
+                    <div class="dropdown-menu new-dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-profile">
+                        <a ui-sref="userSettings">Profile</a>
+                        <a ui-sref="Settings">System settings</a>
+                        <a ui-sref="Portal" target="_blank" >Billing</a>
+                        <a ui-sref="ContactUs">Contact us</a>
+                        <a ui-sref="addUser">Add user</a>
+                        <a ui-sref="Logout" class="logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Log Out</a>
+
+                    </div>
+                </div>
+                <button type="button" class="market-btn">
+            <span class="round-block">
+                32
+            </span>
+                    <div class="drop-down-market">
+                        <ul class="list-drop-down">
+                            <li>
+                                <a href="">your info</a>
+                            </li>
+                            <li>
+                                <a href="">your info</a>
+                            </li>
+                            <li>
+                                <a href="">your info</a>
+                            </li>
+                        </ul>
+                        <div class="separeted-link">
+                            <a href="">Separeted link</a>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="wrapper-button-nav">
+            <div class="container-button-nav">
+                <nav class="button-nav">
+                    <ul class="button-nav-list">
+                        <li class="nav-list-variant none-padding-left active-option">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="nav-list-variant active-option">
+                            <a href="">Campaign list</a>
+                        </li>
+                        <li class="nav-list-variant none-padding-right">
+                            <a href="">Campaign</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container-nav-right">
+                <div class="button-nav-right">
+                    <button type="button" class="video-guide">
+                        <span>Video guide</span>
+                    </button>
+                </div>
+                <div class="currency-options new-currency ">
+                    <select class="js-example-basic-single flag icon" name="flag">
+                        <option value="US">A2UZPC5JPB2EX1</option>
+                        <option value="US">A2UZPC5JPB2EX2</option>
+                        <option value="US">A2UZPC5JPB2EX3</option>
+                    </select>
+                </div>
+                <div class="currency-valute">
+                    <span class="title">Currency: </span>
+                    <select class="js-example-basic-single currency" name="currency">
+                        <option value="USD">USD </option>
+                        <option value="EUR">EUR </option>
+                        <option value="RUB">RUB </option>
+                    </select>
+                </div>
+                <button type="button" class="btn icon add btn-outline-primary btn-add-right" ui-sref="SettingsNewAccount" style="    margin-right: 8px;" href="/settings/newAccount">Add+</button>
+                <div class="trial-wrapper">
+                    <p><span class="orange-text">6</span> days left in trial</p>
+                    <button type="button" class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end top nav -->
+
+    <div class="table-header">
+        <div class="wrapper-charts-graphics">
+            <div class="title-keywords-text">
+                <p>KillBRD - A500-1-SETA500-2-SET - Auto - Matcha Set Start Up - B0735GRKYX - B0735JQZ8Y</p>
+            </div>
+            <div class="container-list-charts">
+                <ul class="charts-list">
+                    <li class="options-charts ravenue-li">
+                        <div class="text-info-charts">
+                            <h5>Revenue</h5>
+                            <div class="info-chart">
+                                <p>
+                                    <span class="total-info">Total:</span>
+                                    <span class="price-chart">$ 652 922</span>
+                                </p>
+                                <span class="percent-number percent-up">+23%</span>
+                            </div>
+                            <div class="info-chart color-change">
+                                <p>
+                                    <span class="total-info">PPC:</span>
+                                    <span class="price-chart"> $ 165 439</span>
+                                </p>
+                                <span class="percent-number percent-down">-21%</span>
+                            </div>
+                        </div>
+                        <div class="wrapper-chart-circul">
+                            <div class="wrapper-chart-circul">
+                                <div id="test-circle2"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="options-charts profit-li">
+                        <div class="text-info-charts">
+                            <h5>Profit</h5>
+                            <div class="info-chart">
+                                <p>
+                                    <span class="total-info">Total:</span>
+                                    <span class="price-chart">$ 652 922</span>
+                                </p>
+                                <span class="percent-number percent-up">-43%</span>
+                            </div>
+                            <div class="info-chart color-change">
+                                <p>
+                                    <span class="total-info">PPC:</span>
+                                    <span class="price-chart"> $ 0</span>
+                                </p>
+                                <span class="percent-number percent-down">-100%</span>
+                            </div>
+                        </div>
+                        <div class="wrapper-chart-circul">
+                            <div id="test-circle"></div>
+                        </div>
+                    </li>
+                    <li class="options-charts acos-li">
+                        <div class="text-info-charts">
+                            <h5>ACoS</h5>
+                            <div class="info-chart">
+                                <p>
+                                    <span class="total-info">Total:</span>
+                                    <span class="price-chart">64.23%</span>
+                                </p>
+                                <span class="percent-number percent-up">+32%</span>
+                            </div>
+                            <div class="info-chart color-change">
+                                <p>
+                                    <span class="total-info">PPC:</span>
+                                    <span class="price-chart">25.42%</span>
+                                </p>
+                                <span class="percent-number percent-opacity-up">+12%</span>
+                            </div>
+                        </div>
+                        <div class="wrapper-chart-circul">
+                            <div class="wrapper-chart-circul">
+                                <div id="test-circle3"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="options-charts orders-li">
+                        <div class="text-info-charts">
+                            <h5>Orders</h5>
+                            <div class="info-chart">
+                                <p>
+                                    <span class="total-info">Total:</span>
+                                    <span class="price-chart">29843</span>
+                                </p>
+                                <span class="percent-number"></span>
+                            </div>
+                            <div class="info-chart color-change">
+                                <p>
+                                    <span class="total-info">PPC:</span>
+                                    <span class="price-chart">7746</span>
+                                </p>
+                                <span class="percent-number percent-down">-23%</span>
+                            </div>
+                        </div>
+                        <div class="wrapper-chart-circul">
+                            <div class="wrapper-chart-circul">
+                                <div id="test-circle4"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="charts-list">
+                    <li class="options-charts info-bottom-block">
+                        <div class="container-chart-info">
+                            <h5>Total AdSpend</h5>
+                            <div class="wrapper-info-data">
+                                <span class="data-charts">$ 42 062</span>
+                                <span class="data-percent green-percent">12%</span>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="options-charts info-bottom-block">
+                        <div class="container-chart-info">
+                            <h5>Impressions</h5>
+                            <div class="wrapper-info-data">
+                                <span class="data-charts">15 237 521</span>
+                                <span class="data-percent">-16%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="options-charts info-bottom-block">
+                        <div class="container-chart-info">
+                            <h5>Clicks / CTR</h5>
+                            <div class="wrapper-info-data">
+                                <span class="data-charts">54 148 / 0.36 % </span>
+                                <span class=""></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="options-charts info-bottom-block">
+                        <div class="container-chart-info">
+                            <h5>Conversion</h5>
+                            <div class="wrapper-info-data">
+                                <span class="data-charts">14.34 %</span>
+                                <span class="data-percent">-3%</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-graphic-content">
+            <div class="wrapper-header-table">
+                <nav class="nav-header-table">
+                    <ul class="nav-table-list">
+                        <li class="nav-li-header active-li-header">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="nav-li-header">
+                            <a href=""> Keywords</a>
+                        </li>
+                        <li class="nav-li-header">
+                            <a href="">Search Terms</a>
+                        </li>
+                        <li class="nav-li-header">
+                            <a href="">Negative keywords</a>
+                        </li>
+                        <li class="nav-li-header">
+                            <a href="">Find Negative Words</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="wrapper-add-btn">
+                </div>
+                <div class="wrapper-data-pickers flex-position">
+                    <ul class="list-day">
+                        <li>
+                            <a href="" class="active-link-list">
+                                <span class="last-span">Last</span>
+                                <span class="days">7 days</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="last-span">Last</span>
+                                <span class="days">14 days</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="last-span">Last</span>
+                                <span class="days">30 days</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="last-span">Last</span>
+                                <span class="days">60 days</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex flex-column">
+                        <span class="title range-title">Select Data Range</span>
+                        <input type="text" id="datePicker2" class="form-control datepicker">
+                    </div>
+                </div>
+            </div>
+            <div class="graphic-content">
+                <div id="area"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-section">
+        <div class="table new-table table-absolute">
+            <div class="control form-inline  align-items-end justify-content-between padding-bottom-0 respons-wrap">
+                <div class="d-flex flex-column basic-view">
+                    <div class="d-flex flex-row align-center view-respons">
+                        <div class="label">
+                            <input type="text" data-search-table-main class="form-control search" id="search"  placeholder="Search">
+                            <div class="search-close"></div>
+                        </div>
+                        <nav class="nav-header-table refresh-wrapper-info">
+                            <ul class="nav-table-list refresh-list">
+                                <li class="nav-li-header nav-li-header-small  active-li-header">
+                                    <a href="" class="icon-refresh">Refresh</a>
+                                </li>
+                                <li class="nav-li-header nav-li-header-small">
+                                    <a href="">All</a>
+                                </li>
+                                <li class="nav-li-header nav-li-header-small">
+                                    <a href="">Acos < 25%</a>
+                                </li>
+                                <li class="nav-li-header nav-li-header-small">
+                                    <a href="">Acos > 50%</a>
+                                </li>
+                                <li class="nav-li-header nav-li-header-small">
+                                    <a href="">Zero Sales</a>
+                                </li>
+                                <li class="nav-li-header nav-li-header-small">
+                                    <a href="">Zero Net</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="campages-block d-flex align-items-center">
+                            <div class="item item-size-small">
+                                <span class="input">CP</span><span class="desc">Campaign Phrase</span>
+                            </div>
+
+                            <div class="item item-size-small">
+                                <span class="input">CE</span><span class="desc">Campaign Exact</span>
+                            </div>
+
+                            <div class="item item-size-small">
+                                <span class="input">AP</span><span class="desc">AdGroup Phrase</span>
+                            </div>
+
+                            <div class="item item-size-small">
+                                <span class="input">AE</span><span class="desc">AdGroup Exact</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters new-filters">
+                    <div class="show-more">
+                        <p>Show <select>
+                            <option>10</option>
+                            <option>25</option>
+                            <option>50</option>
+                            <option>100</option>
+                        </select> entries</p>
+                    </div>
+                </div>
+            </div>
+            <div class="legend d-flex align-items-center flex-center">
+                <div class="item d-flex align-items-center new-action">
+                    <span class="title">Selected(<span class="count">2</span>)</span>
+                    <select class="js-example-basic-single actions icon dubleArrow " name="flag">
+                        <option value="0">Action:</option>
+                        <option value="1" data-icon='reject'>Reject</option>
+                        <option value="2" data-icon='succsess'>Enabled</option>
+                        <option value="3" data-icon='delay'>Delay</option>
+                        <option value="5" data-icon='autosuccssesed'>Auto suggested</option>
+                    </select>
+                    <div class="wrapper-control-block-no-absolute">
+                        <div class="container-control">
+                            <div class="custom-control custom-checkbox control-check">
+                                <input type="checkbox" class="custom-control-input" id="tableCheckA99">
+                                <label class="custom-control-label" for="tableCheckA99">Hide ASINs</label>
+                            </div>
+                        </div>
+                        <div class="container-control">
+                            <div class="custom-control custom-checkbox control-check">
+                                <input type="checkbox" class="custom-control-input" id="tableCheckA100">
+                                <label class="custom-control-label" for="tableCheckA100">Show only ASINs</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters new-filters">
+                    <div class="group">
+                        <button class="btn icon visible btn-outline-primary">Column visibility</button>
+                        <button data-filter-btn class="btn icon filter btn-primary">Filters</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+
+<div uib-modal-window="modal-new-campaing" class="modal ng-scope ng-isolate-scope in" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: none;">
+    <div class="modal-dialog modal-xl change-modal-width">
+        <div class="modal-content  modal-campaing padding-none" uib-modal-transclude="">
+            <div class="modal-header ng-scope change-header-modal">
+                <h5 class="modal-title" id="exampleModalLabel1">Add to negative keywords <span>0</span> keywords</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close(false)">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body ng-scope new-padding-campaing">
+                <div class="wrapper-negative-select">
+                    <div class="wrapper-radio-btn">
+                        <h3>TYPE</h3>
+                        <div class="custom-control custom-radio radio-container">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">Exact</label>
+                        </div>
+                        <div class="custom-control custom-radio radio-container">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">Phrase</label>
+                        </div>
+                    </div>
+                    <div class="wrapper-radio-btn">
+                        <h3>negative level</h3>
+                        <div class="custom-control custom-radio radio-container">
+                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio3">Campaign Level</label>
+                        </div>
+                        <div class="custom-control custom-radio radio-container">
+                            <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio4">AdGroup Level (current adgroup)</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-modal-campaing">
+                    <button type="button" class="cancel-btn campaing-cancel close-btn">Close</button>
+                    <button type="button" class="campaing-next add-btn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div uib-modal-window="modal-window" class="modal ng-scope ng-isolate-scope in" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: none;">
+    <div class="modal-dialog modal-xl width-apdate-profit">
+        <div class="modal-content  width-apdate-profit padding-none" uib-modal-transclude="">
+            <div class="modal-header ng-scope change-header-modal change-header-modal-autopilot">
+                <h5 class="modal-title" id="exampleModalLabel">Update profit margins</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close(false)">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body ng-scope padding-none">
+                <div class="container-table-profit">
+                    <div class="header-table-profit">
+                        <div class="show-more">
+                            <p>Show <select>
+                                <option>10</option>
+                                <option>25</option>
+                                <option>50</option>
+                                <option>100</option>
+                            </select> entries</p>
+                        </div>
+                    </div>
+                    <div class="wrapper-table-profit">
+                        <table id="example2" class="display new-display table-profit" cellspacing="0" width="100%" data-page-length='10'>
+                            <thead>
+                            <tr>
+                                <th>Img</th>
+                                <th>Product</th>
+                                <th>Cost Per Unit</th>
+                                <th>Amazon FBA Fees</th>
+                                <th>Average seling price</th>
+                                <th>ProfitMargin</th>
+                                <th>ProfitMargin Percent</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="container-img-table">
+                                        <img src="img/img-campaing.png" alt="images table"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="campaing-table-text product-line">
+                                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="14.98"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="container-img-table">
+                                        <img src="img/img-campaing.png" alt="images table"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="campaing-table-text product-line">
+                                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="14.98"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="container-img-table">
+                                        <img src="img/img-campaing.png" alt="images table"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="campaing-table-text product-line">
+                                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="14.98"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="container-img-table">
+                                        <img src="img/img-campaing.png" alt="images table"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="campaing-table-text product-line">
+                                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="14.98"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="container-img-table">
+                                        <img src="img/img-campaing.png" alt="images table"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="campaing-table-text product-line">
+                                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="14.98"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="container-img-table">
+                                        <img src="img/img-campaing.png" alt="images table"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="campaing-table-text product-line">
+                                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="14.98"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="select-block-container">
+                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="footer-table-profit"></div>
+                    </div>
+                    <div class="footer-modal-campaing">
+                        <button type="button" class="cancel-btn campaing-cancel close-btn">Close</button>
+                        <button type="button" class="campaing-next btn-save-change">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div uib-modal-window="modal-window" class="modal ng-scope ng-isolate-scope in" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: none;">
+    <div class="modal-dialog modal-xl width-apdate-profit">
+        <div class="modal-content  width-apdate-profit padding-none" uib-modal-transclude="">
+            <div class="modal-header ng-scope change-header-modal change-header-modal-autopilot">
+                <div class="container-modal-header">
+                    <h5 class="modal-title welcome-modal" id="exampleModalLabel">Welcome to PPC tools</h5>
+                    <p>The most advanced AI for PPC ads management</p>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close(false)">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body ng-scope padding-none">
+                <div class="info-modal-welcome welcome-padding">
+                    <div class="container-welcome-img">
+                        <img src="img/welcome-icon.png" alt="welcome"/>
+                    </div>
+                    <div class="container-welcome-content">
+                        <div class="wrapper-list-welcome">
+                            <h3><span>I'm new</span> and I do not know how to advertise yet, and I want PPC.tools to do it for me!</h3>
+                            <p>Launch the PPC Wizard and specify the options for displaying ads and: </p>
+                            <ol class="list-welcome">
+                                <li>
+                                    <p>We will create auto-campaigns and find effective keywords in them. </p>
+                                </li>
+                                <li>
+                                    <p>We will transfer these keywords into manual campaigns and begin to monitor them, adjust bids, and also eliminate inefficient keywords and searchterms. </p>
+                                </li>
+                                <li>
+                                    <p>We will monitor your ACoS, CTR, Conversion and inform you about everything that we do.</p>
+                                </li>
+                            </ol>
+                            <div class="footer-welcome-list">
+                                <a href="" class="read-more">Read more</a>
+                                <button type="button" class="btn-welcome wizard-btn">Launch PPC Wizard</button>
+                            </div>
+                        </div>
+                        <div class="wrapper-list-welcome">
+                            <h3><span>I already run</span>  ads and I want to optimize!</h3>
+                            <p>We suggest using our Autopilot, which will help you with existing campaigns:</p>
+                            <ol class="list-welcome">
+                                <li>
+                                    <p>Find inefficient queries and keywords and delete them. </p>
+                                </li>
+                                <li>
+                                    <p>Automatically adjust bids and maintain certain ACoS level .</p>
+                                </li>
+                                <li>
+                                    <p>Issue warnings about low conversion or CTR.</p>
+                                </li>
+                            </ol>
+                            <div class="footer-welcome-list">
+                                <a href="" class="read-more">Read more</a>
+                                <button type="button" class="btn-welcome wizard-btn">Go to my Campaign</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-modal-welcome">
+                    <div class="custom-control custom-checkbox checkbox-table checkbox-welcome">
+                        <input type="checkbox" class="custom-control-input" id="customCheck320">
+                        <label class="custom-control-label" for="customCheck320">Do not show again</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/select2.full.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/fixedheader/3.1.3/js/dataTables.fixedHeader.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.colVis.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+<script src="js/AddTabs.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/prism.js"></script>
+<script src="js/init.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/morris.min.js"></script>
+<script src="js/jquery.circliful.js"></script>
+<script src="js/main-new-design.js"></script>
+</body>
+</html>
