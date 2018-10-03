@@ -2715,8 +2715,9 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     margin-left: 3px;
     white-space: nowrap;
 }
-.change-modal-width{
+.change-modal-width .modal-xl{
     max-width: 725px;
+    width: 100%;
 }
 .change-header-modal{
     padding: 25px 25px 0 0;
@@ -3371,7 +3372,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .margin-right-0{
     margin-right: 0;
 }
-.width-apdate-profit{
+.width-apdate-profit .modal-xl{
     max-width: 1105px;
     width: 100%;
     box-shadow: 0px 0px 35px 0px rgba(170,170,170,1);
