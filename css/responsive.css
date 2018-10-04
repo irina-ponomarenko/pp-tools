@@ -170,6 +170,28 @@
     .respons-wrap .new-filters{
         margin-bottom: 0;
     }
+    .wrapper-control-block-no-absolute {
+        display: inline;
+    }
+}
+@media only screen and (max-width: 1400px) and (min-width: 360px) {
+    .responsive-filters{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .container-control {
+        margin-right: 10px;
+    }
+    .control-check label {
+        font-size: 16px;
+    }
+    .responsive-filters .group{
+        margin-top: 10px;
+    }
+    .narrow-list li:last-child{
+        margin-right: 0;
+    }
 }
 @media screen and (max-width: 650px) {
 

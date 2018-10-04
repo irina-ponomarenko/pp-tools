@@ -415,7 +415,7 @@
                     </div>
                 </div>
             </div>
-            <div class="legend d-flex align-items-center flex-center">
+            <div class="legend d-flex align-items-flex-end flex-center">
                 <div class="item d-flex align-items-center new-action">
                     <span class="title">Selected(<span class="count">2</span>)</span>
                     <select class="js-example-basic-single actions icon dubleArrow " name="flag">
@@ -440,76 +440,602 @@
                         </div>
                     </div>
                 </div>
-                <div class="filters new-filters">
+                <div class="filters new-filters responsive-filters">
+                    <div class="list-narrow-container">
+                        <ul class="narrow-list">
+                            <li>
+                                <a href="" class="active-narrow-link">All KillBRD 21/08/2017 - Narrow - Broad </a>
+                            </li>
+                            <li>
+                                <a href="">Narrow - Exact</a>
+                            </li>
+                            <li>
+                                <a href="">Narrow - Phrase</a>
+                            </li>
+                            <li>
+                                <a href="">Narrow - Exact</a>
+                            </li>
+                            <li>
+                                <a href="">Narrow - Phrase</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="group">
                         <button class="btn icon visible btn-outline-primary">Column visibility</button>
                         <button data-filter-btn class="btn icon filter btn-primary">Filters</button>
                     </div>
                 </div>
             </div>
+            <table id="example11" class="display new-display " cellspacing="0" width="100%" data-page-length='10'>
+                <thead class="new-thead">
+                <tr>
+                    <th>
+                        <div class="custom-control custom-checkbox custom-control-new">
+                            <input type="checkbox" class="custom-control-input" id="tableCheckAll">
+                            <label class="custom-control-label" for="tableCheckAll"></label>
+                        </div>
+                    </th>
+                    <th>State</th>
+                    <th>SearchQuery</th>
+                    <th>Keyword</th>
+                    <th>Bid</th>
+                    <th>Suggested</th>
+                    <th>Neg.</th>
+                    <th>Match</th>
+                    <th>Rev</th>
+                    <th>Spend</th>
+                    <th>Net</th>
+                    <th>AcoS</th>
+                    <th>Impress</th>
+                    <th>Clicks</th>
+                    <th>Ave CPC</th>
+                    <th>Orders</th>
+                    <th>CTR</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="custom-control custom-checkbox custom-control-new">
+                            <input type="checkbox" class="custom-control-input" id="tableCheck2">
+                            <label class="custom-control-label" for="tableCheck2"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle dropdown-content-toggle" type="button" id="dropdown_r101734757105_1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="round enabled" > </span>
+                            </button>
+                            <div class="dropdown-menu state-a-select" aria-labelledby="dropdown_r101734080757105_1" x-placement="bottom-start" >
+                                <a class="dropdown-item item-variant" ><span class="d-flex align-items-center"><span class="round enabled"></span>Enabled</span></a>
+                                <a class="dropdown-item item-variant" ><span class="d-flex align-items-center"><span class="round paused"></span>Paused</span></a>
+                                <a class="dropdown-item item-variant"><span class="d-flex align-items-center"><span class="round archived"></span>Archived</span></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="" class="search-query">ceremonial matcha tea set</a>
+                    </td>
+                    <td>
+                        <a href="" class="keywords-text-link">a bamboo tea whisk set</a>
+                    </td>
+                    <td>
+                        <div class="table-edited-value new-edit-value">
+                            <input type=text" value="0.60">
+                            <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                            <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+                        </div>
+                        <small>0.60</small>
+                    </td>
+                    <td class="suggested-td">
+                        <span class="table-gray-value">$1.20</span><small>$0.79 - $1.30</small>
+                    </td>
+                    <td>
+                        <div class="dropdown colored checked">
+                            <button class="btn btn-secondary dropdown-toggle d-flex align-items-center drop-down-colored" type="button" id="dropdowenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>CP</span>
+                            </button>
+                            <div class="dropdown-menu colored-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"><span></span></a>
+                                <a class="dropdown-item" href="#"><span>CP</span></a>
+                                <a class="dropdown-item" href="#"><span>CE</span></a>
+                                <a class="dropdown-item" href="#"><span>AP</span></a>
+                                <a class="dropdown-item" href="#"><span>AE</span></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        phrase
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$152.91</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$17.54</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$135.37</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph green-text">
+                            <p>+11.47</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>3,955</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>30</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>0.58</p>
+                        </div>
+                    </td>
+                    <td >
+                        <div class="table-paragraph">
+                            <p>2</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>0.76%</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrapper-btn-table-nav">
+                            <button type="button" class="add-some">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="rating">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="move-up">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="delete">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="custom-control custom-checkbox custom-control-new">
+                            <input type="checkbox" class="custom-control-input" id="tableCheck3">
+                            <label class="custom-control-label" for="tableCheck3"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle dropdown-content-toggle" type="button" id="dropdown_r1017340757105_1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="round enabled" > </span>
+                            </button>
+                            <div class="dropdown-menu state-a-select" aria-labelledby="dropdown_r101734080757105_1" x-placement="bottom-start" >
+                                <a class="dropdown-item item-variant" ><span class="d-flex align-items-center"><span class="round enabled"></span>Enabled</span></a>
+                                <a class="dropdown-item item-variant" ><span class="d-flex align-items-center"><span class="round paused"></span>Paused</span></a>
+                                <a class="dropdown-item item-variant"><span class="d-flex align-items-center"><span class="round archived"></span>Archived</span></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="" class="search-query">ceremonial matcha tea set</a>
+                    </td>
+                    <td>
+                        <a href="" class="keywords-text-link">a bamboo tea whisk set</a>
+                    </td>
+                    <td>
+                        <div class="table-edited-value new-edit-value">
+                            <input type=text" value="0.60">
+                            <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                            <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+                        </div>
+                        <small>0.60</small>
+                    </td>
+                    <td class="suggested-td">
+                        <span class="table-gray-value">$1.20</span><small>$0.79 - $1.30</small>
+                    </td>
+                    <td>
+                        <div class="dropdown colored checked">
+                            <button class="btn btn-secondary dropdown-toggle d-flex align-items-center drop-down-colored" type="button" id="dropdowenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>CP</span>
+                            </button>
+                            <div class="dropdown-menu colored-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"><span></span></a>
+                                <a class="dropdown-item" href="#"><span>CP</span></a>
+                                <a class="dropdown-item" href="#"><span>CE</span></a>
+                                <a class="dropdown-item" href="#"><span>AP</span></a>
+                                <a class="dropdown-item" href="#"><span>AE</span></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        phrase
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$152.91</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$17.54</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$135.37</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph green-text">
+                            <p>+11.47</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>3,955</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>30</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>0.58</p>
+                        </div>
+                    </td>
+                    <td >
+                        <div class="table-paragraph">
+                            <p>2</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>0.76%</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrapper-btn-table-nav">
+                            <button type="button" class="add-some">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="rating">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="move-up">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="delete">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="custom-control custom-checkbox custom-control-new">
+                            <input type="checkbox" class="custom-control-input" id="tableCheck4">
+                            <label class="custom-control-label" for="tableCheck4"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle dropdown-content-toggle" type="button" id="dropdown_r1173080757105_1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="round enabled" > </span>
+                            </button>
+                            <div class="dropdown-menu state-a-select" aria-labelledby="dropdown_r101734080757105_1" x-placement="bottom-start" >
+                                <a class="dropdown-item item-variant" ><span class="d-flex align-items-center"><span class="round enabled"></span>Enabled</span></a>
+                                <a class="dropdown-item item-variant" ><span class="d-flex align-items-center"><span class="round paused"></span>Paused</span></a>
+                                <a class="dropdown-item item-variant"><span class="d-flex align-items-center"><span class="round archived"></span>Archived</span></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="" class="search-query">ceremonial matcha tea set</a>
+                    </td>
+                    <td>
+                        <a href="" class="keywords-text-link">a bamboo tea whisk set</a>
+                    </td>
+                    <td>
+                        <div class="table-edited-value new-edit-value">
+                            <input type=text" value="0.60">
+                            <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                            <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+                        </div>
+                        <small>0.60</small>
+                    </td>
+                    <td class="suggested-td">
+                        <span class="table-gray-value">$1.20</span><small>$0.79 - $1.30</small>
+                    </td>
+                    <td>
+                        <div class="dropdown colored checked">
+                            <button class="btn btn-secondary dropdown-toggle d-flex align-items-center drop-down-colored" type="button" id="dropdowenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>CP</span>
+                            </button>
+                            <div class="dropdown-menu colored-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"><span></span></a>
+                                <a class="dropdown-item" href="#"><span>CP</span></a>
+                                <a class="dropdown-item" href="#"><span>CE</span></a>
+                                <a class="dropdown-item" href="#"><span>AP</span></a>
+                                <a class="dropdown-item" href="#"><span>AE</span></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        phrase
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$152.91</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$17.54</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$135.37</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph green-text">
+                            <p>+11.47</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>3,955</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>30</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>0.58</p>
+                        </div>
+                    </td>
+                    <td >
+                        <div class="table-paragraph">
+                            <p>2</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>0.76%</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrapper-btn-table-nav">
+                            <button type="button" class="add-some">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="rating">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="move-up">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="delete">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="custom-control custom-checkbox custom-control-new">
+                            <input type="checkbox" class="custom-control-input" id="tableCheck5">
+                            <label class="custom-control-label" for="tableCheck5"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle dropdown-content-toggle" type="button" id="dropdown_r11730fd80757105_1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="round enabled" > </span>
+                            </button>
+                            <div class="dropdown-menu state-a-select" aria-labelledby="dropdown_r101734080757105_1" x-placement="bottom-start" >
+                                <a class="dropdown-item item-variant" ><span class="d-flex align-items-center"><span class="round enabled"></span>Enabled</span></a>
+                                <a class="dropdown-item item-variant" ><span class="d-flex align-items-center"><span class="round paused"></span>Paused</span></a>
+                                <a class="dropdown-item item-variant"><span class="d-flex align-items-center"><span class="round archived"></span>Archived</span></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="" class="search-query">ceremonial matcha tea set</a>
+                    </td>
+                    <td>
+                        <a href="" class="keywords-text-link">a bamboo tea whisk set</a>
+                    </td>
+                    <td>
+                        <div class="table-edited-value new-edit-value">
+                            <input type=text" value="0.60">
+                            <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                            <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+                        </div>
+                        <small>0.60</small>
+                    </td>
+                    <td class="suggested-td">
+                        <span class="table-gray-value">$1.20</span><small>$0.79 - $1.30</small>
+                    </td>
+                    <td>
+                        <div class="dropdown colored checked">
+                            <button class="btn btn-secondary dropdown-toggle d-flex align-items-center drop-down-colored" type="button" id="dropdowenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>CP</span>
+                            </button>
+                            <div class="dropdown-menu colored-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"><span></span></a>
+                                <a class="dropdown-item" href="#"><span>CP</span></a>
+                                <a class="dropdown-item" href="#"><span>CE</span></a>
+                                <a class="dropdown-item" href="#"><span>AP</span></a>
+                                <a class="dropdown-item" href="#"><span>AE</span></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        phrase
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$152.91</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$17.54</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$135.37</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph green-text">
+                            <p>+11.47</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>3,955</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>30</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>0.58</p>
+                        </div>
+                    </td>
+                    <td >
+                        <div class="table-paragraph">
+                            <p>2</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>0.76%</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrapper-btn-table-nav">
+                            <button type="button" class="add-some">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="rating">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="move-up">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="delete">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr class="footer-info-table">
+                    <td colspan="8">
+                        <p>Total</p>
+                    </td>
+                    <td>
+                        <p>$1,680.00</p>
+                    </td>
+                    <td>
+                        <p>$2,285.75</p>
+                    </td>
+                    <td colspan="2">
+                        <p>$270.65 </p>
+                    </td>
+                    <td>
+                        <p>30</p>
+                    </td>
+                    <td colspan="2">
+                        <p>345</p>
+                    </td>
+                    <td colspan="3">
+                        <p>18</p>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+            <div class="legend d-flex align-items-center">
 
+                <div class="indicator d-flex align-items-center">
+                    <div class="item">
+                        <span class="round enabled"></span><span class="desc color-green">enabled</span>
+                    </div>
+
+                    <div class="item">
+                        <span class="round paused"></span><span class="desc color-orange">paused</span>
+                    </div>
+
+                    <div class="item">
+                        <span class="round archived"></span><span class="desc color-grey">archived</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Modal -->
 
-<div uib-modal-window="modal-new-campaing" class="modal ng-scope ng-isolate-scope in" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: none;">
-    <div class="modal-dialog modal-xl change-modal-width">
+<div uib-modal-window="modal-new-campaing" class="modal ng-scope ng-isolate-scope in change-modal-width" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: none;">
+    <div class="modal-dialog modal-xl">
         <div class="modal-content  modal-campaing padding-none" uib-modal-transclude="">
             <div class="modal-header ng-scope change-header-modal">
-                <h5 class="modal-title" id="exampleModalLabel1">Add to negative keywords <span>0</span> keywords</h5>
+                <h5 class="modal-title" id="exampleModalLabel1">Find Negative Words</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close(false)">
                     <span aria-hidden="true"></span>
                 </button>
             </div>
             <div class="modal-body ng-scope new-padding-campaing">
-                <div class="wrapper-negative-select">
-                    <div class="wrapper-radio-btn">
-                        <h3>TYPE</h3>
-                        <div class="custom-control custom-radio radio-container">
-                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio1">Exact</label>
+                <div class="wrapper-negative-words">
+                    <div class="title-negative-words">
+                        <div class="wrapper-click">
+                            <div class="container-clicks">
+                                <h5 class="text-title">Number of clicks</h5>
+                                <span>from - <span class="number-clicks">34</span></span>
+                            </div>
+                            <button type="button" class="generate">Generate</button>
+                            <div class="custom-control custom-checkbox check-new-keywords">
+                                <input type="checkbox" class="custom-control-input" id="tableCheckA199">
+                                <label class="custom-control-label" for="tableCheckA199"><span>Only New</span><span>Keywords</span></label>
+                            </div>
                         </div>
-                        <div class="custom-control custom-radio radio-container">
-                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio2">Phrase</label>
-                        </div>
-                    </div>
-                    <div class="wrapper-radio-btn">
-                        <h3>negative level</h3>
-                        <div class="custom-control custom-radio radio-container">
-                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio3">Campaign Level</label>
-                        </div>
-                        <div class="custom-control custom-radio radio-container">
-                            <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio4">AdGroup Level (current adgroup)</label>
+                        <div class="wrapper-data-pickers margin-right-0">
+                            <div class="d-flex flex-column">
+                                <span class="title range-title">Select Data Range</span>
+                                <input type="text" id="datePicker3" class="form-control datepicker">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="footer-modal-campaing">
-                    <button type="button" class="cancel-btn campaing-cancel close-btn">Close</button>
-                    <button type="button" class="campaing-next add-btn">Add</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div uib-modal-window="modal-window" class="modal ng-scope ng-isolate-scope in" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: none;">
-    <div class="modal-dialog modal-xl width-apdate-profit">
-        <div class="modal-content  width-apdate-profit padding-none" uib-modal-transclude="">
-            <div class="modal-header ng-scope change-header-modal change-header-modal-autopilot">
-                <h5 class="modal-title" id="exampleModalLabel">Update profit margins</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close(false)">
-                    <span aria-hidden="true"></span>
-                </button>
-            </div>
-            <div class="modal-body ng-scope padding-none">
-                <div class="container-table-profit">
-                    <div class="header-table-profit">
-                        <div class="show-more">
+                    <div class="sub-title">
+                        <div class="show-more large-more">
                             <p>Show <select>
                                 <option>10</option>
                                 <option>25</option>
@@ -517,250 +1043,406 @@
                                 <option>100</option>
                             </select> entries</p>
                         </div>
+                        <select class="js-example-basic-single actions icon dubleArrow action-words" name="flag">
+                            <option value="0">Action:</option>
+                            <option value="1" data-icon='reject'>Reject</option>
+                            <option value="2" data-icon='succsess'>Enabled</option>
+                            <option value="3" data-icon='delay'>Delay</option>
+                            <option value="5" data-icon='autosuccssesed'>Auto suggested</option>
+                        </select>
                     </div>
-                    <div class="wrapper-table-profit">
-                        <table id="example2" class="display new-display table-profit" cellspacing="0" width="100%" data-page-length='10'>
-                            <thead>
+                    <table id="filter-compaigns4" class="display new-display-key" cellspacing="0" width="100%" data-page-length='10'>
+                        <thead>
+                        <tr>
+                            <th>
+                                <div class="custom-control custom-checkbox custom-control-table-key">
+                                    <input type="checkbox" class="custom-control-input" id="tableCheck6">
+                                    <label class="custom-control-label" for="tableCheck6"></label>
+                                </div>
+                            </th>
+                            <th>Action</th>
+                            <th>Word</th>
+                            <th>Adspend</th>
+                            <th>Clicks</th>
+                        </tr>
+                        </thead>
+                        <tbody>
                             <tr>
-                                <th>Img</th>
-                                <th>Product</th>
-                                <th>Cost Per Unit</th>
-                                <th>Amazon FBA Fees</th>
-                                <th>Average seling price</th>
-                                <th>ProfitMargin</th>
-                                <th>ProfitMargin Percent</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
                                 <td>
-                                    <div class="container-img-table">
-                                        <img src="img/img-campaing.png" alt="images table"/>
+                                    <div class="custom-control custom-checkbox custom-control-table-key">
+                                        <input type="checkbox" class="custom-control-input" id="tableCheck7">
+                                        <label class="custom-control-label" for="tableCheck7"></label>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="campaing-table-text product-line">
-                                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                                    <div class="wrapper-btn-table-nav">
+                                        <button type="button" class="delete">
+                                            <div class="button" data-title="Some text"></div>
+                                        </button>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>whisk</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>4.550000000000001</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="14.98"/>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>23</p>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="container-img-table">
-                                        <img src="img/img-campaing.png" alt="images table"/>
+                                    <div class="custom-control custom-checkbox custom-control-table-key">
+                                        <input type="checkbox" class="custom-control-input" id="tableCheck8">
+                                        <label class="custom-control-label" for="tableCheck8"></label>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="campaing-table-text product-line">
-                                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                                    <div class="wrapper-btn-table-nav">
+                                        <button type="button" class="delete">
+                                            <div class="button" data-title="Some text"></div>
+                                        </button>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>whisk</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>4.550000000000001</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="14.98"/>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>23</p>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="container-img-table">
-                                        <img src="img/img-campaing.png" alt="images table"/>
+                                    <div class="custom-control custom-checkbox custom-control-table-key">
+                                        <input type="checkbox" class="custom-control-input" id="tableCheck9">
+                                        <label class="custom-control-label" for="tableCheck9"></label>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="campaing-table-text product-line">
-                                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                                    <div class="wrapper-btn-table-nav">
+                                        <button type="button" class="delete">
+                                            <div class="button" data-title="Some text"></div>
+                                        </button>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>whisk</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>4.550000000000001</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="14.98"/>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>23</p>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="container-img-table">
-                                        <img src="img/img-campaing.png" alt="images table"/>
+                                    <div class="custom-control custom-checkbox custom-control-table-key">
+                                        <input type="checkbox" class="custom-control-input" id="tableCheck10">
+                                        <label class="custom-control-label" for="tableCheck10"></label>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="campaing-table-text product-line">
-                                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                                    <div class="wrapper-btn-table-nav">
+                                        <button type="button" class="delete">
+                                            <div class="button" data-title="Some text"></div>
+                                        </button>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>whisk</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>4.550000000000001</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="14.98"/>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>23</p>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="container-img-table">
-                                        <img src="img/img-campaing.png" alt="images table"/>
+                                    <div class="custom-control custom-checkbox custom-control-table-key">
+                                        <input type="checkbox" class="custom-control-input" id="tableCheck11">
+                                        <label class="custom-control-label" for="tableCheck11"></label>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="campaing-table-text product-line">
-                                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                                    <div class="wrapper-btn-table-nav">
+                                        <button type="button" class="delete">
+                                            <div class="button" data-title="Some text"></div>
+                                        </button>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>whisk</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>4.550000000000001</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="14.98"/>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>23</p>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="container-img-table">
-                                        <img src="img/img-campaing.png" alt="images table"/>
+                                    <div class="custom-control custom-checkbox custom-control-table-key">
+                                        <input type="checkbox" class="custom-control-input" id="tableCheck12">
+                                        <label class="custom-control-label" for="tableCheck12"></label>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="campaing-table-text product-line">
-                                        <a href="">710 - Main2 - Calm Force - Yerba Mate - Tulsi - M710 - Main2 - Calm Force - Yerba Mate - Tulsi - Mifjddfi...</a>
+                                    <div class="wrapper-btn-table-nav">
+                                        <button type="button" class="delete">
+                                            <div class="button" data-title="Some text"></div>
+                                        </button>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>whisk</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>4.550000000000001</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit" placeholder="" value="14.98"/>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="select-block-container">
-                                        <input type="text" name="select-table-profit" class="select-table-profit profit-select-grey" placeholder="" value="0"/>
+                                    <div class="table-paragraph">
+                                        <p>23</p>
                                     </div>
                                 </td>
                             </tr>
-                            </tbody>
-                        </table>
-                        <div class="footer-table-profit"></div>
-                    </div>
-                    <div class="footer-modal-campaing">
-                        <button type="button" class="cancel-btn campaing-cancel close-btn">Close</button>
-                        <button type="button" class="campaing-next btn-save-change">Save Changes</button>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div uib-modal-window="modal-new-campaing" class="modal ng-scope ng-isolate-scope in change-modal-width" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: none;">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content  modal-campaing padding-none" uib-modal-transclude="">
+            <div class="modal-header ng-scope change-header-modal">
+                <h5 class="modal-title" id="exampleModalLabel1">Negative Keywords</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close(false)">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body ng-scope new-padding-campaing">
+                <div class="container-tabs">
+                    <div data-addui='tabs'>
+                        <div role='tabs'>
+                            <div>All KillBRD 21/08/2017 - Narrow - Broad</div>
+                            <div>Narrow - Exact</div>
+                            <div>Narrow - Phrase</div>
+                        </div>
+                        <div role='contents'>
+                            <div>
+                                <div class="container-table-keywords-tabs">
+                                    <div class="sub-title">
+                                        <div class="show-more large-more">
+                                            <p>Show <select>
+                                                <option>10</option>
+                                                <option>25</option>
+                                                <option>50</option>
+                                                <option>100</option>
+                                            </select> entries</p>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-table-keywords">
+                                        <table id="filter-compaigns5" class="display new-display-key2" cellspacing="0" width="100%" data-page-length='10'>
+                                            <thead>
+                                            <tr>
+                                                <th>KeywordText</th>
+                                                <th>Match</th>
+                                                <th>State</th>
+                                                <th>Action</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="" class="keywords-text-link">a bamboo tea whisk set</a>
+                                                </td>
+                                                <td>
+                                                    <div class="table-paragraph">
+                                                        <p>negativeExact</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-paragraph">
+                                                        <p>enabled</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="wrapper-btn-table-nav">
+                                                        <button type="button" class="delete">
+                                                            <div class="button" data-title="Some text"></div>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="" class="keywords-text-link">a bamboo tea whisk set</a>
+                                                </td>
+                                                <td>
+                                                    <div class="table-paragraph">
+                                                        <p>negativeExact</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-paragraph">
+                                                        <p>enabled</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="wrapper-btn-table-nav">
+                                                        <button type="button" class="delete">
+                                                            <div class="button" data-title="Some text"></div>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="" class="keywords-text-link">a bamboo tea whisk set</a>
+                                                </td>
+                                                <td>
+                                                    <div class="table-paragraph">
+                                                        <p>negativeExact</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-paragraph">
+                                                        <p>enabled</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="wrapper-btn-table-nav">
+                                                        <button type="button" class="delete">
+                                                            <div class="button" data-title="Some text"></div>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="" class="keywords-text-link">a bamboo tea whisk set</a>
+                                                </td>
+                                                <td>
+                                                    <div class="table-paragraph">
+                                                        <p>negativeExact</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-paragraph">
+                                                        <p>enabled</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="wrapper-btn-table-nav">
+                                                        <button type="button" class="delete">
+                                                            <div class="button" data-title="Some text"></div>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="" class="keywords-text-link">a bamboo tea whisk set</a>
+                                                </td>
+                                                <td>
+                                                    <div class="table-paragraph">
+                                                        <p>negativeExact</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-paragraph">
+                                                        <p>enabled</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="wrapper-btn-table-nav">
+                                                        <button type="button" class="delete">
+                                                            <div class="button" data-title="Some text"></div>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="" class="keywords-text-link">a bamboo tea whisk set</a>
+                                                </td>
+                                                <td>
+                                                    <div class="table-paragraph">
+                                                        <p>negativeExact</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-paragraph">
+                                                        <p>enabled</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="wrapper-btn-table-nav">
+                                                        <button type="button" class="delete">
+                                                            <div class="button" data-title="Some text"></div>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table-footer-keywords">
+                                        <input type="text" class="keyword-input" placeholder="keyword"/>
+                                        <button type="button" class="add-negative">Add to campaign negative</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                               some table
+                            </div>
+                            <div>
+                               some table
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -768,74 +1450,6 @@
     </div>
 </div>
 
-<div uib-modal-window="modal-window" class="modal ng-scope ng-isolate-scope in" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: none;">
-    <div class="modal-dialog modal-xl width-apdate-profit">
-        <div class="modal-content  width-apdate-profit padding-none" uib-modal-transclude="">
-            <div class="modal-header ng-scope change-header-modal change-header-modal-autopilot">
-                <div class="container-modal-header">
-                    <h5 class="modal-title welcome-modal" id="exampleModalLabel">Welcome to PPC tools</h5>
-                    <p>The most advanced AI for PPC ads management</p>
-                </div>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close(false)">
-                    <span aria-hidden="true"></span>
-                </button>
-            </div>
-            <div class="modal-body ng-scope padding-none">
-                <div class="info-modal-welcome welcome-padding">
-                    <div class="container-welcome-img">
-                        <img src="img/welcome-icon.png" alt="welcome"/>
-                    </div>
-                    <div class="container-welcome-content">
-                        <div class="wrapper-list-welcome">
-                            <h3><span>I'm new</span> and I do not know how to advertise yet, and I want PPC.tools to do it for me!</h3>
-                            <p>Launch the PPC Wizard and specify the options for displaying ads and: </p>
-                            <ol class="list-welcome">
-                                <li>
-                                    <p>We will create auto-campaigns and find effective keywords in them. </p>
-                                </li>
-                                <li>
-                                    <p>We will transfer these keywords into manual campaigns and begin to monitor them, adjust bids, and also eliminate inefficient keywords and searchterms. </p>
-                                </li>
-                                <li>
-                                    <p>We will monitor your ACoS, CTR, Conversion and inform you about everything that we do.</p>
-                                </li>
-                            </ol>
-                            <div class="footer-welcome-list">
-                                <a href="" class="read-more">Read more</a>
-                                <button type="button" class="btn-welcome wizard-btn">Launch PPC Wizard</button>
-                            </div>
-                        </div>
-                        <div class="wrapper-list-welcome">
-                            <h3><span>I already run</span>  ads and I want to optimize!</h3>
-                            <p>We suggest using our Autopilot, which will help you with existing campaigns:</p>
-                            <ol class="list-welcome">
-                                <li>
-                                    <p>Find inefficient queries and keywords and delete them. </p>
-                                </li>
-                                <li>
-                                    <p>Automatically adjust bids and maintain certain ACoS level .</p>
-                                </li>
-                                <li>
-                                    <p>Issue warnings about low conversion or CTR.</p>
-                                </li>
-                            </ol>
-                            <div class="footer-welcome-list">
-                                <a href="" class="read-more">Read more</a>
-                                <button type="button" class="btn-welcome wizard-btn">Go to my Campaign</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-modal-welcome">
-                    <div class="custom-control custom-checkbox checkbox-table checkbox-welcome">
-                        <input type="checkbox" class="custom-control-input" id="customCheck320">
-                        <label class="custom-control-label" for="customCheck320">Do not show again</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>

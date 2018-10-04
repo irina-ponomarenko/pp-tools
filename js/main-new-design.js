@@ -356,6 +356,31 @@ $(document).ready(function() {
 
             }]
     } );
+    var table14  = $('#example11').DataTable( {
+        "dom": 'prtp',
+        'order': [[ 1, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [0, 2],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3,4,5],
+                'className': 'pl-1 pr-0'
+            },{
+                "targets": [6,7,8,9,10,11,12,13,14,15,16,17],
+                'className': 'pl-1 pr-1'
+            },{
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            }]
+
+    } );
 
     var table7  = $('#filter-compaigns1').DataTable( {
         // "dom": 'prtp',
@@ -386,6 +411,72 @@ $(document).ready(function() {
             "targets": [2],
             'className': 'pl-1 pr-0'
         }]
+    });
+    var table15  = $('#filter-compaigns4').DataTable( {
+        "dom": 'prtp',
+        "scrollY":        "228px",
+        'order': [[ 1, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [0],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [1,2,3,4],
+                'className': 'px-0'
+            }]
+    });
+    var table16  = $('#filter-compaigns5').DataTable( {
+        "dom": 'prtp',
+        "scrollY":        "204px",
+        'order': [[ 0, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "orderable": false,
+            'className': 'pl-0'
+        }, {
+            "targets": [0],
+            'className': 'pl-1 pr-0'
+        },
+            {
+                "targets": [1,2,3],
+                'className': 'px-0'
+            }]
+    });
+    var table17  = $('#filter-compaigns6').DataTable( {
+        "dom": 'prtp',
+        "scrollY":        "204px",
+        'order': [[ 0, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "orderable": false,
+            'className': 'pl-0'
+        }, {
+            "targets": [0],
+            'className': 'pl-1 pr-0'
+        },
+            {
+                "targets": [1,2,3],
+                'className': 'px-0'
+            }]
+    });
+    var table18  = $('#filter-compaigns7').DataTable( {
+        "dom": 'prtp',
+        "scrollY":        "204px",
+        'order': [[ 0, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "orderable": false,
+            'className': 'pl-0'
+        }, {
+            "targets": [0],
+            'className': 'pl-1 pr-0'
+        },
+            {
+                "targets": [1,2,3],
+                'className': 'px-0'
+            }]
     });
 
     $('.dataTables_filter input').attr("placeholder", "search");
