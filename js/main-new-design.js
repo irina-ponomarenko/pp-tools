@@ -1203,7 +1203,9 @@ Morris.Area({
     ykeys: ['y', 'z'],
     labels: ['Y', 'Z']
 });
-
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+});
 
 
 

@@ -5116,6 +5116,7 @@ table.dataTable thead .sorting_desc{
 .wrapper-content-tools{
     max-width: 1140px;
     margin: 0 auto;
+    margin-bottom: 70px;
 }
 .tools-options{
     max-width: 360px;
@@ -5367,4 +5368,8 @@ table.dataTable thead .sorting_desc{
 .wrapper-control-block-no-absolute{
     display: flex;
     align-items: center;
+}
+body {
+    overflow: inherit;
+    padding-right: auto !important;
 }
