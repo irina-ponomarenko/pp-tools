@@ -381,6 +381,31 @@ $(document).ready(function() {
             }]
 
     } );
+    var table19  = $('#example12').DataTable( {
+        "dom": 'prtp',
+        'order': [[ 1, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [0, 2],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3,4,5],
+                'className': 'pl-1 pr-0'
+            },{
+                "targets": [6,7,8,9,10,11,12,13,14,15,16],
+                'className': 'pl-1 pr-1'
+            },{
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            }]
+
+    } );
 
     var table7  = $('#filter-compaigns1').DataTable( {
         // "dom": 'prtp',
@@ -920,7 +945,7 @@ $(document).ready(function() {
      */
     $('#example2 tbody').on('click', '.add-new-row', function () {
         var tr = $(this).closest('tr');
-        var row = table.row( tr );
+        var row = table2.row( tr );
         if ( row.child.isShown() ) {
             //  This row is already open - close it
             row.child.hide();

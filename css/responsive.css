@@ -1,3 +1,78 @@
+@media only screen and (max-width: 1750px) and (min-width: 360px) {
+    .respons-wrap{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .view-respons{
+        flex-wrap: wrap;
+    }
+    .view-respons .campages-block {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    .respons-wrap .new-filters{
+        margin-bottom: 0;
+    }
+    .wrapper-control-block-no-absolute {
+        display: inline;
+    }
+    .container-img-change img {
+        max-width: 330px;
+    }
+    .wrapper-input-change label {
+        font-size: 14px;
+    }
+    .wrapper-input-change input {
+        padding: 14px 8px;
+        font-size: 20px;
+        max-width: 122px;
+    }
+    .wrapper-input-change {
+        max-width: 165px;
+        margin-right: 50px;
+    }
+    .info-save-change-container h4 {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+    .responsive-filters{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .container-control {
+        margin-right: 10px;
+    }
+    .control-check label {
+        font-size: 16px;
+    }
+    .responsive-filters .group{
+        margin-top: 10px;
+    }
+    .narrow-list li:last-child{
+        margin-right: 0;
+    }
+    .show-more p {
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    .nav-li-header a {
+        padding: 15px;
+    }
+    .icon-refresh{
+        padding: 15px 50px 15px 15px !important;
+    }
+    .nav-li-header {
+        padding: 15px 0 13px;
+    }
+    .list-day li a {
+        padding: 15px 20px 10px 20px;
+    }
+    .padding-bottom-10{
+        padding-bottom: 10px !important;
+    }
+
+}
 @media only screen and (max-width: 1560px) and (min-width: 360px) {
     .info-top-nav a {
         font-size: 13px;
@@ -46,10 +121,6 @@
     }
     .campages-block .item {
         margin-right: 10px;
-    }
-    .show-more p {
-        font-size: 15px;
-        white-space: nowrap;
     }
     .respons-wrap .show-more{
         margin-bottom: 15px;
@@ -144,35 +215,7 @@
     .title-keywords-text p {
         font-size: 20px;
     }
-    .nav-li-header a {
-        padding: 15px;
-    }
-    .icon-refresh{
-        padding: 15px 50px 15px 15px !important;
-    }
-    .nav-li-header {
-        padding: 15px 0 13px;
-    }
-    .list-day li a {
-        padding: 15px 20px 10px 20px;
-    }
-    .respons-wrap{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    .view-respons{
-        flex-wrap: wrap;
-    }
-    .view-respons .campages-block {
-        margin-top: 25px;
-        margin-bottom: 15px;
-    }
-    .respons-wrap .new-filters{
-        margin-bottom: 0;
-    }
-    .wrapper-control-block-no-absolute {
-        display: inline;
-    }
+
 }
 @media only screen and (max-width: 1400px) and (min-width: 360px) {
     .responsive-filters{

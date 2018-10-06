@@ -874,6 +874,9 @@ body{
     background-color: #ffffff;
     color: #428bca;
 }
+.checkbox-table{
+    padding-left: 0 !important;
+}
 .checkbox-table .custom-control-label::before,
 .checkbox-add .custom-control-label::before {
     width: 15px;
@@ -947,7 +950,7 @@ body{
 .checkbox-add .custom-control-label::after{
     position: absolute;
     top: 0.1rem;
-    left: -0.3rem;
+    left: -1.5rem;
 }
 .table-content td{
     border-bottom: 1px solid #eaeaea;
@@ -1408,6 +1411,9 @@ body{
     background-color: transparent;
     position: relative;
 }
+.transparent-no-content-height{
+    min-height: 70px;
+}
 .new-action{
     position: absolute !important;
     left: 20px;
@@ -1488,7 +1494,7 @@ body{
 .custom-control-new .custom-control-label:before {
     position: absolute;
     top: 2px;
-    left: 13px;
+    left: -18px;
 }
 .percent{
     color: #005a93;
@@ -1499,9 +1505,6 @@ body{
     color: #757575;
     font-size: 14px;
     font-weight: 300;
-}
-.percent-wrapper{
-    padding-left: 15px;
 }
 .new-display .pl-1, .px-1 {
     padding-left: 0.5rem !important;
@@ -1976,8 +1979,8 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 }
 .checkbox-block .custom-control-label::before, .checkbox-block .custom-control-label::after {
     position: absolute;
-    top: 0.2rem;
-    left: 0.8rem;
+    top: -0.1rem;
+    left: -1.8rem;
     background-image: none;
 }
 .footer-table{
@@ -2206,7 +2209,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 .custom-control-label::before, .visibility-checked .custom-control-label::after{
     position: absolute;
     top: 2px;
-    left: 0.8rem;
+    left: -2rem;
 }
 .modal-visibility .container-tables{
     flex-direction: column;
@@ -2422,6 +2425,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 .new_searchterms .dataTable thead .sorting{
     background: url(../img/selected_icon/double-arrow.png) no-repeat !important;
     background-position: left 45% !important;
+    background-size: 13px !important;
 }
 .new_searchterms thead.sorting:first-child,
 .new_searchterms .dataTable thead .sorting:first-child{
@@ -2680,9 +2684,10 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     color: #222222;
     margin-left: 10px;
 }
-.control-check .custom-control-label:after{
+.control-check .custom-control-label:after,
+.control-check .custom-control-label:before{
     top: 2px;
-    left: 13px;
+    left: -20px !important;
 }
 .wrapper-control-block{
     display: flex;
@@ -3141,7 +3146,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .custom-radio .custom-control-label::after{
     top: 1px;
-    left: 12px;
+    left: -32px;
 }
 .container-checked .custom-control-input:checked ~ .custom-control-label::before,
 .container-checked input:checked ~ .container-checked label::before,
@@ -3209,6 +3214,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     border: 1px solid #222222;
     width: 13px;
     height: 13px;
+    top: -0.5rem;
 }
 .img-campaing{
     margin-right: 10px;
@@ -3400,8 +3406,8 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     background-position: 8px center;
 }
 .custom-campaing .custom-control-label::before{
-    top: 4px;
-    left: -0.1rem;
+    top: -9px;
+    left: -1.5rem;
 }
 .wrapper_searchterms .dataTable .padding-left-thead .sorting,
 .wrapper_searchterms .dataTable .padding-left-thead .sorting_asc,
@@ -3526,15 +3532,16 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     font-size: 18px;
 }
 .profit-checked .custom-control-label::after{
-    left: 14px;
+    left: -1.1rem;
+    top: -6px;
 }
 .profit-checked .custom-control-label::before{
     width: 13px !important;
     height: 13px !important;
     border: 1px solid #222222;
     border-radius: 0;
-    top: 4px;
-    left: 0.9rem;
+    top: -6px;
+    left: -1.1rem;
 }
 .profit-checked .custom-control-input:checked ~ .custom-control-label::before{
     border: none;
@@ -3563,10 +3570,10 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     border-bottom: 1px solid #ececec;
 }
 .radio-container .custom-control-label::before{
-    left: 0;
+    left: -24px;
 }
 .radio-container .custom-control-label::after{
-    left: -1px;
+    left: -24px;
 }
 .add-btn{
     width: 82px;
@@ -4252,7 +4259,10 @@ svg:not(:root) {
 .checkbox-welcome .custom-control-label::before, .checkbox-welcome .custom-control-label::after {
     position: absolute;
     top: 0rem;
-    left: -1px;
+    left: -1.5rem;
+}
+.checkbox-welcome .custom-control-label::after{
+    border: 1px solid #222222;
 }
 .checkbox-welcome .custom-control-label{
     font-size: 18px;
@@ -5451,7 +5461,7 @@ body {
 .check-new-keywords .custom-control-label::before,
 .check-new-keywords .custom-control-label::after{
     top: 10px;
-    left: -2px;
+    left: -24px;
 }
 .check-new-keywords .custom-control-label::before{
     border-radius: 0;
@@ -5504,8 +5514,8 @@ body {
 .custom-control-table-key .custom-control-label::before,
 .custom-control-table-key .custom-control-label::after {
     position: absolute;
-    top: 4px;
-    left: 0;
+    top: -7px;
+    left: -16px;
 }
 .new-display-key .pl-1 {
     padding-left: 1.2rem !important;
@@ -5561,4 +5571,94 @@ body {
     font-family: 'Ubuntu';
     font-weight: 300;
     color: #222222;
+}
+.block-none{
+    display: none;
+}
+.new-table-padding{
+    padding-bottom: 0!important;
+    align-items: flex-end;
+    padding-top: 10px !important;
+}
+.container-img-change img{
+    max-width: 376px;
+}
+.info-save-change-container h4{
+    font-size: 24px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    margin: 28px 0;
+    line-height: 1.5rem;
+}
+.block-save-change{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 28px;
+    -webkit-box-shadow: 0px 7px 13px -6px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0px 7px 13px -6px rgba(0,0,0,0.37);
+    box-shadow: 0px 7px 13px -6px rgba(0,0,0,0.37);
+    padding-bottom: 15px;
+}
+.wrapper-input-change{
+    display: flex;
+    flex-direction: column;
+    max-width: 178px;
+}
+.wrapper-input-change label{
+    font-size: 16px;
+    font-family: 'Ubuntu';
+    color: #757575;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.wrapper-input-change input{
+    padding: 16px 10px;
+    font-size: 24px;
+    font-family: 'Ubuntu';
+    color: #757575;
+    font-weight: 300;
+    max-width: 132px;
+}
+.wrapper-input-change input::placeholder{
+    font-size: 16px;
+}
+.change-info{
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 30px;
+}
+.disabled-input-change:disabled{
+    border: none;
+    background-color: transparent;
+    color: #222222;
+}
+.wrapper-input-change{
+    margin-right: 80px;
+}
+.wrapper-input-change:last-child{
+    margin-right: 0;
+}
+.save-change-form-btn{
+    background-color: #428bca;
+    color: #fff;
+    border: 1px solid #428bca;
+    font: 300 18px 'Ubuntu';
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+    padding: 10px 0;
+    width: 153px;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+.save-change-form-btn:hover{
+    transition: .3s;
+    background-color: transparent;
+    color: #428bca;
+}
+.change-info-container-form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 35px;
 }

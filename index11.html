@@ -291,6 +291,42 @@
                     </li>
                 </ul>
             </div>
+            <div class="block-save-change">
+                <div class="container-img-change">
+                    <img src="img/tea-img.png" alt="tea"/>
+                </div>
+                <div class="wrapper-info-save-change">
+                    <div class="info-save-change-container">
+                        <h4>Tealyra - Glass Kettle 60-ounce - Stove-top Safe - Heat Resistant Borosilicate - Pitcher - Carafe -
+                            Teapot - No-Dripping - Great For Tea Juice Water - Hot and Iced - Bamboo Lid - Filter Spout - 1800ml</h4>
+                    </div>
+                    <form class="change-info-container-form">
+                        <div class="change-info">
+                            <div class="wrapper-input-change">
+                                <label for="input-info">Cost per unit:</label>
+                                <input type="text" id="input-info" value="5" placeholder="enter info"/>
+                            </div>
+                            <div class="wrapper-input-change">
+                                <label for="input-info1">Amazon FBA fees:</label>
+                                <input type="text" id="input-info1" value="5.47" placeholder="enter info"/>
+                            </div>
+                            <div class="wrapper-input-change">
+                                <label for="input-info2">Average selling price:</label>
+                                <input type="text" id="input-info2" value="33.38" placeholder="enter info"/>
+                            </div>
+                            <div class="wrapper-input-change">
+                                <label for="input-info3">Profit margins:</label>
+                                <input type="text" id="input-info3" class="disabled-input-change" value="22.84" placeholder="enter info" disabled/>
+                            </div>
+                            <div class="wrapper-input-change">
+                                <label for="input-info4">Profit margins:</label>
+                                <input type="text" id="input-info4" class="disabled-input-change" value="68.57%" placeholder="enter info" disabled/>
+                            </div>
+                        </div>
+                        <button type="submit" class="save-change-form-btn">Save Changes</button>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="container-graphic-content">
             <div class="wrapper-header-table">
@@ -303,18 +339,10 @@
                             <a href=""> Keywords</a>
                         </li>
                         <li class="nav-li-header">
-                            <a href="">Search Terms</a>
-                        </li>
-                        <li class="nav-li-header">
-                            <a href="">Negative keywords</a>
-                        </li>
-                        <li class="nav-li-header">
-                            <a href="">Find Negative Words</a>
+                            <a href="">Backend keywords</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="wrapper-add-btn">
-                </div>
                 <div class="wrapper-data-pickers flex-position">
                     <ul class="list-day">
                         <li>
@@ -363,48 +391,26 @@
                             <input type="text" data-search-table-main class="form-control search" id="search"  placeholder="Search">
                             <div class="search-close"></div>
                         </div>
-                        <nav class="nav-header-table refresh-wrapper-info">
-                            <ul class="nav-table-list refresh-list">
-                                <li class="nav-li-header nav-li-header-small  active-li-header">
-                                    <a href="" class="icon-refresh">Refresh</a>
-                                </li>
-                                <li class="nav-li-header nav-li-header-small">
-                                    <a href="">All</a>
-                                </li>
-                                <li class="nav-li-header nav-li-header-small">
-                                    <a href="">Acos < 25%</a>
-                                </li>
-                                <li class="nav-li-header nav-li-header-small">
-                                    <a href="">Acos > 50%</a>
-                                </li>
-                                <li class="nav-li-header nav-li-header-small">
-                                    <a href="">Zero Sales</a>
-                                </li>
-                                <li class="nav-li-header nav-li-header-small">
-                                    <a href="">Zero Net</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="campages-block d-flex align-items-center">
-                            <div class="item item-size-small">
-                                <span class="input">CP</span><span class="desc">Campaign Phrase</span>
-                            </div>
-
-                            <div class="item item-size-small">
-                                <span class="input">CE</span><span class="desc">Campaign Exact</span>
-                            </div>
-
-                            <div class="item item-size-small">
-                                <span class="input">AP</span><span class="desc">AdGroup Phrase</span>
-                            </div>
-
-                            <div class="item item-size-small">
-                                <span class="input">AE</span><span class="desc">AdGroup Exact</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="filters new-filters">
+                    <div class="campages-block d-flex align-items-center">
+                        <div class="item item-size-small">
+                            <span class="input">CP</span><span class="desc">Campaign Phrase</span>
+                        </div>
+
+                        <div class="item item-size-small">
+                            <span class="input">CE</span><span class="desc">Campaign Exact</span>
+                        </div>
+
+                        <div class="item item-size-small">
+                            <span class="input">AP</span><span class="desc">AdGroup Phrase</span>
+                        </div>
+
+                        <div class="item item-size-small">
+                            <span class="input">AE</span><span class="desc">AdGroup Exact</span>
+                        </div>
+                    </div>
                     <div class="show-more">
                         <p>Show <select>
                             <option>10</option>
@@ -415,7 +421,7 @@
                     </div>
                 </div>
             </div>
-            <div class="legend d-flex align-items-flex-end flex-center">
+            <div class="legend d-flex align-items-flex-end flex-center new-table-padding padding-bottom-10">
                 <div class="item d-flex align-items-center new-action">
                     <span class="title">Selected(<span class="count">2</span>)</span>
                     <select class="js-example-basic-single actions icon dubleArrow " name="flag">
@@ -425,7 +431,7 @@
                         <option value="3" data-icon='delay'>Delay</option>
                         <option value="5" data-icon='autosuccssesed'>Auto suggested</option>
                     </select>
-                    <div class="wrapper-control-block-no-absolute">
+                    <div class="wrapper-control-block-no-absolute block-none">
                         <div class="container-control">
                             <div class="custom-control custom-checkbox control-check">
                                 <input type="checkbox" class="custom-control-input" id="tableCheckA99">
@@ -441,32 +447,35 @@
                     </div>
                 </div>
                 <div class="filters new-filters responsive-filters">
-                    <div class="list-narrow-container">
-                        <ul class="narrow-list">
-                            <li>
-                                <a href="" class="active-narrow-link">All KillBRD 21/08/2017 - Narrow - Broad </a>
+                    <nav class="nav-header-table refresh-wrapper-info">
+                        <ul class="nav-table-list refresh-list">
+                            <li class="nav-li-header nav-li-header-small  active-li-header">
+                                <a href="" class="icon-refresh">Refresh</a>
                             </li>
-                            <li>
-                                <a href="">Narrow - Exact</a>
+                            <li class="nav-li-header nav-li-header-small">
+                                <a href="">All</a>
                             </li>
-                            <li>
-                                <a href="">Narrow - Phrase</a>
+                            <li class="nav-li-header nav-li-header-small">
+                                <a href="">Acos < 25%</a>
                             </li>
-                            <li>
-                                <a href="">Narrow - Exact</a>
+                            <li class="nav-li-header nav-li-header-small">
+                                <a href="">Acos > 50%</a>
                             </li>
-                            <li>
-                                <a href="">Narrow - Phrase</a>
+                            <li class="nav-li-header nav-li-header-small">
+                                <a href="">Zero Sales</a>
+                            </li>
+                            <li class="nav-li-header nav-li-header-small">
+                                <a href="">Zero Net</a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                     <div class="group">
                         <button class="btn icon visible btn-outline-primary">Column visibility</button>
                         <button data-filter-btn class="btn icon filter btn-primary">Filters</button>
                     </div>
                 </div>
             </div>
-            <table id="example11" class="display new-display " cellspacing="0" width="100%" data-page-length='10'>
+            <table id="example12" class="display new-display " cellspacing="0" width="100%" data-page-length='10'>
                 <thead class="new-thead">
                 <tr>
                     <th>
@@ -476,7 +485,6 @@
                         </div>
                     </th>
                     <th>State</th>
-                    <th>SearchQuery</th>
                     <th>Keyword</th>
                     <th>Bid</th>
                     <th>Suggested</th>
@@ -513,9 +521,6 @@
                                 <a class="dropdown-item item-variant"><span class="d-flex align-items-center"><span class="round archived"></span>Archived</span></a>
                             </div>
                         </div>
-                    </td>
-                    <td>
-                        <a href="" class="search-query">ceremonial matcha tea set</a>
                     </td>
                     <td>
                         <a href="" class="keywords-text-link">a bamboo tea whisk set</a>
@@ -630,9 +635,6 @@
                         </div>
                     </td>
                     <td>
-                        <a href="" class="search-query">ceremonial matcha tea set</a>
-                    </td>
-                    <td>
                         <a href="" class="keywords-text-link">a bamboo tea whisk set</a>
                     </td>
                     <td>
@@ -745,9 +747,6 @@
                         </div>
                     </td>
                     <td>
-                        <a href="" class="search-query">ceremonial matcha tea set</a>
-                    </td>
-                    <td>
                         <a href="" class="keywords-text-link">a bamboo tea whisk set</a>
                     </td>
                     <td>
@@ -858,9 +857,6 @@
                                 <a class="dropdown-item item-variant"><span class="d-flex align-items-center"><span class="round archived"></span>Archived</span></a>
                             </div>
                         </div>
-                    </td>
-                    <td>
-                        <a href="" class="search-query">ceremonial matcha tea set</a>
                     </td>
                     <td>
                         <a href="" class="keywords-text-link">a bamboo tea whisk set</a>
@@ -976,27 +972,13 @@
                     <td colspan="2">
                         <p>345</p>
                     </td>
-                    <td colspan="3">
+                    <td colspan="2">
                         <p>18</p>
                     </td>
                 </tr>
                 </tfoot>
             </table>
-            <div class="legend d-flex align-items-center">
-
-                <div class="indicator d-flex align-items-center">
-                    <div class="item">
-                        <span class="round enabled"></span><span class="desc color-green">enabled</span>
-                    </div>
-
-                    <div class="item">
-                        <span class="round paused"></span><span class="desc color-orange">paused</span>
-                    </div>
-
-                    <div class="item">
-                        <span class="round archived"></span><span class="desc color-grey">archived</span>
-                    </div>
-                </div>
+            <div class="legend d-flex align-items-cente transparent-no-content-height">
             </div>
         </div>
     </div>
