@@ -792,8 +792,8 @@ body{
     margin-right: 30px;
 }
 .wrapper-img-tabs img{
-    max-width: 288px;
-    width: 100%;
+    width: 288px;
+    float: left;
 }
 .container-content-tabs-top{
     -webkit-box-shadow: 0px 0px 5px 0px rgba(170,170,170,1);
