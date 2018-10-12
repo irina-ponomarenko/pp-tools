@@ -71,6 +71,15 @@
     .padding-bottom-10{
         padding-bottom: 10px !important;
     }
+    .round-block-nav {
+        top: 3px;
+        right: 0;
+    }
+    .modal-body.wrapper_searchterms .dataTables_wrapper {
+        position: relative;
+        overflow-x: inherit;
+        padding-bottom: 40px;
+    }
 
 }
 @media only screen and (max-width: 1560px) and (min-width: 360px) {

@@ -503,6 +503,20 @@ $(document).ready(function() {
                 'className': 'px-0'
             }]
     });
+    var table20  = $('#filter-compaigns8').DataTable( {
+        "dom": 'prtp',
+        "scrollY":        "204px",
+        'order': [[ 0, false ]],
+        "pagingType": 'simple_numbers',
+        "aoColumnDefs": [{
+            "bSortable": false,
+            "aTargets": [0, 1, 2, 3]
+        },
+        {
+            "targets": [0,1,2,3],
+            'className': 'px-3'
+        }]
+    });
 
     $('.dataTables_filter input').attr("placeholder", "search");
 
