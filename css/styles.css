@@ -5799,3 +5799,8 @@ body {
 .modal-body.wrapper_searchterms .dataTables_wrapper .dataTables_paginate{
     display: none;
 }
+.modal-body.wrapper_searchterms .dataTable thead th{
+    color: #757575 !important;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
