@@ -39,6 +39,9 @@ function formatStateCircle (state) {
 };
 
 $(document).ready(function() {
+
+    $('#demo1').chungTimePicker();
+    $('#demo2').chungTimePicker();
   $('[data-toggle="tooltip"]').tooltip();
 
   $('.table-edited-value input').on('focus', function() {
@@ -515,6 +518,27 @@ $(document).ready(function() {
         {
             "targets": [0,1,2,3],
             'className': 'px-3'
+        }]
+    });
+    var table21  = $('#filter-compaigns9').DataTable( {
+        // "dom": 'prtp',
+        "scrollY":        "310px",
+        'order': [[ 1, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [1],
+            'className': 'pl-1 pr-0'
+        }]
+    });
+
+    var table22 = $('#filter-compaigns10').DataTable( {
+        // "dom": 'prtp',
+        "scrollY":        "310px",
+        'order': [[ 0, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "bSortable": false,
+            'className': 'pl-1 pr-0'
         }]
     });
 

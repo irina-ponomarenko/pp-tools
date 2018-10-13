@@ -949,6 +949,7 @@ body{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #eaeaea;
+    min-height: 51px;
 }
 .list-navigate,
 .wrapper-pagination{
@@ -2349,6 +2350,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 .table-block{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .title-table-block{
     font-weight: 300;
@@ -2518,6 +2520,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     background-repeat: no-repeat;
     background-position: center left;
     background-image: none;
+    color: #757575;
 }
 .header-table-modal .sorting:first-child,
 .header-table-modal .sorting:nth-child(3),
@@ -2542,7 +2545,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     float: right;
     position: absolute;
     text-align: right;
-    right: 15%;
+    right: 14%;
     top: -42px;
 }
 .wrapper-table-modal .dataTables_wrapper .dataTables_filter label{
@@ -2770,7 +2773,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .change-header-modal .modal-title{
     font-family: 'Ubuntu';
     font-size: 24px;
-    padding: 35px 40px 25px;
+    padding: 35px 50px 25px;
 }
 .new-padding{
     padding: 0 60px 60px 55px;
@@ -2796,7 +2799,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     padding-right: 0;
 }
 .modal-window .wrapper-table{
-    padding-top: 160px;
+    padding-top: 120px;
 }
 .modal-window .change-header-modal{
     position: absolute;
@@ -5701,7 +5704,7 @@ body {
 .new-select-multiple-2 .chosen-container-multi .chosen-choices {
     border: none;
     width: 247px;
-    padding: 5px;
+    padding: 7px;
 }
 .new-select-multiple-2 .chosen-choices {
     background-image: url(../img/chewron-down.png);
@@ -5717,7 +5720,7 @@ body {
 }
 .new-select-multiple-2  .chosen-choices li.search-choice .search-choice-close {
      position: absolute;
-     top: 4px;
+     top: 2px;
      left: 3px;
      display: block;
      width: 12px;
@@ -5727,7 +5730,7 @@ body {
  }
 .new-select-multiple-2  .chosen-choices li.search-choice .search-choice-close:hover {
     position: absolute;
-    top: 4px;
+    top: 2px;
     right: 3px;
     display: block;
     width: 8px;
@@ -5764,6 +5767,9 @@ body {
     box-shadow: none;
 }
 .active-choise-option{
+    color: #428bca;
+}
+.new-select-multiple-2 .chosen-container-multi .chosen-choices li.search-choice:last-child{
     color: #428bca;
 }
 .modal-body.wrapper_searchterms{
@@ -5803,4 +5809,135 @@ body {
     color: #757575 !important;
     font-family: 'Ubuntu';
     font-weight: 300;
+}
+.show-action .icon.actions + .select2-container{
+    padding-left: 0;
+}
+.show-action .icon.actions + .select2-container {
+    max-width: 68px !important;
+    border: none;
+}
+.title-table-block-1 {
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    width: auto;
+    cursor: pointer;
+    padding: 9px 15px;
+    border-bottom: 4px solid #ffffff;
+}
+.title-table-block-1 .show-more p{
+    white-space: nowrap;
+}
+.title-table-block-1 .show-more{
+    margin-left: 0;
+}
+table.new-modal-table thead th{
+    padding: 15px 15px 15px 8px;
+}
+#filter-compaigns9_paginate,
+#filter-compaigns10_paginate{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    left: inherit;
+    bottom: -41px;
+    z-index: 1000;
+}
+.padding-modal{
+    padding: 0;
+}
+.container-picker-time h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Ubuntu';
+}
+.time-picker-input,
+.time-format{
+    padding: 5px 14px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    background-image: url("../img/chewron-down.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    color: #222222;
+    outline: none;
+}
+.time-picker-input{
+    margin-right: 30px;
+}
+.chung-timepicker:after,
+.chung-timepicker:before{
+    display: none;
+}
+.chung-timepicker td.active {
+    background-color: #428bca;
+}
+.time-format{
+ border-radius: 0;
+    background-size: 13px 8px;
+    outline: none;
+    width: 128px;
+}
+.time-format.custom-select:focus {
+    border-bottom: 1px solid #757575;
+    outline: 0;
+    box-shadow: none;
+}
+.time-format:hover{
+    background-color: transparent;
+    box-shadow: none;
+}
+.active-time-format{
+    color: #428bca;
+}
+.time-format:not(:disabled):not(.disabled).active, .time-format:not(:disabled):not(.disabled):active, .show>.btn-outline-secondary.time-format {
+    color: #222222;
+    background-color: #ffffff;
+    border-bottom: 1px solid #757575;
+    box-shadow: none;
+}
+.show >.btn-outline-secondary.time-format:focus{
+    box-shadow: none;
+}
+.time-format-drop-down{
+    min-width: 128px !important;
+    background-color: #ececec;
+}
+.time-format-drop-down .dropdown-item{
+    padding: 5px 14px;
+}
+.time-format-drop-down .dropdown-item:focus,
+.time-format-drop-down .dropdown-item:hover {
+    color: #222222;
+    text-decoration: none;
+    background-color: #c0bebe;
+}
+.time-format-drop-down .dropdown-item.active-time-format:hover {
+    color: #428bca;
+}
+.btn-outline-secondary.time-format:focus {
+    box-shadow: none;
+}
+.container-picker-time-content{
+    display: flex;
+    align-items: flex-end;
+}
+.wrapper-picker-time-list{
+    margin-top: 15px;
+}
+.picker-time-list li h4{
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    color: #222222;
+    font-weight: 300;
+}
+.picker-time-list{
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }

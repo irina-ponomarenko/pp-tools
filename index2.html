@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/chosen.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="css/chung-timepicker.css" rel="stylesheet"/>
   <link href="css/styles.css" rel="stylesheet"/>
   <link href="css/responsive.css" rel="stylesheet"/>
 </head>
@@ -1186,7 +1187,7 @@
   </div>
 
 
-  <div uib-modal-window="modal-window" class="modal ng-scope ng-isolate-scope in" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: none;">
+  <div uib-modal-window="modal-window" class="modal ng-scope ng-isolate-scope in" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: block;">
     <div class="modal-dialog modal-xl change-modal-width-filters">
       <div class="modal-content  modal-filters margin-top-50 padding-none" uib-modal-transclude="">
         <div class="modal-header ng-scope change-header-modal">
@@ -1719,7 +1720,7 @@
     </div>
   </div>
 
-  <div uib-modal-window="modal-window" class="modal ng-scope ng-isolate-scope in change-modal-width-1112" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: block;">
+  <div uib-modal-window="modal-window" class="modal ng-scope ng-isolate-scope in change-modal-width-1112" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: none;">
     <div class="modal-dialog modal-xl">
       <div class="modal-content  padding-none" uib-modal-transclude="">
         <div class="modal-header ng-scope change-header-modal">
@@ -1827,9 +1828,375 @@
     </div>
   </div>
 
+  <div uib-modal-window="modal-window" class="modal ng-scope ng-isolate-scope in" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: none;">
+    <div class="modal-dialog modal-xl change-modal-width-filters">
+      <div class="modal-content  modal-window margin-top-50 padding-none" uib-modal-transclude="">
+        <div class="modal-header ng-scope change-header-modal">
+          <h5 class="modal-title" id="exampleModalLabel">Select SKU(s)</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close(false)">
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="modal-body ng-scope padding-modal">
+          <div class="container-tables display-flex-two">
+            <div class="wrapper-table">
+              <div class="header-tabs">
+                <div class="list-table-block">
+                  <div class="table-block">
+                    <div class="title-table-block-1">
+                      <div class="item d-flex align-items-center  show-action">
+                        <select class="js-example-basic-single actions icon dubleArrow " name="flag">
+                          <option value="0">Show</option>
+                          <option value="1" data-icon='reject'>Reject</option>
+                          <option value="2" data-icon='succsess'>Enabled</option>
+                          <option value="3" data-icon='delay'>Delay</option>
+                          <option value="5" data-icon='autosuccssesed'>Auto suggested</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="title-table-block-1">
+                      <div class="show-more">
+                        <p>Show <select>
+                          <option>10</option>
+                          <option>25</option>
+                          <option>50</option>
+                          <option>100</option>
+                        </select> entries</p>
+                      </div>
+                    </div>
+                    <div class="container-search active-option-table">
+                          <span class="search-icon">
+                              <b class="icon-search"></b>
+                          </span>
+                      <input type="text" name="search" value="tea" placeholder="search" />
+                    </div>
+                  </div>
+                  <div class="contents-table-block">
+                    <div class="wrapper-table-modal modal-wrapper-width">
+                      <table id="filter-compaigns9" class="modal-table">
+                        <thead class="header-table-modal">
+                        <tr>
+                          <th class="checkbox-block">
+                            <div class="custom-control custom-checkbox checkbox-table">
+                              <input type="checkbox" class="custom-control-input" id="customCheck200">
+                              <label class="custom-control-label" for="customCheck200"></label>
+                            </div>
+                          </th>
+                          <th>
+                              <span class="arrow-span">Name</span>
+                          </th>
+                          <th class="img-head">
+                            <span>image</span>
+                          </th>
+                        </tr>
+                        </thead>
+                        <tbody class="body-table">
+                        <tr>
+                          <td class="checkbox-block">
+                            <div class="custom-control custom-checkbox checkbox-table">
+                              <input type="checkbox" class="custom-control-input" id="customCheck202">
+                              <label class="custom-control-label" for="customCheck202"></label>
+                            </div>
+                          </td>
+                          <td class="sku-span name-span">
+                              <span>Tealyra - 12 pcs Blooming Flowering Tea - 12 Variety Flavors of Finest...</span>
+                          </td>
+                          <td class="image-block">
+                            <div class="wrapper-img-table">
+                              <img src="img/selected_icon/img-table.png" alt="table img"/>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td class="checkbox-block">
+                                <div class="custom-control custom-checkbox checkbox-table">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck203">
+                                    <label class="custom-control-label" for="customCheck203"></label>
+                                </div>
+                            </td>
+                            <td class="sku-span name-span">
+                                <span>Tealyra - 12 pcs Blooming Flowering Tea - 12 Variety Flavors of Finest...</span>
+                            </td>
+                            <td class="image-block">
+                                <div class="wrapper-img-table">
+                                    <img src="img/selected_icon/img-table.png" alt="table img"/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="checkbox-block">
+                                <div class="custom-control custom-checkbox checkbox-table">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck204">
+                                    <label class="custom-control-label" for="customCheck204"></label>
+                                </div>
+                            </td>
+                            <td class="sku-span name-span">
+                                <span>Tealyra - 12 pcs Blooming Flowering Tea - 12 Variety Flavors of Finest...</span>
+                            </td>
+                            <td class="image-block">
+                                <div class="wrapper-img-table">
+                                    <img src="img/selected_icon/img-table.png" alt="table img"/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="checkbox-block">
+                                <div class="custom-control custom-checkbox checkbox-table">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck205">
+                                    <label class="custom-control-label" for="customCheck205"></label>
+                                </div>
+                            </td>
+                            <td class="sku-span name-span">
+                                <span>Tealyra - 12 pcs Blooming Flowering Tea - 12 Variety Flavors of Finest...</span>
+                            </td>
+                            <td class="image-block">
+                                <div class="wrapper-img-table">
+                                    <img src="img/selected_icon/img-table.png" alt="table img"/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="checkbox-block">
+                                <div class="custom-control custom-checkbox checkbox-table">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck206">
+                                    <label class="custom-control-label" for="customCheck206"></label>
+                                </div>
+                            </td>
+                            <td class="sku-span name-span">
+                                <span>Tealyra - 12 pcs Blooming Flowering Tea - 12 Variety Flavors of Finest...</span>
+                            </td>
+                            <td class="image-block">
+                                <div class="wrapper-img-table">
+                                    <img src="img/selected_icon/img-table.png" alt="table img"/>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <div class="footer-table">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper-table">
+              <div class="header-tabs">
+                <div class="list-table-block">
+                  <div class="table-block">
+                    <div class="title-table-block-1">
+                      <div class="item d-flex align-items-center  show-action">
+                        <select class="js-example-basic-single actions icon dubleArrow " name="flag">
+                          <option value="0">Show</option>
+                          <option value="1" data-icon='reject'>Reject</option>
+                          <option value="2" data-icon='succsess'>Enabled</option>
+                          <option value="3" data-icon='delay'>Delay</option>
+                          <option value="5" data-icon='autosuccssesed'>Auto suggested</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="title-table-block-1">
+                      <div class="show-more">
+                        <p>Show <select>
+                          <option>10</option>
+                          <option>25</option>
+                          <option>50</option>
+                          <option>100</option>
+                        </select> entries</p>
+                      </div>
+                    </div>
+                    <div class="container-search active-option-table">
+                          <span class="search-icon">
+                              <b class="icon-search"></b>
+                          </span>
+                      <input type="text" name="search" value="tea" placeholder="search" />
+                    </div>
+                  </div>
+                  <div class="contents-table-block">
+                    <div class="wrapper-table-modal modal-wrapper-width">
+                      <table id="filter-compaigns10" class="modal-table new-modal-table">
+                        <thead class="header-table-modal">
+                        <tr>
+                          <th>AdGroup</th>
+                          <th>
+                            <span class="arrow-span">Campaigns</span>
+                          </th>
+                        </tr>
+                        </thead>
+                        <tbody class="body-table tbody-width-column">
+                        <tr>
+                          <td>
+                            <div class="side-by-side clearfix new-select-multiple-2">
+                              <div>
+                                <select data-placeholder="Select AdGroup" class="chosen-select" multiple tabindex="6">
+                                  <option value=""></option>
+                                  <option>Group 1</option>
+                                  <option class="active-choise-option">Group 2</option>
+                                  <option>Group 3</option>
+                                  <option>Group 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="campaigns-span">
+                            <span>Individual Words - Corigem</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="side-by-side clearfix new-select-multiple-2">
+                              <div>
+                                <select data-placeholder="Select AdGroup" class="chosen-select" multiple tabindex="6">
+                                  <option value=""></option>
+                                  <option>Group 1</option>
+                                  <option class="active-choise-option">Group 2</option>
+                                  <option>Group 3</option>
+                                  <option>Group 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="campaigns-span">
+                            <span>Individual Words - Corigem</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="side-by-side clearfix new-select-multiple-2">
+                              <div>
+                                <select data-placeholder="Select AdGroup" class="chosen-select" multiple tabindex="6">
+                                  <option value=""></option>
+                                  <option>Group 1</option>
+                                  <option class="active-choise-option">Group 2</option>
+                                  <option>Group 3</option>
+                                  <option>Group 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="campaigns-span">
+                            <span>Individual Words - Corigem</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="side-by-side clearfix new-select-multiple-2">
+                              <div>
+                                <select data-placeholder="Select AdGroup" class="chosen-select" multiple tabindex="6">
+                                  <option value=""></option>
+                                  <option>Group 1</option>
+                                  <option class="active-choise-option">Group 2</option>
+                                  <option>Group 3</option>
+                                  <option>Group 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="campaigns-span">
+                            <span>Individual Words - Corigem</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="side-by-side clearfix new-select-multiple-2">
+                              <div>
+                                <select data-placeholder="Select AdGroup" class="chosen-select" multiple tabindex="6">
+                                  <option value=""></option>
+                                  <option>Group 1</option>
+                                  <option class="active-choise-option">Group 2</option>
+                                  <option>Group 3</option>
+                                  <option>Group 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="campaigns-span">
+                            <span>Individual Words - Corigem</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="side-by-side clearfix new-select-multiple-2">
+                              <div>
+                                <select data-placeholder="Select AdGroup" class="chosen-select" multiple tabindex="6">
+                                  <option value=""></option>
+                                  <option>Group 1</option>
+                                  <option class="active-choise-option">Group 2</option>
+                                  <option>Group 3</option>
+                                  <option>Group 4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="campaigns-span">
+                            <span>Individual Words - Corigem</span>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <div class="footer-table">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div uib-modal-window="modal-window" class="modal ng-scope ng-isolate-scope in change-modal-width" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-body" size="xl" index="0" animate="animate" ng-style="{'z-index': 1050 + $$topModalIndex*10, display: 'block'}" tabindex="-1" uib-modal-animation-class="fade" modal-in-class="in" style="z-index: 1050; display: block;">
+      <div class="modal-dialog modal-xl">
+          <div class="modal-content  modal-visibility padding-none" uib-modal-transclude="">
+              <div class="modal-header ng-scope change-header-modal">
+                  <h5 class="modal-title" id="exampleModalLabel">Set schedule</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="close(false)">
+                      <span aria-hidden="true"></span>
+                  </button>
+              </div>
+              <div class="modal-body ng-scope new-padding">
+                  <div class="container-picker-time">
+                      <h3>Please select Time</h3>
+                      <div class="wrapper-picker-time-list">
+                          <ul class="picker-time-list">
+                              <li>
+                                <h4>Maximum bid:</h4>
+                                <div class="container-picker-time-content">
+                                  <input type="text" id="demo1" class="time-picker-input" value="10:20" style="width: 128px;"/>
+                                  <div class="input-group-prepend">
+                                    <button class="btn btn-outline-secondary dropdown-toggle time-format" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 128px"></button>
+                                    <div class="dropdown-menu time-format-drop-down">
+                                      <a class="dropdown-item" href="#">am</a>
+                                      <a class="dropdown-item active-time-format" href="#">pm</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                              <h4>Maximum bid:</h4>
+                              <div class="container-picker-time-content">
+                                <input type="text" id="demo2" class="time-picker-input" value="12:30" style="width: 128px;"/>
+                                <div class="input-group-prepend">
+                                  <button class="btn btn-outline-secondary dropdown-toggle time-format" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 128px"></button>
+                                  <div class="dropdown-menu time-format-drop-down">
+                                    <a class="dropdown-item" href="#">am</a>
+                                    <a class="dropdown-item active-time-format" href="#">pm</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
-  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-3.2.1.js"></script>
   <script src="bootstrap_4.1.3/js/bootstrap.bundle.js"></script>
   <script src="bootstrap_4.1.3/js/bootstrap.min.js"></script>
   <script src="js/select2.full.min.js"></script>
@@ -1844,6 +2211,7 @@
   <script src="js/prism.js"></script>
   <script src="js/init.js"></script>
   <script src="js/jquery-ui.js"></script>
+  <script src="js/chung-timepicker.js"></script>
   <script src="js/main-new-design.js"></script>
   </body>
   </html>
