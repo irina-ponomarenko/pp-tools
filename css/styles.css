@@ -3620,6 +3620,12 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .delete{
     background-image: url("../img/delete.png");
 }
+.write-pen{
+    background-image: url("../img/write-pen.png");
+}
+.pause-btn{
+    background-image: url("../img/pause-icon.png");
+}
 .button {
     display: inline-block; /* Строчно-блочный элемент */
     position: relative; /* Относительное позиционирование */
@@ -3638,7 +3644,36 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     border: 1px solid #222222;
     transition: .3s;
     width: 60px;
+    white-space: pre-wrap;
+}
+.pause-btn:hover .button::after {
     position: absolute;
+    left: 10px;
+    top: -15px;
+    content: attr(data-title);
+    z-index: 1;
+    background: rgba(255,255,230,0.9);
+    font-family: 'Ubuntu';
+    font-size: 13px;
+    padding: 5px;
+    border: 1px solid #222222;
+    transition: .3s;
+    width: 60px;
+    white-space: pre-wrap;
+}
+.write-pen:hover .button::after {
+    position: absolute;
+    left: 10px;
+    top: -15px;
+    content: attr(data-title);
+    z-index: 1;
+    background: rgba(255,255,230,0.9);
+    font-family: 'Ubuntu';
+    font-size: 13px;
+    padding: 5px;
+    border: 1px solid #222222;
+    transition: .3s;
+    width: 60px;
     white-space: pre-wrap;
 }
 .move-up:hover .button::after {
@@ -3654,7 +3689,6 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     border: 1px solid #222222;
     transition: .3s;
     width: 60px;
-    position: absolute;
      white-space: pre-wrap;
 }
 .rating:hover .button::after {
@@ -3670,7 +3704,6 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     border: 1px solid #222222;
     transition: .3s;
     width: 60px;
-    position: absolute;
      white-space: pre-wrap;
 }
 .add-some:hover .button::after {
@@ -3686,7 +3719,6 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     border: 1px solid #222222;
     transition: .3s;
     width: 60px;
-    position: absolute;
      white-space: pre-wrap;
 }
 
@@ -5853,18 +5885,23 @@ table.new-modal-table thead th{
     text-transform: uppercase;
     font-family: 'Ubuntu';
 }
+.container-picker-time{
+    padding: 0 55px;
+}
 .time-picker-input,
 .time-format{
-    padding: 5px 14px;
-    border: none;
-    border-bottom: 1px solid #757575;
+    padding: 5px 14px !important;
+    border: none !important;
+    border-bottom: 1px solid #757575 !important;
     background-image: url("../img/chewron-down.png");
     background-repeat: no-repeat;
     background-position: 95% 50%;
-    font-size: 18px;
-    font-family: 'Ubuntu';
-    color: #222222;
-    outline: none;
+    font-size: 18px !important;
+    font-family: 'Ubuntu' !important;
+    color: #222222 !important;
+    outline: none !important;
+    font-weight: 300 !important;
+    line-height: initial !important;
 }
 .time-picker-input{
     margin-right: 30px;
@@ -5883,12 +5920,12 @@ table.new-modal-table thead th{
     width: 128px;
 }
 .time-format.custom-select:focus {
-    border-bottom: 1px solid #757575;
-    outline: 0;
+    border-bottom: 1px solid #757575 !important;
+    outline: 0 !important;
     box-shadow: none;
 }
 .time-format:hover{
-    background-color: transparent;
+    background-color: transparent !important;
     box-shadow: none;
 }
 .active-time-format{
@@ -5896,7 +5933,7 @@ table.new-modal-table thead th{
 }
 .time-format:not(:disabled):not(.disabled).active, .time-format:not(:disabled):not(.disabled):active, .show>.btn-outline-secondary.time-format {
     color: #222222;
-    background-color: #ffffff;
+    background-color: transparent !important;
     border-bottom: 1px solid #757575;
     box-shadow: none;
 }
@@ -5940,4 +5977,180 @@ table.new-modal-table thead th{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+}
+.custom-action-radio .custom-control-label::before,
+.custom-action-radio .custom-control-label::after{
+    left: -1.5rem;
+}
+.custom-radio .custom-control-label::after {
+    top: 1px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+.custom-action-radio{
+    margin: 10px 0;
+}
+.action-input{
+    border: 1px solid #757575;
+    max-width: 97px;
+    width: 100%;
+    color: #757575;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    padding: 5px;
+    margin-left: 25px;
+}
+.save-modal-btn{
+    background-color: #428bca;
+    color: #ffffff;
+    border: 1px solid #428bca;
+    box-shadow: 0 4px 4px rgba(121, 143, 150, 0.24);
+}
+.save-modal-btn:hover{
+    transition: .3s;
+    color: #428bca;
+    background-color: transparent;
+}
+.footer-modal-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 55px 53px;
+    border-top: 1px solid #ececec;
+}
+.action-container{
+    padding-bottom: 23px;
+}
+.time-container span{
+    color: #222222;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+table.dataTable .thead-modal-table .sorting:first-child,
+table.dataTable .thead-modal-table .sorting_asc:first-child,
+table.dataTable .thead-modal-table .sorting_desc:first-child,
+table.dataTable .thead-modal-table .sorting_asc_disabled:first-child,
+table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
+    padding-left: 25px !important;
+    background-position: 5% 50%;
+}
+.padding-left-15{
+    padding-left: 15px;
+}
+.nav-table-list-modal li a{
+    padding: 15px 33px 17px;
+}
+.nav-table-list-modal li{
+    padding: 15px 0 17px;
+}
+.top-header-selected{
+    border-bottom: 1px solid #ececec;
+}
+.container-content-header-selected{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-content-header-selected h3,
+.amazon-time-content span{
+    font-weight: 300;
+    font-family: 'Ubuntu';
+    font-size: 18px;
+}
+.amazon-time-content{
+    text-align: right;
+}
+.amazon-time-content h5{
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    color: #757575;line-height: 20px;
+}
+#filter-compaigns11_paginate{
+    display: block;
+}
+.wrapper_searchterms #filter-compaigns11_paginate.paging_simple_numbers:nth-of-type(1),
+.dataTables_wrapper #filter-compaigns11_paginate.paging_simple_numbers:nth-of-type(1) {
+    position: absolute;
+    right: 24px;
+    top: -125px;
+    display: flex !important;
+    align-items: center;
+}
+.container-action-time{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-right: 1px solid #ffffff;
+    padding: 20px;
+    width: 100%;
+}
+.container-action-time h3{
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    color: #222222;
+    margin-bottom: 15px;
+}
+.container-action-time h3 span{
+    color: #757575;
+}
+.container-action-time:last-child{
+    border-right: none;
+}
+.wrapper-time-picker-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.diviber-span{
+    margin: 0 20px;
+}
+.sub-table-modal-container,
+.sub-table-modal td,
+.wrapper-time-picker-group .time-picker-input{
+    background-color: #ececec !important;
+}
+.sub-table-modal{
+    width: 100%;
+}
+.display-flex-jc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.modal-table.dataTable tbody .display-flex-jc:first-child,
+.modal-table.dataTable tbody .display-flex-jc:last-child {
+    padding: 0;
+    border-top: none !important;
+}
+.sub-table-modal tbody tr{
+    background-color: #ececec !important;
+}
+.container-input-sub-modal{
+    width: 100%;
+}
+.container-input-sub-modal input{
+    padding: 5px 14px !important;
+    border: none !important;
+    border-bottom: 1px solid #757575 !important;
+    font-size: 18px !important;
+    font-family: 'Ubuntu' !important;
+    color: #222222 !important;
+    outline: none !important;
+    background: transparent;
+    width: 100%;
+}
+.time-format-padding-left{
+    padding-left: 10px !important;
+    text-align: left;
+    margin-right: 20px;
+}
+.wrapper_searchterms table.modal-table-selected tbody td[colspan="7"]{
+    background-color: #ececec !important;
 }

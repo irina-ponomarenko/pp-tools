@@ -1293,6 +1293,125 @@ $(document).ready(function() {
         }
     });
 } );
+
+var opinions = [{"id":47,"name":"E061140","fileName":null,"disposition":null,"summary":null,"title":"Marr. of Eustice","opinionDate":"2015-12-10"},{"id":48,"name":"C070296M","fileName":null,"disposition":null,"summary":null,"title":"P. v. Nilsson","opinionDate":"2015-12-10"},{"id":50,"name":"S209643","fileName":null,"disposition":null,"summary":null,"title":"P. v. Stevens","opinionDate":"2015-12-10"}];
+var sections = [{"code":"code of civil procedure","sectionNumber":{"position":-1,"sectionNumber":"177.5"},"refCount":2,"section":{"part":"Chapter","partNumber":"4","title":"Incidental Powers and Duties of Judicial Officers","codeRange":{"sNumber":{"position":168,"sectionNumber":"177"},"eNumber":{"position":171,"sectionNumber":"179"}},"depth":3}},{"code":"code of civil procedure","sectionNumber":{"position":-1,"sectionNumber":"580"},"refCount":16,"section":{"part":"Chapter","partNumber":"1","title":"Judgment in General","codeRange":{"sNumber":{"position":862,"sectionNumber":"577"},"eNumber":{"position":879,"sectionNumber":"582.5"}},"depth":3}}];
+
+function format ( table_id ) {
+    return  '<table class="sub-table-modal">'+
+        '<tbody>'+
+        '<tr>'+
+        '<td class="display-flex-jc">'+
+        '<div class="container-action-time">'+
+        '<h3>Set time where your rule is active:</h3>'+
+    '<div class="wrapper-time-picker-group">'+
+        '<div class="container-picker-time-content">'+
+        '<input type="text" id="demo3' + table_id + '" class="time-picker-input" value="12:30" style="width: 103px;"/>'+
+        '<div class="input-group-prepend">'+
+        '<button class="btn btn-outline-secondary dropdown-toggle time-format" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 103px"></button>'+
+        '<div class="dropdown-menu time-format-drop-down">'+
+        '<a class="dropdown-item" href="#">am</a>'+
+        '<a class="dropdown-item active-time-format" href="#">pm</a>'+
+        '</div>'+
+        '</div>'+
+        '</div>'+
+        '<span class="diviber-span">-</span>'+
+        '<div class="container-picker-time-content">'+
+        '<input type="text" id="demo4' + table_id +'" class="time-picker-input" value="12:30" style="width: 103px;"/>'+
+        '<div class="input-group-prepend">'+
+        '<button class="btn btn-outline-secondary dropdown-toggle time-format" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 103px"></button>'+
+        '<div class="dropdown-menu time-format-drop-down">'+
+        '<a class="dropdown-item" href="#">am</a>'+
+        '<a class="dropdown-item active-time-format" href="#">pm</a>'+
+        '</div>'+
+        '</div>'+
+        '</div>'+
+        '</div>'+
+        '</div>'+
+        '<div class="container-action-time">'+
+        '<h3>Action: <span>(do not show Ads SetBit to use Multiplier)</span></h3>'+
+    '<div class="wrapper-time-picker-group">'+
+        '<div class="input-group-prepend">'+
+        '<button class="btn btn-outline-secondary dropdown-toggle time-format time-format-padding-left" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 103px">action</button>'+
+        '<div class="dropdown-menu time-format-drop-down">'+
+        '<a class="dropdown-item" href="#">action</a>'+
+        '<a class="dropdown-item active-time-format" href="#">action</a>'+
+        '</div>'+
+        '</div>'+
+        '<div class="container-input-sub-modal">'+
+        '<input type="text" name="text"/>'+
+        '</div>'+
+        '</div>'+
+        '</div>'+
+        '</td>'+
+        '</tr>'+
+        '</tbody>'+
+        '</table>';
+}
+var iTableCounter=1;
+var oInnerTable;
+
+$(document).ready(function() {
+    TableHtml = $('#filter-compaigns11').html();
+
+    var table23  = $('#filter-compaigns11').DataTable( {
+        "dom": 'prtp',
+        "scrollY":        "150px",
+        'order': [[ 0, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "orderable": false,
+            'className': 'pl-0'
+        }, {
+            "targets": [0],
+            'className': 'pl-1 pr-0'
+        },
+            {
+                "targets": [1,2,3,4,5,6],
+                'className': 'pl-1 pr-0'
+            }]
+    });
+    /* Add event listener for opening and closing details
+     * Note that the indicator for showing which row is open is not controlled by DataTables,
+     * rather it is done here
+     */
+    $('#filter-compaigns11 tbody').on('click', '.write-pen', function () {
+        var tr = $(this).closest('tr');
+        var row = table23.row( tr );
+        if ( row.child.isShown() ) {
+            //  This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        }
+        else {
+            // Open this row
+            row.child( format(iTableCounter) ).show();
+            $('#demo3' + iTableCounter).chungTimePicker();
+            $('#demo4' + iTableCounter).chungTimePicker();
+            tr.addClass('shown');
+            // try datatable stuff
+            oInnerTable = $('#example23' + iTableCounter).dataTable({
+                data: sections,
+                autoWidth: true,
+                deferRender: true,
+                info: false,
+                lengthChange: false,
+                ordering: false,
+                paging: false,
+                scrollX: false,
+                scrollY: false,
+                searching: false,
+                columns:[
+                    { data:'refCount' },
+                    { data:'section.codeRange.sNumber.sectionNumber' },
+                    { data:'section.title' }
+                ]
+            });
+            iTableCounter = iTableCounter + 1;
+        }
+    });
+} );
+
 $(document).ready(function () {
     $("#test-circle").circliful({
         animation: 1,
