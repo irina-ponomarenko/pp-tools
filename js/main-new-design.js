@@ -409,6 +409,54 @@ $(document).ready(function() {
             }]
 
     } );
+    var table24  = $('#example13').DataTable( {
+        // "dom": 'prtp',
+        "scrollY":        "310px",
+        'order': [[ 2, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [0,1],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3,4,5],
+                'className': 'pl-1 pr-0'
+            },{
+                "targets": [6,7],
+                'className': 'pl-1 pr-1'
+            },{
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            }]
+    } );
+    var table25  = $('#example14').DataTable( {
+        "dom": 'prtp',
+        "scrollY":        "393px",
+        'order': [[ 2, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [1],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3,4,5],
+                'className': 'pl-1 pr-0'
+            },
+            {
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            }]
+    } );
 
     var table7  = $('#filter-compaigns1').DataTable( {
         // "dom": 'prtp',
