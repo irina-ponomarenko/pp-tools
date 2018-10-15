@@ -5983,7 +5983,7 @@ table.new-modal-table thead th{
     left: -1.5rem;
 }
 .custom-radio .custom-control-label::after {
-    top: 1px;
+    top: 0;
 }
 .margin-bottom-20{
     margin-bottom: 20px;
