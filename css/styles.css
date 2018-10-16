@@ -4322,7 +4322,7 @@ svg:not(:root) {
     margin-top: 5px;
     box-shadow: 0 8px 16px rgba(121, 143, 150, 0.24), 0 0 8px rgba(121, 143, 150, 0.12) !important;
     z-index: 10000;
-    width: 179px;
+    max-width: 500px;
 }
 .wrapper_searchterms .dropdown .dropdown-menu .dropdown-item {
     padding: 6px 10px;
@@ -4452,10 +4452,6 @@ svg:not(:root) {
 .wrapper_searchterms .dropdown .table-actions:hover span,
 .table-actions[aria-expanded="true"] > span{
     color: #222222;
-}
-.change-modal-width-filters{
-   max-width: 1140px !important;
-    width: 100%;
 }
 .wrapper-table-modal .dataTables_paginate span{
     display: flex;
