@@ -207,8 +207,7 @@ body{
     margin-right: 50px;
 }
 .user-btn,
-.video-guide,
-.profile .nav-link{
+.video-guide{
     border: none;
     background-color: #428bca;
     padding: 15px 17px;
@@ -216,8 +215,17 @@ body{
     position: relative;
     height: 50px;
 }
+.profile .nav-link{
+    border: none;
+    background-color: #428bca;
+    padding: 15px 17px;
+    min-width: 150px;
+    position: relative;
+    height: 50px;
+}
 .nav-link{
     padding: 0;
+    padding-left: 10px;
 }
 .user-btn{
     position: relative;
@@ -1933,8 +1941,8 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 }
 .checkbox-block .custom-control-label::before, .checkbox-block .custom-control-label::after {
     position: absolute;
-    top: -0.6rem;
-    left: 0.5rem;
+    top: 0;
+    left: -2rem;
     background-image: none;
 }
 .footer-table{
