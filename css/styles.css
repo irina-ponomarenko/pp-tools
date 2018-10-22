@@ -1941,6 +1941,13 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 }
 .checkbox-block .custom-control-label::before, .checkbox-block .custom-control-label::after {
     position: absolute;
+    top: -0.6rem;
+    left: 0.5rem;
+    background-image: none;
+}
+.custom-control-autopilot .custom-control-label::before,
+.custom-control-autopilot .custom-control-label::after {
+    position: absolute;
     top: 0;
     left: -2rem;
     background-image: none;
@@ -4242,11 +4249,18 @@ svg:not(:root) {
 }
 .checkbox-welcome .custom-control-input:checked ~ .custom-control-label::after {
     background-image: url('../img/selected_icon/checked.png');
-    width: 16px;
-    height: 16px;
+    width: 17px;
+    height: 17px;
+    background-size: 18px;
     border: 1px solid #428bca;
     background-position: center;
 }
+.checkbox-welcome .custom-control-label::before{
+     width: 17px;
+    height: 17px;
+    border: none;
+}
+
 .nvtooltip {
     background-color: white;
     border-radius: 5px;
@@ -6415,7 +6429,15 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     justify-content: center;
 }
 .footer-modal-info-wizard{
-    padding: 23px 0 53px;
+    padding: 30px 0 53px;
     display: flex;
     justify-content: flex-end;
+}
+.footer-justify{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-justify .checkbox-welcome{
+    margin-left: 25px;
 }
