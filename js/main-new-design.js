@@ -1,3 +1,7 @@
+$(document).ready(function () {
+    $('#demo1').chungTimePicker();
+    $('#demo2').chungTimePicker();
+})
 function formatState (state) {
   if (!state.id) { return state.text; }
   var $state = $(
@@ -39,9 +43,6 @@ function formatStateCircle (state) {
 };
 
 $(document).ready(function() {
-
-    $('#demo1').chungTimePicker();
-    $('#demo2').chungTimePicker();
   $('[data-toggle="tooltip"]').tooltip();
 
   $('.table-edited-value input').on('focus', function() {
@@ -1345,8 +1346,8 @@ $(document).ready(function() {
 var opinions = [{"id":47,"name":"E061140","fileName":null,"disposition":null,"summary":null,"title":"Marr. of Eustice","opinionDate":"2015-12-10"},{"id":48,"name":"C070296M","fileName":null,"disposition":null,"summary":null,"title":"P. v. Nilsson","opinionDate":"2015-12-10"},{"id":50,"name":"S209643","fileName":null,"disposition":null,"summary":null,"title":"P. v. Stevens","opinionDate":"2015-12-10"}];
 var sections = [{"code":"code of civil procedure","sectionNumber":{"position":-1,"sectionNumber":"177.5"},"refCount":2,"section":{"part":"Chapter","partNumber":"4","title":"Incidental Powers and Duties of Judicial Officers","codeRange":{"sNumber":{"position":168,"sectionNumber":"177"},"eNumber":{"position":171,"sectionNumber":"179"}},"depth":3}},{"code":"code of civil procedure","sectionNumber":{"position":-1,"sectionNumber":"580"},"refCount":16,"section":{"part":"Chapter","partNumber":"1","title":"Judgment in General","codeRange":{"sNumber":{"position":862,"sectionNumber":"577"},"eNumber":{"position":879,"sectionNumber":"582.5"}},"depth":3}}];
 
-function format ( table_id ) {
-    return  '<table class="sub-table-modal">'+
+function format2 ( table_id ) {
+    return  '<table class="sub-table-modal" '+table_id+'>'+
         '<tbody>'+
         '<tr>'+
         '<td class="display-flex-jc">'+
@@ -1433,7 +1434,7 @@ $(document).ready(function() {
         }
         else {
             // Open this row
-            row.child( format(iTableCounter) ).show();
+            row.child( format2(iTableCounter) ).show();
             $('#demo3' + iTableCounter).chungTimePicker();
             $('#demo4' + iTableCounter).chungTimePicker();
             tr.addClass('shown');

@@ -1824,7 +1824,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     height: 46px;
 }
 .wrapper-img-table img{
-    width: 100%;
+    width: 46px;
 }
 .sku-span span,
 .campaigns-span span{
@@ -6001,7 +6001,7 @@ table.new-modal-table thead th{
     left: -1.5rem;
 }
 .custom-radio .custom-control-label::after {
-    top: 0
+    top: 1px;
 }
 .margin-bottom-20{
     margin-bottom: 20px;
