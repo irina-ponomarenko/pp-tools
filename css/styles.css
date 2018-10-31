@@ -2796,7 +2796,8 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .padding-none{
     padding: 0;
 }
-.change-header-modal .close {
+.change-header-modal .close,
+.wrapper-logout-block .close{
     padding: 1.5rem;
     background: url(../img/icon-close.png) no-repeat center;
     background-size: 14px 14px;
@@ -4555,6 +4556,18 @@ svg:not(:root) {
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
     max-width: 732px;
     padding-top: 70px;
+    position: relative;
+}
+.wrapper-logout-block .close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    opacity: .5;
+}
+.wrapper-logout-block .close:hover{
+    transition: .3s;
+    opacity: 1;
 }
 .title-sign-in{
     font-size: 30px;
