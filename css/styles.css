@@ -6463,3 +6463,6 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
 .footer-justify .checkbox-welcome{
     margin-left: 25px;
 }
+.wrapper_searchterms .dataTable thead, .new-thead th tr th{
+    background-color: #ececec !important;
+}
