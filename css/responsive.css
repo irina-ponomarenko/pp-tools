@@ -84,8 +84,14 @@
 }
 @media only screen and (max-width: 1560px) and (min-width: 360px) {
     .info-top-nav a {
-        font-size: 13px;
+        font-size: 0.875rem;
         padding: 10px 15px;
+    }
+    #example2_wrapper{
+        padding-bottom: 0;
+    }
+    .user-btn-text{
+        font-size: 0.875rem;
     }
     .info-top-nav {
         margin-right: 10px;
@@ -138,7 +144,7 @@
         margin-left: 10px;
     }
     .wrapper_searchterms .btn {
-        font-size: 10px;
+        font-size: 0.875rem;
     }
     .wrapper_searchterms .control,
     .wrapper_searchterms .legend{
@@ -146,10 +152,10 @@
     }
     .new-action .title, .new-action .count,
     .select2-selection__rendered{
-        font-size: 16px;
+        font-size: 1rem;
     }
     .desc {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .wrapper_searchterms .select-bottom-table{
         padding: 20px 18px;
@@ -223,6 +229,36 @@
     }
     .title-keywords-text p {
         font-size: 20px;
+    }
+    .wrapper_searchterms .dataTable thead .sorting,
+    .wrapper_searchterms .dataTable thead .sorting_asc,
+    .wrapper_searchterms .dataTable thead .sorting_desc,
+    table.dataTable thead .sorting,
+    table.dataTable thead .sorting_asc,
+    table.dataTable thead .sorting_desc {
+        background-size: 11px;
+    }
+    .green-percent-p,
+    .red-percent-p,
+    .percent{
+        font-size: 1.25rem;
+    }
+    .percent-span{
+        font-size: 0.75rem;
+    }
+    .wrapper_searchterms table.dataTable .table-gray-value, .wrapper_searchterms table.dataTable .select2-selection, .wrapper_searchterms table.dataTable input {
+        font-size: 1rem;
+    }
+    .table-paragraph p{
+        font-size: 1rem;
+    }
+    .wrapper_searchterms .table-gray-value + small,
+    .wrapper_searchterms .table-edited-value + small,
+    .wrapper_searchterms .table-edited-value-holder + small{
+        font-size: 0.75rem;
+    }
+    .wrapper_searchterms .dataTables_paginate .paginate_button, .dataTables_wrapper .dataTables_paginate .paginate_button{
+        font-size: 0.875rem;
     }
 
 }

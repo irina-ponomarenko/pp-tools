@@ -101,7 +101,7 @@
 }
 
 
-*{
+*, html{
     font-size: 16px;
     color: #222222;
     font-weight: 300;
@@ -131,6 +131,7 @@ time, mark, audio, video {
 
 html {
     line-height: 1;
+    font-size: 16px;
 }
 
 ol, ul {
@@ -160,7 +161,7 @@ a img {
     border: none;
 }
 * a{
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     color: #262626;
     cursor: pointer;
@@ -179,7 +180,7 @@ a img {
 * h2{
     font-style: normal;
     line-height: normal;
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 0.05em;
 }
 button{
@@ -255,7 +256,7 @@ body{
 }
 .list-drop-down li a,
 .separeted-link a{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     color: #222222;
     padding: 10px;
@@ -300,7 +301,7 @@ body{
 .user-btn-text{
     position: relative;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: 1rem;
     color: #ffffff;
     font-family: 'Ubuntu';
     font-weight: 300;
@@ -323,7 +324,7 @@ body{
 }
 .new-dropdown-menu a{
     padding: 10px;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Ubuntu';
     color: #222222;
     font-weight: 300;
@@ -482,10 +483,10 @@ body{
     border-left: none;
 }
 .video-guide span{
-    font-size: 17px;
+    font-size: 1.125rem;
     color: #ffffff;
     position: relative;
-    padding-right: 25px;
+    padding-right: 20px;
 }
 .video-guide{
     width: 140px;
@@ -730,7 +731,7 @@ body{
     color: #222222;
     position: relative;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.125rem;
     height: 42px;
     font-weight: 300;
     margin-right: 25px;
@@ -774,7 +775,7 @@ body{
 }
 
 .desc-window__text p{
-    font: 300 16px 'Ubuntu';
+    font: 300 1rem 'Ubuntu';
 }
 
 .desc-window .icon-close{
@@ -825,7 +826,7 @@ body{
     padding: 10px 0;
     align-self: flex-end;
     margin: 30px 30px  30px 0;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     font-weight: 300;
 }
@@ -876,7 +877,7 @@ body{
 .arrow-down span,
 .arrow-grey span{
     position: relative;
-    font-size: 18px;
+    font-size: 1.125rem;
     padding-left: 10px;
 }
 .arrow-grey span{
@@ -890,7 +891,7 @@ body{
 }
 .pupular-title,
 .top-header-keywords{
-    padding: 18px;
+    padding: 1.5rem;
     font-weight: 300;
 }
 .top-header-keywords{
@@ -999,7 +1000,7 @@ body{
     margin-right: 0;
 }
 .add-label{
-    font-size: 18px;
+    font-size: 1rem;
 }
 .add-list-li{
     margin-bottom: 10px;
@@ -1017,7 +1018,7 @@ body{
     width: 114px;
     height: 44px;
     padding: 12px 0 16px;
-    font-size: 18px;
+    font-size: 1.125rem;
     cursor: pointer;
     webkit-box-shadow: 3px 6px 8px -2px rgba(0,0,0,0.29);
     -moz-box-shadow: 3px 6px 8px -2px rgba(0,0,0,0.29);
@@ -1049,7 +1050,7 @@ body{
     width: 100%;
     margin-bottom: 10px;
     color: #bdbdbd;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
 }
 .container-content-tabs-bottom{
@@ -1103,7 +1104,7 @@ body{
 }
 .nav-li-header a{
     padding: 27px 33px 25px;
-    font-size: 18px;
+    font-size: 1.125rem;
     position: relative;
     font-weight: 300;
 }
@@ -1157,7 +1158,7 @@ body{
     padding-right: 70px;
 }
 .currency-valute .title{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     margin-right: 5px;
 }
@@ -1169,7 +1170,7 @@ body{
 .currency-options span, .currency span,
 .currency-valute .select2-selection__rendered{
     font-family: 'Ubuntu';
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
 }
 .currency-valute .select2-selection,
@@ -1205,7 +1206,7 @@ body{
     height: 32px;
     line-height: 32px;
     border: 0;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     color: #757575;
     padding-left: 40px;
@@ -1354,7 +1355,7 @@ body{
 .new-action .title,
 .new-action .count{
     color: #bdbdbd;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
 }
 .new-action .dubleArrow + .select2.select2-container.select2-container--open {
@@ -1387,7 +1388,7 @@ body{
     margin: 0 auto;
 }
 .desc{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
 }
 .color-green{
@@ -1406,7 +1407,7 @@ body{
 .new-thead th{
     background: #ececec;
     color: #757575 !important;
-    font-size: 14px;
+    font-size: 0.875;
     font-weight: 300 !important;
 }
 .wrapper_searchterms table.dataTable.display tbody tr.even {
@@ -1459,12 +1460,12 @@ body{
 }
 .percent{
     color: #005a93;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 .percent-span{
     color: #757575;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 300;
 }
 .new-display .pl-1, .px-1 {
@@ -1555,13 +1556,13 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #428bca !important;
     text-decoration: underline;
 }
 .text-ok{
     color: #757575;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .ok-icon{
     width: 15px;
@@ -1594,7 +1595,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     font-size: 18px;
 }
 .wrapper_searchterms table.dataTable input{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .wrapper_searchterms .table-edited-value + small{
     display: block;
@@ -1656,7 +1657,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     margin: 6px 2px;
 }
 .table-paragraph p {
-    font: 200 18px 'Ubuntu';
+    font: 200 1.125rem 'Ubuntu';
     color: #222222;
 }
 .align-items-center{
@@ -1799,7 +1800,8 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 }
 .header-table-modal tr th span{
     color: #757575;
-    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 300;
 }
 .header-table-modal tr th{
     padding: 19px 0;
@@ -1828,7 +1830,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 }
 .sku-span span,
 .campaigns-span span{
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #222222;
 }
 .sku-span {
@@ -1858,7 +1860,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     cursor: pointer;
     color: rgba(0, 0, 0, 0.87);
     transition: .3s;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     white-space: nowrap;
     font-weight: 300;
@@ -1869,7 +1871,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: left;
     color: #428bca !important;
 }
@@ -1960,7 +1962,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 }
 .conteiner-items p,
 .conteiner-items p span{
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #757575;
     font-weight: 300;
 }
@@ -1974,14 +1976,14 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     height: 47px;
     font-weight: 300;
     font-family: 'Ubuntu';
-    font-size: 18px;
+    font-size: 1.125rem;
     border-radius: 5px;
 }
 .footer-filters-btn{
     width: 93px;
     height: 35px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     border-radius: 5px;
     text-align: center;
@@ -2015,7 +2017,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     padding: 3px 0 5px;
     border-radius: 5px;
     width: 58px;
-    font-size: 14px;
+    font-size: 0.875rem;
 
 }
 .footer-modal{
@@ -2060,7 +2062,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 .title-column h3{
     font-weight: 300;
     font-family: 'Ubuntu';
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #222222;
     margin-bottom: 20px;
 }
@@ -2152,11 +2154,11 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 .visibility-checked .custom-control-label,
 .autopilit-checked  .custom-control-label{
     color: #222222;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-left: 20px;
 }
 .autopilit-checked  .custom-control-label{
-    font-size: 16px;
+    font-size: 1rem;
 }
 .autopilit-checked  .custom-control-new{
     display: flex;
@@ -2211,7 +2213,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 .wrapper-input-keywords input{
     border: none;
     outline: none;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #222222;
     font-family: 'Ubuntu';
     padding: 5px;
@@ -2219,10 +2221,10 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 }
 .wrapper-input-keywords input::placeholder,
 .column-input::placeholder{
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .question-icon a{
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #222222;
     font-family: 'Ubuntu';
     padding: 5px;
@@ -2283,10 +2285,13 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     padding-left: 0rem!important;
 }
 .range-title{
-    font-size: 15px;
+    font-size: 0.875rem;
     color: #757575;
     margin-left: 10px;
     font-weight: 300;
+}
+.flex-column{
+    padding-bottom: 2px;
 }
 .table-actions .icon.actions + .select2-container{
     padding-left: 0;
@@ -2503,7 +2508,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     z-index: 1000;
 }
 .new_searchterms .dataTables_wrapper .dataTables_length label{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .new_searchterms .dataTables_wrapper .dataTables_length select {
     -webkit-appearance: none;
@@ -2596,16 +2601,16 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     background-color: transparent;
 }
 .keywords-text{
-    max-width: 163px;
-    width: 100%;
+    width: 163px;
     display: flex;
     white-space: pre-line;
+    font-size: 0.875rem;
 }
 .ml-1 span{
-    max-width: 168px;
-    width: 100%;
+    width: 168px;
     display: flex;
     white-space: pre-line;
+    font-size: 0.875rem;
 }
 .icon-refresh{
     background-image: url("../img/refresh1.png");
@@ -2631,7 +2636,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     margin-left: 10px;
 }
 .campages-block .item .input{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     color: #757575;
     font-weight: 300;
@@ -2641,7 +2646,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     margin-right: 17px;
 }
 .campages-block .item .desc{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: 'Ubuntu';
     color: #757575;
     font-weight: 300;
@@ -2650,7 +2655,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     margin-right: 20px;
 }
 .control-check label{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     color: #222222;
     margin-left: 10px;
@@ -2678,7 +2683,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     border-radius: 5px;
 }
 .id-block{
-    font-size: 18px !important;
+    font-size: 1.125rem !important;
     color: #222222;
 }
 .wrapper_searchterms .dataTable thead .no-sorting{
@@ -2690,7 +2695,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .search-query,
 .keywords-text-link{
     color: #428bca !important;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-decoration: underline;
     white-space: normal !important;
 }
@@ -2772,7 +2777,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     padding: 0;
 }
 .list-recommend li .custom-control-new label{
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-top: 2px;
     margin-left: 3px;
     white-space: nowrap;
@@ -2787,7 +2792,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .change-header-modal .modal-title{
     font-family: 'Ubuntu';
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 35px 50px 25px;
 }
 .new-padding{
@@ -2834,7 +2839,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     background: url(../img/minus.png) no-repeat;
 }
 .new-details a{
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #428bca !important;
     text-decoration: underline;
     max-width: 330px;
@@ -2848,7 +2853,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .status-info{
     font-family: 'Ubuntu';
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
 }
 .wrapper_searchterms .details{
@@ -2928,7 +2933,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     left: 12px;
     top: 6px;
     display: block;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #ffffff;
     font-family: 'Ubuntu';
     content: 'on';
@@ -2989,7 +2994,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .footer-info-table td p{
     color: #757575;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .new-display tfoot{
     background-color: #ececec;
@@ -2999,7 +3004,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     border: 1px solid #428bca;
     background-color: #428bca;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: 11px 0;
     width: 161px;
     border-radius: 5px;
@@ -3036,7 +3041,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     padding-bottom: 23px;
 }
 .title-campaing{
-    font-size: 18px;
+    font-size: 1.125rem;
     text-transform: uppercase;
     font-family: 'Ubuntu';
     padding: 35px 0 30px 0;
@@ -3053,7 +3058,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .wrapper-select-campaing h3,
 .container-select h3{
     font-family: 'Ubuntu';
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-bottom: 20px;
 }
 .wrapper-select-campaing input,
@@ -3062,6 +3067,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     width: 100%;
     padding: 11px;
     font-family: 'Ubuntu';
+    font-size: 1.125rem;
 }
 .block-select-list{
     display: flex;
@@ -3128,7 +3134,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .container-checked .custom-control-label{
     color: #388e3c;
-    line-height: 18px;
+    line-height: 1.125rem;
     margin-left: 10px;
 }
 .container-checked .custom-control-label p a{
@@ -3152,6 +3158,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     border: 1px solid #428bca;
     color: #ffffff;
     background-color: #428bca;
+    font-size: 1.125rem;
 }
 .campaing-next:hover{
     background-color: transparent;
@@ -3171,7 +3178,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     justify-content: space-between;
 }
 .title-table-modal-campaing span{
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #757575 !important;
 }
 .custom-campaing.custom-control-input:checked ~ .custom-campaing.custom-control-label::before{
@@ -3202,11 +3209,11 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 252px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .campaing-table-text span{
-    font-size: 18px;
-    color: #ff5722;
+    font-size: 1.125rem;
+    color: #ff5722 !important;
 }
 .campaign-table tr{
     background-color: #ececec;
@@ -3251,7 +3258,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .title-select-campaing span{
     color: #757575 !important;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .textarea-keywords{
     border: 1px solid #757575;
@@ -3279,18 +3286,18 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     max-width: 180px;
 }
 .option-autopilot-container h3{
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #222222;
     margin-bottom: 18px;
 }
 .option-autopilot-container input{
     padding: 7px 10px;
     border: none;
-    font-size: 18px;
+    font-size: 1.125rem;
     width: 100%;
 }
 .option-autopilot-container input::placeholder{
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .autopilot-info-list{
     display: flex;
@@ -3298,7 +3305,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .change-header-modal-autopilot .modal-title{
     font-family: 'Ubuntu';
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 35px 55px 25px;
 
 }
@@ -3359,9 +3366,10 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .dataTables_wrapper .dataTables_info{
     color: #bdbdbd;
-    font-size: 18px;
+    font-size: 1.125rem;
     padding-left: 25px;
     padding-top: 21px;
+    font-weight: 300;
 }
 .wrapper_searchterms .refresh-btn {
     padding: 0 10px 0 30px;
@@ -3393,7 +3401,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     padding: 7px 9px !important;
 }
 .campaing-table-text a{
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #428bca !important;
     text-decoration: underline;
     text-overflow: ellipsis;
@@ -3401,7 +3409,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     line-height: 1rem;
 }
 .sku-kod a{
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #428bca !important;
     text-decoration: underline;
 }
@@ -3463,7 +3471,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     background-color: #ececec;
 }
 .table-profit thead th{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: 'Ubuntu';
     color: #757575;
     padding: .5rem .75rem;
@@ -3485,7 +3493,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     margin-right: 25px;
 }
 .show-selected p{
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #757575;
     font-family: 'Ubuntu';
     font-weight: 300;
@@ -3501,7 +3509,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     display: flex;;
     align-items: center;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .profit-checked .custom-control-label::after{
     left: -1.1rem;
@@ -3523,13 +3531,13 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     height: 13px;
 }
 .small-table-paragraph p{
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .wrapper-radio-btn .radio-container{
     margin-bottom: 30px;
 }
 .wrapper-radio-btn h3{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     text-transform: uppercase;
     margin-bottom: 40px;
@@ -3594,7 +3602,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     align-items: center;
 }
 .direction-block span{
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-left: 5px;
 }
 .ranking-block{
@@ -3898,12 +3906,12 @@ svg:not(:root) {
     align-items: center;
 }
 .list-day li a span{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     font-weight: 300;
 }
 .last-span{
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #757575;
 }
 .days{
@@ -3969,7 +3977,7 @@ svg:not(:root) {
     width: 99px;
     height: 30px;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     background-color: #ff5722;
     border-radius: 5px;
@@ -3988,7 +3996,7 @@ svg:not(:root) {
 }
 .trial-wrapper p{
     margin-right: 15px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     color: #222222;
 }
@@ -4006,7 +4014,7 @@ svg:not(:root) {
     background-color: #4caf50;
 }
 .text-info-charts h5{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     color: #ffffff;
     font-weight: 300;
@@ -4019,10 +4027,10 @@ svg:not(:root) {
 }
 .total-info,
 .price-chart{
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .percent-number{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .color-change span{
     color: #ffffff;
@@ -4092,7 +4100,7 @@ svg:not(:root) {
 .container-chart-info h5{
     font-weight: 300;
     font-family: 'Ubuntu';
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #757575;
 }
 .wrapper-info-data{
@@ -4101,7 +4109,7 @@ svg:not(:root) {
     margin-top: 5px;
 }
 .data-charts{
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #222222;
     font-weight: 300;
     font-family: 'Ubuntu';
@@ -4111,7 +4119,7 @@ svg:not(:root) {
 .green-percent{
     font-weight: 300;
     font-family: 'Ubuntu';
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #ff5722;
     position: relative;
     padding-right: 23px;
@@ -4156,7 +4164,7 @@ svg:not(:root) {
     flex-direction: column;
 }
 .container-modal-header h5{
-    font-size: 36px !important;
+    font-size: 2.25rem !important;
     color: #428ac9;
     font-family: 'Ubuntu';
     padding: 35px 55px 0 !important;
@@ -4179,7 +4187,7 @@ svg:not(:root) {
     margin-bottom: 30px;
 }
 .wrapper-list-welcome h3{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Ubuntu';
     font-weight: 300;
 }
@@ -4192,14 +4200,14 @@ svg:not(:root) {
 
 }
 .wrapper-list-welcome p{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     font-weight: 300;
     margin-top: 11px;
 }
 .list-welcome li p{
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #757575;
 }
 .list-welcome{
@@ -4214,7 +4222,7 @@ svg:not(:root) {
     background: #428bca;
     border: 1px solid #428bca;
     padding: 12px 0;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #ffffff;
     font-family: 'Ubuntu';
 }
@@ -4229,7 +4237,7 @@ svg:not(:root) {
 .read-more{
     color: #428bca;
     font-family: 'Ubuntu';
-    font-size: 18px;
+    font-size: 1.125rem;
     text-decoration: underline;
 }
 .footer-welcome-list{
@@ -4245,7 +4253,7 @@ svg:not(:root) {
 }
 .container-modal-header p{
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Ubuntu';
 }
 .checkbox-welcome .custom-control-input:checked ~ .custom-control-label::after {
@@ -4276,7 +4284,7 @@ svg:not(:root) {
     border: 1px solid #222222;
 }
 .checkbox-welcome .custom-control-label{
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #222222;
     font-family: 'Ubuntu';
     margin-bottom: 3px;
@@ -4383,7 +4391,7 @@ svg:not(:root) {
     line-height: initial;
     margin-top: 0;
     min-width: 19px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     font-weight: 300;
 }
@@ -4429,10 +4437,10 @@ svg:not(:root) {
 }
 .green-percent-p{
     color: #4caf50;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .red-percent-p{
-     font-size: 24px;
+     font-size: 1.5rem;
      color: #ff5722;
 }
 .graph-height{
@@ -4445,6 +4453,7 @@ svg:not(:root) {
 }
 .text-tabs p{
     font-weight: 300;
+    font-size: 1rem;
 }
 
 .table-actions{
@@ -4461,7 +4470,7 @@ svg:not(:root) {
     background-image: url(../img/selected_icon/chewron-down-white.png);
 }
 .table-actions span{
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #ffffff;
     font-family: 'Ubuntu';
     font-weight: 300;
@@ -4570,7 +4579,7 @@ svg:not(:root) {
     opacity: 1;
 }
 .title-sign-in{
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #222222;
     font-weight: 300;
     font-family: 'Ubuntu';
@@ -4593,7 +4602,7 @@ svg:not(:root) {
     border-radius: 3px;
 }
 .amazon-logout span{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     position: relative;
     padding-left: 52px;
@@ -4609,7 +4618,7 @@ svg:not(:root) {
 }
 .or-span,
 .login-email{
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #757575;
     font-weight: 300;
     font-family: 'Ubuntu';
@@ -4634,13 +4643,13 @@ svg:not(:root) {
     align-items: center;
 }
 .container-footer-logout-text p{
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #757575;
     font-weight: 300;
     font-family: 'Ubuntu';
 }
 .container-footer-logout-text a{
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #428bca;
     font-weight: 300;
     text-decoration: underline;
@@ -4666,7 +4675,7 @@ svg:not(:root) {
     border-bottom: 1px solid #757575;
     padding: 20px 11px;
     outline: none;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     color: #222222;
     font-weight: 300;
@@ -4679,7 +4688,7 @@ svg:not(:root) {
     margin-bottom: 30px;
 }
 .password-input{
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .active-input-logout{
     border-bottom: 4px solid #428bca;
@@ -4688,7 +4697,7 @@ svg:not(:root) {
     margin-bottom: 30px;
 }
 .login-btn{
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: 14px;
     width: 112px;
     background-color: #428bca;
@@ -4729,7 +4738,7 @@ svg:not(:root) {
 }
 .options-list h4{
     color: #222222;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     font-weight: 300;
     margin-bottom: 30px;
@@ -4777,7 +4786,7 @@ svg:not(:root) {
     left: -1.5rem;
 }
 .private-custom .custom-control-label{
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .container-logout-group{
     display: flex;
@@ -4804,7 +4813,7 @@ svg:not(:root) {
 .title-trial{
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     font-weight: 300;
 }
@@ -4814,7 +4823,7 @@ svg:not(:root) {
 }
 .info-trial-btn{
     color: #c0dbf3;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: 'Ubuntu';
     font-weight: 300;
 }
@@ -4842,7 +4851,7 @@ svg:not(:root) {
     position: relative;
     padding-right: 15px;
     padding-left: 10px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     color: #757575;
 }
@@ -4899,7 +4908,7 @@ a.active-link-log:before,
 .sign-up-btn span,
 .access-btn span{
     color: #428bca;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     font-family: 'Ubuntu';
 }
@@ -4928,7 +4937,7 @@ a.active-link-log:before,
     margin-bottom: 0 !important;
 }
 .option-span{
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .loged-input{
     width: 100%;
@@ -4948,7 +4957,7 @@ a.active-link-log:before,
 }
 .next-btn-loged span{
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     font-family: 'Ubuntu';
     text-transform: uppercase;
@@ -4982,14 +4991,14 @@ a.active-link-log:before,
     border-bottom: 1px solid #757575;
     border-radius: 0;
     color: #222222;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     font-family: 'Ubuntu';
     width: 100%;
 }
 .toggle-select-group span{
     color: #222222;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     font-family: 'Ubuntu';
 }
@@ -5058,7 +5067,7 @@ table.dataTable thead th{
     padding-left: 29px !important;
 }
 .title-small-info{
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #222222;
     font-family: 'Ubuntu';
     font-weight: 300;
@@ -5076,7 +5085,7 @@ table.dataTable thead th{
     display: flex;
     border-radius: 50px;
     position: relative;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: 'Ubuntu';
     font-weight: 300;
     text-align: center;
@@ -5156,14 +5165,14 @@ table.dataTable thead .sorting_desc{
 }
 .header-content-tools h3,
 .header-content-tools p{
-    font-size: 30px;
+    font-size: 1.875rem;
     font-family: 'Ubuntu';
     font-weight: 300;
     text-align: center;
     color: #428bca;
 }
 .header-content-tools p{
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #222222;
     margin-top: 20px;
 }
@@ -5184,7 +5193,7 @@ table.dataTable thead .sorting_desc{
     align-items: center;
 }
 .header-tools-li h5{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Ubuntu';
     font-weight: 300;
     text-align: center;
@@ -5200,11 +5209,11 @@ table.dataTable thead .sorting_desc{
     font-family: 'Oswald';
 }
 .price-tools{
-    font-size: 72px;
+    font-size: 4.5rem;
 }
 .mounts-tools,
 .dollar-icon{
-    font-size: 39px;
+    font-size: 2.4375rem;
 }
 .dollar-icon{
     align-self: flex-start;
@@ -5218,7 +5227,7 @@ table.dataTable thead .sorting_desc{
     padding: 13px 0;
 }
 .grey-block-tools h5{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     font-weight: 100;
     text-transform: uppercase;
@@ -5235,7 +5244,7 @@ table.dataTable thead .sorting_desc{
     font-weight: 400;
     font-family: 'Oswald';
     color: #ffffff;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
 }
 .info-text-block-tools,
@@ -5253,7 +5262,7 @@ table.dataTable thead .sorting_desc{
 .info-text-tools-blue-check,
 .info-text-tools-orange-check,
 .orange-span span{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     color: #222222;
     font-weight: 300;
@@ -5314,7 +5323,7 @@ table.dataTable thead .sorting_desc{
     color: #ffffff;
     font-weight: 300;
     font-family: 'Ubuntu';
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     border: 1px solid #005a93;
     box-shadow: 1px 2px 10px rgba(0,0,0,0.5)!important;
@@ -5397,7 +5406,7 @@ table.dataTable thead .sorting_desc{
 }
 .nav-li-header-small a {
     padding: 15px 25px 15px;
-    font-size: 14px;
+    font-size: 0.875rem;
     position: relative;
     font-weight: 300;
 }
@@ -5413,7 +5422,7 @@ table.dataTable thead .sorting_desc{
     flex-wrap: nowrap;
 }
 .campages-block .item .input {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-right: 10px;
 }
 .respons-wrap .new-filters{
@@ -5435,7 +5444,7 @@ body {
     margin-right: 15px;
 }
 .narrow-list li a{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 300;
     color: #222222;
     font-family: 'Ubuntu';
@@ -5458,7 +5467,7 @@ body {
 }
 .text-title,
 .container-clicks span{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 300;
     font-family: 'Ubuntu';
     color: #222222;
@@ -5470,14 +5479,14 @@ body {
 }
 .container-clicks span.number-clicks{
     color: #222222;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .generate,
 .add-negative{
     border: 1px solid #428bca;
     background-color: #428bca;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     font-family: 'Ubuntu';
     width: 105px;
@@ -5608,7 +5617,7 @@ body {
     border-bottom: 1px solid #222222;
     outline: none;
     padding: 10px;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: 'Ubuntu';
     font-weight: 300;
     color: #222222;
@@ -5628,7 +5637,7 @@ body {
     max-width: 376px;
 }
 .info-save-change-container h4{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Ubuntu';
     font-weight: 300;
     margin: 28px 0;
@@ -5649,7 +5658,7 @@ body {
     max-width: 178px;
 }
 .wrapper-input-change label{
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Ubuntu';
     color: #757575;
     margin-bottom: 10px;
@@ -5657,14 +5666,14 @@ body {
 }
 .wrapper-input-change input{
     padding: 16px 10px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Ubuntu';
     color: #757575;
     font-weight: 300;
     max-width: 132px;
 }
 .wrapper-input-change input::placeholder{
-    font-size: 16px;
+    font-size: 1rem;
 }
 .change-info{
     display: flex;
@@ -5689,7 +5698,7 @@ body {
     background-color: #428bca;
     color: #fff;
     border: 1px solid #428bca;
-    font: 300 18px 'Ubuntu';
+    font: 300 1.125rem 'Ubuntu';
     box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
     padding: 10px 0;
     width: 153px;
@@ -5721,7 +5730,7 @@ body {
     height: 20px;
     background-color: #ff5722;
     color: #ffffff;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-family: 'Ubuntu';
     display: flex;
     align-items: center;
@@ -5737,7 +5746,7 @@ body {
     height: 20px;
     background-color: #ff5722;
     color: #ffffff;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-family: 'Ubuntu';
     display: flex;
     align-items: center;
@@ -5842,7 +5851,7 @@ body {
     background-color: #ff5722;
     color: #ffffff;
     font-family: 'Ubuntu';
-    font-size: 12px;
+    font-size: 0.75rem;
     border: none;
     padding: 8px 0;
     border-radius: 5px;
@@ -5863,7 +5872,7 @@ body {
 .custom-modal-footer .custom-control-label{
     font-weight: 700;
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .modal-body.wrapper_searchterms .dataTables_wrapper .dataTables_paginate{
     display: none;
@@ -5882,7 +5891,7 @@ body {
 }
 .title-table-block-1 {
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     width: auto;
     cursor: pointer;
@@ -5912,7 +5921,7 @@ table.new-modal-table thead th{
     padding: 0;
 }
 .container-picker-time h3{
-    font-size: 18px;
+    font-size: 1.125rem;
     text-transform: uppercase;
     font-family: 'Ubuntu';
 }
@@ -5927,7 +5936,7 @@ table.new-modal-table thead th{
     background-image: url("../img/chewron-down.png");
     background-repeat: no-repeat;
     background-position: 95% 50%;
-    font-size: 18px !important;
+    font-size: 1.125rem !important;
     font-family: 'Ubuntu' !important;
     color: #222222 !important;
     outline: none !important;
@@ -5999,7 +6008,7 @@ table.new-modal-table thead th{
 }
 .picker-time-list li h4{
     font-family: 'Ubuntu';
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #222222;
     font-weight: 300;
 }
@@ -6027,7 +6036,7 @@ table.new-modal-table thead th{
     max-width: 97px;
     width: 100%;
     color: #757575;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     font-weight: 300;
     padding: 5px;
@@ -6056,7 +6065,7 @@ table.new-modal-table thead th{
 }
 .time-container span{
     color: #222222;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     font-weight: 300;
 }
@@ -6090,13 +6099,13 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
 .amazon-time-content span{
     font-weight: 300;
     font-family: 'Ubuntu';
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .amazon-time-content{
     text-align: right;
 }
 .amazon-time-content h5{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: 'Ubuntu';
     font-weight: 300;
     color: #757575;line-height: 20px;
@@ -6205,7 +6214,7 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
 }
 .title-wizzard{
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #222222;
     font-weight: 300;
     font-family: 'Ubuntu';
@@ -6222,7 +6231,7 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     padding: 10px 0;
     border-radius: 5px;
     border: 1px solid #428bca;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #ffffff;
     background-color: #428bca;
     box-shadow: 1px 2px 10px rgba(0,0,0,0.5)!important;
@@ -6283,7 +6292,7 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     margin-left: 20px;
 }
 .sku-span-table span{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     color: #222222;
     white-space: nowrap;
@@ -6293,7 +6302,7 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     border-radius: 5px;
     border: 1px solid #428bca;
     color: #428bca;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu';
     text-align: center;
     padding: 10px 0;
@@ -6319,7 +6328,7 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     border-radius: 5px;
     padding: 16px 0;
     width: 160px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Ubuntu';
 }
 .percent-btn:hover,
@@ -6344,7 +6353,7 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     margin-right: 0;
 }
 .input-info-wizard{
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #222222;
     font-family: 'Ubuntu';
     padding: 12px 16px;
@@ -6357,7 +6366,7 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     border-bottom: 1px solid #ececec;
 }
 .input-wizard h3{
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #222222;
     font-family: 'Ubuntu';
     margin-bottom: 10px;
@@ -6375,7 +6384,7 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     margin-right: 0;
 }
 .change-header-modal-wizzard .modal-title-wizard{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: 'Ubuntu';
     color: #428bca;
     text-transform: uppercase;
@@ -6391,17 +6400,17 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
 }
 .title-nfo-wizard{
     color: #ff5621;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-transform: uppercase;
     text-align: left;
 }
 .title-nfo-wizard p{
     color: #222222;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-transform: capitalize;
 }
 .title-list-wizard{
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #222222;
     font-family: 'Ubuntu';
 }
@@ -6412,12 +6421,12 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     margin-top: 24px;
 }
 .text-list-wizard{
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #757575;
     font-family: 'Ubuntu';
 }
 .text-list-wizard-p{
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #222222;
     font-family: 'Ubuntu';
     margin-top: 33px;

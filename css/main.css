@@ -69,7 +69,7 @@ select + .select2-container:hover {
   color: #757575 !important;
   font-weight: 300;
   outline: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   padding-right: 35px;
   box-sizing: content-box;
   min-width: 40px; }
@@ -172,7 +172,7 @@ form + .select2-container.select2-container--default.select2-container--open {
 .datepicker {
   height: 32px;
   color: #222222;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   padding: 0 28px 0 34px;
   background-image: url("../img/calendar_darken.png"), url("../img/chewron-down.png");
@@ -360,8 +360,7 @@ table.dataTable .d-flex > .select2 {
   margin: 0; }
   .wrapper_searchterms .btn {
     height: 32px;
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 1.125rem;
     line-height: 32px;
     padding: 0 32px;
     outline: 0 !important;
@@ -575,10 +574,11 @@ table.dataTable .d-flex > .select2 {
     cursor: pointer; }
     .wrapper_searchterms .table-gray-value + small {
       display: block;
-      font-size: 12px;
+      font-size: 0.875rem;
       color: #222222;
       margin-top: 10px;
-      margin-left: 10px; }
+      white-space: nowrap;
+    }
   .wrapper_searchterms .table-edited-value-holder {
     height: 24px;
     width: 41px;
@@ -586,8 +586,11 @@ table.dataTable .d-flex > .select2 {
     margin: 1px 0 0 0; }
     .wrapper_searchterms .table-edited-value-holder + small {
       display: block;
-      font-size: 10px;
-      color: #798f96; }
+      font-size: 0.875rem;
+      color: #798f96;
+      margin-top: 10px;
+      text-align: center;
+    }
   .wrapper_searchterms .table-edited-value {
     display: inline-block;
     background: #fff;
@@ -626,7 +629,7 @@ table.dataTable .d-flex > .select2 {
       transition: .3s ease; }
     .wrapper_searchterms .table-edited-value + small, .wrapper_searchterms .table-edited-value .table-edited-value-holder + small {
       display: block;
-      font-size: 10px;
+      font-size: 0.875rem;
       color: #798f96; }
   .wrapper_searchterms .dataTable .select2-container {
     border: 0 !important;
@@ -774,15 +777,15 @@ table.dataTable .d-flex > .select2 {
     white-space: initial !important; }
   .wrapper_searchterms table.dataTable tbody th, .wrapper_searchterms table.dataTable tbody td {
     padding: 7px 0px;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400; }
   .wrapper_searchterms table.dataTable .table-gray-value, .wrapper_searchterms table.dataTable .select2-selection, .wrapper_searchterms table.dataTable input {
-    font-size: 18px; }
+    font-size: 1.125rem; }
   .wrapper_searchterms table.dataTable .d-flex > .select2 {
     margin-top: 2px; }
   .wrapper_searchterms table.dataTable tfoot th, .wrapper_searchterms table.dataTable tfoot td {
     padding: 7px 0px;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     border-top: #b8c5c9 solid 1px !important;
     border-bottom: 0 !important; }
@@ -853,7 +856,7 @@ table.dataTable .d-flex > .select2 {
     .wrapper_searchterms .dataTables_paginate .paginate_button,
     .dataTables_wrapper .dataTables_paginate .paginate_button{
       color: #263238;
-      font-size: 16px;
+      font-size: 1.125rem;
       font-weight: 600;
       background-color: transparent;
       border: 1px solid #e4e9ed;
@@ -1273,7 +1276,7 @@ table.dataTable tbody th, table.dataTable tbody td {
 
 table.dataTable tbody th, table.dataTable tbody td {
   padding: 7px 0px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400; }
 
 table.dataTable .table-gray-value, table.dataTable .select2-selection, table.dataTable input {
