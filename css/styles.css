@@ -3123,7 +3123,7 @@ table.dataTable thead .sorting_desc_disabled:first-child {
     height: 14px !important;
 }
 .custom-radio .custom-control-label::after{
-    top: 1px;
+    top: 0;
     left: -32px;
 }
 .container-checked .custom-control-input:checked ~ .custom-control-label::before,
@@ -5037,7 +5037,7 @@ a.active-link-log:before,
 .item-select-toggle{
     display: none;
     align-items: center;
-    padding: 8px 20px !important;
+    padding: 15px 20px !important;
     background: transparent;
     border: none;
 }
@@ -6462,7 +6462,4 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
 }
 .footer-justify .checkbox-welcome{
     margin-left: 25px;
-}
-.wrapper_searchterms .dataTable thead, .new-thead th tr th{
-    background-color: #ececec !important;
 }
