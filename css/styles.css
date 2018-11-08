@@ -4480,7 +4480,7 @@ svg:not(:root) {
     background-image: url(../img/selected_icon/chewron-down-white.png);
 }
 .table-actions-danger{
-    width: 61px !important;
+    min-width: 61px !important;
     border-radius: 5px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
