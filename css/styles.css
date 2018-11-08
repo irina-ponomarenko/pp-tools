@@ -1366,9 +1366,6 @@ body{
 .icons.select2-dropdown ul.select2-results__options{
     min-width: 161px;
 }
-.select2-results__options  .select2-results__option:first-child img{
-    display: none;
-}
 .wrapper_searchterms .legend {
     background-color: transparent;
     position: relative;
@@ -4455,7 +4452,20 @@ svg:not(:root) {
     font-weight: 300;
     font-size: 1rem;
 }
-
+.table-actions-btn{
+    border: 0;
+    width: 20px !important;
+    padding: 0 10px !important;
+    border-radius: 5px;
+    background-color: #428bca !important;
+    height: 27px !important;
+    color: #ffffff !important;
+    line-height: 27px !important;
+    background-position: center !important;
+    border: 1px solid #428bca !important;
+    background-image: url(../img/selected_icon/chewron-down-white.png) !important;
+    background-repeat: no-repeat !important;
+}
 .table-actions{
     border: 0;
     width: 81px !important;
@@ -4468,6 +4478,27 @@ svg:not(:root) {
     background-position: 85% 50% !important;
     border: 1px solid #428bca !important;
     background-image: url(../img/selected_icon/chewron-down-white.png);
+}
+.table-actions-danger{
+    width: 61px !important;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #428bca !important;
+    height: 27px !important;
+    color: #ffffff !important;
+    line-height: 27px !important;
+    border: 1px solid #428bca !important;
+    padding: 0 !important;
+    font-size: 0.875rem !important;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+.show .dropdown-item-new{
+    max-width: 500px;
+}
+.item-variant{
+    padding: .25rem .5rem;
 }
 .table-actions span{
     font-size: 0.875rem;
