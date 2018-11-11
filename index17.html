@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PPC.tools</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.3/css/fixedHeader.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/css/tether-theme-arrows-dark.css" />
+    <link rel="stylesheet" href="bootstrap_4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/chosen.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="wrapper_searchterms" style="opacity: 0">
+
+    <!-- top nav -->
+    <header class="header">
+        <div class="wrapper-top-nav">
+            <div class="logo">
+                <h1 class="general-title">
+                    <a href="">
+                        <img src="img/selected_icon/logo.png" alt="logo"/>
+                    </a>
+                </h1>
+            </div>
+            <div class="wrapper-navigation-top">
+                <nav class="top-nav">
+                    <ul class="navigation-top-list">
+                        <li class="info-top-nav">
+                            <a href="" class="active-link">SKUs</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">ppc Wizard</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Changemaster</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Campaigns</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Keywords</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Searchterms</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Tracking</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Autopilot</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Help</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="profile dropdown">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center" title="User's menu"  data-step="26" data-intro="Information about your account, global settings, billing."
+                       id="dropdown-profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                            class="name user-btn-text" ng-bind="email">info7
+              <i class="fa fa-chevron-down" aria-hidden="true"></i></span></a>
+                    <div class="dropdown-menu new-dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-profile">
+                        <a ui-sref="userSettings">Profile</a>
+                        <a ui-sref="Settings">System settings</a>
+                        <a ui-sref="Portal" target="_blank" >Billing</a>
+                        <a ui-sref="ContactUs">Contact us</a>
+                        <a ui-sref="addUser">Add user</a>
+                        <a ui-sref="Logout" class="logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Log Out</a>
+
+                    </div>
+                </div>
+                <button type="button" class="market-btn">
+            <span class="round-block">
+                32
+            </span>
+                    <div class="drop-down-market">
+                        <ul class="list-drop-down">
+                            <li>
+                                <a href="">your info</a>
+                            </li>
+                            <li>
+                                <a href="">your info</a>
+                            </li>
+                            <li>
+                                <a href="">your info</a>
+                            </li>
+                        </ul>
+                        <div class="separeted-link">
+                            <a href="">Separeted link</a>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="wrapper-button-nav">
+            <div class="container-button-nav">
+                <nav class="button-nav">
+                    <ul class="button-nav-list">
+                        <li class="nav-list-variant none-padding-left active-option">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="nav-list-variant active-option">
+                            <a href="">Product List </a>
+                        </li>
+                        <li class="nav-list-variant active-option">
+                            <a href="">Product</a>
+                        </li>
+                        <li class="nav-list-variant none-padding-right">
+                            <a href="">Words Generator</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container-nav-right">
+                <div class="button-nav-right">
+                    <button type="button" class="video-guide">
+                        <span>Video guide</span>
+                    </button>
+                </div>
+                <div class="currency-options new-currency ">
+                    <select class="js-example-basic-single flag icon" name="flag">
+                        <option value="US">A2UZPC5JPB2EX1</option>
+                        <option value="US">A2UZPC5JPB2EX2</option>
+                        <option value="US">A2UZPC5JPB2EX3</option>
+                    </select>
+                </div>
+                <div class="currency-valute">
+                    <span class="title">Currency: </span>
+                    <select class="js-example-basic-single currency" name="currency">
+                        <option value="USD">USD </option>
+                        <option value="EUR">EUR </option>
+                        <option value="RUB">RUB </option>
+                    </select>
+                </div>
+                <button type="button" class="btn icon add btn-outline-primary btn-add-right" ui-sref="SettingsNewAccount" style="    margin-right: 8px;" href="/settings/newAccount">Add+</button>
+            </div>
+        </div>
+    </header>
+    <!-- end top nav -->
+
+    <div class="table-header">
+        <div class="desc-window">
+            <div class="desc-window__block">
+                <a href="#" class="icon-close"></a>
+                <div class="desc-window__icon-bell">
+                    <i class="icon-bell"></i>
+                </div>
+                <div class="desc-window__text">
+                    <p>
+                        Proin dapibus tellus eget nisl hendrerit congue. Orci varius natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Duis sit amet posuere justo, ac volutpat mauris. Fusce aliquet nunc massa, sit amet
+                        luctus nisl ornare a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer vulputate
+                        malesuada tortor, sit amet laoreet nunc mollis nec.
+                        Cras ac malesuada nunc. Curabitur quis lacus in enim volutpat ullamcorper. Pellentesque eu facilisis ex.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-section">
+        <div class="table new-table table-absolute">
+            <nav class="nav-header-table border-bottom-grey">
+                <ul class="nav-table-list">
+                    <li class="nav-li-header">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="nav-li-header">
+                        <a href=""> Keywords</a>
+                    </li>
+                    <li class="nav-li-header">
+                        <a href="">Search Terms</a>
+                    </li>
+                    <li class="nav-li-header active-li-header">
+                        <a href="">Negative keywords</a>
+                    </li>
+                    <li class="nav-li-header">
+                        <a href="">Find Negative Words</a>
+                    </li>
+                </ul>
+                <div class="filters new-filters">
+                    <div class="show-more">
+                        <p>Show <select>
+                            <option>10</option>
+                            <option>25</option>
+                            <option>50</option>
+                            <option>100</option>
+                        </select> entries</p>
+                    </div>
+                </div>
+            </nav>
+            <div class="control form-inline  align-items-end justify-content-between filter-block-center">
+                <div class="d-flex flex-column basic-view">
+                    <div class="d-flex flex-row align-center view-respons">
+                        <div class="label">
+                            <input type="text" data-search-table-main class="form-control search" id="search"  placeholder="Search">
+                            <div class="search-close"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-filter-group">
+                    <a href="" class="filter-btn active-btn-filter">All</a>
+                    <a href="" class="filter-btn">Ad Group 1</a>
+                </div>
+            </div>
+            <div class="legend d-flex flex-center">
+               <div class="container-litter">
+                   <ul class="litter-list">
+                       <li class="litter-item">
+                           <a href="">KW Only- kitty litter mat</a>
+                       </li>
+                       <li class="litter-item">
+                           <a href="">KW Only- kitty litter mat</a>
+                       </li>
+                       <li class="litter-item">
+                           <a href="">KW Only- kitty litter mat</a>
+                       </li>
+                       <li class="litter-item">
+                           <a href="">KW Only- kitty litter mat</a>
+                       </li>
+                   </ul>
+               </div>
+            </div>
+            <table id="example15" class="display new-display " cellspacing="0" width="100%" data-page-length='10'>
+                <thead class="new-thead">
+                <tr>
+                    <th>Negative</th>
+                    <th>Match</th>
+                    <th>State</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <a href="" class="search-query">zen spirit matcha green tea</a>
+                    </td>
+                    <td>
+                        <p class="table-paragraph">
+                            negativeExact
+                        </p>
+                    </td>
+                    <td>
+                        <p class="table-paragraph">
+                            enabled
+                        </p>
+                    </td>
+                    <td>
+                        <div class="wrapper-btn-table-nav">
+                            <button type="button" class="delete">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="" class="search-query">zen spirit matcha green tea</a>
+                    </td>
+                    <td>
+                        <p class="table-paragraph">
+                            negativeExact
+                        </p>
+                    </td>
+                    <td>
+                        <p class="table-paragraph">
+                            enabled
+                        </p>
+                    </td>
+                    <td>
+                        <div class="wrapper-btn-table-nav">
+                            <button type="button" class="delete">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="" class="search-query">zen spirit matcha green tea</a>
+                    </td>
+                    <td>
+                        <p class="table-paragraph">
+                            negativeExact
+                        </p>
+                    </td>
+                    <td>
+                        <p class="table-paragraph">
+                            enabled
+                        </p>
+                    </td>
+                    <td>
+                        <div class="wrapper-btn-table-nav">
+                            <button type="button" class="delete">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="" class="search-query">zen spirit matcha green tea</a>
+                    </td>
+                    <td>
+                        <p class="table-paragraph">
+                            negativeExact
+                        </p>
+                    </td>
+                    <td>
+                        <p class="table-paragraph">
+                            enabled
+                        </p>
+                    </td>
+                    <td>
+                        <div class="wrapper-btn-table-nav">
+                            <button type="button" class="delete">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="legend d-flex  flex-direction-block">
+                <div class="wrapper-text-area area-keywords">
+                    <textarea placeholder="text"></textarea>
+                </div>
+                <div class="item d-flex width-keywords-100">
+                    <div class="table-negative-keywords">
+                        <input type="text" class="keyword-input" placeholder="keyword"/>
+                        <button type="button" class="add-negative">Add to campaign negative</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="bootstrap_4.1.3/js/bootstrap.bundle.js"></script>
+<script src="bootstrap_4.1.3/js/bootstrap.min.js"></script>
+<script src="js/select2.full.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/fixedheader/3.1.3/js/dataTables.fixedHeader.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.colVis.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+<script src="js/AddTabs.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/prism.js"></script>
+<script src="js/init.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/morris.min.js"></script>
+<script src="js/jquery.circliful.js"></script>
+<script src="js/main-new-design.js"></script>
+</body>
+</html>

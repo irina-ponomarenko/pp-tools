@@ -1135,8 +1135,10 @@ table.dataTable .d-flex > .select2 {
     padding: 20px 24px; }
     .wrapper_searchterms .control .title {
       margin-bottom: 5px;
-      color: #263238;
-      font-weight: 700; }
+      color: #757575;
+      font-weight: 300;
+      font-size: .875rem;
+    }
     .wrapper_searchterms .control .basic-view .select2 {
       margin-right: 12px; }
     .wrapper_searchterms .control .filters .btn {

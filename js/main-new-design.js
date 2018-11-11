@@ -458,6 +458,44 @@ $(document).ready(function() {
                 'className': 'pl-1 pr-0'
             }]
     } );
+    var table26  = $('#example15').DataTable( {
+        "dom": 'prtp',
+        'order': [[ 1, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [0],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            }]
+
+    } );
+    var table27  = $('#example16').DataTable( {
+        "dom": 'prtp',
+        'order': [[ 1, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [0],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3],
+                'className': 'pl-1 pr-0'
+            }]
+
+    } );
 
     var table7  = $('#filter-compaigns1').DataTable( {
         // "dom": 'prtp',

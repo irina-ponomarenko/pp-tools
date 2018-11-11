@@ -6494,3 +6494,122 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
 .footer-justify .checkbox-welcome{
     margin-left: 25px;
 }
+.border-bottom-grey{
+    border-bottom: 2px solid #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.border-bottom-grey .new-filters{
+    margin-right: 18px;
+}
+.all-filter-group{
+    display: flex;
+    align-items: center;
+}
+.filter-btn{
+    color: #242423;
+    font-weight: 300;
+    font-size: 1.125rem;
+    margin-right: 40px;
+}
+.filter-btn:last-child{
+    margin-right: 0;
+}
+.active-btn-filter{
+    color: #428bca;
+}
+.filter-block-center{
+    align-items: center !important;
+}
+.litter-list{
+    display: flex;
+    align-items: center;
+}
+.litter-item a{
+    color: #242423;
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+.litter-item{
+    margin-right: 40px;
+}
+.litter-item:last-child{
+    margin-right: 0;
+}
+.table-negative-keywords{
+    display: flex;
+    align-items: center;
+    max-width: 928px;
+    width: 100%;
+    min-height: 80px;
+}
+.width-keywords-100{
+    width: 100%;
+    min-height: 80px;
+}
+.table-negative-keywords .keyword-input{
+    width: 100%;
+    margin-right: 20px;
+}
+.flex-direction-block{
+    flex-direction: column;
+}
+.area-keywords{
+    padding: 0;
+}
+.area-keywords textarea::placeholder{
+    font-size: 0.875rem;
+}
+.negative-keywords-padding-0{
+    padding: 0 !important;
+    padding-left: 15px !important;
+}
+.new-action-keywords{
+    top: 8px;
+}
+.add-new-number{
+    max-width: 65px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 10px;
+}
+.number-clicks{
+    font-size: 1.125rem;
+    color: #222222;
+    font-weight: 300;
+    margin-right: 25px;
+}
+.number-click-container{
+    display: flex;
+    align-items: center;
+}
+.container-inpun-add-new-number{
+    margin-right: 20px;
+}
+.control-label-add-keywords{
+    max-width: 76px;
+    font-size: .875rem;
+}
+
+.add-keywords-control .custom-control-label:after, .add-keywords-control .custom-control-label:before {
+    top: 10px;
+    left: -20px !important;
+}
+.after-legend{
+    padding: 20px 18px;
+    border-top: 2px solid #eceff1;
+}
+.first-block-table-th{
+    width: 48px;
+}
+.control-table-key .custom-control-label:after, .control-table-key .custom-control-label:before {
+    top: 6px;
+}
+#example16_wrapper{
+    padding-bottom: 40px;
+}
+#example16_wrapper .dataTables_paginate{
+    bottom: 10px;
+}

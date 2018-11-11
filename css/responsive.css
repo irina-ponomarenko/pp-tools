@@ -87,6 +87,11 @@
         font-size: 0.875rem;
         padding: 10px 15px;
     }
+    .filter-btn,
+    .litter-item a,
+    .number-clicks{
+        font-size: 1rem;
+    }
     #example2_wrapper{
         padding-bottom: 0;
     }
