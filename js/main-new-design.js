@@ -1,7 +1,12 @@
 $(document).ready(function () {
+    $('.advanced').click(function () {
+        $('.checkbox-group-container').toggleClass('advanced-action');
+    });
+
     $('#demo1').chungTimePicker();
     $('#demo2').chungTimePicker();
-})
+});
+
 function formatState (state) {
   if (!state.id) { return state.text; }
   var $state = $(

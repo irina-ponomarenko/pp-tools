@@ -2186,6 +2186,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 }
 .autopilit-checked{
      margin-bottom: 15px;
+     max-width: 283px;
      width: 100%;
 }
 .visibility-checked:last-child,
@@ -2206,6 +2207,61 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin: 40px 0;
+}
+.list-visibility{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.padding-left-right{
+    padding: 0 60px;
+}
+.change-padding-autopilot{
+    padding: 0  !important;
+}
+.autopilot-title-check-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ececec;
+}
+.advanced{
+    position: relative;
+    font-size: 1.125rem;
+    padding-left: 40px;
+}
+.advanced:before{
+    content: '';
+    position: absolute;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.advanced:after{
+    content: '';
+    position: absolute;
+    left: 16px;
+    width: 8px;
+    height: 1px;
+    top: 8px;
+    background-color: black;
+}
+.advanced-action .advanced:after{
+    content: '+';
+    position: absolute;
+    left: 15px;
+    top: -2px;
+    height: 0;
+    background-color: black;
+}
+.advanced-action .list-visibility{
+    display: none;
 }
 .modal-visibility{
     padding: 0 70px 70px 65px;
@@ -3333,9 +3389,6 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 }
 .wrapper-autopilot-info{
     margin-bottom: 40px;
-}
-.checkbox-group-container{
-    padding-bottom: 40px;
 }
 .container-autopilot{
     padding: 0 60px 0 55px;
