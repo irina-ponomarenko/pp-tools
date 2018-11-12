@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PPC.tools</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.3/css/fixedHeader.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/css/tether-theme-arrows-dark.css" />
+    <link rel="stylesheet" href="bootstrap_4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/chosen.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="wrapper_searchterms" style="opacity: 0">
+
+    <!-- top nav -->
+    <header class="header">
+        <div class="wrapper-top-nav">
+            <div class="logo">
+                <h1 class="general-title">
+                    <a href="">
+                        <img src="img/selected_icon/logo.png" alt="logo"/>
+                    </a>
+                </h1>
+            </div>
+            <div class="wrapper-navigation-top">
+                <nav class="top-nav">
+                    <ul class="navigation-top-list">
+                        <li class="info-top-nav">
+                            <a href="" class="active-link">SKUs</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">ppc Wizard</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Changemaster</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Campaigns</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Keywords</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Searchterms</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Tracking</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Autopilot</a>
+                        </li>
+                        <li class="info-top-nav">
+                            <a href="">Help</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="profile dropdown">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center" title="User's menu"  data-step="26" data-intro="Information about your account, global settings, billing."
+                       id="dropdown-profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                            class="name user-btn-text" ng-bind="email">info7
+              <i class="fa fa-chevron-down" aria-hidden="true"></i></span></a>
+                    <div class="dropdown-menu new-dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-profile">
+                        <a ui-sref="userSettings">Profile</a>
+                        <a ui-sref="Settings">System settings</a>
+                        <a ui-sref="Portal" target="_blank" >Billing</a>
+                        <a ui-sref="ContactUs">Contact us</a>
+                        <a ui-sref="addUser">Add user</a>
+                        <a ui-sref="Logout" class="logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Log Out</a>
+
+                    </div>
+                </div>
+                <button type="button" class="market-btn">
+            <span class="round-block">
+                32
+            </span>
+                    <div class="drop-down-market">
+                        <ul class="list-drop-down">
+                            <li>
+                                <a href="">your info</a>
+                            </li>
+                            <li>
+                                <a href="">your info</a>
+                            </li>
+                            <li>
+                                <a href="">your info</a>
+                            </li>
+                        </ul>
+                        <div class="separeted-link">
+                            <a href="">Separeted link</a>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="wrapper-button-nav">
+            <div class="container-button-nav">
+                <nav class="button-nav">
+                    <ul class="button-nav-list">
+                        <li class="nav-list-variant none-padding-left active-option">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="nav-list-variant active-option">
+                            <a href="">Product List </a>
+                        </li>
+                        <li class="nav-list-variant active-option">
+                            <a href="">Product</a>
+                        </li>
+                        <li class="nav-list-variant none-padding-right">
+                            <a href="">Words Generator</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container-nav-right">
+                <div class="button-nav-right">
+                    <button type="button" class="video-guide">
+                        <span>Video guide</span>
+                    </button>
+                </div>
+                <div class="currency-options new-currency ">
+                    <select class="js-example-basic-single flag icon" name="flag">
+                        <option value="US">A2UZPC5JPB2EX1</option>
+                        <option value="US">A2UZPC5JPB2EX2</option>
+                        <option value="US">A2UZPC5JPB2EX3</option>
+                    </select>
+                </div>
+                <div class="currency-valute">
+                    <span class="title">Currency: </span>
+                    <select class="js-example-basic-single currency" name="currency">
+                        <option value="USD">USD </option>
+                        <option value="EUR">EUR </option>
+                        <option value="RUB">RUB </option>
+                    </select>
+                </div>
+                <button type="button" class="btn icon add btn-outline-primary btn-add-right" ui-sref="SettingsNewAccount" style="    margin-right: 8px;" href="/settings/newAccount">Add+</button>
+            </div>
+        </div>
+    </header>
+    <!-- end top nav -->
+
+    <div class="table-header">
+        <div class="desc-window">
+            <div class="desc-window__block">
+                <a href="#" class="icon-close"></a>
+                <div class="desc-window__icon-bell">
+                    <i class="icon-bell"></i>
+                </div>
+                <div class="desc-window__text">
+                    <p>
+                        Proin dapibus tellus eget nisl hendrerit congue. Orci varius natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Duis sit amet posuere justo, ac volutpat mauris. Fusce aliquet nunc massa, sit amet
+                        luctus nisl ornare a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer vulputate
+                        malesuada tortor, sit amet laoreet nunc mollis nec.
+                        Cras ac malesuada nunc. Curabitur quis lacus in enim volutpat ullamcorper. Pellentesque eu facilisis ex.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-section">
+        <div class="table new-table table-absolute">
+            <nav class="nav-header-table border-bottom-grey">
+                <ul class="nav-table-list">
+                    <li class="nav-li-header">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="nav-li-header active-li-header">
+                        <a href="">Find Brand New</a>
+                    </li>
+                    <li class="nav-li-header">
+                        <a href="">Duplicate Keywords</a>
+                    </li>
+                    <li class="nav-li-header">
+                        <a href="">Keyword search</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="wrapper-header-table">
+                <nav class="nav-header-table refresh-wrapper-info">
+                    <ul class="nav-table-list refresh-list">
+                        <li class="nav-li-header active-li-header">
+                            <a href="" class="icon-refresh">Refresh</a>
+                        </li>
+                        <li class="nav-li-header">
+                            <a href="">All</a>
+                        </li>
+                        <li class="nav-li-header">
+                            <a href="">Acos < 25%</a>
+                        </li>
+                        <li class="nav-li-header">
+                            <a href="">Acos > 50%</a>
+                        </li>
+                        <li class="nav-li-header">
+                            <a href="">Acos < 25%</a>
+                        </li>
+                        <li class="nav-li-header">
+                            <a href="">Zero Sales</a>
+                        </li>
+                        <li class="nav-li-header">
+                            <a href="">Zero Net</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="wrapper-data-pickers wrapper-two-pickers">
+                    <div class="date-pickers d-flex flex-row">
+                        <div class="d-flex flex-column">
+                            <span class="title range-title">Select Data Range</span>
+                            <input type="text" id="datePicker2" class="form-control datepicker">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="control form-inline  align-items-end justify-content-between">
+                <div class="d-flex flex-column basic-view">
+                    <div class="d-flex flex-row">
+                        <div class="label">
+                            <input type="text" data-search-table-main class="form-control search" id="search"  placeholder="Search">
+                            <div class="search-close"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filters new-filters">
+                    <div class="campages-block d-flex align-items-center">
+                        <div class="item">
+                            <span class="input">CP</span><span class="desc">Campaign Phrase</span>
+                        </div>
+
+                        <div class="item">
+                            <span class="input">CE</span><span class="desc">Campaign Exact</span>
+                        </div>
+
+                        <div class="item">
+                            <span class="input">AP</span><span class="desc">AdGroup Phrase</span>
+                        </div>
+
+                        <div class="item">
+                            <span class="input">AE</span><span class="desc">AdGroup Exact</span>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <button class="btn icon visible btn-outline-primary">Column visibility</button>
+                        <button data-filter-campaigns-btn class="btn icon filter btn-primary">Filters Campaigns</button>
+                        <button data-filter-btn class="btn icon filter btn-primary">Filters</button>
+                    </div>
+                    <div class="show-more">
+                        <p>Show <select>
+                            <option>10</option>
+                            <option>25</option>
+                            <option>50</option>
+                            <option>100</option>
+                        </select> entries</p>
+                    </div>
+                </div>
+            </div>
+            <div class="legend d-flex align-items-center flex-center">
+                <div class="item d-flex align-items-center new-action">
+                    <span class="title">Selected(<span class="count">2</span>)</span>
+                    <select class="js-example-basic-single actions icon dubleArrow " name="flag">
+                        <option value="0">Action:</option>
+                        <option value="1" data-icon='reject'>Reject</option>
+                        <option value="2" data-icon='succsess'>Enabled</option>
+                        <option value="3" data-icon='delay'>Delay</option>
+                        <option value="5" data-icon='autosuccssesed'>Auto suggested</option>
+                    </select>
+                </div>
+                <div class="indicator d-flex align-items-center">
+                    <div class="item">
+                        <span class="round enabled"></span><span class="desc color-green">enabled</span>
+                    </div>
+
+                    <div class="item">
+                        <span class="round paused"></span><span class="desc color-orange">paused</span>
+                    </div>
+
+                    <div class="item">
+                        <span class="round archived"></span><span class="desc color-grey">archived</span>
+                    </div>
+                </div>
+                <div class="wrapper-control-block">
+                    <div class="container-control control-search-keywords1">
+                        <div class="d-flex flex-column basic-view basic-search">
+                            <div class="d-flex flex-row">
+                                <div class="label control-block-search">
+                                    <input type="text" data-search-table-main class="form-control search" id="search1"  placeholder="enter keyword to search">
+                                    <div class="search-close"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="progress-btn">process</button>
+                    </div>
+                    <button type="button" class="csv-btn"></button>
+                </div>
+            </div>
+            <table id="example17" class="display new-display " cellspacing="0" width="100%" data-page-length='10'>
+                <thead class="new-thead">
+                <tr>
+                    <th>
+                        <div class="custom-control custom-checkbox custom-control-new">
+                            <input type="checkbox" class="custom-control-input" id="tableCheckAll">
+                            <label class="custom-control-label" for="tableCheckAll"></label>
+                        </div>
+                    </th>
+                    <th>Details</th>
+                    <th>Bid</th>
+                    <th>Suggested</th>
+                    <th>Neg.</th>
+                    <th>Match</th>
+                    <th>Profit</th>
+                    <th>Rev</th>
+                    <th>Spend</th>
+                    <th>Net</th>
+                    <th>AcoS</th>
+                    <th>Impress</th>
+                    <th>Clicks</th>
+                    <th>CTR</th>
+                    <th>Ave CPC</th>
+                    <th>Orders</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="custom-control custom-checkbox custom-control-new">
+                            <input type="checkbox" class="custom-control-input" id="tableCheck2">
+                            <label class="custom-control-label" for="tableCheck2"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrapper-d-flex-ok">
+                            <div class="d-flex d-flex-ok">
+                                <select class="js-example-basic-single state dubleArrow state-ok">
+                                    <option value="1">Enabled</option>
+                                    <option value="2">Paused</option>
+                                    <option value="3">Archived</option>
+                                </select>
+                            </div>
+                            <div class="details-container">
+                                <a href="">200029 - Main - Glass Water Ca...</a>
+                                <div class="details-span">
+                    <span class="ok-icon">
+                      <b></b>
+                    </span>
+                                    <span class="text-ok">KillBRD 21/08/2017 - Narrow - Broad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-edited-value new-edit-value">
+                            <input type=text" value="0.60">
+                            <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                            <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+                        </div>
+                        <small>0.60</small>
+                    </td>
+                    <td class="suggested-td">
+                        <span class="table-gray-value">$1.20</span><small>$0.79 - $1.30</small>
+                    </td>
+                    <td>
+                        <div class="dropdown colored checked">
+                            <button class="btn btn-secondary dropdown-toggle d-flex align-items-center drop-down-colored" type="button" id="dropdowenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>CP</span>
+                            </button>
+                            <div class="dropdown-menu colored-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"><span></span></a>
+                                <a class="dropdown-item" href="#"><span>CP</span></a>
+                                <a class="dropdown-item" href="#"><span>CE</span></a>
+                                <a class="dropdown-item" href="#"><span>AP</span></a>
+                                <a class="dropdown-item" href="#"><span>AE</span></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        broad
+                    </td>
+                    <td>
+                        <div>
+                            <p class="table-paragraph light-green-text">$3.00</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$0.00</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$2.15</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph orange-text">
+                            <p>-$0.15</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph orange-text">
+                            <p>0</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>1</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>5363</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>0.76%</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>1</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrapper-btn-table-nav">
+                            <button type="button" class="add-some">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="rating">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="move-up">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="delete">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="custom-control custom-checkbox custom-control-new">
+                            <input type="checkbox" class="custom-control-input" id="tableCheck202">
+                            <label class="custom-control-label" for="tableCheck202"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrapper-d-flex-ok">
+                            <div class="d-flex d-flex-ok">
+                                <select class="js-example-basic-single state dubleArrow state-ok">
+                                    <option value="1">Enabled</option>
+                                    <option value="2">Paused</option>
+                                    <option value="3">Archived</option>
+                                </select>
+                            </div>
+                            <div class="details-container">
+                                <a href="">200029 - Main - Glass Water Ca...</a>
+                                <div class="details-span">
+                    <span class="ok-icon">
+                      <b></b>
+                    </span>
+                                    <span class="text-ok">KillBRD 21/08/2017 - Narrow - Broad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-edited-value new-edit-value">
+                            <input type=text" value="0.60">
+                            <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                            <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+                        </div>
+                        <small>0.60</small>
+                    </td>
+                    <td class="suggested-td">
+                        <span class="table-gray-value">$1.20</span><small>$0.79 - $1.30</small>
+                    </td>
+                    <td>
+                        <div class="dropdown colored checked">
+                            <button class="btn btn-secondary dropdown-toggle d-flex align-items-center drop-down-colored" type="button" id="dropdowenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>CP</span>
+                            </button>
+                            <div class="dropdown-menu colored-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"><span></span></a>
+                                <a class="dropdown-item" href="#"><span>CP</span></a>
+                                <a class="dropdown-item" href="#"><span>CE</span></a>
+                                <a class="dropdown-item" href="#"><span>AP</span></a>
+                                <a class="dropdown-item" href="#"><span>AE</span></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        broad
+                    </td>
+                    <td>
+                        <div>
+                            <p class="table-paragraph light-green-text">$3.00</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$0.00</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$2.15</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph orange-text">
+                            <p>-$0.15</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph orange-text">
+                            <p>0</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>1</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>5363</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>0.76%</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>1</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrapper-btn-table-nav">
+                            <button type="button" class="add-some">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="rating">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="move-up">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="delete">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="custom-control custom-checkbox custom-control-new">
+                            <input type="checkbox" class="custom-control-input" id="tableCheck203">
+                            <label class="custom-control-label" for="tableCheck203"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrapper-d-flex-ok">
+                            <div class="d-flex d-flex-ok">
+                                <select class="js-example-basic-single state dubleArrow state-ok">
+                                    <option value="1">Enabled</option>
+                                    <option value="2">Paused</option>
+                                    <option value="3">Archived</option>
+                                </select>
+                            </div>
+                            <div class="details-container">
+                                <a href="">200029 - Main - Glass Water Ca...</a>
+                                <div class="details-span">
+                    <span class="ok-icon">
+                      <b></b>
+                    </span>
+                                    <span class="text-ok">KillBRD 21/08/2017 - Narrow - Broad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-edited-value new-edit-value">
+                            <input type=text" value="0.60">
+                            <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                            <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+                        </div>
+                        <small>0.60</small>
+                    </td>
+                    <td class="suggested-td">
+                        <span class="table-gray-value">$1.20</span><small>$0.79 - $1.30</small>
+                    </td>
+                    <td>
+                        <div class="dropdown colored checked">
+                            <button class="btn btn-secondary dropdown-toggle d-flex align-items-center drop-down-colored" type="button" id="dropdowenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>CP</span>
+                            </button>
+                            <div class="dropdown-menu colored-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"><span></span></a>
+                                <a class="dropdown-item" href="#"><span>CP</span></a>
+                                <a class="dropdown-item" href="#"><span>CE</span></a>
+                                <a class="dropdown-item" href="#"><span>AP</span></a>
+                                <a class="dropdown-item" href="#"><span>AE</span></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        broad
+                    </td>
+                    <td>
+                        <div>
+                            <p class="table-paragraph light-green-text">$3.00</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$0.00</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$2.15</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph orange-text">
+                            <p>-$0.15</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph orange-text">
+                            <p>0</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>1</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>5363</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>0.76%</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>1</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrapper-btn-table-nav">
+                            <button type="button" class="add-some">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="rating">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="move-up">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="delete">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="custom-control custom-checkbox custom-control-new">
+                            <input type="checkbox" class="custom-control-input" id="tableCheck204">
+                            <label class="custom-control-label" for="tableCheck204"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrapper-d-flex-ok">
+                            <div class="d-flex d-flex-ok">
+                                <select class="js-example-basic-single state dubleArrow state-ok">
+                                    <option value="1">Enabled</option>
+                                    <option value="2">Paused</option>
+                                    <option value="3">Archived</option>
+                                </select>
+                            </div>
+                            <div class="details-container">
+                                <a href="">200029 - Main - Glass Water Ca...</a>
+                                <div class="details-span">
+                    <span class="ok-icon">
+                      <b></b>
+                    </span>
+                                    <span class="text-ok">KillBRD 21/08/2017 - Narrow - Broad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-edited-value new-edit-value">
+                            <input type=text" value="0.60">
+                            <button class="btn btn-sm table-edited-value-btn btn-primary">Save</button>
+                            <button class="btn btn-sm table-edited-value-btn btn-secondary">Cancel</button>
+                        </div>
+                        <small>0.60</small>
+                    </td>
+                    <td class="suggested-td">
+                        <span class="table-gray-value">$1.20</span><small>$0.79 - $1.30</small>
+                    </td>
+                    <td>
+                        <div class="dropdown colored checked">
+                            <button class="btn btn-secondary dropdown-toggle d-flex align-items-center drop-down-colored" type="button" id="dropdowenuButto4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>CP</span>
+                            </button>
+                            <div class="dropdown-menu colored-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"><span></span></a>
+                                <a class="dropdown-item" href="#"><span>CP</span></a>
+                                <a class="dropdown-item" href="#"><span>CE</span></a>
+                                <a class="dropdown-item" href="#"><span>AP</span></a>
+                                <a class="dropdown-item" href="#"><span>AE</span></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        broad
+                    </td>
+                    <td>
+                        <div>
+                            <p class="table-paragraph light-green-text">$3.00</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$0.00</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>$2.15</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph orange-text">
+                            <p>-$0.15</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph orange-text">
+                            <p>0</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>1</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>5363</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>0.76%</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-paragraph">
+                            <p>1</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="wrapper-btn-table-nav">
+                            <button type="button" class="add-some">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="rating">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="move-up">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                            <button type="button" class="delete">
+                                <div class="button" data-title="Some text"></div>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="legend d-flex align-items-center">
+
+                <div class="indicator d-flex align-items-center">
+                    <div class="item">
+                        <span class="round enabled"></span><span class="desc color-green">enabled</span>
+                    </div>
+
+                    <div class="item">
+                        <span class="round paused"></span><span class="desc color-orange">paused</span>
+                    </div>
+
+                    <div class="item">
+                        <span class="round archived"></span><span class="desc color-grey">archived</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-text-area wrapper-text-area-justify">
+                <div class="text-area-group">
+                    <p>Paste a list of keywords here, each on new line</p>
+                    <textarea placeholder="add new keywords"></textarea>
+                    <button class="find-keywords-btn">Find New Keywords</button>
+                </div>
+                <div class="text-area-group">
+                    <p>NEW keywords</p>
+                    <textarea placeholder="results"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal -->
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="bootstrap_4.1.3/js/bootstrap.bundle.js"></script>
+<script src="bootstrap_4.1.3/js/bootstrap.min.js"></script>
+<script src="js/select2.full.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/fixedheader/3.1.3/js/dataTables.fixedHeader.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.colVis.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+<script src="js/AddTabs.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/prism.js"></script>
+<script src="js/init.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/morris.min.js"></script>
+<script src="js/jquery.circliful.js"></script>
+<script src="js/main-new-design.js"></script>
+</body>
+</html>

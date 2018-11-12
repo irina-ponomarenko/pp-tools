@@ -815,7 +815,8 @@ body{
     color: #0093c5;
     margin-bottom: 13px;
 }
-.btn-generate{
+.btn-generate,
+.progress-btn{
     border-radius: 5px;
     background-color: #428bca;
     border: 1px solid #428bca;
@@ -830,7 +831,17 @@ body{
     font-family: 'Ubuntu';
     font-weight: 300;
 }
-.btn-generate:hover{
+.progress-btn{
+    width: 82px;
+    height: 27px;
+    padding: 3px 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.btn-generate:hover,
+.progress-btn:hover{
     transition: .3s;
     background-color: #ffffff;
     color: #428bca;
@@ -1010,7 +1021,8 @@ body{
 }
 .add-btn,
 .copy,
-.set-btn{
+.set-btn,
+.find-keywords-btn{
     background-color: #428bca;
     border: 1px solid #428bca;
     color: #ffffff;
@@ -1024,6 +1036,12 @@ body{
     -moz-box-shadow: 3px 6px 8px -2px rgba(0,0,0,0.29);
     box-shadow: 3px 6px 8px -2px rgba(0,0,0,0.29);
 }
+.find-keywords-btn{
+    width: 195px;
+    padding: 6px 0 10px;
+    height: 34px;
+    align-self: flex-end;
+}
 .set-btn{
     width: 61px;
     padding: 2px 0;
@@ -1031,7 +1049,8 @@ body{
 }
 .add-btn:hover,
 .copy:hover,
-.set-btn:hover{
+.set-btn:hover,
+.find-keywords-btn:hover{
     transition: .3s;
     background-color: transparent;
     color: #428bca;
@@ -6612,4 +6631,49 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
 }
 #example16_wrapper .dataTables_paginate{
     bottom: 10px;
+}
+.wrapper_searchterms .control-block-search .search{
+    width: 255px;
+}
+.control-search-keywords1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 473px;
+    width: 100%;
+    padding: 0 10px;
+    border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+}
+.basic-search{
+    margin-right: 10px;
+}
+.light-green-text{
+    color: #7bce4c;
+    font-size: 1rem;
+}
+.text-area-group{
+    display: flex;
+   align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 25px;
+}
+.text-area-group textarea{
+    font-size: .875rem;
+}
+.text-area-group:last-child{
+    margin-right: 0;
+}
+.wrapper-text-area-justify{
+    display: flex;
+    align-items: flex-start;
+}
+.text-area-group:first-child  textarea{
+    margin-bottom: 20px;
+}
+.text-area-group p{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 20px;
 }

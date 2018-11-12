@@ -496,6 +496,29 @@ $(document).ready(function() {
             }]
 
     } );
+    var table28  = $('#example17').DataTable( {
+        "dom": 'prtp',
+        "scrollY":        "295px",
+        'order': [[ 2, "asc" ]],
+        "pagingType": 'simple_numbers',
+        "columnDefs":  [{
+            "targets": [0],
+            "orderable": false,
+            'className': 'pl-1'
+        },
+            {
+                "targets": [2],
+                'className': 'pl-0'
+            },
+            {
+                "targets": [3,5],
+                'className': 'pl-1 pr-0'
+            },{
+                "targets": [1,6,7,8,9,10,11,12,13,14,15,16],
+                'className': 'pl-1 pr-1'
+            }]
+
+    } );
 
     var table7  = $('#filter-compaigns1').DataTable( {
         // "dom": 'prtp',
