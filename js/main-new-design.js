@@ -2,6 +2,7 @@ $(document).ready(function () {
     $('.advanced').click(function () {
         $('.checkbox-group-container').toggleClass('advanced-action');
     });
+    $(".chosen-select").chosen({disable_search_threshold: 10});
 
     $('#demo1').chungTimePicker();
     $('#demo2').chungTimePicker();
@@ -681,7 +682,6 @@ $(document).ready(function() {
     column.visible( ! column.visible() );
 
   } );
-
   $('[data-change-legth1]').on( 'change', function () {
     var value = $(this).val()
     table1.page.len( value ).draw();

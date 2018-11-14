@@ -271,13 +271,32 @@
             <div class="legend d-flex align-items-center flex-center">
                 <div class="item d-flex align-items-center new-action">
                     <span class="title">Selected(<span class="count">2</span>)</span>
-                    <select class="js-example-basic-single actions icon dubleArrow " name="flag">
-                        <option value="0">Action:</option>
-                        <option value="1" data-icon='reject'>Reject</option>
-                        <option value="2" data-icon='succsess'>Enabled</option>
-                        <option value="3" data-icon='delay'>Delay</option>
-                        <option value="5" data-icon='autosuccssesed'>Auto suggested</option>
-                    </select>
+                    <div class="wrapper-input-actions">
+                        <div class="new-select-multiple new-select-multiple-action">
+                            <select data-placeholder="Actions:" class="chosen-select">
+                                <option value=""></option>
+                                <optgroup label="SearchTerms">
+                                    <option>Copy selected SearchTerm(s)</option>
+                                    <option>Add selected SearchTerm(s) to negative</option>
+                                    <option>Delete selected SearchTerm(s) from negative</option>
+                                </optgroup>
+                                <optgroup label="Keywords">
+                                    <option>Add selected Keyword(s) to negative</option>
+                                    <option>Delete selected Keyword(s) from negative</option>
+                                    <option>Pause selected Keyword(s)</option>
+                                    <option>Run paused Keyword(s)</option>
+                                    <option>Archive selected Keyword(s)</option>
+                                    <option>Start AutoPilot with selected Keyword(s)</option>
+                                    <option>Stop AutoPilot for selected Keyword(s)</option>
+                                    <option>Add selected Keyword(s) to tracking</option>
+                                    <option>Delete selected Keyword(s) from tracking</option>
+                                    <option>Schedule selected Keyword(s)</option>
+                                    <option>Delete Schedule for selected Keyword(s)</option>
+                                    <option>Add selected Keyword(s) to campaign</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
                 </div>
                 <div class="indicator d-flex align-items-center">
                     <div class="item">
@@ -598,9 +617,9 @@
                             <div class="details-container">
                                 <a href="">200029 - Main - Glass Water Ca...</a>
                                 <div class="details-span">
-                    <span class="ok-icon">
-                      <b></b>
-                    </span>
+                                    <span class="ok-icon">
+                                      <b></b>
+                                    </span>
                                     <span class="text-ok">KillBRD 21/08/2017 - Narrow - Broad</span>
                                 </div>
                             </div>

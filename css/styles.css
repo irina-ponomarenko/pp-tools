@@ -6904,3 +6904,193 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
 .conditions-block:last-child{
     margin-right: 0;
 }
+.wrapper-input-actions{
+    width: 120px;
+    margin-left: 20px;
+}
+.new-select-multiple-action .chosen-container-single .chosen-single{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+.new-select-multiple-action .chosen-default{
+    background-image: url("../img/chewron-down.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: 95% 50% !important;
+}
+.new-select-multiple-action  .chosen-with-drop .chosen-default{
+    background-image: url("../img/chewron-up.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: 95% 50% !important;
+}
+.new-select-multiple-action .chosen-container-single .chosen-single span{
+    font-size: 1.125rem;
+    color: #757575;
+    font-weight: 300;
+}
+.new-select-multiple-action .chosen-container {
+    max-width: 368px;
+    width: 100% !important;
+}
+.new-select-multiple-action .chosen-container.chosen-with-drop .chosen-drop {
+    min-width: 368px;
+    max-width: 100%;
+    top: 43px;
+    border-radius: 5px;
+    border: none;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(170,170,170,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(170,170,170,1);
+    box-shadow: 0px 0px 5px 1px rgba(170,170,170,1);
+}
+.new-select-multiple-action .chosen-container-single .chosen-search{
+    background-color: #ececec;
+}
+.new-select-multiple-action .chosen-container .chosen-results{
+    background-color: #ececec;
+    padding: 25px;
+    padding-right: 0;
+    min-height: 365px;
+    margin: 0;
+}
+.new-select-multiple-action .chosen-container .group-result{
+    position: relative;
+    color: #757575 !important;
+    font-size: 1.125rem !important;
+    font-weight: 300 !important;
+    padding-left: 17px !important;
+}
+.new-select-multiple-action .chosen-container .group-result:before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #ffffff;
+    right: 0;
+    top: 14px;
+    left: 36%;
+}
+.new-select-multiple-action .chosen-container-single .chosen-search input[type="text"]{
+    display: none;
+}
+.new-select-multiple-action .chosen-container .group-result:first-child:before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #ffffff;
+    right: 0;
+    top: 14px;
+    left: 43%;
+}
+.new-select-multiple-action .chosen-container .group-result:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background-image: url("../img/key-icon.png");
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+}
+.new-select-multiple-action .chosen-container .group-result:first-child:after{
+    content: '#';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background-image: none;
+}
+.new-select-multiple-action .chosen-container .chosen-results li{
+    padding: 9px 0;
+}
+.new-select-multiple-action .chosen-container .active-result{
+    margin-left: 16px;
+    padding-left: 23px !important;
+    font-size: .875rem !important;
+    font-weight: 300 !important;
+    position: relative;
+}
+.new-select-multiple-action .chosen-container li{
+    position: relative;
+}
+.new-select-multiple-action .chosen-container li:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.new-select-multiple-action .chosen-container li:nth-child(2):after{
+    background-image: url("../img/copy.png") !important;
+    width: 14px;
+    height: 16px;
+}
+.new-select-multiple-action .chosen-container li:nth-child(3):after{
+    background-image: url("../img/add-sel.png") !important;
+    width: 15px;
+    height: 15px;
+}
+.new-select-multiple-action .chosen-container li:nth-child(4):after{
+    background-image: url("../img/delete-select.png") !important;
+    width: 15px;
+    height: 15px;
+}
+.new-select-multiple-action .chosen-container li:nth-child(6):after{
+    background-image: url("../img/add-sel-0.png") !important;
+    width: 15px;
+    height: 15px;
+}
+.new-select-multiple-action .chosen-container li:nth-child(7):after{
+    background-image: url("../img/delete-select.png") !important;
+    width: 15px;
+    height: 15px;
+}
+.new-select-multiple-action .chosen-container li:nth-child(8):after{
+    background-image: url("../img/paused-sel.png") !important;
+    width: 15px;
+    height: 15px;
+}
+.new-select-multiple-action .chosen-container li:nth-child(9):after{
+    background-image: url("../img/run.png") !important;
+    width: 15px;
+    height: 15px;
+}
+.new-select-multiple-action .chosen-container li:nth-child(10):after{
+     background-image: url("../img/arhived.png") !important;
+     width: 15px;
+     height: 15px;
+ }
+.new-select-multiple-action .chosen-container li:nth-child(11):after{
+    background-image: url("../img/start-selec.png") !important;
+    width: 9px;
+    height: 11px;
+    top: 8px;
+}
+.new-select-multiple-action .chosen-container li:nth-child(12):after{
+    background-image: url("../img/stop.png") !important;
+    width: 11px;
+    height: 11px;
+}
+.new-select-multiple-action .chosen-container li:nth-child(13):after{
+    background-image: url("../img/add-key.png") !important;
+    width: 15px;
+    height: 12px;
+}
+.new-select-multiple-action .chosen-container li:nth-child(14):after{
+    background-image: url("../img/delete-key.png") !important;
+    width: 15px;
+    height: 12px;
+}
+.new-select-multiple-action .chosen-container li:nth-child(15):after{
+    background-image: url("../img/shedule.png") !important;
+    width: 15px;
+    height: 15px;
+}
+.new-select-multiple-action .chosen-container li:nth-child(16):after{
+    background-image: url("../img/del-chedule.png") !important;
+    width: 15px;
+    height: 14px;
+}
+.new-select-multiple-action .chosen-container li:nth-child(17):after{
+    background-image: url("../img/add-sel.png") !important;
+    width: 15px;
+    height: 16px;
+}
