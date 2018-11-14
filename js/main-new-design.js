@@ -656,6 +656,20 @@ $(document).ready(function() {
             'className': 'pl-1 pr-0'
         }]
     });
+    var table29  = $('#filter-compaigns12').DataTable( {
+        "dom": 'prtp',
+        "scrollY":        "170px",
+        'order': [[ 0, false ]],
+        "pagingType": 'simple_numbers',
+        "aoColumnDefs": [{
+            "bSortable": false,
+            "aTargets": [0, 1, 2, 3]
+        },
+            {
+                "targets": [0,1,2,3],
+                'className': 'px-3'
+            }]
+    });
 
     $('.dataTables_filter input').attr("placeholder", "search");
 

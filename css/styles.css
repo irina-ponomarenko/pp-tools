@@ -3390,6 +3390,93 @@ table.dataTable thead .sorting_desc_disabled:first-child {
 .wrapper-autopilot-info{
     margin-bottom: 40px;
 }
+.wrapper-add-group-info{
+    border-bottom: 1px solid #ececec;
+    padding: 45px 0;
+}
+.wrapper-add-group-info:first-child{
+    border-top: 1px solid #ececec;
+}
+.wrapper-add-group-info:last-child{
+    border: none;
+}
+.select-add-group-container-between{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+.select-add-group-container-between .new-select-multiple-add{
+    width: 50%;
+    margin-right: 40px;
+}
+.table-multiple .chosen-container{
+    max-width: 85px;
+}
+.table-multiple .chosen-container-multi .chosen-choices{
+    border-bottom: none;
+    background-color: transparent;
+}
+.table-multiple .chosen-container-multi .chosen-choices li.search-choice{
+    position: absolute;
+    width: 100%;
+}
+.wrapper-add-group-info.wrapper_searchterms {
+    min-width: 100%;
+}
+.campain-end {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.select-add-bid{
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 11px;
+    width: 100%;
+}
+.container-block-bid-info{
+    max-width: 284px;
+    width: 100%;
+}
+.select-add-group-container-between .new-select-multiple-add:last-child{
+    margin-right: 0;
+}
+.new-select-multiple-add .chosen-container-multi .chosen-choices li.search-choice{
+    background: #ffffff;
+    box-shadow: none;
+    font-size: 1.125rem;
+    width: 100%;
+    position: absolute;
+}
+.new-select-multiple-add .chosen-container-multi .chosen-choices {
+    padding-left: 0;
+}
+.wrapper-add-select-group{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper-add-select-group .add-btn{
+    align-self: flex-end;
+}
+.new-select-multiple-add .chosen-container-multi .chosen-choices li.search-choice span{
+    color: #757575 !important;
+}
+.title-select-add{
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+.add-bid-textarea{
+    max-width: 282px;
+    width: 100%;
+    min-height: 104px;
+    resize: none;
+    border: 1px solid #757575;
+    padding: 11px 13px;
+}
+.new-select-multiple-add .chosen-container{
+    max-width: 100%;
+}
 .container-autopilot{
     padding: 0 60px 0 55px;
 }
