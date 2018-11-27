@@ -273,6 +273,9 @@
     .wrapper_searchterms .dataTables_paginate .paginate_button, .dataTables_wrapper .dataTables_paginate .paginate_button{
         font-size: 0.875rem;
     }
+    .narrow-list {
+        max-width: 638px;
+    }
 
 }
 @media only screen and (max-width: 1400px) and (min-width: 360px) {

@@ -5629,6 +5629,10 @@ body {
 .narrow-list{
     display: flex;
     align-items: center;
+    max-width: 715px;
+}
+.narrow-list:first-child{
+    margin-bottom: 10px;
 }
 .narrow-list li{
     margin-right: 15px;
