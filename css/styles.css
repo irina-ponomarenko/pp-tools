@@ -1880,7 +1880,7 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
     font-family: 'Ubuntu';
     white-space: nowrap;
     font-weight: 300;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 4px solid #ffffff;
 }
 .addui-Tabs .addui-Tabs-tabHolder .addui-Tabs-tab.addui-Tabs-active {
     border-bottom: 4px solid #428bca;
@@ -7114,7 +7114,7 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     padding: 12px 26px;
 }
 .container-keywords-info{
-    padding: 40px 60px 70px 60px;
+    padding: 40px 60px;
 }
 .title-keyword-setting{
     font-size: 24px;
@@ -7130,6 +7130,7 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     font-family: 'Ubuntu';
     font-weight: normal;
     line-height: 24px;
+    color: #757575;
 }
 .list-item-keywords{
     list-style: none;
@@ -7144,4 +7145,136 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     position: absolute; top: 5px; left: 0;
     color: #3c7fb9;
     font-size: 19px;
+}
+.border-keywords-desk{
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.padding-small-desk{
+    padding: 35px 60px;
+}
+.footer-modal-keywords{
+    padding: 30px 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.keyword-next,
+.keyword-save{
+    width: 94px;
+    border-radius: 5px;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #428bca;
+    color: #ffffff;
+    background-color: #428bca;
+    font-size: 1.125rem;
+}
+.margin-top-25{
+    margin-top: 35px;
+}
+.custom-control-keywords .custom-control-label::before, .custom-control-keywords .custom-control-label::after {
+    position: absolute;
+    top: -0.1rem;
+    left: -1.5rem;
+    background-image: none;
+}
+.custom-control-keywords .custom-control-label::before {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #222222;
+    cursor: pointer;
+    border-radius: 1px;
+}
+.custom-checkbox.custom-control-keywords  .custom-control-input:checked~.custom-control-label:after {
+    background-image: url(../img/selected_icon/checked.png);
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-position: center;
+    background-size: contain;
+}
+.custom-control-keywords .custom-control-input:checked~.custom-control-label:after {
+    background-image: url(../img/selected_icon/checked.png);
+    width: 18px;
+    height: 18px;
+    border: 1px solid #428bca;
+    background-position: center;
+}
+.container-keywords-setting{
+    margin-top: 15px;
+}
+.custom-control-keywords label,
+.target-item h2,
+.target-title{
+    font-size: 14px;
+    color: #757575;
+}
+.target-container-keywords{
+    margin: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.container-target-input{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.container-target-input{
+    border-bottom: 1px solid #757575;
+    max-width: 297px;
+    width: 100%;
+}
+.target-input{
+    padding: 10px;
+    color: #222222;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    border: none;
+    outline: none;
+}
+.bottom-info-target p{
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    font-style: italic;
+    color: #757575;
+    line-height: 20px;
+}
+.bottom-info-target p a{
+    font-style: normal;
+    color: #428bca;
+}
+.awansed-container-keywords,
+.awansed-container-keywords-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.awansed-container-keywords-2 .adwansed-item{
+    max-width: 192px;
+}
+.target-container:nth-child(2){
+    margin-top: 23px;
+}
+.container-target-input span{
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    color: #757575 !important;
+    white-space: nowrap;
+}
+.adwansed-item .container-target-input .target-input{
+    max-width: 230px;
+}
+.awansed-container-keywords-2 .adwansed-item .container-target-input{
+    max-width: 192px;
+    width: 100%;
+}
+.awansed-container-keywords-2 .adwansed-item .container-target-input .target-input{
+    max-width: 135px;
+}
+.keyword-save{
+    width: 161px;
 }
