@@ -7105,3 +7105,43 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     bottom: 0;
     padding-bottom: 4px;
 }
+.modal-keyword-settings .modal-xl{
+    max-width: 740px;
+    width: 100%;
+}
+.addui-Tabs .addui-Tabs-tabHolder .addui-Tabs-tab.keywords-item{
+    text-align: center;
+    padding: 12px 26px;
+}
+.container-keywords-info{
+    padding: 40px 60px 70px 60px;
+}
+.title-keyword-setting{
+    font-size: 24px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+}
+.container-info-text-keywords{
+    margin-top: 18px;
+}
+.container-info-text-keywords p,
+.item-keywords p{
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    line-height: 24px;
+}
+.list-item-keywords{
+    list-style: none;
+}
+.list-item-keywords > .item-keywords{
+    padding-left: 20px;
+    position: relative;
+    margin: 10px 0;
+}
+.list-item-keywords > .item-keywords:before{
+    content: '✔';
+    position: absolute; top: 5px; left: 0;
+    color: #3c7fb9;
+    font-size: 19px;
+}
