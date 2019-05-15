@@ -7278,3 +7278,114 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
 .keyword-save{
     width: 161px;
 }
+
+
+.left-indicators{
+    justify-content: flex-start !important;
+    margin-left: 247px !important;
+    margin-right: 10px !important;
+}
+.atribute-info{
+    font: 200 1rem 'Ubuntu';
+    position: relative;
+    padding-left: 32px;
+}
+.list-atribute{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.list-atribute:last-child{
+    margin-bottom: 0;
+}
+.item-atribute{
+    margin-right: 15px;
+}
+.item-atribute:last-child{
+    margin-right: 0;
+}
+.atribute-info::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    top: -2px;
+}
+.a-black::before{
+    background: url("../img/a_black.svg")no-repeat;
+    background-size: contain;
+}
+.pa-black::before{
+    background: url("../img/pa_black.svg")no-repeat;
+    background-size: contain;
+}
+.m-black::before{
+    background: url("../img/m_black.svg")no-repeat;
+    background-size: contain;
+}
+.kw-black::before{
+    background: url("../img/kw_black.svg")no-repeat;
+    background-size: contain;
+}
+.wrapper-list-atribute{
+    display: flex;
+    margin: 0 auto;
+    margin-left: 0;
+    flex-direction: column;
+}
+.strat-btn{
+    position: relative;
+    background: url("../img/a_black.svg")no-repeat;
+    background-position: left;
+    background-size: 23px 23px;
+}
+.placement{
+    position: relative;
+    background: url("../img/kw_black.svg")no-repeat;
+    background-position: left;
+    background-size: 23px 23px;
+}
+.wrapper_searchterms .strat-btn{
+    padding: 0 25px;
+    border: none;
+}
+.wrapper_searchterms .strat-btn:hover{
+    background-color: transparent;
+}
+.btn-secondary.strat-btn:not(:disabled):not(.disabled).active, .btn-secondary.strat-btn:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle.strat-btn{
+    background-color: transparent;
+}
+.strat-btn::before{
+    content: '';
+    position: absolute;
+    background-image: url("../img/chewron-down.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 10px;
+    right: 4px;
+    top: 11px;
+}
+.container-element{
+    padding: 8px 10px;
+    background-color: #e4e9ea !important;
+    border-radius: 3px;
+}
+.dropdown-element{
+    min-width: 7rem;
+    border: none;
+    padding: 5px 6px;
+    box-shadow: 0 8px 16px rgba(121, 143, 150, 0.24), 0 0 8px rgba(121, 143, 150, 0.12) !important;
+}
+.strat-paragraph{
+    display: flex;
+    align-items: center;
+}
+.input-strat{
+    max-width: 50px;
+    text-align: center;
+    font-size: 1.125rem;
+    color: #757575;
+}
