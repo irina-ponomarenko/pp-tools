@@ -80,6 +80,11 @@
         overflow-x: inherit;
         padding-bottom: 40px;
     }
+    .atribute-info {
+        font: 200 0.925rem 'Ubuntu';
+        position: relative;
+        padding-left: 29px;
+    }
 
 }
 @media only screen and (max-width: 1560px) and (min-width: 360px) {
@@ -275,6 +280,19 @@
     }
     .narrow-list {
         max-width: 638px;
+    }
+    .atribute-info::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+    }
+    .atribute-info {
+        font: 200 0.625rem 'Ubuntu';
+        position: relative;
+        padding-left: 24px;
     }
 
 }

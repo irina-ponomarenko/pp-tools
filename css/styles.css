@@ -7317,6 +7317,34 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     background: url("../img/a_black.svg")no-repeat;
     background-size: contain;
 }
+.c_black::before{
+    background: url("../img/c_black.svg")no-repeat;
+    background-size: contain;
+}
+.fix_black::before{
+    background: url("../img/fix_black.svg")no-repeat;
+    background-size: contain;
+}
+.lm_black::before{
+    background: url("../img/lm_black.svg")no-repeat;
+    background-size: contain;
+}
+.cm-black::before{
+    background: url("../img/cm_black.svg")no-repeat;
+    background-size: contain;
+}
+.s-black::before{
+    background: url("../img/s_black.svg")no-repeat;
+    background-size: contain;
+}
+.arrow_black::before{
+    background: url("../img/arrow_black.svg")no-repeat;
+    background-size: contain;
+}
+.arrows_black::before{
+    background: url("../img/arrows_black.svg")no-repeat;
+    background-size: contain;
+}
 .pa-black::before{
     background: url("../img/pa_black.svg")no-repeat;
     background-size: contain;
@@ -7337,13 +7365,13 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
 }
 .strat-btn{
     position: relative;
-    background: url("../img/a_black.svg")no-repeat;
+    background: url("../img/arrow_black.svg")no-repeat;
     background-position: left;
     background-size: 23px 23px;
 }
 .placement{
     position: relative;
-    background: url("../img/kw_black.svg")no-repeat;
+    background: url("../img/arrows_black.svg")no-repeat;
     background-position: left;
     background-size: 23px 23px;
 }
