@@ -7364,19 +7364,12 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     flex-direction: column;
 }
 .strat-btn{
-    position: relative;
-    background: url("../img/arrow_black.svg")no-repeat;
-    background-position: left;
-    background-size: 23px 23px;
+    background-color: transparent;
 }
-.placement{
-    position: relative;
-    background: url("../img/arrows_black.svg")no-repeat;
-    background-position: left;
-    background-size: 23px 23px;
-}
+
 .wrapper_searchterms .strat-btn{
-    padding: 0 25px;
+    padding: 0;
+    padding-right: 25px;
     border: none;
 }
 .wrapper_searchterms .strat-btn:hover{
@@ -7402,7 +7395,7 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     border-radius: 3px;
 }
 .dropdown-element{
-    min-width: 7rem;
+    min-width: 3rem;
     border: none;
     padding: 5px 6px;
     box-shadow: 0 8px 16px rgba(121, 143, 150, 0.24), 0 0 8px rgba(121, 143, 150, 0.12) !important;

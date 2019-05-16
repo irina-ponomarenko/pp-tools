@@ -4,11 +4,16 @@ $(document).ready(function () {
     });
     $(".chosen-select").chosen({disable_search_threshold: 10});
 
-    $('#demo1').chungTimePicker();
-    $('#demo2').chungTimePicker();
+    if ( $('#demo1').length) {
+        $('#demo1').chungTimePicker();
+    }
+    if ( $('#demo2').length) {
+        $('#demo2').chungTimePicker();
+    }
 
 
-    const  btn = $('.img-dropdown');
+
+    const  span = $('.img-dropdown');
     const navItem = $('.container-element .img-btn');
 
     navItem.on('click', function (event) {
