@@ -13,12 +13,15 @@ $(document).ready(function () {
 
 
 
-    const  span = $('.img-dropdown');
     const navItem = $('.container-element .img-btn');
 
     navItem.on('click', function (event) {
-       const value = $(this).attr('src');
-       span.attr('src', value);
+        const value = $(this).attr('src');
+
+        $(this)
+            .closest('.btn-group')
+            .find('.img-dropdown')
+            .attr('src', value);
     });
 
 });

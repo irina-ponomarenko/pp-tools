@@ -7366,7 +7366,23 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
 .strat-btn{
     background-color: transparent;
 }
+.wrapper_searchterms .wrapper-input-strat .details{
+    width: 51px;
+    padding: 3px 1px;
 
+}
+.wrapper_searchterms .wrapper-input-strat .details input{
+    text-align: center;
+}
+.wrapper-input-strat{
+    position: relative;
+
+}
+.wrapper_searchterms .wrapper-input-strat .table-edited-value.active{
+    width: 200px;
+    position: absolute;
+    right: 0;
+}
 .wrapper_searchterms .strat-btn{
     padding: 0;
     padding-right: 25px;
@@ -7409,4 +7425,15 @@ table.dataTable .thead-modal-table .sorting_desc_disabled:first-child{
     text-align: center;
     font-size: 1.125rem;
     color: #757575;
+}
+.item-pat{
+    display: flex;
+    flex-direction: column;
+}
+.list-pat{
+    display: flex;
+}
+.img-dropdown{
+    width: 24px;
+    height: 24px;
 }
