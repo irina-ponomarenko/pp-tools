@@ -8,7 +8,7 @@ $(document).ready(function () {
     $('#demo2').chungTimePicker();
 
 
-    const  btn = $('.strat-btn');
+    const  btn = $('.img-dropdown');
     const navItem = $('.container-element .img-btn');
 
     navItem.on('click', function (event) {
