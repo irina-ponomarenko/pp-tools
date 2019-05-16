@@ -6,6 +6,16 @@ $(document).ready(function () {
 
     $('#demo1').chungTimePicker();
     $('#demo2').chungTimePicker();
+
+
+    const  btn = $('.strat-btn');
+    const navItem = $('.container-element .img-btn');
+
+    navItem.on('click', function (event) {
+       const value = $(this).attr('src');
+       span.attr('src', value);
+    });
+
 });
 
 function formatState (state) {
